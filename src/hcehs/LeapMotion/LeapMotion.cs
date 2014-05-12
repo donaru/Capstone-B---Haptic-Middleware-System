@@ -9,6 +9,7 @@ namespace HapCon.LeapMotion
 {
     public class LeapMotion : ILeapMotion
     {
+
         public LeapMotion()
         {
 

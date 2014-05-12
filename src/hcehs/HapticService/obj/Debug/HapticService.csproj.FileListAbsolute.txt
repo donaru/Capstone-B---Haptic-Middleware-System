@@ -1,0 +1,14 @@
+C:\Users\Donald\Documents\Visual Studio 2013\Projects\HelloService\HelloService\obj\Debug\HapticService.csprojResolveAssemblyReference.cache
+C:\Users\Donald\Documents\Visual Studio 2013\Projects\HelloService\HelloService\obj\Debug\HelloService.dll
+C:\Users\Donald\Documents\Visual Studio 2013\Projects\HelloService\HelloService\obj\Debug\HelloService.pdb
+C:\Users\Donald\Documents\Visual Studio 2013\Projects\HelloService\HelloService\bin\Debug\HelloService.dll.config
+C:\Users\Donald\Documents\Visual Studio 2013\Projects\HelloService\HelloService\bin\Debug\HelloService.dll
+C:\Users\Donald\Documents\Visual Studio 2013\Projects\HelloService\HelloService\bin\Debug\HelloService.pdb
+C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticService\obj\Debug\HapticService.csprojResolveAssemblyReference.cache
+C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticService\bin\Debug\HapticService.dll.config
+C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticService\bin\Debug\HapticService.dll
+C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticService\bin\Debug\HapticService.pdb
+C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticService\obj\Debug\HapticService.dll
+C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticService\obj\Debug\HapticService.pdb
+C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticService\bin\Debug\Common.dll
+C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticService\bin\Debug\Common.pdb

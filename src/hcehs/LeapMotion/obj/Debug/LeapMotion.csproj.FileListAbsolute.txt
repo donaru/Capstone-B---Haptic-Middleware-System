@@ -1,0 +1,8 @@
+C:\Users\Donald\Documents\haptic-control\src\hcehs\LeapMotion\obj\Debug\LeapMotion.csprojResolveAssemblyReference.cache
+C:\Users\Donald\Documents\haptic-control\src\hcehs\LeapMotion\bin\Debug\LeapMotion.dll.config
+C:\Users\Donald\Documents\haptic-control\src\hcehs\LeapMotion\bin\Debug\LeapMotion.dll
+C:\Users\Donald\Documents\haptic-control\src\hcehs\LeapMotion\bin\Debug\LeapMotion.pdb
+C:\Users\Donald\Documents\haptic-control\src\hcehs\LeapMotion\bin\Debug\Common.dll
+C:\Users\Donald\Documents\haptic-control\src\hcehs\LeapMotion\bin\Debug\Common.pdb
+C:\Users\Donald\Documents\haptic-control\src\hcehs\LeapMotion\obj\Debug\LeapMotion.dll
+C:\Users\Donald\Documents\haptic-control\src\hcehs\LeapMotion\obj\Debug\LeapMotion.pdb

@@ -1,0 +1,16 @@
+C:\Users\Donald\Documents\Visual Studio 2013\Projects\HelloService\HelloServiceHost\bin\Debug\HelloServiceHost.exe.config
+C:\Users\Donald\Documents\Visual Studio 2013\Projects\HelloService\HelloServiceHost\bin\Debug\HelloServiceHost.exe
+C:\Users\Donald\Documents\Visual Studio 2013\Projects\HelloService\HelloServiceHost\bin\Debug\HelloServiceHost.pdb
+C:\Users\Donald\Documents\Visual Studio 2013\Projects\HelloService\HelloServiceHost\bin\Debug\HelloService.dll
+C:\Users\Donald\Documents\Visual Studio 2013\Projects\HelloService\HelloServiceHost\bin\Debug\HelloService.pdb
+C:\Users\Donald\Documents\Visual Studio 2013\Projects\HelloService\HelloServiceHost\obj\Debug\HelloServiceHost.exe
+C:\Users\Donald\Documents\Visual Studio 2013\Projects\HelloService\HelloServiceHost\obj\Debug\HelloServiceHost.pdb
+C:\Users\Donald\Documents\Visual Studio 2013\Projects\HelloService\HelloServiceHost\obj\Debug\RPCServiceHost.csprojResolveAssemblyReference.cache
+C:\Users\Donald\Documents\haptic-control\src\hcehs\RPCServiceHost\obj\Debug\RPCServiceHost.csprojResolveAssemblyReference.cache
+C:\Users\Donald\Documents\haptic-control\src\hcehs\RPCServiceHost\bin\Debug\RPCServiceHost.exe.config
+C:\Users\Donald\Documents\haptic-control\src\hcehs\RPCServiceHost\bin\Debug\RPCServiceHost.exe
+C:\Users\Donald\Documents\haptic-control\src\hcehs\RPCServiceHost\bin\Debug\RPCServiceHost.pdb
+C:\Users\Donald\Documents\haptic-control\src\hcehs\RPCServiceHost\obj\Debug\RPCServiceHost.exe
+C:\Users\Donald\Documents\haptic-control\src\hcehs\RPCServiceHost\obj\Debug\RPCServiceHost.pdb
+C:\Users\Donald\Documents\haptic-control\src\hcehs\RPCServiceHost\bin\Debug\HapticService.dll
+C:\Users\Donald\Documents\haptic-control\src\hcehs\RPCServiceHost\bin\Debug\HapticService.pdb

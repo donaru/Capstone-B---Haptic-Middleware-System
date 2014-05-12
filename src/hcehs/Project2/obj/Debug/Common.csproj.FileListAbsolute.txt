@@ -1,0 +1,6 @@
+C:\Users\Donald\Documents\haptic-control\src\hcehs\Project2\obj\Debug\Common.csprojResolveAssemblyReference.cache
+C:\Users\Donald\Documents\haptic-control\src\hcehs\Project2\bin\Debug\Common.dll.config
+C:\Users\Donald\Documents\haptic-control\src\hcehs\Project2\bin\Debug\Common.dll
+C:\Users\Donald\Documents\haptic-control\src\hcehs\Project2\bin\Debug\Common.pdb
+C:\Users\Donald\Documents\haptic-control\src\hcehs\Project2\obj\Debug\Common.dll
+C:\Users\Donald\Documents\haptic-control\src\hcehs\Project2\obj\Debug\Common.pdb

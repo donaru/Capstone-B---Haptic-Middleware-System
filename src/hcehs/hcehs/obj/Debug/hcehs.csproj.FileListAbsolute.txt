@@ -1,0 +1,2 @@
+C:\Users\Donald\Documents\haptic-control\src\hcehs\hcehs\bin\Debug\hcehs.exe.config
+C:\Users\Donald\Documents\haptic-control\src\hcehs\hcehs\obj\Debug\hcehs.csprojResolveAssemblyReference.cache

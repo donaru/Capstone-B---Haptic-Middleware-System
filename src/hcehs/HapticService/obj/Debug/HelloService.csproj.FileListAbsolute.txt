@@ -1,0 +1,6 @@
+C:\Users\Donald\Documents\Visual Studio 2013\Projects\HelloService\HelloService\bin\Debug\HelloService.dll.config
+C:\Users\Donald\Documents\Visual Studio 2013\Projects\HelloService\HelloService\bin\Debug\HelloService.dll
+C:\Users\Donald\Documents\Visual Studio 2013\Projects\HelloService\HelloService\bin\Debug\HelloService.pdb
+C:\Users\Donald\Documents\Visual Studio 2013\Projects\HelloService\HelloService\obj\Debug\HelloService.csprojResolveAssemblyReference.cache
+C:\Users\Donald\Documents\Visual Studio 2013\Projects\HelloService\HelloService\obj\Debug\HelloService.dll
+C:\Users\Donald\Documents\Visual Studio 2013\Projects\HelloService\HelloService\obj\Debug\HelloService.pdb

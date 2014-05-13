@@ -18,7 +18,9 @@ namespace HapticControlManager
     
     public partial class mainForm : Form
     {
-        ServiceHost host; 
+        ServiceHost host;
+        
+        
         public mainForm()
         {
             InitializeComponent();
@@ -56,9 +58,31 @@ namespace HapticControlManager
 
         private void addButton_Click(object sender, EventArgs e)
         {
+
             AddForm addForm = new AddForm();
-            addForm.Show();
+            addForm.ShowDialog();
+            string computerName = addForm.getWorkstationName;
+            string hapticDevice = addForm.getHapticDevice;
+            string listeningMode = addForm.getListeningMode;
+            string ipAddress = addForm.getIpAddress;
+            ListViewItem item = new ListViewItem(hapticDevice);
+            item.SubItems.Add(computerName);
+            item.SubItems.Add(listeningMode);
+            item.SubItems.Add(ipAddress);
+            deviceListView.Items.Add(item);
+
+
         }
+
+        private void deleteButton_Click(object sender, EventArgs e)
+        {
+            foreach (ListViewItem eachItem in deviceListView.SelectedItems)
+            {
+                deviceListView.Items.Remove(eachItem);
+            }
+        }
+
+
 
  
 

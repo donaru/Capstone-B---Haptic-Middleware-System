@@ -17,3 +17,6 @@ C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticControlManager\bin\Debu
 C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticControlManager\bin\Debug\Common.pdb
 C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticControlManager\bin\Debug\Leap.dll
 C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticControlManager\bin\Debug\LeapCSharp.dll
+C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticControlManager\bin\Debug\leap_motion_logo.jpg
+C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticControlManager\bin\Debug\softkinetic.jpg
+C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticControlManager\bin\Debug\mesa_imaging.jpg

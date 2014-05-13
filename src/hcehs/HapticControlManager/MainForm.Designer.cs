@@ -32,7 +32,7 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.startButton = new System.Windows.Forms.Button();
             this.stopButton = new System.Windows.Forms.Button();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.deviceListView = new System.Windows.Forms.ListView();
             this.columnName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnComputer = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnListeningMode = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -69,19 +69,20 @@
             this.stopButton.UseVisualStyleBackColor = true;
             this.stopButton.Click += new System.EventHandler(this.stopButton_Click);
             // 
-            // listView1
+            // deviceListView
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.deviceListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnName,
             this.columnComputer,
             this.columnListeningMode,
             this.columnIPAddress});
-            this.listView1.Location = new System.Drawing.Point(13, 33);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(518, 339);
-            this.listView1.TabIndex = 2;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.deviceListView.FullRowSelect = true;
+            this.deviceListView.Location = new System.Drawing.Point(13, 33);
+            this.deviceListView.Name = "deviceListView";
+            this.deviceListView.Size = new System.Drawing.Size(518, 339);
+            this.deviceListView.TabIndex = 2;
+            this.deviceListView.UseCompatibleStateImageBehavior = false;
+            this.deviceListView.View = System.Windows.Forms.View.Details;
             // 
             // columnName
             // 
@@ -132,6 +133,7 @@
             this.deleteButton.TabIndex = 5;
             this.deleteButton.Text = "&Delete";
             this.deleteButton.UseVisualStyleBackColor = true;
+            this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
             // 
             // exitButton
             // 
@@ -173,9 +175,10 @@
             this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.addButton);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.deviceListView);
             this.Controls.Add(this.stopButton);
             this.Controls.Add(this.startButton);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "mainForm";
             this.Text = "Haptic Control Manager";
@@ -189,7 +192,7 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Button startButton;
         private System.Windows.Forms.Button stopButton;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView deviceListView;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ColumnHeader columnName;
         private System.Windows.Forms.ColumnHeader columnComputer;

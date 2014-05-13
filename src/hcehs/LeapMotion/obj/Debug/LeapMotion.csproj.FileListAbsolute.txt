@@ -6,3 +6,6 @@ C:\Users\Donald\Documents\haptic-control\src\hcehs\LeapMotion\bin\Debug\Common.d
 C:\Users\Donald\Documents\haptic-control\src\hcehs\LeapMotion\bin\Debug\Common.pdb
 C:\Users\Donald\Documents\haptic-control\src\hcehs\LeapMotion\obj\Debug\LeapMotion.dll
 C:\Users\Donald\Documents\haptic-control\src\hcehs\LeapMotion\obj\Debug\LeapMotion.pdb
+C:\Users\Donald\Documents\haptic-control\src\hcehs\LeapMotion\bin\Debug\Leap.dll
+C:\Users\Donald\Documents\haptic-control\src\hcehs\LeapMotion\bin\Debug\LeapCSharp.dll
+C:\Users\Donald\Documents\haptic-control\src\hcehs\LeapMotion\bin\Debug\LeapCSharp.NET4.0.dll

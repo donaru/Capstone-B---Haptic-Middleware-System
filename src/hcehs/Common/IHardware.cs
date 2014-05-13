@@ -12,8 +12,10 @@ namespace HapCon.Common
         string Name { get; set; }
         void Initialise();
         void Shutdown();
-        void SetComputerName(string name);
-        string GetListeningMode();
+
+        void SetParameters(string name, string computerName, string listeningMode);
+        string SetComputerName { get; set; }
+        string GetListeningMode { get; set; }
         string getGesture();
         int getXCoordinate();
         int getYCoordinate();

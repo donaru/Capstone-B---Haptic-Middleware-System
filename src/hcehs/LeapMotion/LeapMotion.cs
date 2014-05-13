@@ -9,51 +9,26 @@ namespace HapCon.LeapMotion
 {
     public class LeapMotion : ILeapMotion
     {
-
+        public string Name { get; set; }
+        public string ConnectionString { get; set; }
+        public string SetComputerName { get; set; }
+        public string GetListeningMode { get; set; }
         public LeapMotion()
         {
 
         }
-        public string ConnectionString
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
 
-        public string Name
+        public void SetParameters(string name, string computerName, string listeningMode)
         {
-            get
-            {
-                throw new NotImplementedException();
-            }
-            set
-            {
-                throw new NotImplementedException();
-            }
+            this.Name = name;
+            throw new NotImplementedException();
         }
-
         public void Initialise()
         {
             throw new NotImplementedException();
         }
 
         public void Shutdown()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void SetComputerName(string name)
-        {
-            throw new NotImplementedException();
-        }
-
-        public string GetListeningMode()
         {
             throw new NotImplementedException();
         }

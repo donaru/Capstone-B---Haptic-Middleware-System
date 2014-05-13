@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ServiceModel;
-using HapticService;
+using HapCon.HapticService;
 using HapCon.Common;
 
 namespace HapCon.RPCServiceHost
@@ -12,7 +12,7 @@ namespace HapCon.RPCServiceHost
     public class RPCServiceHost
     {
 
-        public void start()
+        public static void Main()
         {
 
             using (ServiceHost host = new ServiceHost(typeof(HapticService.HapticService)))

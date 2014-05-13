@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace test_functionality.Properties
+namespace hcehs_client.Properties
 {
 
 

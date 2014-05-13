@@ -10,3 +10,10 @@ C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticService\bin\Debug\Hapti
 C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticService\bin\Debug\HapticService.pdb
 C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticService\obj\Debug\HapticService.dll
 C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticService\obj\Debug\HapticService.pdb
+C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticService\bin\Debug\Leap.dll
+C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticService\bin\Debug\LeapCSharp.dll
+C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticService\bin\Debug\LeapCSharp.NET4.0.dll
+C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticService\bin\Debug\Common.dll
+C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticService\bin\Debug\LeapMotion.dll
+C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticService\bin\Debug\Common.pdb
+C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticService\bin\Debug\LeapMotion.pdb

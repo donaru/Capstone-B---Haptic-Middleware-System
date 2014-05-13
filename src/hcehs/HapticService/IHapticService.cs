@@ -5,7 +5,7 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
 
-namespace HapticService
+namespace HapCon.HapticService
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the interface name "IHapticService" in both code and config file together.
     [ServiceContract]
@@ -13,5 +13,12 @@ namespace HapticService
     {
         [OperationContract]
         string GetMessage(string name);
+
+        [OperationContract]
+        string GetCoordinate(string workstationName);
+
+        [OperationContract]
+        void LoadConfigurations();
+       
     }
 }

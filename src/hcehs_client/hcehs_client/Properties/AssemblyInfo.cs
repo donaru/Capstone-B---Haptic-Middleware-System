@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("test functionality")]
+[assembly: AssemblyTitle("hcehs_client")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("test functionality")]
+[assembly: AssemblyProduct("hcehs_client")]
 [assembly: AssemblyCopyright("Copyright ©  2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("a061a1f8-82ab-44e0-ba8e-c033dab40fb8")]
+[assembly: Guid("0e3d313c-77c5-4a24-921b-1dde45f3ff9b")]
 
 // Version information for an assembly consists of the following four values:
 //

@@ -87,22 +87,22 @@
             // columnName
             // 
             this.columnName.Text = "Name";
-            this.columnName.Width = 64;
+            this.columnName.Width = 67;
             // 
             // columnComputer
             // 
             this.columnComputer.Text = "Mapped workstation";
-            this.columnComputer.Width = 120;
+            this.columnComputer.Width = 151;
             // 
             // columnListeningMode
             // 
             this.columnListeningMode.Text = "Listening Mode";
-            this.columnListeningMode.Width = 99;
+            this.columnListeningMode.Width = 143;
             // 
             // columnIPAddress
             // 
             this.columnIPAddress.Text = "IP Address";
-            this.columnIPAddress.Width = 119;
+            this.columnIPAddress.Width = 152;
             // 
             // label1
             // 

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test functionality", "test functionality\test functionality.csproj", "{87A2D497-44CD-44D0-A406-B4D1A185D39E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hcehs_client", "hcehs_client\hcehs_client.csproj", "{A9A770B9-9B23-4A6F-90D9-6CE5D5106EFD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{87A2D497-44CD-44D0-A406-B4D1A185D39E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{87A2D497-44CD-44D0-A406-B4D1A185D39E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{87A2D497-44CD-44D0-A406-B4D1A185D39E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{87A2D497-44CD-44D0-A406-B4D1A185D39E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9A770B9-9B23-4A6F-90D9-6CE5D5106EFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9A770B9-9B23-4A6F-90D9-6CE5D5106EFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9A770B9-9B23-4A6F-90D9-6CE5D5106EFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9A770B9-9B23-4A6F-90D9-6CE5D5106EFD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

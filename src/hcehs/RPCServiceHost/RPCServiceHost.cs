@@ -9,17 +9,20 @@ using HapCon.Common;
 
 namespace HapCon.RPCServiceHost
 {
-    class Program
+    public class RPCServiceHost
     {
-        static void Main(string[] args)
+
+        public void start()
         {
 
             using (ServiceHost host = new ServiceHost(typeof(HapticService.HapticService)))
             {
+                
                 host.Open();
+                
                 Console.WriteLine("Service started at " + DateTime.Now.ToString());
 
-
+                /*
                 //testing leap motion
                 LeapMotion.LeapMotion leapmotion = new LeapMotion.LeapMotion();
                 leapmotion.SetParameters("Leap Motion", "local", ListeningMode.UsbConnection);
@@ -32,7 +35,7 @@ namespace HapCon.RPCServiceHost
                         Console.WriteLine("X: " + coordinates[0] + ", Y: " + coordinates[1]);
                     }
                     
-                }
+                }*/
 
                 Console.ReadLine();
             }

@@ -7,3 +7,13 @@ C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticControlManager\obj\Debu
 C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticControlManager\obj\Debug\HapticControlManager.exe
 C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticControlManager\obj\Debug\HapticControlManager.pdb
 C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticControlManager\obj\Debug\HapticControlManager.mainForm.resources
+C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticControlManager\obj\Debug\HapticControlManager.AddForm.resources
+C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticControlManager\bin\Debug\HapticService.dll
+C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticControlManager\bin\Debug\LeapMotion.dll
+C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticControlManager\bin\Debug\Common.dll
+C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticControlManager\bin\Debug\LeapCSharp.NET4.0.dll
+C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticControlManager\bin\Debug\HapticService.pdb
+C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticControlManager\bin\Debug\LeapMotion.pdb
+C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticControlManager\bin\Debug\Common.pdb
+C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticControlManager\bin\Debug\Leap.dll
+C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticControlManager\bin\Debug\LeapCSharp.dll

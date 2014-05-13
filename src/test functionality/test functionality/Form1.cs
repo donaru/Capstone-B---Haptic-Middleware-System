@@ -8,20 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace HapticControlManager
+namespace test_functionality
 {
-    public partial class mainForm : Form
+    public partial class Form1 : Form
     {
-        public mainForm()
+        public Form1()
         {
             InitializeComponent();
         }
 
-        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
-
-
     }
 }

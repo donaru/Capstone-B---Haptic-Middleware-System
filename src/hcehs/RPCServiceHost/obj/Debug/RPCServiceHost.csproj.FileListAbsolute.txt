@@ -7,10 +7,7 @@ C:\Users\Donald\Documents\Visual Studio 2013\Projects\HelloService\HelloServiceH
 C:\Users\Donald\Documents\Visual Studio 2013\Projects\HelloService\HelloServiceHost\obj\Debug\HelloServiceHost.pdb
 C:\Users\Donald\Documents\Visual Studio 2013\Projects\HelloService\HelloServiceHost\obj\Debug\RPCServiceHost.csprojResolveAssemblyReference.cache
 C:\Users\Donald\Documents\haptic-control\src\hcehs\RPCServiceHost\obj\Debug\RPCServiceHost.csprojResolveAssemblyReference.cache
-C:\Users\Donald\Documents\haptic-control\src\hcehs\RPCServiceHost\bin\Debug\RPCServiceHost.exe.config
-C:\Users\Donald\Documents\haptic-control\src\hcehs\RPCServiceHost\bin\Debug\RPCServiceHost.exe
 C:\Users\Donald\Documents\haptic-control\src\hcehs\RPCServiceHost\bin\Debug\RPCServiceHost.pdb
-C:\Users\Donald\Documents\haptic-control\src\hcehs\RPCServiceHost\obj\Debug\RPCServiceHost.exe
 C:\Users\Donald\Documents\haptic-control\src\hcehs\RPCServiceHost\obj\Debug\RPCServiceHost.pdb
 C:\Users\Donald\Documents\haptic-control\src\hcehs\RPCServiceHost\bin\Debug\HapticService.dll
 C:\Users\Donald\Documents\haptic-control\src\hcehs\RPCServiceHost\bin\Debug\HapticService.pdb
@@ -21,3 +18,6 @@ C:\Users\Donald\Documents\haptic-control\src\hcehs\RPCServiceHost\bin\Debug\Comm
 C:\Users\Donald\Documents\haptic-control\src\hcehs\RPCServiceHost\bin\Debug\LeapMotion.dll
 C:\Users\Donald\Documents\haptic-control\src\hcehs\RPCServiceHost\bin\Debug\Common.pdb
 C:\Users\Donald\Documents\haptic-control\src\hcehs\RPCServiceHost\bin\Debug\LeapMotion.pdb
+C:\Users\Donald\Documents\haptic-control\src\hcehs\RPCServiceHost\bin\Debug\RPCServiceHost.dll.config
+C:\Users\Donald\Documents\haptic-control\src\hcehs\RPCServiceHost\bin\Debug\RPCServiceHost.dll
+C:\Users\Donald\Documents\haptic-control\src\hcehs\RPCServiceHost\obj\Debug\RPCServiceHost.dll

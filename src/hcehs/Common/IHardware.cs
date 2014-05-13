@@ -6,19 +6,24 @@ using System.Threading.Tasks;
 
 namespace HapCon.Common
 {
-
+    public enum ListeningMode
+    {
+        TcpConnection,
+        HttpConnection,
+        UsbConnection
+    }
     public interface IHardware
     {
         string Name { get; set; }
         void Initialise();
         void Shutdown();
 
-        void SetParameters(string name, string computerName, string listeningMode);
+        void SetParameters(string name, string computerName, ListeningMode listeningMode);
         string SetComputerName { get; set; }
-        string GetListeningMode { get; set; }
+        ListeningMode GetListeningMode { get; set; }
         string getGesture();
-        int getXCoordinate();
-        int getYCoordinate();
+        float[] getCoordinate();
+        
     }
 }
 

@@ -14,3 +14,10 @@ C:\Users\Donald\Documents\haptic-control\src\hcehs\RPCServiceHost\obj\Debug\RPCS
 C:\Users\Donald\Documents\haptic-control\src\hcehs\RPCServiceHost\obj\Debug\RPCServiceHost.pdb
 C:\Users\Donald\Documents\haptic-control\src\hcehs\RPCServiceHost\bin\Debug\HapticService.dll
 C:\Users\Donald\Documents\haptic-control\src\hcehs\RPCServiceHost\bin\Debug\HapticService.pdb
+C:\Users\Donald\Documents\haptic-control\src\hcehs\RPCServiceHost\bin\Debug\Leap.dll
+C:\Users\Donald\Documents\haptic-control\src\hcehs\RPCServiceHost\bin\Debug\LeapCSharp.dll
+C:\Users\Donald\Documents\haptic-control\src\hcehs\RPCServiceHost\bin\Debug\LeapCSharp.NET4.0.dll
+C:\Users\Donald\Documents\haptic-control\src\hcehs\RPCServiceHost\bin\Debug\Common.dll
+C:\Users\Donald\Documents\haptic-control\src\hcehs\RPCServiceHost\bin\Debug\LeapMotion.dll
+C:\Users\Donald\Documents\haptic-control\src\hcehs\RPCServiceHost\bin\Debug\Common.pdb
+C:\Users\Donald\Documents\haptic-control\src\hcehs\RPCServiceHost\bin\Debug\LeapMotion.pdb

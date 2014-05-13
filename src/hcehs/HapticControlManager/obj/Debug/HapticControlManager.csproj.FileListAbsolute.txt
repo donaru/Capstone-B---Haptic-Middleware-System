@@ -1,0 +1,9 @@
+C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticControlManager\bin\Debug\HapticControlManager.exe.config
+C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticControlManager\bin\Debug\HapticControlManager.exe
+C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticControlManager\bin\Debug\HapticControlManager.pdb
+C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticControlManager\obj\Debug\HapticControlManager.csprojResolveAssemblyReference.cache
+C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticControlManager\obj\Debug\HapticControlManager.Properties.Resources.resources
+C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticControlManager\obj\Debug\HapticControlManager.csproj.GenerateResource.Cache
+C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticControlManager\obj\Debug\HapticControlManager.exe
+C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticControlManager\obj\Debug\HapticControlManager.pdb
+C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticControlManager\obj\Debug\HapticControlManager.mainForm.resources

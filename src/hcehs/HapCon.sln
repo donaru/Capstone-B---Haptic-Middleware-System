@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HapticControlManager", "HapticControlManager\HapticControlManager.csproj", "{EDD82147-60B3-41C2-8084-01D0B47260DA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeapService", "LeapService\LeapService.csproj", "{F6DF452C-1755-4FB4-B09E-17D157167D64}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{EDD82147-60B3-41C2-8084-01D0B47260DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDD82147-60B3-41C2-8084-01D0B47260DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDD82147-60B3-41C2-8084-01D0B47260DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6DF452C-1755-4FB4-B09E-17D157167D64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6DF452C-1755-4FB4-B09E-17D157167D64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6DF452C-1755-4FB4-B09E-17D157167D64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6DF452C-1755-4FB4-B09E-17D157167D64}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

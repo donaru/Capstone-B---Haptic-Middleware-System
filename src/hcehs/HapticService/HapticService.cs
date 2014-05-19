@@ -7,6 +7,7 @@ using System.Text;
 using System.Xml.Linq;
 using HapCon.Common;
 using HapCon.LeapMotion;
+using HapCon.LeapService;
 using System.Threading;
 using System.IO;
 
@@ -16,9 +17,6 @@ namespace HapCon.HapticService
     public class HapticService : IHapticService
     {
         private LinkedList<HapticDevice> _devices = new LinkedList<HapticDevice>();
-        private float[] _coordinates = {0,0};
-
-        
 
 
         private struct HapticDevice
@@ -30,57 +28,36 @@ namespace HapCon.HapticService
         }
         public string GetMessage(string name)
         {
-            Console.WriteLine("started");
-            LeapMotion();
-            return "Hello " + name;
-        }
+            LoadConfigurations();
 
-        public string GetCoordinate(string workstationName)
-        {
-
-            string coordinates1 = "testing";
-            return coordinates1;
-        }
-
-
-        
-        private static void LeapMotion()
-        {
-            LeapMotion.LeapMotion leapmotion = new LeapMotion.LeapMotion();
-            leapmotion.SetParameters("Leap Motion", "local", ListeningMode.UsbConnection);
-            leapmotion.Initialise();
-            Console.WriteLine("test");
-            while (true)
+            string data = "Not connected";
+            bool result = LoadWorkstation(name);
+            if (result)
             {
-                float[] coordinates = leapmotion.getCoordinate();
-                if (coordinates != null)
-                {
-                    Console.WriteLine("X: " + coordinates[0] + ", Y: " + coordinates[1]);
-                }
-
+                data = "connected";
             }
+            
+            return data;
         }
-        private void LoadWorkstation(string workstationName)
+
+
+
+
+        private bool LoadWorkstation(string workstationName)
         {
             for (int i = 0; i < _devices.Count;i++)
             {
                 if (_devices.ElementAt(i).workstationName == workstationName)
                 {
-                    
-                    if (_devices.ElementAt(i).hapticType == "leapmotion")
-                    {
-                        LeapMotion.LeapMotion leapmotion = new LeapMotion.LeapMotion();
-                        leapmotion.SetParameters("Leap Motion", "local", ListeningMode.UsbConnection);
-                        leapmotion.Initialise();
-                        float[] coordinates = leapmotion.getCoordinate();
-                        if (coordinates != null)
-                        {
-                            _coordinates[0] = coordinates[0];
-                            _coordinates[1] = coordinates[1];
-                        }  
-                    }
+                    LeapService.LeapService service = new LeapService.LeapService();
+                    var task = new Thread(service.run);
+                    task.Start();
+                    Console.WriteLine("Workstation found!!");
+                    return true;
+ 
                 }
             }
+            return false;
 
         }
  

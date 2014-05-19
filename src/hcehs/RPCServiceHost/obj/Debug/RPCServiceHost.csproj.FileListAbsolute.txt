@@ -21,3 +21,5 @@ C:\Users\Donald\Documents\haptic-control\src\hcehs\RPCServiceHost\bin\Debug\Leap
 C:\Users\Donald\Documents\haptic-control\src\hcehs\RPCServiceHost\bin\Debug\RPCServiceHost.exe.config
 C:\Users\Donald\Documents\haptic-control\src\hcehs\RPCServiceHost\bin\Debug\RPCServiceHost.exe
 C:\Users\Donald\Documents\haptic-control\src\hcehs\RPCServiceHost\obj\Debug\RPCServiceHost.exe
+C:\Users\Donald\Documents\haptic-control\src\hcehs\RPCServiceHost\bin\Debug\LeapService.dll
+C:\Users\Donald\Documents\haptic-control\src\hcehs\RPCServiceHost\bin\Debug\LeapService.pdb

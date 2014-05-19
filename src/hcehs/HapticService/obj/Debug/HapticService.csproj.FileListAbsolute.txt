@@ -17,3 +17,5 @@ C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticService\bin\Debug\Commo
 C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticService\bin\Debug\LeapMotion.dll
 C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticService\bin\Debug\Common.pdb
 C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticService\bin\Debug\LeapMotion.pdb
+C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticService\bin\Debug\LeapService.dll
+C:\Users\Donald\Documents\haptic-control\src\hcehs\HapticService\bin\Debug\LeapService.pdb

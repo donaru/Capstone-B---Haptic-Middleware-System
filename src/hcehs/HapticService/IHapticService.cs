@@ -14,8 +14,6 @@ namespace HapCon.HapticService
         [OperationContract]
         string GetMessage(string name);
 
-        [OperationContract]
-        string GetCoordinate(string workstationName);
 
         [OperationContract]
         void LoadConfigurations();

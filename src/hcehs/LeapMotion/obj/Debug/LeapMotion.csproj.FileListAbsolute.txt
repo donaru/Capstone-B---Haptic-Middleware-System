@@ -9,3 +9,15 @@ C:\Users\Donald\Documents\haptic-control\src\hcehs\LeapMotion\obj\Debug\LeapMoti
 C:\Users\Donald\Documents\haptic-control\src\hcehs\LeapMotion\bin\Debug\Leap.dll
 C:\Users\Donald\Documents\haptic-control\src\hcehs\LeapMotion\bin\Debug\LeapCSharp.dll
 C:\Users\Donald\Documents\haptic-control\src\hcehs\LeapMotion\bin\Debug\LeapCSharp.NET4.0.dll
+C:\Users\Dell\Documents\haptic-control\src\hcehs\LeapMotion\obj\Debug\LeapMotion.csprojResolveAssemblyReference.cache
+C:\Users\Dell\Documents\haptic-control\src\hcehs\LeapMotion\bin\Debug\Leap.dll
+C:\Users\Dell\Documents\haptic-control\src\hcehs\LeapMotion\bin\Debug\LeapCSharp.dll
+C:\Users\Dell\Documents\haptic-control\src\hcehs\LeapMotion\bin\Debug\LeapCSharp.NET4.0.dll
+C:\Users\Dell\Documents\haptic-control\src\hcehs\LeapMotion\bin\Debug\App.config
+C:\Users\Dell\Documents\haptic-control\src\hcehs\LeapMotion\bin\Debug\LeapMotion.dll.config
+C:\Users\Dell\Documents\haptic-control\src\hcehs\LeapMotion\bin\Debug\LeapMotion.dll
+C:\Users\Dell\Documents\haptic-control\src\hcehs\LeapMotion\bin\Debug\LeapMotion.pdb
+C:\Users\Dell\Documents\haptic-control\src\hcehs\LeapMotion\bin\Debug\Common.dll
+C:\Users\Dell\Documents\haptic-control\src\hcehs\LeapMotion\bin\Debug\Common.pdb
+C:\Users\Dell\Documents\haptic-control\src\hcehs\LeapMotion\obj\Debug\LeapMotion.dll
+C:\Users\Dell\Documents\haptic-control\src\hcehs\LeapMotion\obj\Debug\LeapMotion.pdb

@@ -16,3 +16,9 @@ C:\Users\Dell\Documents\haptic-control\src\hcehs\Common\bin\Debug\Common.pdb
 C:\Users\Dell\Documents\haptic-control\src\hcehs\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
 C:\Users\Dell\Documents\haptic-control\src\hcehs\Common\obj\Debug\Common.dll
 C:\Users\Dell\Documents\haptic-control\src\hcehs\Common\obj\Debug\Common.pdb
+C:\Users\Dell\Documents\capstone\src\hcehs\Common\bin\Debug\Common.dll.config
+C:\Users\Dell\Documents\capstone\src\hcehs\Common\bin\Debug\Common.dll
+C:\Users\Dell\Documents\capstone\src\hcehs\Common\bin\Debug\Common.pdb
+C:\Users\Dell\Documents\capstone\src\hcehs\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+C:\Users\Dell\Documents\capstone\src\hcehs\Common\obj\Debug\Common.dll
+C:\Users\Dell\Documents\capstone\src\hcehs\Common\obj\Debug\Common.pdb

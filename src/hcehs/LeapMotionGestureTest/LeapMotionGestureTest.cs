@@ -12,15 +12,11 @@ namespace HapCon.LeapMotionGestureTest
     {
         static void Main(string[] args)
         {
-
             LeapMotion.LeapMotion leapmotion = new LeapMotion.LeapMotion();
             leapmotion.SetParameters("Leap Motion", "local", ListeningMode.UsbConnection);
             leapmotion.Initialise();
-            
-
             while (true)
             {
-               
                 try
                 {
                       CommonGestures gesture = leapmotion.getGesture();
@@ -46,14 +42,13 @@ namespace HapCon.LeapMotionGestureTest
                           //    break;    
 
                       }
-                      System.Threading.Thread.Sleep(450);
+                      System.Threading.Thread.Sleep(400);
 
                 }
                 catch (Exception e)
                 {
                     Console.WriteLine("Error recieved:" + e);
                 }
-
             }
         }
     }

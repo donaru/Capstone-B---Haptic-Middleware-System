@@ -8,7 +8,7 @@ using Microsoft.Kinect;
 
 namespace HapCon.MicrosoftKinect
 {
-    class MicrosoftKinect : IMicrosoftKinect
+    public class MicrosoftKinect : IMicrosoftKinect
     {
         public string Name { get; set; }
         public string ConnectionString { get; set; }
@@ -42,10 +42,12 @@ namespace HapCon.MicrosoftKinect
 
         public void Initialise()
         {
+            Console.WriteLine("Initialized Kinect");
             try
             {
                 sensor_SkeletonStream();
                 this.sensor.Start();
+                Console.WriteLine("Connected Kinect");
             } catch (Exception e)
             {
                 throw new InvalidOperationException("Error: unable to initialise Microsoft Kinect :" + e);

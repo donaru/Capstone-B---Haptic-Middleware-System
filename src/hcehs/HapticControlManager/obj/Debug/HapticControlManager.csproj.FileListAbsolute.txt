@@ -73,3 +73,4 @@ C:\Users\Dell\Documents\capstone\src\hcehs\HapticControlManager\obj\Debug\Haptic
 C:\Users\Dell\Documents\capstone\src\hcehs\HapticControlManager\obj\Debug\HapticControlManager.Properties.Resources.resources
 C:\Users\Dell\Documents\capstone\src\hcehs\HapticControlManager\obj\Debug\HapticControlManager.csproj.GenerateResource.Cache
 C:\Users\Dell\Documents\capstone\src\hcehs\HapticControlManager\bin\Debug\kinect_logo.jpg
+C:\Users\Dell\Documents\haptic-control\src\hcehs\HapticControlManager\bin\Debug\kinect_logo.jpg

@@ -38,7 +38,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.Kinect, Version=1.8.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="GesturePakObjects">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Franklins.Net\GesturePak 1.0.4\samples\c#\GesturePak Demo\gesturepak\GesturePakObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Kinect, Version=1.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
@@ -50,6 +53,23 @@
   <ItemGroup>
     <Compile Include="IMicrosoftKinect.cs" />
     <Compile Include="MicrosoftKinect.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CircleAntiClockwise.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CircleClockwise.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Okay.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SwipeLeft.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SwipeRight.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

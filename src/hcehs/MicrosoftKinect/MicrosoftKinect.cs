@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using HapCon.Common;
 using Microsoft.Kinect;
+using GesturePak;
+
 
 namespace HapCon.MicrosoftKinect
 {
@@ -20,8 +22,25 @@ namespace HapCon.MicrosoftKinect
         static float xCoordinate;
         static float yCoordinate;
         static float distance;
+
+        // Matcher
+        private GestureMatcher matcher;
+
+        // Path to gesture. Point this to any GesturePak created gesture
+       // private string gesturefile = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\GesturePak\\Flap.xml";
+        private string gesturefile  = "Okay.xml";
+        private string gesturefile1 = "SwipeLeft.xml";
+        private string gesturefile2 = "SwipeRight.xml";
+        private string gesturefile3 = "CircleClockwise.xml";
+        private string gesturefile4 = "CircleAntiClockwise.xml";
+
+
+        private bool gestureFound = false;
+        private string gestureName; 
+
         public MicrosoftKinect()
         {
+
 
         }
 
@@ -42,12 +61,55 @@ namespace HapCon.MicrosoftKinect
 
         public void Initialise()
         {
+
+            // Make sure we have a Kinect
+            if (KinectSensor.KinectSensors.Count == 0)
+            {
+                throw new InvalidOperationException("Please plug in your Kinect and try again");
+            }
+
+            // Make sure we have a gesture file
+            if (System.IO.File.Exists(gesturefile) == false)
+            {
+                throw new InvalidOperationException("Please modify this code to point to an existing gesture file.");
+            }
+
             Console.WriteLine("Initialized Kinect");
             try
             {
                 sensor_SkeletonStream();
                 this.sensor.Start();
                 Console.WriteLine("Connected Kinect");
+
+                // Create your gesture objects (however many you want to test)
+                Gesture g1 = new Gesture(gesturefile);
+                Gesture g2 = new Gesture(gesturefile1);
+                Gesture g3 = new Gesture(gesturefile2);
+                Gesture g4 = new Gesture(gesturefile3);
+                Gesture g5 = new Gesture(gesturefile4);
+
+                // Add it to a gestures collection
+                List<Gesture> gestures = new List<Gesture>();
+                gestures.Add(g1);
+                gestures.Add(g2);
+                gestures.Add(g3);
+                gestures.Add(g4);
+                gestures.Add(g5);
+
+
+                // Create a new matcher from the Kinect sensor and the gestures
+                matcher = new GestureMatcher(KinectSensor.KinectSensors[0], gestures);
+
+                // hook up events
+                matcher.StartedRecognizing += matcher_StartedRecognizing;
+                matcher.DoneRecognizing += matcher_DoneRecognizing;
+                matcher.Tracking += matcher_Tracking;
+                matcher.NotTracking += matcher_NotTracking;
+                matcher.PoseMatch += matcher_PoseMatch;
+                matcher.GestureMatch += matcher_GestureMatch;
+
+                // Start recognizing your gestures!
+                matcher.StartRecognizing();
             } catch (Exception e)
             {
                 throw new InvalidOperationException("Error: unable to initialise Microsoft Kinect :" + e);
@@ -71,10 +133,16 @@ namespace HapCon.MicrosoftKinect
        
         public CommonGestures getGesture()
         {
-            
-            return CommonGestures.Okay;
+            if (gestureFound)
+            {
+                gestureFound = false;
+                if(gestureName == "Flap")
+                    return CommonGestures.Okay;
+            }
+            return CommonGestures.Unknown;
         }
 
+         
         public float[] getCoordinate()
         {
             float[] coordinate = new float[2];
@@ -143,6 +211,44 @@ namespace HapCon.MicrosoftKinect
             }
         }
 
+        private void matcher_StartedRecognizing()
+        {
+            // This tells us the matcher is recognizing
+            Console.WriteLine("Watching...");
+        }
+
+        private void matcher_DoneRecognizing()
+        {
+            // This tells us the matcher is NOT recognizing
+            Console.WriteLine("Not Watching");
+        }
+
+        private void matcher_Tracking(Pose pose, float delta)
+        {
+            // The window goes red when tracking
+            Console.WriteLine("Tracking ...");
+        }
+
+        private void matcher_NotTracking()
+        {
+            // The window goes white when not tracking
+            Console.WriteLine("Not Tracking");
+        }
+
+        private void matcher_PoseMatch(MatchingPose match, Pose pose)
+        {
+            //  We have matched a pose. 
+            //  match.Pose is the pose from the gesture
+            //  pose is the current frame (real time)
+        }
+
+        private void matcher_GestureMatch(Gesture gesture)
+        {
+            // We got a match!
+            Console.WriteLine("Found: " + gesture.Name);
+            gestureName = gesture.Name;
+            gestureFound = true;
+        }
  
     
 

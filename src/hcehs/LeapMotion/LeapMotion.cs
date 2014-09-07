@@ -63,7 +63,11 @@ namespace HapCon.LeapMotion
             for (int i = 0; i < gestures.Count; i++)
             {
                 Gesture gesture = gestures[i];
+                //Console.WriteLine(swipe.Direction.y);
+                Hand hand = frame.Hands[0];
 
+                // Check if the hand has any fingers
+                FingerList fingers = hand.Fingers;
                 switch (gesture.Type)
                 {
                     case Gesture.GestureType.TYPECIRCLE:
@@ -71,6 +75,11 @@ namespace HapCon.LeapMotion
 
                         // Calculate clock direction using the angle between circle normal and pointable
                         //String clockwiseness;
+
+                        if (fingers.Count() == 3)
+                            return CommonGestures.Okay;
+
+
                         if (circle.Pointable.Direction.AngleTo(circle.Normal) <= Math.PI / 4)
                         {
                             //Clockwise if angle is less than 90 degrees
@@ -107,19 +116,20 @@ namespace HapCon.LeapMotion
                         SwipeGesture swipe = new SwipeGesture(gesture);
 
                         //if (swipe.Direction.Equals())
-                        /*
+                        
                         Console.WriteLine("Swipe id: " + swipe.Id
                                        + ", " + swipe.State
                                        + ", position: " + swipe.Position
                                        + ", direction: " + swipe.Direction
-                                       + ", speed: " + swipe.Speed);
-                        */
+                                       + ", speed: " + swipe.Speed
+                                       + ", fingers: " + fingers.Count());
+                        
 
                         //Console.WriteLine(swipe.Direction.y);
-                        Hand hand = frame.Hands[0];
+                        //Hand hand = frame.Hands[0];
 
                         // Check if the hand has any fingers
-                        FingerList fingers = hand.Fingers;
+                        //FingerList fingers = hand.Fingers;
                         //Console.WriteLine(fingers.Count());
                         if (fingers.Count() == 3)
                         {

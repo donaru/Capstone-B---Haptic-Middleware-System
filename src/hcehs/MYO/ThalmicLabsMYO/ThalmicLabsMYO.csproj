@@ -50,6 +50,7 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Internal\ConsoleHelper.cs" />
     <Compile Include="IThalmicLabsMYO.cs" />
     <Compile Include="ThalmicLabsMYO.cs" />
   </ItemGroup>

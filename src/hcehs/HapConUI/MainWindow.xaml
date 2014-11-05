@@ -1,0 +1,34 @@
+﻿<Window x:Class="HapConUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="454.478" Width="681.717" Loaded="WindowLoaded" Closing="Window_Closing" AllowsTransparency="True" WindowStyle="None">
+    <Grid Loaded="Grid_Loaded">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF73AE63" Offset="0.4"/>
+                <GradientStop Color="White"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TabControl HorizontalAlignment="Left" Height="326" Margin="10,108,0,0" VerticalAlignment="Top" Width="652">
+            <TabItem Header="Microsoft Kinect">
+                <Grid Margin="0,-4,-3,0" Background="White">
+                    <Image x:Name="Image" HorizontalAlignment="Left" Height="257" Margin="338,10,0,0" VerticalAlignment="Top" Width="304"/>
+                    <CheckBox Content="Seated Mode" Height="26" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,241,0,27" x:Name="checkBoxSeatedMode" Checked="CheckBoxSeatedModeChanged" Unchecked="CheckBoxSeatedModeChanged" Width="145" FontSize="14" FontWeight="Bold"/>
+                    <StatusBar HorizontalAlignment="Stretch" x:Name="statusBar" VerticalAlignment="Bottom" Background="White">
+                        <StatusBarItem Padding="0 0 0 10"/>
+                        <TextBlock x:Name="statusBarText"><Run Text="Click 'Seated' to change skeletal pipeline type!"/></TextBlock>
+                    </StatusBar>
+                    <TextBox x:Name="TextDistance" HorizontalAlignment="Left" Height="23" Margin="187,167,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="White"/>
+                    <Label Content="Distance (m) - R Hand" HorizontalAlignment="Left" Margin="0,161,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+                    <Image Margin="10,10,394,164" Source="kinect-pr-top-1.jpg" Stretch="Fill"/>
+                    <TextBlock x:Name="kinectTextBlock" HorizontalAlignment="Left" Margin="11,145,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="181"/>
+                    <Button x:Name="resetKinectButton" Content="Reset" HorizontalAlignment="Left" Margin="176,118,0,0" VerticalAlignment="Top" Width="75" MouseLeftButtonDown="ResetKinect_Pressed"/>
+                    <Label Content="Velocity(m/s) - R Hand" HorizontalAlignment="Left" Margin="0,195,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Leap Motion">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

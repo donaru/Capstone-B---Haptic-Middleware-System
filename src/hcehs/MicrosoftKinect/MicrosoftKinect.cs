@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using HapCon.Common;
 using Microsoft.Kinect;
 using GesturePak;
+using System.Timers;
+using System.Diagnostics;
 
 
 namespace HapCon.MicrosoftKinect
@@ -35,8 +37,10 @@ namespace HapCon.MicrosoftKinect
         private string gesturefile4 = "CircleAntiClockwise.xml";
 
 
-        private bool gestureFound = false;
-        private string gestureName; 
+        public bool gestureFound = false;
+        public string gestureName;
+        public bool regGesture;
+       
 
         public MicrosoftKinect()
         {
@@ -78,7 +82,9 @@ namespace HapCon.MicrosoftKinect
             try
             {
                 sensor_SkeletonStream();
+               
                 this.sensor.Start();
+                this.sensor.SkeletonStream.TrackingMode = SkeletonTrackingMode.Seated;
                 Console.WriteLine("Connected Kinect");
 
                 // Create your gesture objects (however many you want to test)
@@ -110,6 +116,8 @@ namespace HapCon.MicrosoftKinect
 
                 // Start recognizing your gestures!
                 matcher.StartRecognizing();
+                regGesture = true;
+
             } catch (Exception e)
             {
                 throw new InvalidOperationException("Error: unable to initialise Microsoft Kinect :" + e);
@@ -145,9 +153,10 @@ namespace HapCon.MicrosoftKinect
          
         public float[] getCoordinate()
         {
-            float[] coordinate = new float[2];
+            float[] coordinate = new float[3];
             coordinate[0] = xCoordinate;
             coordinate[1] = yCoordinate;
+            coordinate[2] = distance;
             return coordinate;
         }
 
@@ -187,6 +196,8 @@ namespace HapCon.MicrosoftKinect
                 Skeleton firstSkeleton = (from trackskeleton in totalSkeleton where trackskeleton.TrackingState == SkeletonTrackingState.Tracked select trackskeleton).FirstOrDefault();
                 if (firstSkeleton == null)
                 {
+                    //matcher.DoneRecognizing(); 
+                    regGesture = false;
                     return;
                 }
                 if (firstSkeleton.Joints[JointType.HandRight].TrackingState == JointTrackingState.Tracked)
@@ -195,8 +206,13 @@ namespace HapCon.MicrosoftKinect
                     distance = firstSkeleton.Joints[JointType.HandRight].Position.Z;
                     xCoordinate = firstSkeleton.Joints[JointType.HandRight].Position.X;
                     yCoordinate = firstSkeleton.Joints[JointType.HandRight].Position.Y;
-
-
+                    
+                    if(!regGesture)
+                    {
+                        matcher.StartRecognizing();
+                        regGesture = true;
+                        
+                    }
                         
                 }
                 /*
@@ -213,8 +229,10 @@ namespace HapCon.MicrosoftKinect
 
         private void matcher_StartedRecognizing()
         {
+
             // This tells us the matcher is recognizing
             Console.WriteLine("Watching...");
+
         }
 
         private void matcher_DoneRecognizing()
@@ -233,6 +251,8 @@ namespace HapCon.MicrosoftKinect
         {
             // The window goes white when not tracking
             Console.WriteLine("Not Tracking");
+
+
         }
 
         private void matcher_PoseMatch(MatchingPose match, Pose pose)

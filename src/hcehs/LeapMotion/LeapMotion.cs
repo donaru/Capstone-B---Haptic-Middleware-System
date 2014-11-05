@@ -176,7 +176,7 @@ namespace HapCon.LeapMotion
         /// <returns>A normalized coordinate to be multiplied with the actual width and height of the screen</returns>
         public float[] getCoordinate()
         {
-            float[] coordinates = new float[2];
+            float[] coordinates = new float[3];
             Frame frame = _controller.Frame();
             if (!frame.Hands.IsEmpty)
             {
@@ -200,6 +200,7 @@ namespace HapCon.LeapMotion
 
                     coordinates[0] = normalizedPosition.x;
                     coordinates[1] = normalizedPosition.y;
+                    coordinates[2] = normalizedPosition.z;
 
                     return coordinates;
                 }

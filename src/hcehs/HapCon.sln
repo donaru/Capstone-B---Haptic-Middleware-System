@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeapMotionGestureTest", "Le
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicrosoftKinectFunctionalityTest", "MicrosoftKinectFunctionalityTest\MicrosoftKinectFunctionalityTest.csproj", "{42243AD1-1A25-459B-9264-276FA5D3C2B2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HapConUI", "HapConUI\HapConUI.csproj", "{0E17186C-EF0C-475C-8379-44644AA2E767}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThalmicLabsMYO", "MYO\ThalmicLabsMYO\ThalmicLabsMYO.csproj", "{733DFE8B-AA69-4A9D-B906-035070216B26}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +67,14 @@ Global
 		{42243AD1-1A25-459B-9264-276FA5D3C2B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42243AD1-1A25-459B-9264-276FA5D3C2B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42243AD1-1A25-459B-9264-276FA5D3C2B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E17186C-EF0C-475C-8379-44644AA2E767}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E17186C-EF0C-475C-8379-44644AA2E767}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E17186C-EF0C-475C-8379-44644AA2E767}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E17186C-EF0C-475C-8379-44644AA2E767}.Release|Any CPU.Build.0 = Release|Any CPU
+		{733DFE8B-AA69-4A9D-B906-035070216B26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{733DFE8B-AA69-4A9D-B906-035070216B26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{733DFE8B-AA69-4A9D-B906-035070216B26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{733DFE8B-AA69-4A9D-B906-035070216B26}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

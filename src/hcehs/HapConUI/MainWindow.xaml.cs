@@ -14,12 +14,30 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Microsoft.Kinect;
 using System.IO;
-using HapCon.MicrosoftKinect;
+using HapCon.Haptics;
+using System.ComponentModel;
+using System.Threading;
+using HapCon.Common;
 
 namespace HapConUI
 {
     public partial class MainWindow : Window
     {
+
+        //********PROTOTYPE DECLARATIONS******************************
+
+        /// <summary>
+        /// Bitmap that will hold color information
+        /// </summary>
+        private WriteableBitmap colorBitmap;
+
+        /// <summary>
+        /// Intermediate storage for the color data received from the camera
+        /// </summary>
+        private byte[] colorPixels;
+
+
+        //**************************************
         /// <summary>
         /// Width of output drawing
         /// </summary>
@@ -85,15 +103,21 @@ namespace HapConUI
         /// </summary>
         private DrawingImage imageSource;
 
-        HapCon.MicrosoftKinect.MicrosoftKinect kinect = new HapCon.MicrosoftKinect.MicrosoftKinect();
-        bool resetGesture = false;
+        Haptics controller = new Haptics();
+        static float[] previouscoordinates = new float[3];
+        static CommonGestures oldgesture = CommonGestures.Unknown;
+
+        //private readonly BackgroundWorker update = new BackgroundWorker();
         /// <summary>
         /// Initializes a new instance of the MainWindow class.
         /// </summary>
         public MainWindow()
         {
             InitializeComponent();
+            
         }
+
+ 
 
         /// <summary>
         /// Draws indicators to show which edges are clipping skeleton data
@@ -137,9 +161,10 @@ namespace HapConUI
         
         private void ResetKinect_Pressed(object sender, RoutedEventArgs e)
         {
-            kinect.Shutdown();
-            System.Threading.Thread.Sleep(1000);
-            kinect.Initialise();
+            //controller.Initialise();
+            //kinect.Shutdown();
+            //System.Threading.Thread.Sleep(1000);
+            //kinect.Initialise();
         }
         
         private void Grid_Loaded(object sender, RoutedEventArgs e) 
@@ -157,16 +182,17 @@ namespace HapConUI
         private void WindowLoaded(object sender, RoutedEventArgs e)
         {
             
-
+            controller.Initialise();
             
             // Create the drawing group we'll use for drawing
             this.drawingGroup = new DrawingGroup();
 
             // Create an image source that we can use in our image control
+            //this.imageSource = new DrawingImage(this.drawingGroup);
             this.imageSource = new DrawingImage(this.drawingGroup);
-
             // Display the drawing using our image control
             Image.Source = this.imageSource;
+            //Image.Source = this.colorBitmap;
 
             // Look through all sensors and start the first connected one.
             // This requires that a Kinect is connected at the time of app startup.
@@ -183,17 +209,45 @@ namespace HapConUI
 
             if (null != this.sensor)
             {
+
+                
+
+
+
                 // Turn on the skeleton stream to receive skeleton frames
                 this.sensor.SkeletonStream.Enable();
 
                 // Add an event handler to be called whenever there is new color frame data
                 this.sensor.SkeletonFrameReady += this.SensorSkeletonFrameReady;
-                kinect.SetParameters("Kinect", "local", HapCon.Common.ListeningMode.UsbConnection);
+              //  kinect.SetParameters("Kinect", "local", HapCon.Common.ListeningMode.UsbConnection);
+
+
+                //*******************************
+
+                // Turn on the color stream to receive color frames
+                this.sensor.ColorStream.Enable(ColorImageFormat.RgbResolution640x480Fps30);
+
+                // Allocate space to put the pixels we'll receive
+                this.colorPixels = new byte[this.sensor.ColorStream.FramePixelDataLength];
+
+                // This is the bitmap we'll display on-screen
+                this.colorBitmap = new WriteableBitmap(this.sensor.ColorStream.FrameWidth, this.sensor.ColorStream.FrameHeight, 96.0, 96.0, PixelFormats.Bgr32, null);
+
+                // Set the image we display to point to the bitmap where we'll put the image data
+                this.VideoImage.Source = this.colorBitmap;
+
+                // Add an event handler to be called whenever there is new color frame data
+                this.sensor.ColorFrameReady += this.SensorColorFrameReady;
+
+
+
+                //*******************************
                 // Start the sensor!
                 try
                 {
                     
-                    kinect.Initialise();
+                   // kinect.Initialise();
+                    
                     this.sensor.Start();
                 }
                 catch (IOException)
@@ -201,7 +255,9 @@ namespace HapConUI
                     this.sensor = null;
                 }
 
-
+                
+                    
+                
 
             }
 
@@ -233,6 +289,48 @@ namespace HapConUI
         {
             Skeleton[] skeletons = new Skeleton[0];
 
+            // UPDATING ALL DATA FROM MAIN Gesture Controller
+            // Distance
+            TextDistance.Text = controller.getDistance().ToString();
+
+            float[] angle = new float[3];
+            angle = controller.eulerAngle();
+            // Euler's Angles
+            TextAngle.Text = "Roll: " + angle[0] + " Pitch: " + angle[1] + " Yaw:" + angle[2];
+            // Coordinates
+            
+
+            float[] coordinate = new float[3];
+            coordinate = controller.getCoordinate();
+            TextCoodinatesX.Text = "X:" + coordinate[0];
+            TextCoodinatesY.Text = "Y:" + coordinate[1];
+            TextCoodinatesZ.Text = "Z:" + coordinate[2];
+
+            TextCurrentDevice.Text = controller.deviceSelected().ToString();
+
+            CommonGestures gesture = controller.getGesture();
+            if (gesture != oldgesture && (gesture != CommonGestures.Unknown))
+            {
+                TextGesture.Text = gesture.ToString();
+
+                oldgesture = gesture;
+            }
+
+            // Velocity
+            /*
+            if (previouscoordinates == null)
+                previouscoordinates = coordinate;
+            System.Threading.Thread.Sleep(200);
+            coordinate = controller.getCoordinate();
+            float deltax = previouscoordinates[0] - previouscoordinates[0];
+            float deltay = previouscoordinates[1] - previouscoordinates[1];
+            float deltaz = previouscoordinates[2] - previouscoordinates[2];
+
+            TextVelocity.Text = (Math.Sqrt(Math.Pow(deltax, 2) + Math.Pow(deltay, 2) + Math.Pow(deltaz, 2)) / 0.2).ToString();
+            */
+            
+            //-----------
+
             using (SkeletonFrame skeletonFrame = e.OpenSkeletonFrame())
             {
                 if (skeletonFrame != null)
@@ -253,10 +351,10 @@ namespace HapConUI
                 {
                     //this.MapJointsWithUIElement(fir)
                     
-                    TextDistance.Text = firstSkeleton.Joints[JointType.HandRight].Position.Z.ToString();
+                   // TextDistance.Text = firstSkeleton.Joints[JointType.HandRight].Position.Z.ToString();
                     
-                    if(kinect.gestureFound)
-                        kinectTextBlock.Text = kinect.gestureName;
+                   // if(kinect.gestureFound)
+                   //     kinectTextBlock.Text = kinect.gestureName;
                    // xCoordinate = firstSkeleton.Joints[JointType.HandRight].Position.X;
                    // yCoordinate = firstSkeleton.Joints[JointType.HandRight].Position.Y;
  
@@ -269,7 +367,7 @@ namespace HapConUI
             using (DrawingContext dc = this.drawingGroup.Open())
             {
                 // Draw a transparent background to set the render size
-                dc.DrawRectangle(Brushes.DimGray, null, new Rect(0.0, 0.0, RenderWidth, RenderHeight));
+                dc.DrawRectangle(Brushes.Transparent, null, new Rect(0.0, 0.0, RenderWidth, RenderHeight));
 
                 if (skeletons.Length != 0)
                 {
@@ -429,5 +527,26 @@ namespace HapConUI
             if (e.ChangedButton == MouseButton.Left)
                 this.DragMove();
         }
+
+        private void SensorColorFrameReady(object sender, ColorImageFrameReadyEventArgs e)
+        {
+            using (ColorImageFrame colorFrame = e.OpenColorImageFrame())
+            {
+                if (colorFrame != null)
+                {
+                    // Copy the pixel data from the image to a temporary array
+                    colorFrame.CopyPixelDataTo(this.colorPixels);
+
+                    // Write the pixel data into our bitmap
+                    this.colorBitmap.WritePixels(
+                        new Int32Rect(0, 0, this.colorBitmap.PixelWidth, this.colorBitmap.PixelHeight),
+                        this.colorPixels,
+                        this.colorBitmap.PixelWidth * sizeof(int),
+                        0);
+                }
+            }
+        }
+
+
     }
 }

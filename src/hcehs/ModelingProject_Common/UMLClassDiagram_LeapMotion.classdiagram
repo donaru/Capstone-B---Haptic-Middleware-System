@@ -1,0 +1,931 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="a053ddb1-ac49-4ce6-af8a-19916db2b2d5" name="UMLClassDiagram_LeapMotion" linkedPackageId="a71a506c-6b17-44e4-96d2-e95f5dc4c942" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="f8051500-0ee8-4528-8bab-2d92dbd3c398">
+      <profileInstance Id="98bef636-a023-46fc-834d-25538b29dd6b" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="8826134b-4183-4c00-b6f1-7a09e72473f9">
+      <profileInstance Id="aa0e7c7f-4243-485c-b8bd-729641cece87" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="862016a8-765e-4644-9993-176d29863229">
+      <profileInstance Id="d9f994d4-e203-468b-9955-b2890d5440d7" name="CSharpProfile">
+        <elementDefinition Id="29d9e351-7470-481b-9d7c-5c85cfc946de" />
+      </profileInstance>
+      <elementDefinition Id="10e7dac4-ac27-4aec-a360-5ee037e0c103" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="27e087c2-0ab6-4a42-87ea-2a6425c17cb1" name="ILeapMotion" isAbstract="false" isLeaf="false">
+        <referencesInternal>
+          <reference Id="aaf1313c-68eb-4649-8e08-c8e79033baa3" handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FLeapMotion%2Fbin%2FDebug%2FLeapMotion.dll Namespace%3DHapCon.LeapMotion Type%3DILeapMotion" tag="ViewCode">
+            <elementDefinition Id="5faab2c5-7a95-4053-ba6a-4f9e58d2bbfd" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="e5284ee3-1bfa-43bf-b92f-a4a69392d2ff" name="interface" profile="CSharpProfile">
+            <elementDefinition Id="80fa187c-1374-4a7d-8ac9-1debbf7d714c" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="4f9df36c-5d35-4e22-aa9b-d90af7548060">
+                <propertyInstance Id="b2455dab-72fa-42ca-a2d3-6c53bc719fce" name="ClrAttributes">
+                  <elementDefinition Id="b5cbd579-90f8-4b06-863c-e074afc7202e" />
+                </propertyInstance>
+                <elementDefinition Id="58a2ab7c-2723-4935-8299-d2d60df14a4a" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="65cf548e-0a37-4b62-8a90-1742a6354b0b">
+                <propertyInstance Id="1b10aeca-d9d2-40b8-95b6-80e9163076a9" name="IsPartial" value="false">
+                  <elementDefinition Id="c2708f22-46f2-4141-af3c-1c4c90e50fef" />
+                </propertyInstance>
+                <elementDefinition Id="bfa86f4d-f80a-43f1-810a-2da99e193f09" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="61579bcf-c81d-446d-93a9-017d119702b8">
+                <propertyInstance Id="a6dc215d-61ef-4154-aa3b-029741da3aa2" name="IsUnsafe" value="false">
+                  <elementDefinition Id="08aab0c2-f4bb-4c43-a9e5-995c3ab04380" />
+                </propertyInstance>
+                <elementDefinition Id="495d1c41-d15d-4487-ba05-918db048debb" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="e815c417-fb03-4947-bf2c-9b14bdb83051">
+                <propertyInstance Id="49ae08e4-861b-43d3-b90d-6ed2ad5d0c0e" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="eaf493c6-34a3-4e80-980f-000587e0617c" />
+                </propertyInstance>
+                <elementDefinition Id="6cbbdbe4-d3ca-45ce-a01b-07f4ec6a9d59" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="042900d9-39d7-4f8f-bf96-c8c54c15f57b" />
+        <ownedAttributes>
+          <property Id="2276481e-d9fa-4684-999f-30b26993fac8" name="ConnectionString" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="e2280656-b9f2-459c-a507-b20cb97cd0ae" handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FLeapMotion%2Fbin%2FDebug%2FLeapMotion.dll Namespace%3DHapCon.LeapMotion Type%3DILeapMotion Member%3DConnectionString" tag="ViewCode">
+                <elementDefinition Id="29e54ddf-8587-44a9-b833-edc237145b67" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="15d2ae1e-490f-4af2-a8f1-4030896ed172" name="property" profile="CSharpProfile">
+                <elementDefinition Id="41dff985-08fa-4f6e-9260-2be604b4709b" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="be248f18-671d-4a51-9164-e9449918fe04">
+                    <propertyInstance Id="91079393-aacd-412d-a75f-be71066cda9d" name="ClrAttributes">
+                      <elementDefinition Id="c67cd252-0eeb-4eac-80e3-9c06657eef37" />
+                    </propertyInstance>
+                    <elementDefinition Id="6a873cff-fff9-4c50-a537-94e4c54840b0" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="fb99ab66-c2b3-492b-8670-5ff4a3c4eb65">
+                    <propertyInstance Id="d91119a5-db0a-4076-a80d-9099817f736e" name="Get" value="public">
+                      <elementDefinition Id="5216c435-5fb1-41b8-ac3c-0e204884faa0" />
+                    </propertyInstance>
+                    <elementDefinition Id="56395b62-34d0-4694-8e87-5a081fcc8708" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="fc380614-2980-4ac4-8934-36ad91c3d51b">
+                    <propertyInstance Id="c5be0e07-13c8-47d0-bda3-946aea01421b" name="HasBody" value="false">
+                      <elementDefinition Id="87f77879-0379-4ad5-9320-3be66437bfec" />
+                    </propertyInstance>
+                    <elementDefinition Id="e80c933e-9c52-446c-9606-9ef615e9090b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="cebf0fb6-4a01-4edb-b67a-f7e9665314d9">
+                    <propertyInstance Id="fa8ee5da-f7a4-48e2-ac39-e96880390576" name="IsUnsafe" value="false">
+                      <elementDefinition Id="28380809-f6ee-4300-8f6b-15a9d8978bad" />
+                    </propertyInstance>
+                    <elementDefinition Id="3881c495-76cf-4e48-b5a3-edc967725e8b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="457d177f-82ad-41d9-8da4-3eefb8bea9b4">
+                    <propertyInstance Id="39355dba-fb3a-414d-b17e-14cf6e92d23b" name="Inheritance" value="none">
+                      <elementDefinition Id="a1804270-f26c-462d-8151-f6326f0f5902" />
+                    </propertyInstance>
+                    <elementDefinition Id="9c12968e-3ff2-4dd8-8734-48e23846537e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="265c0edc-8bbd-4f39-b7e6-be5d7e6cdb96">
+                    <propertyInstance Id="328eb19e-d44d-4d20-b89d-f303e66ee601" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="62fe150b-e486-405e-9d0c-bc2f6291b93d" />
+                    </propertyInstance>
+                    <elementDefinition Id="8fabcfc4-f628-40e4-8930-76eb26baa6df" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2cf60e11-77ed-4279-9af3-d0f385880555">
+                    <propertyInstance Id="a2508ae2-179a-4992-bf3d-ce8e8d818ab3" name="Set" value="public">
+                      <elementDefinition Id="cddd6cea-4a77-46fa-a404-b5bebb6c912c" />
+                    </propertyInstance>
+                    <elementDefinition Id="aa86e651-e5cc-4b18-919d-ef95ae40440c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="08b87750-36c0-46bb-927c-ddacc01ad444" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="bc13e77c-6455-48ea-b422-d2ddeb676306" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributes>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="bc13e77c-6455-48ea-b422-d2ddeb676306" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="2cb59ecf-b333-47ce-8f05-46dbcc141371" name="Controller" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject_Common::Leap::Controller">
+        <elementDefinition Id="56cbb6da-e730-4a27-8b8a-5ae8a8ce64c9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5edfb129-a26b-4b27-9ae0-1107866de4fb" name="LeapMotion" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <referencesInternal>
+          <reference Id="d12c396b-f22c-4bf8-9e32-de384196c60d" handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FLeapMotion%2Fbin%2FDebug%2FLeapMotion.dll Namespace%3DHapCon.LeapMotion Type%3DLeapMotion" tag="ViewCode">
+            <elementDefinition Id="2c18bb2f-89d9-46ec-a37e-3962e94f8bc7" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="b525d826-80ba-4073-ba96-661d6c27acfd" name="class" profile="CSharpProfile">
+            <elementDefinition Id="02fa3779-1ad7-44ff-9e9a-bd4d900f530e" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="47928871-f6ad-4ad1-b8d7-aaa17e9bd377">
+                <propertyInstance Id="f7a6d2d9-e894-4a23-96f3-d3c84b899d26" name="ClrAttributes">
+                  <elementDefinition Id="db5fb976-0d51-47f0-b027-34ea04ce2a36" />
+                </propertyInstance>
+                <elementDefinition Id="d7522875-fe81-4669-a715-669677dfc87c" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="1ccd160e-810a-40a8-b050-38fc1f99b91e">
+                <propertyInstance Id="31d55ee4-f05b-4982-88da-511bc92339d6" name="IsPartial" value="false">
+                  <elementDefinition Id="33694bf2-c280-4bc3-8651-63d0f63bd149" />
+                </propertyInstance>
+                <elementDefinition Id="dbb44cf9-df43-432c-b152-94363bc6de0b" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="f1e50d4c-5407-4ede-b2b6-44b7663b94d2">
+                <propertyInstance Id="236f9079-79f7-4dfc-93f9-f0427b33062d" name="IsStatic" value="False">
+                  <elementDefinition Id="80cbfe0f-8583-4188-951d-ae39e60425fd" />
+                </propertyInstance>
+                <elementDefinition Id="6388d7c5-3eaf-45c7-9ad2-f1edc3b0a8ae" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="bbec681d-d9e1-4e53-b22d-b54fe8ca1054">
+                <propertyInstance Id="574425ea-a91b-4efa-9ba7-398e8f3f762d" name="IsUnsafe" value="false">
+                  <elementDefinition Id="b370e31a-ee32-4845-8c58-1c9f01df0f2e" />
+                </propertyInstance>
+                <elementDefinition Id="acde398c-968c-4ffc-87be-334881ab0f5c" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="b72bebea-bc03-4503-a688-2a61a28fcc3e">
+                <propertyInstance Id="50fe843e-7506-4cf1-b54f-785aceaf75de" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="1ff80845-adc6-41c0-b7a3-998a68f7237e" />
+                </propertyInstance>
+                <elementDefinition Id="c25b961d-0686-4cd8-9008-4bfce4925cc3" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="64e685c2-5865-4c43-bd13-3744a65affa6" />
+        <suppliersInternal>
+          <interfaceRealization Id="2052bd3c-97ff-4271-9ef7-e4b95678f571">
+            <interfaceMoniker Id="27e087c2-0ab6-4a42-87ea-2a6425c17cb1" LastKnownName="ILeapMotion" />
+            <elementDefinition Id="c5740843-9e2f-4e17-8783-9306b7e6cd90" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="718508d2-49cd-4462-9cc0-9f308b84e917" name="ConnectionString" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="e82dbcba-0848-4e72-a239-b2fd5a53346b" handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FLeapMotion%2Fbin%2FDebug%2FLeapMotion.dll Namespace%3DHapCon.LeapMotion Type%3DLeapMotion Member%3DConnectionString" tag="ViewCode">
+                <elementDefinition Id="2c1e9fb5-5d01-418c-bb3b-241f81b711c4" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="64384fc1-0150-4afd-a6aa-0cd5f910030e" name="property" profile="CSharpProfile">
+                <elementDefinition Id="fd5f5d69-983e-44bd-ab4f-714dc9b59956" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2a690dc1-c9a1-4cf3-ad7a-ee145b6ee06c">
+                    <propertyInstance Id="ebe36511-7300-48a1-8c30-1fe906fcb5c1" name="ClrAttributes">
+                      <elementDefinition Id="9207700a-9d21-4954-9f2a-fff91b142ab1" />
+                    </propertyInstance>
+                    <elementDefinition Id="e98bce1a-91b0-4828-9ab4-d230b10f2a05" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="8869b4df-3d40-46d5-a7b9-b662b0a6acda">
+                    <propertyInstance Id="bef16ad5-f79d-4c8b-bfc9-1a78ee8efa9b" name="Get" value="public">
+                      <elementDefinition Id="8a711517-ac6c-409c-8a3d-12c3be6c7fe7" />
+                    </propertyInstance>
+                    <elementDefinition Id="076611ac-f866-4cc9-ad23-89583ab60a2c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="759a9ad9-3f57-47b8-9d10-9418abed2b13">
+                    <propertyInstance Id="08e26897-ecfe-4a89-91bc-8899b9bc59e4" name="HasBody" value="false">
+                      <elementDefinition Id="cda4e798-b37e-4773-80ce-b5a987d6b50e" />
+                    </propertyInstance>
+                    <elementDefinition Id="52fecb97-ee0c-494e-bedd-bdc2e17c434e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="71262d48-b9f5-4947-a726-5cb1e0a0608b">
+                    <propertyInstance Id="2d8b8ac3-76b1-4164-9c1d-953e12306985" name="IsUnsafe" value="false">
+                      <elementDefinition Id="f152d34a-3ec6-4b00-a885-f7dbef620d05" />
+                    </propertyInstance>
+                    <elementDefinition Id="d820f854-1ce2-45a4-8c8e-9b25f6f9f21a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="65c5f85a-47e7-4cc2-baa3-914c7591bd28">
+                    <propertyInstance Id="c9794f12-015d-41a0-b438-aaa928782aa6" name="Inheritance" value="none">
+                      <elementDefinition Id="2d043f55-ccd6-4ad0-93b8-3a111fe79bba" />
+                    </propertyInstance>
+                    <elementDefinition Id="44f52bde-2f3a-4972-9a54-1efe7c6ad3b5" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c94f079c-e0cc-455f-9358-530945cd5e7f">
+                    <propertyInstance Id="69f70d04-bc71-4309-9232-8fbfdd8d4192" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="9cd2f573-3465-42fe-9491-8264f6110cfc" />
+                    </propertyInstance>
+                    <elementDefinition Id="a13fb21a-d993-4e1a-8827-0520d5beacd8" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c19a8f34-f3b3-4215-b60a-cd4c66b41685">
+                    <propertyInstance Id="dfb250e5-0122-4d47-ad3f-6a3a1f526bcf" name="Set" value="public">
+                      <elementDefinition Id="c4386aee-5628-4007-91ab-ed2527675cc5" />
+                    </propertyInstance>
+                    <elementDefinition Id="267371c4-a5bf-47c5-864d-76958bd1ebfe" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="4003a585-23ac-49d3-8911-841554db2bbf" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="bc13e77c-6455-48ea-b422-d2ddeb676306" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="9191d04a-e7c0-4817-992d-16b1f0617214" name="GetListeningMode" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="b2e13428-fcf7-42fe-b470-5c5b9802b094" handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FLeapMotion%2Fbin%2FDebug%2FLeapMotion.dll Namespace%3DHapCon.LeapMotion Type%3DLeapMotion Member%3DGetListeningMode" tag="ViewCode">
+                <elementDefinition Id="ac82bedb-582d-41bb-b9e3-c53e6fc60597" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="53263e3e-56b4-49f6-9eb0-9c626bdd7314" name="property" profile="CSharpProfile">
+                <elementDefinition Id="dd8dcf07-69e7-4b07-bd3c-30194c186e82" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="5f4e806a-a399-460c-a391-5ca5a1930fc0">
+                    <propertyInstance Id="73a95149-b869-4655-8ae1-c1c3f0e3b191" name="ClrAttributes">
+                      <elementDefinition Id="7fe3e1a1-17a1-42b2-841d-9201bd0520cf" />
+                    </propertyInstance>
+                    <elementDefinition Id="9bf69ad7-575a-4a8d-a246-6df1c5fbb12e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="f309c108-ce6a-423d-8d2c-80e420fd7025">
+                    <propertyInstance Id="28a600bc-8260-441e-8a04-c53b45be4106" name="Get" value="public">
+                      <elementDefinition Id="f05ce712-c3cd-414f-82fd-72ce0de01576" />
+                    </propertyInstance>
+                    <elementDefinition Id="fdb30a7c-088d-4854-b2e8-9574c3233b6f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2f9b80d4-0d12-4422-8099-1b891ec24786">
+                    <propertyInstance Id="1277493d-84dd-482c-b620-93e2df7b5421" name="HasBody" value="false">
+                      <elementDefinition Id="516194a2-596e-4dd3-af8c-a5f75720a8b0" />
+                    </propertyInstance>
+                    <elementDefinition Id="b1022d32-6893-43a6-b9cb-ddd49ff897b2" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="aeb373c6-c832-44e1-b915-df3a7eac0785">
+                    <propertyInstance Id="fc53e1bc-be79-4946-ac5f-c39b4203ef02" name="IsUnsafe" value="false">
+                      <elementDefinition Id="44f03900-0901-48b8-87e6-ae1b88b61d6f" />
+                    </propertyInstance>
+                    <elementDefinition Id="ec320616-d7e1-431e-bb24-3ae279ff848c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="8f12327d-c2f6-4ef9-8150-83af1f4d5f69">
+                    <propertyInstance Id="82774404-a910-4c5f-ba31-a799835e1b69" name="Inheritance" value="none">
+                      <elementDefinition Id="c8b083f6-6e72-4ae6-b8cb-ad16cba7ce5f" />
+                    </propertyInstance>
+                    <elementDefinition Id="d987ac1c-7442-4e65-8257-8e4b4bfb39c1" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="4a1ded05-2e41-4b64-bab3-1ffb539de9dc">
+                    <propertyInstance Id="c23e6a64-c317-487e-888a-b64c34f35812" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="c6dbac4e-2998-4fb5-85da-99ca1b571de4" />
+                    </propertyInstance>
+                    <elementDefinition Id="bf90fe1a-c77a-4c04-b472-142b699494b8" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="f7381fa9-c66b-4609-822c-7ff7849543ff">
+                    <propertyInstance Id="80ed8475-8cdb-49f5-970b-4a338b1da2e7" name="Set" value="public">
+                      <elementDefinition Id="c5999032-e9b0-4298-90e1-fbcdb04870db" />
+                    </propertyInstance>
+                    <elementDefinition Id="085be515-bc0e-4ddb-b065-975a2820bcd2" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="6b449dfa-709a-4618-9493-3efc45507383" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="b4fea1f7-adac-41d7-a70e-5158d97fde71" LastKnownName="ListeningMode" />
+            </type_NamedElement>
+          </property>
+          <property Id="18d3e85a-394c-4ffe-aa64-b3872ad9131f" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="0f03f776-0a42-4547-be8b-725cfab378a0" handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FLeapMotion%2Fbin%2FDebug%2FLeapMotion.dll Namespace%3DHapCon.LeapMotion Type%3DLeapMotion Member%3DName" tag="ViewCode">
+                <elementDefinition Id="b7ba19de-588e-425f-85fc-31bcac0bb035" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="3e186db8-f7c8-4c6d-b9ee-30ecd8500fb4" name="property" profile="CSharpProfile">
+                <elementDefinition Id="c12581c3-dc63-4ba0-bb93-4fa35e1d5128" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="802f866f-9e4c-49aa-99ba-afe4137d95a9">
+                    <propertyInstance Id="d1ba8475-d03b-46f0-adc5-d6dfe33f5f27" name="ClrAttributes">
+                      <elementDefinition Id="768a97ee-3c3c-4838-ab69-2147735a8970" />
+                    </propertyInstance>
+                    <elementDefinition Id="270a5cda-ff98-47eb-a882-e8bdfa2986e3" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="eb41eeda-82b2-42e8-bcad-71391464308b">
+                    <propertyInstance Id="3c2f9ce6-c8fc-4e63-b3db-b21ab599ec78" name="Get" value="public">
+                      <elementDefinition Id="c8b128c5-a352-4c84-9b74-bb4b9f58a6b3" />
+                    </propertyInstance>
+                    <elementDefinition Id="68d51974-f5b8-4474-be41-3ce42feb093c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="8e6e7c6e-41ff-464d-9701-ed8e797abfc2">
+                    <propertyInstance Id="5eb4e616-403d-4b0d-995a-1a0c205b68bc" name="HasBody" value="false">
+                      <elementDefinition Id="d0a936e4-a2ee-4923-808d-1e4073cea79e" />
+                    </propertyInstance>
+                    <elementDefinition Id="f16e9520-3b8a-453d-9a6e-fac4eb756511" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9a936673-4da2-4879-b028-d0b7f8fe3618">
+                    <propertyInstance Id="8572b16d-8c3e-47da-a2be-403c6b3e1c21" name="IsUnsafe" value="false">
+                      <elementDefinition Id="e9e3515e-dcdb-4205-8f3f-ce485d138cd2" />
+                    </propertyInstance>
+                    <elementDefinition Id="695610ca-5315-4591-81d6-55b551f1c188" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="689309a4-ffb7-45a3-bb85-2f636150451c">
+                    <propertyInstance Id="a2253103-0adf-439d-a901-bac1a93631a4" name="Inheritance" value="none">
+                      <elementDefinition Id="63256320-04eb-4e82-9313-26e15ac1f279" />
+                    </propertyInstance>
+                    <elementDefinition Id="aac0fa8a-3352-4e4a-be3e-afb284ec2660" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="335690df-1afd-4c83-b9bd-c65216263b7d">
+                    <propertyInstance Id="fee72c03-63df-4680-8e98-e14515aec914" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="b5443412-16b7-473f-afc2-d5e202d1b378" />
+                    </propertyInstance>
+                    <elementDefinition Id="a1784713-8a39-4485-81ce-8faa0e471b51" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="833c70de-5367-40a6-9440-599e724365bc">
+                    <propertyInstance Id="f0afe0ce-305a-458a-ba13-d9504f39e0be" name="Set" value="public">
+                      <elementDefinition Id="e47645f7-a803-4770-b59d-29a1fd83fb2e" />
+                    </propertyInstance>
+                    <elementDefinition Id="4dd927fd-7cfa-495e-b657-e99948426212" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="acd8c68b-ede4-4c37-a32e-9b1669cb69e6" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="bc13e77c-6455-48ea-b422-d2ddeb676306" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="2d8b7eff-dbf8-43ab-a6f0-ba3a686b0aca" name="SetComputerName" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="701c20d3-b8be-4f9a-85d1-ab6e1f7ea0f5" handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FLeapMotion%2Fbin%2FDebug%2FLeapMotion.dll Namespace%3DHapCon.LeapMotion Type%3DLeapMotion Member%3DSetComputerName" tag="ViewCode">
+                <elementDefinition Id="dc8a1a31-3598-4429-b22b-651aee4949da" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="0b0aefd4-748d-4b03-a197-43e075ac2d64" name="property" profile="CSharpProfile">
+                <elementDefinition Id="bb14dcd3-2ee8-4172-8722-4e64779056e2" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="22d0e403-a09b-4d3e-881e-35e12726d573">
+                    <propertyInstance Id="8bd469be-d445-482e-b703-fd8419b24f36" name="ClrAttributes">
+                      <elementDefinition Id="4bfa2392-36c3-4368-b398-71864e253407" />
+                    </propertyInstance>
+                    <elementDefinition Id="d8b69511-6616-49d5-b5b8-903b62bde92d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="01d1ee87-a949-47c7-881d-0c2e7e5452e5">
+                    <propertyInstance Id="ee6ce3d5-7c78-45d7-846b-145d9bd62fe3" name="Get" value="public">
+                      <elementDefinition Id="07556080-9af1-4b94-b4be-ab6cad3ba541" />
+                    </propertyInstance>
+                    <elementDefinition Id="19381478-dc42-4bde-9621-59af447a92d9" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b281907a-fa00-40bd-99ff-8df2d96edd69">
+                    <propertyInstance Id="cc846b10-ab1b-4c99-adaa-73892ddd5566" name="HasBody" value="false">
+                      <elementDefinition Id="453bf7ff-f765-46ef-b3d1-594a44ca6c8c" />
+                    </propertyInstance>
+                    <elementDefinition Id="d56cd58a-4e83-4fae-9d63-5a455af474b9" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="57bc61f6-1291-4297-9c22-ab7c43a393f4">
+                    <propertyInstance Id="e4d87456-9ec0-4e44-9b70-685bed69b68e" name="IsUnsafe" value="false">
+                      <elementDefinition Id="8f686f30-bf6c-4b25-a60f-b0c281fcfd65" />
+                    </propertyInstance>
+                    <elementDefinition Id="4bf833d4-ed1c-4030-bfd4-731da6faa377" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7178ae73-5883-4aaa-b8d9-fbf473cf6c33">
+                    <propertyInstance Id="09904253-a2e2-4ab5-8d6b-d8dd1863c4a2" name="Inheritance" value="none">
+                      <elementDefinition Id="93247af7-fa88-41cf-9f9c-bcde339ec950" />
+                    </propertyInstance>
+                    <elementDefinition Id="6f849c64-b4d1-4336-a0fa-c8dc041cf602" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="302363b1-b310-4900-98c6-1b6d67d5801c">
+                    <propertyInstance Id="676dbac4-040f-435b-9de4-0df4845e1766" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="e1b83beb-03c8-49b4-beb1-eba723459b0a" />
+                    </propertyInstance>
+                    <elementDefinition Id="dac7cfaf-54b4-409f-9a1f-83196df6b66b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7415365d-5944-44f2-8d7c-3f840d810138">
+                    <propertyInstance Id="a53023ee-87f3-473c-8a1a-a5b161404e7b" name="Set" value="public">
+                      <elementDefinition Id="150b29ae-ba3f-4546-9544-cfa147ef9e0d" />
+                    </propertyInstance>
+                    <elementDefinition Id="9e95b48c-85d0-406f-b444-5fdbad32c524" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="299d9f13-25ce-4603-af9a-30317f1d0991" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="bc13e77c-6455-48ea-b422-d2ddeb676306" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="67701f3d-6290-43ba-b884-04b74e1343c6" name="_controller" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="11f89f45-ce0d-4d3f-8be2-891a09085021" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FLeapMotion%2Fbin%2FDebug%2FLeapMotion.dll Namespace%3DHapCon.LeapMotion Type%3DLeapMotion Member%3D_controller" tag="ViewCode">
+                <elementDefinition Id="f2f343f0-a4ee-4d6a-9e57-355a2f135780" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="cc8ca85a-eef2-44e4-9eb9-4d16afbcb058" name="field" profile="CSharpProfile">
+                <elementDefinition Id="8fa4a7c3-12ca-42df-9302-8e258d52183e" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9a850152-3439-4c06-b326-39af4faa8004">
+                    <propertyInstance Id="b1720a00-02e0-4499-bf29-bec902f7c3d8" name="ClrAttributes">
+                      <elementDefinition Id="70675c99-90af-4fa7-913c-79f199b471df" />
+                    </propertyInstance>
+                    <elementDefinition Id="391fcb2c-7879-4a76-9fe6-40101cc197ab" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9454901e-5583-4816-8090-3058ea56b765">
+                    <propertyInstance Id="56c3d9fd-a844-41b1-97a6-efe9286bc158" name="IsConst" value="false">
+                      <elementDefinition Id="7bd5a0d0-469a-4cfa-844f-29c18c1708b5" />
+                    </propertyInstance>
+                    <elementDefinition Id="c6d45729-7a16-422b-9804-e6f673e43310" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c56082f2-6550-4492-9d84-0f653cb9db91">
+                    <propertyInstance Id="494fc016-5098-4db0-b19d-5efcccbd83f9" name="IsNullable" value="false">
+                      <elementDefinition Id="7a00d416-27e4-4e8a-9be8-dcb967587292" />
+                    </propertyInstance>
+                    <elementDefinition Id="e5062f5f-0dc4-403a-b694-1beeb373d629" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a9bb2bbe-6a1f-4049-ad11-970886cc1bd4">
+                    <propertyInstance Id="29da7648-275b-4269-9718-f53389a0ff68" name="IsVolatile" value="false">
+                      <elementDefinition Id="d1f08fe8-03e7-4884-a1d3-39d1b5e3a101" />
+                    </propertyInstance>
+                    <elementDefinition Id="50898f07-465d-413c-926e-f26bb84f627c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="0f067ef3-8958-4e3c-b812-b17a37142879">
+                    <propertyInstance Id="7ae95b84-6e25-4c8a-8008-b08f27279ad2" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="d89e91bc-3680-4339-b716-6f080ea6e56f" />
+                    </propertyInstance>
+                    <elementDefinition Id="e736951d-9a30-4c35-98a0-b6db72eebdaa" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="a2578912-8eb4-4a56-9d2b-373c88e3b249" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="2cb59ecf-b333-47ce-8f05-46dbcc141371" LastKnownName="Controller" />
+            </type_NamedElement>
+          </property>
+          <property Id="6891d306-69c9-4b6e-a9b1-994e6170d4d0" name="_listener" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="d5efe2fd-abb7-4485-8da1-dae8a6a6e276" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FLeapMotion%2Fbin%2FDebug%2FLeapMotion.dll Namespace%3DHapCon.LeapMotion Type%3DLeapMotion Member%3D_listener" tag="ViewCode">
+                <elementDefinition Id="24d3f218-6c51-440b-a7e0-869dac93f312" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="c3a02bce-0b34-40fe-bde7-af202ac2b2fd" name="field" profile="CSharpProfile">
+                <elementDefinition Id="46a61db6-9cdb-42d9-b595-d30ecfe42869" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="07b43256-87ac-4730-b76d-2706b2546d8e">
+                    <propertyInstance Id="62b89e19-584c-4821-bf03-781723dcf2cd" name="ClrAttributes">
+                      <elementDefinition Id="6ea0daa6-278e-474c-844c-73b32f2e7a3f" />
+                    </propertyInstance>
+                    <elementDefinition Id="e0a37c2d-dd62-4047-9769-e419e7a1cdee" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="4c1bddf6-f08b-4d13-a9c1-b10303296d0c">
+                    <propertyInstance Id="64bc882e-6e4a-40e6-85f8-9a7c592d70c0" name="IsConst" value="false">
+                      <elementDefinition Id="66930412-7cfd-4d98-8d4b-dfcb9ae6c8ea" />
+                    </propertyInstance>
+                    <elementDefinition Id="f444929a-2a2d-4837-ba14-bb8d78b787bb" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="74f0e4a4-1440-45ae-9357-c0c71788e372">
+                    <propertyInstance Id="0b206e2f-705a-4e09-a799-c76e0dacd862" name="IsNullable" value="false">
+                      <elementDefinition Id="0d71bb54-8cb7-4a41-8737-22934a2981fe" />
+                    </propertyInstance>
+                    <elementDefinition Id="4ef254ec-9352-4002-80a1-a6e757fe5132" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2518a1d2-3645-434b-8b25-e6460e9eade5">
+                    <propertyInstance Id="1ac89236-0dc5-48a5-8486-ff05db2d4e4f" name="IsVolatile" value="false">
+                      <elementDefinition Id="e89791e7-1fca-4ebb-9707-b60159f48d79" />
+                    </propertyInstance>
+                    <elementDefinition Id="42110eea-8e0b-418c-807e-706e492be301" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="4b45342e-8a98-4233-8944-7991ada636eb">
+                    <propertyInstance Id="ea709d9e-1cd6-4bc1-a51c-c8d9a56a35f6" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="bfde20cb-16ea-48a6-b59b-6908e7d2032f" />
+                    </propertyInstance>
+                    <elementDefinition Id="cc786134-a354-46e9-a65f-6a4aee0087e9" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="c104eaec-8cd5-4b03-a911-22411f9e2f73" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c0a5e11b-a604-41c6-8c06-2edab9e77864" LastKnownName="LeapListener" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="5f8ed143-908b-44cf-a8c6-eaf2fa86860b" name="SetParameters" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="6d4b09f3-f2d3-4814-a0c1-55cf179bb5d0" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FLeapMotion%2Fbin%2FDebug%2FLeapMotion.dll Namespace%3DHapCon.LeapMotion Type%3DLeapMotion Member%3D(Name%3DSetParameters OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FCommon%2Fbin%2FDebug%2FCommon.dll Namespace%3DHapCon.Common Type%3DListeningMode)])" tag="ViewCode">
+                <elementDefinition Id="7a518a00-cbfe-456c-be3c-da876ce4f61d" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="27b1b9fd-9c81-4f60-87ad-c55fa7709da6" name="method" profile="CSharpProfile">
+                <elementDefinition Id="78dbd9e8-ecac-45fe-a964-92c93489eb00" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a9b30246-a122-44d0-b2dc-ee9f05a27696">
+                    <propertyInstance Id="0aca0613-163d-4d24-b661-252af350f943" name="ClrAttributes">
+                      <elementDefinition Id="6adfe9b3-db88-4b13-bd89-578b9d097a7e" />
+                    </propertyInstance>
+                    <elementDefinition Id="58acdd4c-0522-4325-92b7-94088e72bd83" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6a281696-f8d7-4fdb-9c1e-04af38cfe78f">
+                    <propertyInstance Id="480d58c9-5f8e-4963-9d86-dc4a76382aff" name="IsPartial" value="false">
+                      <elementDefinition Id="6b9d427f-dc6c-4a1f-8952-43f407ef4e3b" />
+                    </propertyInstance>
+                    <elementDefinition Id="15e5c105-129e-47ce-b855-10264bdb3bb7" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="36fdff4b-3da4-4ef4-9efc-96cd16363573">
+                    <propertyInstance Id="618f317e-b197-4f3c-b0e3-5aaf20ab507d" name="IsUnsafe" value="false">
+                      <elementDefinition Id="613d1421-94b6-4f81-b31c-d084c5987652" />
+                    </propertyInstance>
+                    <elementDefinition Id="38ed4769-8523-4c0f-bc97-6d6b1a12595b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d2c875a5-efed-4c09-a866-0dbebb4d0664">
+                    <propertyInstance Id="b7d67802-2e3f-4490-8129-fc231bd9939a" name="Inheritance" value="none">
+                      <elementDefinition Id="07d259df-8a62-4f38-b508-5326c4f1ba5f" />
+                    </propertyInstance>
+                    <elementDefinition Id="16d62623-db15-4ad0-a869-cbf4f358fddc" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="968305e7-2daf-484f-b4ff-8a806a659b7e">
+                    <propertyInstance Id="eb01e54c-e0d6-45c2-b884-ec45f5cfb620" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="33e030ce-77f9-4ba9-91da-17d6957c7b82" />
+                    </propertyInstance>
+                    <elementDefinition Id="aed4e501-2764-432d-845b-caaf9c5d540d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="54c8f2c1-08ba-44c0-889a-779387c28b04">
+                    <propertyInstance Id="f5c7f53c-b34a-431e-b4ac-84d06bd54cbd" name="params" value="false">
+                      <elementDefinition Id="aab3eee8-4941-480a-85cf-dd2471241e1f" />
+                    </propertyInstance>
+                    <elementDefinition Id="92e0285f-a2f1-441e-88c5-cc4a965accf6" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="1c5507d8-15e5-4905-8f3b-bd5ba786e607" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="51333a41-1d72-4a36-9d6c-c9735d7518d3" name="name" direction="In">
+                  <referencesInternal>
+                    <reference Id="ca53e301-d29b-4720-a1bb-4f52ccfc6b94" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FLeapMotion%2Fbin%2FDebug%2FLeapMotion.dll Namespace%3DHapCon.LeapMotion Type%3DLeapMotion Member%3D(Name%3DSetParameters OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FCommon%2Fbin%2FDebug%2FCommon.dll Namespace%3DHapCon.Common Type%3DListeningMode)]) ParameterIdentifier%3Dname" tag="ViewCode">
+                      <elementDefinition Id="1d5f7cff-5828-4fba-8249-18590e524ac9" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="033c921c-86f5-4b8f-9c7a-23aaf6a5f91d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="bc13e77c-6455-48ea-b422-d2ddeb676306" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="db4241e6-9394-4355-bd7d-d53194d16e8f" name="computerName" direction="In">
+                  <referencesInternal>
+                    <reference Id="9c038b0d-b648-4c41-b723-51e8ca35fbbd" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FLeapMotion%2Fbin%2FDebug%2FLeapMotion.dll Namespace%3DHapCon.LeapMotion Type%3DLeapMotion Member%3D(Name%3DSetParameters OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FCommon%2Fbin%2FDebug%2FCommon.dll Namespace%3DHapCon.Common Type%3DListeningMode)]) ParameterIdentifier%3DcomputerName" tag="ViewCode">
+                      <elementDefinition Id="1716a2dc-9957-455f-90a2-b44a0fcbb204" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="022f0cd8-5d34-4239-9a35-420faa2f2b53" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="bc13e77c-6455-48ea-b422-d2ddeb676306" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6497a3c9-0252-40a5-9381-08c5c9c32282" name="listeningMode" direction="In">
+                  <referencesInternal>
+                    <reference Id="eff65fca-f181-4923-acae-e701fda310f7" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FLeapMotion%2Fbin%2FDebug%2FLeapMotion.dll Namespace%3DHapCon.LeapMotion Type%3DLeapMotion Member%3D(Name%3DSetParameters OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FCommon%2Fbin%2FDebug%2FCommon.dll Namespace%3DHapCon.Common Type%3DListeningMode)]) ParameterIdentifier%3DlisteningMode" tag="ViewCode">
+                      <elementDefinition Id="352eb18c-27e5-4bf7-95f8-6e33a9c5ccdd" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="72be93a3-c3b8-4d20-a2c2-f9cbc14d41ac" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b4fea1f7-adac-41d7-a70e-5158d97fde71" LastKnownName="ListeningMode" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="db454228-b72f-47a7-9e4f-56df4dccab32" name="LeapMotion" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="8ddb37c8-5332-446d-a03e-dd7941b6f07c" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FLeapMotion%2Fbin%2FDebug%2FLeapMotion.dll Namespace%3DHapCon.LeapMotion Type%3DLeapMotion Member%3D.ctor" tag="ViewCode">
+                <elementDefinition Id="fbdc8e92-62ae-44f2-8d3a-f9291bd54ec8" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="5edb4f1c-82de-458d-9174-4568c9512852" name="method" profile="CSharpProfile">
+                <elementDefinition Id="3536711b-28b6-40f4-9005-d51c3ca3c796" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="3ed8164e-23f3-47ba-939e-01bce1b9795c">
+                    <propertyInstance Id="8fbe08b2-7655-4170-bba1-8e28f9e6bd1b" name="ClrAttributes">
+                      <elementDefinition Id="ef9d363b-0f6d-459d-9e23-875e1abd908a" />
+                    </propertyInstance>
+                    <elementDefinition Id="c2b5a104-6f31-46b6-8abe-e3c1d8ea107e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c65460fa-2da6-4836-89af-e8299598b2dc">
+                    <propertyInstance Id="2908f577-1519-41ee-a2bc-a7101434c99a" name="IsPartial" value="false">
+                      <elementDefinition Id="93c2ec20-c0dc-46d0-b32f-a68a0dfb5172" />
+                    </propertyInstance>
+                    <elementDefinition Id="a62bf1b8-b662-44e3-9917-29da9b549c97" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="db10e971-f4aa-466a-b82a-bd03c4333ccc">
+                    <propertyInstance Id="ece2e52b-9187-4d69-aee8-f3c105d3bc0e" name="IsUnsafe" value="false">
+                      <elementDefinition Id="b74e001a-0f4a-40ee-868e-0caf940e4add" />
+                    </propertyInstance>
+                    <elementDefinition Id="4b0e0b0f-d26a-4f4b-862f-5e4e57b6d59a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7c29f5cd-395c-4f72-9302-74c10044752d">
+                    <propertyInstance Id="60aa2a29-7261-4567-8936-4ae93e009afb" name="Inheritance" value="none">
+                      <elementDefinition Id="95725e66-cc5e-40d2-8733-27cddb62a379" />
+                    </propertyInstance>
+                    <elementDefinition Id="ef0910c5-9015-4f1d-b735-cfa92d0d7294" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b845afd5-c4df-449c-9761-c1c45168b318">
+                    <propertyInstance Id="b420d34e-b390-44f5-8f05-faae838fcc68" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="f49cce43-c0a5-4c08-bba3-6d46b4ba997a" />
+                    </propertyInstance>
+                    <elementDefinition Id="98c0398e-eecc-49cb-89d4-55be091ce1cd" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="eadb35fb-5465-4d2a-9e5a-77394ad98bc1">
+                    <propertyInstance Id="f96a3abb-c5f7-420b-bb50-e93adc16cb57" name="params" value="false">
+                      <elementDefinition Id="62f75de3-36f0-4ad0-b5f0-b97caf138442" />
+                    </propertyInstance>
+                    <elementDefinition Id="40643159-41d3-4e1c-ad00-77d4c685b33d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="11dc670c-4418-4502-9f10-407dbcc6c661" />
+          </operation>
+          <operation Id="df240488-2c98-487e-bb31-b029d0e05755" name="Initialise" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="2affa0dc-8103-4543-9fbb-6d9567e3afbc" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FLeapMotion%2Fbin%2FDebug%2FLeapMotion.dll Namespace%3DHapCon.LeapMotion Type%3DLeapMotion Member%3DInitialise" tag="ViewCode">
+                <elementDefinition Id="5f6f07d0-e599-4264-9dac-4e5a9e7f3003" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="a948d965-73b0-4833-9ece-65a16d34c517" name="method" profile="CSharpProfile">
+                <elementDefinition Id="f019e385-4f92-4f6f-b017-290d4f551e1a" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c787c6a2-d985-45c5-bc8b-4d208ea64bbb">
+                    <propertyInstance Id="0a6e2409-3e60-4cbb-9150-8cfbbc2d79d7" name="ClrAttributes">
+                      <elementDefinition Id="68992772-691a-448a-acc4-46dd9b171de5" />
+                    </propertyInstance>
+                    <elementDefinition Id="d15e7643-7de4-43fa-b9e4-fd26aa5d1134" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="fed4f86d-8ef8-425a-9242-b8f9dd1bb51f">
+                    <propertyInstance Id="f2e783e4-58ec-4b70-bb59-1cc2e5c93029" name="IsPartial" value="false">
+                      <elementDefinition Id="715b92e8-c426-4d3b-a45d-fa237f584820" />
+                    </propertyInstance>
+                    <elementDefinition Id="c172e964-00e1-46cd-80a7-4253251859d4" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="376623f5-52e5-4217-af42-be41c1240a42">
+                    <propertyInstance Id="cc5b1a6b-a3b0-4f7f-8929-d927af962e70" name="IsUnsafe" value="false">
+                      <elementDefinition Id="ee0ca991-2bca-4739-9550-c13619706dd1" />
+                    </propertyInstance>
+                    <elementDefinition Id="a270c0a0-7748-445b-bdb3-1906063b75e2" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="69371a91-7e66-46b2-9ad1-02422b386193">
+                    <propertyInstance Id="5b065a45-dcf1-4510-9a63-232cabb0d6d2" name="Inheritance" value="none">
+                      <elementDefinition Id="6aea02bd-4278-4062-8776-740f45407557" />
+                    </propertyInstance>
+                    <elementDefinition Id="7bdb5e44-222b-4525-9ad0-83df16527b80" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="925380cb-7ff4-4df7-9fb9-ce967c98b658">
+                    <propertyInstance Id="89e4653a-b90b-4368-928a-16a9f612235d" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="c4216d52-2f60-4df1-bc9a-ee7e217b452d" />
+                    </propertyInstance>
+                    <elementDefinition Id="61e66b25-6f1d-49e7-b723-c4464ca363d5" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="20ac80ea-3c6d-4ba5-b3de-ad667afe0530">
+                    <propertyInstance Id="232cd3d6-f409-440d-9415-e224fd88c049" name="params" value="false">
+                      <elementDefinition Id="b34b03ce-b248-4caf-8237-5eb1c9bf0e27" />
+                    </propertyInstance>
+                    <elementDefinition Id="6fd52170-66ed-46f0-8d71-9bec89b0029c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="879b8455-1bd9-4891-813f-65012a7a481e" />
+          </operation>
+          <operation Id="979cd8e5-3c6d-4808-8c5a-d6b17777f0cc" name="Shutdown" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="ea201a2d-179e-4c2f-a78c-dd76931d608c" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FLeapMotion%2Fbin%2FDebug%2FLeapMotion.dll Namespace%3DHapCon.LeapMotion Type%3DLeapMotion Member%3DShutdown" tag="ViewCode">
+                <elementDefinition Id="ca1bdc72-8826-4ec5-b9a1-b0effcbe67e5" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="afc749fd-758f-44b9-a4d9-98fb9696d07b" name="method" profile="CSharpProfile">
+                <elementDefinition Id="a34e1251-2bc4-48a8-b9da-3b4bb7764cb6" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="fda0dc60-6a17-46e4-8a6b-ced000d2272a">
+                    <propertyInstance Id="4a303829-ccc8-4ca1-bc3d-ecd5f3796a1b" name="ClrAttributes">
+                      <elementDefinition Id="f6b706b5-d37d-4578-b642-4c42fedf0e05" />
+                    </propertyInstance>
+                    <elementDefinition Id="4e570028-5a68-41bb-a040-21d3324a2a51" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="1ba5d61c-c902-42e1-b668-e1d48bf9c57e">
+                    <propertyInstance Id="76486bfa-767a-4569-871d-6a2920bb9b33" name="IsPartial" value="false">
+                      <elementDefinition Id="f6beb2af-5efb-495e-acba-02d62547a64f" />
+                    </propertyInstance>
+                    <elementDefinition Id="9ca7f478-6a98-4d3c-99e6-2194b6c101ac" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d1498685-8a32-4e38-bb3f-c728423e3189">
+                    <propertyInstance Id="2a7ee543-515d-45a4-b898-c12f7900c352" name="IsUnsafe" value="false">
+                      <elementDefinition Id="86796d93-ee1f-4dba-bbf8-46b11f39fbbe" />
+                    </propertyInstance>
+                    <elementDefinition Id="7e7a91d0-2c08-48de-853b-96a8d4671198" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="22953a91-65b9-48e9-a5e0-ed6121ac7ae4">
+                    <propertyInstance Id="9f699ee4-45fe-41b9-9d60-17fdf0a446d0" name="Inheritance" value="none">
+                      <elementDefinition Id="f10e302d-1eef-46fa-9d0d-1f49defb94f1" />
+                    </propertyInstance>
+                    <elementDefinition Id="a386dd88-345f-4569-90e8-b3b010f8122c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="0d3b5c78-66d6-4681-8c44-1b48e583244c">
+                    <propertyInstance Id="493626a2-8bc4-4a24-ac82-be06771e1844" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="93a985c4-8c6e-4f75-a3b9-2cca0292473e" />
+                    </propertyInstance>
+                    <elementDefinition Id="c9935b9b-7ab4-4540-a40f-e197c9464065" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a700b661-cbcf-4f31-9640-44cf54289d13">
+                    <propertyInstance Id="295beb50-32c4-4168-8e3c-e44b460a35f4" name="params" value="false">
+                      <elementDefinition Id="85350aac-8ed3-40b1-8546-324c7e275014" />
+                    </propertyInstance>
+                    <elementDefinition Id="141553ac-ce6f-4558-8bbe-e74bbf669dd8" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="ba7d862b-94aa-4129-9c13-dd9116bd971f" />
+          </operation>
+          <operation Id="744bf598-f46a-44c3-8ffc-bc0ecd57688a" name="getCoordinate" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="3a3f21ba-2bb8-40f3-baa0-d8297bc9032f" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FLeapMotion%2Fbin%2FDebug%2FLeapMotion.dll Namespace%3DHapCon.LeapMotion Type%3DLeapMotion Member%3DgetCoordinate" tag="ViewCode">
+                <elementDefinition Id="f642651b-5740-473d-a4f0-b27b219d8b0d" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="9dad2daf-d304-4fca-b402-fe6929fa92a6" name="method" profile="CSharpProfile">
+                <elementDefinition Id="68db4c9f-cbca-4f76-a794-173e1fd2c0ad" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b8a02d9b-3645-4796-a238-2a8fdc0ae797">
+                    <propertyInstance Id="8f266f1d-37a2-4a79-b4d8-4591c93beb7c" name="ClrAttributes">
+                      <elementDefinition Id="24d00a95-971c-4776-b33c-da12eef970c3" />
+                    </propertyInstance>
+                    <elementDefinition Id="cd2857f2-41a2-4354-9b08-36e571eec9f0" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d48c6c8b-2f7b-4cdc-a27b-aa7cbd78e375">
+                    <propertyInstance Id="382d1e89-b7b6-4599-a145-de492e633012" name="IsPartial" value="false">
+                      <elementDefinition Id="540f2177-3325-432e-817d-a95bd1d0a839" />
+                    </propertyInstance>
+                    <elementDefinition Id="7a00e734-35ef-4ff9-9496-9da7c0ddfed5" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="65448046-d383-4f07-8eb3-85ddcff07509">
+                    <propertyInstance Id="e3c4cc90-3f52-4872-b2c3-23ea1201ff6d" name="IsUnsafe" value="false">
+                      <elementDefinition Id="c311f8b8-e699-4905-8395-f0cdf56c910c" />
+                    </propertyInstance>
+                    <elementDefinition Id="923e35d6-2362-4b14-8345-1a3be0152e3e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="5567bec9-f77b-4233-abb0-6d81c1d181e9">
+                    <propertyInstance Id="8e7ff096-69ad-411a-88e0-d5bb40a0a647" name="Inheritance" value="none">
+                      <elementDefinition Id="0ba39385-2d6e-4a29-a165-54daa287284b" />
+                    </propertyInstance>
+                    <elementDefinition Id="010de16d-ae58-4244-8d0b-2802c92cc5b6" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="eabf3cbf-1885-432b-a760-d49a1cc7a574">
+                    <propertyInstance Id="bdd354bd-7b32-4434-a75f-bd5fb8c544dd" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="b1e2bfa1-f868-4c75-9384-aab5eea80a6c" />
+                    </propertyInstance>
+                    <elementDefinition Id="c1c4a758-b02d-4c1b-8a0c-75cb7cab0a1d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2b33aa09-9182-46c3-991c-15fba954b058">
+                    <propertyInstance Id="69dcf020-f1ca-40a9-adf6-09b927d6d06c" name="params" value="false">
+                      <elementDefinition Id="89d00bd7-361f-43de-95c9-5713a8a28874" />
+                    </propertyInstance>
+                    <elementDefinition Id="a814c559-3c1f-4d1f-a1f0-b5392e8e0d43" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="e83e92f6-7244-4e01-989f-4593b53d8472" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="0d1b022b-4640-4831-ae2d-0d91fa6fdfa6" direction="Return" isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString Id="e5cfbfab-ae48-47fd-8c2c-f0bc7f98e12e" name="Lower" value="*">
+                      <elementDefinition Id="2a9621db-e1cd-47b5-826c-0a883daff259" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="fd6a310a-0d3c-41c5-af40-69e8736c02cc" name="Upper" value="*">
+                      <elementDefinition Id="2483e512-eb2c-4da4-82df-6c0563a80bb1" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="858568e6-b606-4e91-95e2-b033aea46b4d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="263b9086-d31a-4cf1-8941-edfd32127446" LastKnownName="Single" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="05ca6cae-bb83-4750-9502-039fb461a151" name="getGesture" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="0f6e6024-b3c2-49f2-9fb0-fca235dc9bdb" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FLeapMotion%2Fbin%2FDebug%2FLeapMotion.dll Namespace%3DHapCon.LeapMotion Type%3DLeapMotion Member%3DgetGesture" tag="ViewCode">
+                <elementDefinition Id="8ff69986-0c97-4f6f-b347-21258e138ca1" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="4d495d97-968d-4cc1-a359-1aa3efb54daa" name="method" profile="CSharpProfile">
+                <elementDefinition Id="8fcd2657-b829-4682-a043-a7ee3f1e86f0" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="0488b9c9-f306-4468-846d-02e6c9b42a36">
+                    <propertyInstance Id="16cec286-1c77-40d9-b9a0-d986f3fd8aab" name="ClrAttributes">
+                      <elementDefinition Id="e6e77ccf-7d9e-4889-8963-c45b497770b8" />
+                    </propertyInstance>
+                    <elementDefinition Id="51d559aa-1912-45ed-9a67-8a757d491346" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="5a7c1318-0518-4f97-a97f-ea319c291958">
+                    <propertyInstance Id="cca49fc9-9a1f-4020-95cd-3c58ec6972b6" name="IsPartial" value="false">
+                      <elementDefinition Id="9c4ccf29-4e99-415e-adfc-acc06452a2c1" />
+                    </propertyInstance>
+                    <elementDefinition Id="00c4f261-c526-4778-ab2d-4526c2a853c6" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="3662856d-c908-4b1e-99d0-34c737fa2e8c">
+                    <propertyInstance Id="b6b95b14-dc7c-4957-8229-6be86976e805" name="IsUnsafe" value="false">
+                      <elementDefinition Id="9511fb05-0893-4d7d-90ae-4ac87a25b36a" />
+                    </propertyInstance>
+                    <elementDefinition Id="8f7e6306-a4e2-4073-b2cb-dc7d3b060b96" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="fa1de203-813b-4e15-b8f9-ce383be9f568">
+                    <propertyInstance Id="c1867640-7354-4740-bd71-96eb5d8c5658" name="Inheritance" value="none">
+                      <elementDefinition Id="4bd1967b-5292-4730-bfc6-96429daee5aa" />
+                    </propertyInstance>
+                    <elementDefinition Id="a1d17045-abbc-4cd9-ada2-7deaafd47a74" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e9e0a414-8862-42e6-871b-bb09653f82de">
+                    <propertyInstance Id="513e46c1-0db0-4e8a-807f-25e6556bca34" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="1596f11b-cb8d-4593-9959-4e6f54cf1815" />
+                    </propertyInstance>
+                    <elementDefinition Id="e27f8340-7694-4b4c-be5a-bf6528cc0a7d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="07c4de91-b37d-44c5-ace4-4a2020bc8e2b">
+                    <propertyInstance Id="4b82d291-95c7-471e-875e-420d4f5a1e16" name="params" value="false">
+                      <elementDefinition Id="b0056b92-2b1a-4456-a02f-9fc9dfa2284a" />
+                    </propertyInstance>
+                    <elementDefinition Id="2944cc1f-3246-4032-ae22-38f03229d98c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="fca0fb11-90ab-444e-a9b8-90872edee0d3" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="0d61f7b1-912a-4fa6-9536-d9b56edb0ed0" direction="Return">
+                  <elementDefinition Id="a28bc098-fc46-4575-b788-2c22d04709d1" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="0a83a33b-6192-4d66-bbfb-c8a3229adea1" LastKnownName="CommonGestures" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="b4fea1f7-adac-41d7-a70e-5158d97fde71" name="ListeningMode" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject_Common::HapCon::Common::ListeningMode">
+        <elementDefinition Id="47a45df8-84f2-48cf-aaab-122592ca19bb" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="c0a5e11b-a604-41c6-8c06-2edab9e77864" name="LeapListener" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject_Common::HapCon::LeapMotion::LeapListener">
+        <elementDefinition Id="73033302-170d-4e5f-908f-0486ebe6ea7b" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="263b9086-d31a-4cf1-8941-edfd32127446" name="Single" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject_Common::System::Single">
+        <elementDefinition Id="438ac932-1e49-4c9c-80b7-46e5a706fd6b" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="0a83a33b-6192-4d66-bbfb-c8a3229adea1" name="CommonGestures" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject_Common::HapCon::Common::CommonGestures">
+        <elementDefinition Id="b1876c72-4584-4d60-903c-7063d3ee2481" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="a71a506c-6b17-44e4-96d2-e95f5dc4c942" name="ModelingProject_Common">
+    <elementDefinition Id="07716275-ac28-412a-8fa1-60a2ec999500" />
+  </package>
+</logicalClassDesignerModel>

@@ -13,5 +13,7 @@ namespace HapConUI
     /// </summary>
     public partial class App : Application
     {
+ 
+        
     }
 }

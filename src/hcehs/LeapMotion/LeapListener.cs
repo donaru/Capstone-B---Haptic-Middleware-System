@@ -10,6 +10,7 @@ namespace HapCon.LeapMotion
 {
     class LeapListener : Listener
     {
+        /*
         private Object thisLock = new Object();
 
         private void SafeWriteLine(String line)
@@ -18,16 +19,16 @@ namespace HapCon.LeapMotion
             {
                 Console.WriteLine(line);
             }
-        }
+        }*/
 
         public override void OnInit(Controller controller)
         {
-            SafeWriteLine("Initialized");
+            //SafeWriteLine("Initialized");
         }
 
         public override void OnConnect(Controller controller)
         {
-            SafeWriteLine("Connected");
+            //SafeWriteLine("Connected");
             controller.EnableGesture(Gesture.GestureType.TYPECIRCLE);
             controller.EnableGesture(Gesture.GestureType.TYPEKEYTAP);
             controller.EnableGesture(Gesture.GestureType.TYPESCREENTAP);
@@ -37,12 +38,12 @@ namespace HapCon.LeapMotion
         public override void OnDisconnect(Controller controller)
         {
             //Note: not dispatched when running in a debugger.
-            SafeWriteLine("Disconnected");
+            //SafeWriteLine("Disconnected");
         }
 
         public override void OnExit(Controller controller)
         {
-            SafeWriteLine("Exited");
+            //SafeWriteLine("Exited");
         }
 
         public override void OnFrame(Controller controller)

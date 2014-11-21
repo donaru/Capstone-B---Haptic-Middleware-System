@@ -40,7 +40,7 @@ namespace HapCon.MicrosoftKinect
         public bool gestureFound = false;
         public string gestureName;
         public bool regGesture;
-       
+        bool inRange = false;
 
         public MicrosoftKinect()
         {
@@ -164,7 +164,10 @@ namespace HapCon.MicrosoftKinect
         {
             try
             {
-                return distance;
+                if (inRange)
+                    return distance;
+                else
+                    return 0;
             }
             catch (Exception e)
             {
@@ -231,27 +234,28 @@ namespace HapCon.MicrosoftKinect
         {
 
             // This tells us the matcher is recognizing
-            Console.WriteLine("Watching...");
-
+            //Console.WriteLine("Watching...");
+            inRange = true;
         }
 
         private void matcher_DoneRecognizing()
         {
             // This tells us the matcher is NOT recognizing
-            Console.WriteLine("Not Watching");
+            //Console.WriteLine("Not Watching");
+            inRange = false;
         }
 
         private void matcher_Tracking(Pose pose, float delta)
         {
             // The window goes red when tracking
-            Console.WriteLine("Tracking ...");
+            //Console.WriteLine("Tracking ...");
         }
 
         private void matcher_NotTracking()
         {
             // The window goes white when not tracking
             Console.WriteLine("Not Tracking");
-
+            inRange = false;
 
         }
 

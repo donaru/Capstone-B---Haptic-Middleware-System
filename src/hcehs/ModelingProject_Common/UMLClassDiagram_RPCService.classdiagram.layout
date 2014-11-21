@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLClassDiagram_RPCService">
+  <logicalClassDesignerModelMoniker Id="ada5306b-7645-46a8-a08e-a1c0af042c23" />
+  <nestedChildShapes>
+    <classShape Id="89488bd8-fc85-423f-b25f-200931b7d7b0" absoluteBounds="0.5, 1.5, 2.875, 1.8284605995814007" hideQualifiedName="false" increaseHeight="0.18800345897674561" customColor="181, 193, 223">
+      <classMoniker Id="225789d1-ba55-4b12-9571-054fa1319710" LastKnownName="HapticDevice" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="706fba5e-2f73-4eba-a0c3-fda23205e707" absoluteBounds="0.515, 2.0153356393178306, 2.8449999999999998, 0.84179684768120444" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="4dd153c9-b353-420d-84a6-2fa63d222c4a" absoluteBounds="0.515, 2.8671324869990347, 2.8449999999999998, 0.36132811258236575" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0ce9b530-8e33-4c6a-b2b0-d03671c67fa0" absoluteBounds="3.5, 0.5, 3.25, 1.8284605995814007" hideQualifiedName="false" increaseHeight="0.18800345897674561" customColor="181, 193, 223">
+      <classMoniker Id="1b311a09-8b9b-47b9-ac1b-a5656ea1a7a9" LastKnownName="HapticService" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="0b913ab8-cb65-4103-8206-c77adb2676d7" absoluteBounds="3.515, 1.0153356393178306, 3.2199999999999998, 0.36132811258236563" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="626167a5-909d-4992-a19e-625c55fa2c06" absoluteBounds="3.515, 1.3866637519001961, 3.2199999999999998, 0.84179684768120455" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <interfaceShape Id="5261318e-6ea0-4160-8b98-c356340d8497" absoluteBounds="3.5, 2.75, 3.125, 1.4106596841414767" hideQualifiedName="false" increaseHeight="0.18800345897674564" customColor="207, 223, 191">
+      <interfaceMoniker Id="ef1e7056-a315-4604-8577-5d77477eae8d" LastKnownName="IHapticService" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="0909d6eb-fe3b-4db8-a148-d529eae9ba7f" absoluteBounds="3.515, 3.3280034589767458, 3.0949999999999998, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="1ac6bb73-6ee1-4d10-82b3-f7b5963268ad" absoluteBounds="3.515, 3.539175326526165, 3.0949999999999998, 0.521484357615312" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </interfaceShape>
+    <realizationConnector edgePoints="[(5.125 : 2.3284605995814); (5.125 : 2.51); (5.0625 : 2.51); (5.0625 : 2.75)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" showAsLollipop="false">
+      <interfaceRealizationMoniker Id="effed6e3-9e59-49ef-8c01-f70723620fb6" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="0ce9b530-8e33-4c6a-b2b0-d03671c67fa0" />
+        <interfaceShapeMoniker Id="5261318e-6ea0-4160-8b98-c356340d8497" />
+      </nodes>
+    </realizationConnector>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>

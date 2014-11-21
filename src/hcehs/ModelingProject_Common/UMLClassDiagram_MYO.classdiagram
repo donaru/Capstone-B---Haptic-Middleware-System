@@ -1,0 +1,1512 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="87975d02-de77-4980-abad-58d023b17e72" name="UMLClassDiagram1" linkedPackageId="e67c8730-357d-4a1b-9967-53e96720f17b" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="5ac6b030-88a5-40fb-9efb-03c0f5bd1186">
+      <profileInstance Id="770c16c8-e4de-4c3d-873b-fb78666e3845" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="91e41a5c-3e9b-49ec-bf2e-7ee39bde0789">
+      <profileInstance Id="aacb30c1-d41c-4563-b230-b86e1290eddc" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="c825a664-a404-437b-b6de-4bf161cdb7cc">
+      <profileInstance Id="736c28a0-be65-4a38-a10f-60bea68a209e" name="CSharpProfile">
+        <elementDefinition Id="29d9e351-7470-481b-9d7c-5c85cfc946de" />
+      </profileInstance>
+      <elementDefinition Id="10e7dac4-ac27-4aec-a360-5ee037e0c103" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="42e317b1-d39a-4625-b565-9cef1f88418e" name="IThalmicLabsMYO" isAbstract="false" isLeaf="false">
+        <referencesInternal>
+          <reference Id="2bd54064-74ef-4f23-aff5-3d24bb026725" handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DIThalmicLabsMYO" tag="ViewCode">
+            <elementDefinition Id="ef90a0b7-9111-4686-8b67-e89dbf800f24" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="2eb0e3e5-b787-44d3-8991-603c3ad43296" name="interface" profile="CSharpProfile">
+            <elementDefinition Id="4f587fa8-1c38-46e1-a649-b94a0ab34903" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="0ae8e801-76e5-485f-9989-dcb20b17c687">
+                <propertyInstance Id="cf58fb9f-6eec-48e0-a5b1-228ccd43bdcc" name="ClrAttributes">
+                  <elementDefinition Id="8beaae9c-d9ba-41b5-a3e9-da03f3195292" />
+                </propertyInstance>
+                <elementDefinition Id="fb4ea68d-5a26-4724-ab56-7205c389c51f" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="672eac76-2f05-4828-aec5-c5c98d3764bf">
+                <propertyInstance Id="180ce178-daa9-4025-9f02-c63e80a0da2b" name="IsPartial" value="false">
+                  <elementDefinition Id="6c63877c-08ca-42f5-8ae0-83ce9de5964b" />
+                </propertyInstance>
+                <elementDefinition Id="c374e210-51d3-4d43-839c-f3214b9204a6" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="d0c93506-9e12-4363-b2b7-f0c4cc0b3084">
+                <propertyInstance Id="f3f056ea-90d2-4811-8d79-190e119bf47e" name="IsUnsafe" value="false">
+                  <elementDefinition Id="93743324-5f14-4164-a756-7e7970c19ccb" />
+                </propertyInstance>
+                <elementDefinition Id="ba6e196e-95c2-46ed-a225-ed470feb951e" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="ef8d57de-0787-44c0-aaab-4bd98b1328c8">
+                <propertyInstance Id="8bbc11bb-52c3-4d24-82b0-4248dbd250fa" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="97dd53a7-0397-481a-8b60-7208dd1525ea" />
+                </propertyInstance>
+                <elementDefinition Id="b194d585-8f87-447a-942c-d0201ea785d0" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="24a7eeab-5839-40ec-9934-d2a1ea6483f1" />
+        <ownedAttributes>
+          <property Id="1bf1e217-0947-40cd-a056-2601ffe337f0" name="ConnectionString" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="34d8a35a-0444-43a5-b6c2-a30a0b36c45e" handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DIThalmicLabsMYO Member%3DConnectionString" tag="ViewCode">
+                <elementDefinition Id="4d70f16e-bf13-4d83-8142-8ad36acae259" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="7c32ee75-0344-4918-af7c-30b7acf9b3be" name="property" profile="CSharpProfile">
+                <elementDefinition Id="a67eaf0a-e6f5-4a05-8299-36628f0c57c5" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a811e0bc-1b60-4e89-999f-9d71df332acf">
+                    <propertyInstance Id="38ae9cdc-9d70-446f-b07a-002c46769b9d" name="ClrAttributes">
+                      <elementDefinition Id="b244c610-a77e-421a-bf66-2472effd2d00" />
+                    </propertyInstance>
+                    <elementDefinition Id="8d68f29d-7fcc-4f18-b864-6e998a2c4374" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="32f92994-55d7-4492-99b2-9318424a118a">
+                    <propertyInstance Id="93de69fb-7bb4-4596-ba8f-eb53f24cbd00" name="Get" value="public">
+                      <elementDefinition Id="1bd959f5-d2e8-44be-89e1-b6b96611f7a3" />
+                    </propertyInstance>
+                    <elementDefinition Id="fa723917-96a9-4fc9-8242-863145d2d1b6" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="82a1d9dd-ddf4-4ff4-9806-840fcd86783c">
+                    <propertyInstance Id="c0bdb298-6642-40b0-a2d6-c4d96d55af27" name="HasBody" value="false">
+                      <elementDefinition Id="5406bec5-e5ca-4f63-801c-bc3dd83ccf8a" />
+                    </propertyInstance>
+                    <elementDefinition Id="4ceb8dfb-1ff6-4057-84d0-7795bb96dbaa" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="f633879b-5ab7-4041-a312-d8e93200ff9e">
+                    <propertyInstance Id="8162c0d2-ff9e-418b-b9e0-d777dfc9d7b3" name="IsUnsafe" value="false">
+                      <elementDefinition Id="95e97946-ead1-41aa-af8e-f107eda66c8a" />
+                    </propertyInstance>
+                    <elementDefinition Id="f7b4df98-2fee-43ea-a484-7594b674e3cf" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="875eac11-c1e8-4fb7-b27d-ae6df62525d7">
+                    <propertyInstance Id="2385245a-55d1-431c-a0d5-8ec98c0b1996" name="Inheritance" value="none">
+                      <elementDefinition Id="899f85a3-0413-4a91-9106-01e39f40f6e2" />
+                    </propertyInstance>
+                    <elementDefinition Id="650450c3-f341-42dd-b28c-22f442a963a8" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b47bd013-a3cd-4014-aeb1-c73989eefe0d">
+                    <propertyInstance Id="01c02a9f-5b96-4d2b-a3b5-87de7e97d9ff" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="40d0b257-cc92-441b-b1ec-db64e8e2101a" />
+                    </propertyInstance>
+                    <elementDefinition Id="524110c0-e4ea-4a69-93e6-c89a0a2ee0ab" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="baa28681-8ae7-4fa7-82b7-afafded92307">
+                    <propertyInstance Id="e6f425d6-7b7b-4402-a5e9-abaa354c5189" name="Set" value="public">
+                      <elementDefinition Id="67a93f2f-6bde-432b-adf1-a07a5a9e3eb5" />
+                    </propertyInstance>
+                    <elementDefinition Id="b3395219-04cd-4bb5-a89c-e6f17c7c17a4" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="d1618cd1-8e05-45ba-a92e-f41825bd7194" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="80a7810e-cf0c-48fd-ad45-a567d43dc4ac" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributes>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="80a7810e-cf0c-48fd-ad45-a567d43dc4ac" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ccd28751-943a-49c2-b3c1-2d1dfd8a94ab" name="ThalmicLabsMYO" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <referencesInternal>
+          <reference Id="4edc2082-1e67-468d-a896-dbafc08fbf85" handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO" tag="ViewCode">
+            <elementDefinition Id="3d37244e-4af3-4f14-8864-d2b58c485881" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="d34ddaae-d4f4-4bfc-b261-ebbfcdee93af" name="class" profile="CSharpProfile">
+            <elementDefinition Id="3348f0f3-ffd5-4900-9a9f-85e47932c9a1" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="801c70d5-111c-450b-b71c-295266d031f8">
+                <propertyInstance Id="68d9be07-f7eb-439d-83a8-0d2797a1f1f0" name="ClrAttributes">
+                  <elementDefinition Id="2249f8d0-c3b9-4e33-a1ea-9991913ce5b7" />
+                </propertyInstance>
+                <elementDefinition Id="f27f21ee-54a9-4495-b7b8-9c5ce6f61e03" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="42c75981-0611-4992-abf8-9c2395f8f6d1">
+                <propertyInstance Id="42c22a6b-cadf-4154-bcb3-426e62d716f2" name="IsPartial" value="false">
+                  <elementDefinition Id="9c1a9911-acb2-4dba-8a35-babbe069680d" />
+                </propertyInstance>
+                <elementDefinition Id="ded6bd5d-b5b7-4451-9c35-94717d01144e" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="1dafc17f-14fb-4d8d-b2ee-a0778571f5a3">
+                <propertyInstance Id="62fdfbc7-4dbd-4d2a-b819-d5f77b13e627" name="IsStatic" value="False">
+                  <elementDefinition Id="b751f787-0aa5-43e4-8ace-e40ed810cb1b" />
+                </propertyInstance>
+                <elementDefinition Id="6822e910-6f41-4794-8c9b-c59b36d30a4e" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="fd63a247-0e44-4bd2-a19c-75a06324d8b6">
+                <propertyInstance Id="e482781f-d2a2-4fa9-a322-2b7b67adf09d" name="IsUnsafe" value="false">
+                  <elementDefinition Id="d501d92c-7838-499b-aee4-3125a854e66b" />
+                </propertyInstance>
+                <elementDefinition Id="cf37b976-6244-471a-b39e-ab8a0d08e5d5" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="ed9c82d6-b117-41b0-b72b-291dcf21ca15">
+                <propertyInstance Id="30fb42c1-6836-49a9-b3a6-d7f572afb5cb" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="fceb1988-6063-4178-a6c8-d17b4bef74de" />
+                </propertyInstance>
+                <elementDefinition Id="0e6e148e-06a1-4325-9039-b1e35b7d81cb" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="530b9db4-3e51-445f-ae43-a2dc9dc39f67" />
+        <suppliersInternal>
+          <interfaceRealization Id="54a1b684-1cd9-43cf-869f-afaa99e59373">
+            <interfaceMoniker Id="42e317b1-d39a-4625-b565-9cef1f88418e" LastKnownName="IThalmicLabsMYO" />
+            <elementDefinition Id="c690cd19-49dd-4417-a413-4f7b48c067bb" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="55900541-41fe-4dcb-af23-19fc9bbd6dca" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="095ac813-099f-4fed-9e68-39acd35aa105" handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3DName" tag="ViewCode">
+                <elementDefinition Id="92390e8c-52ff-4f0b-8ea0-f0acb8a16f35" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="86ea48ef-ae8b-466f-b238-e5c5089169e1" name="property" profile="CSharpProfile">
+                <elementDefinition Id="e454f078-011a-4c12-8512-553a48c803c5" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e44f834f-a0bf-433e-ad35-03bef4031d37">
+                    <propertyInstance Id="4046c70a-beb2-49f8-8762-c8aaa6637020" name="ClrAttributes">
+                      <elementDefinition Id="089402f0-856e-485a-943f-794ce31c3b99" />
+                    </propertyInstance>
+                    <elementDefinition Id="6f9e39dd-7c4f-42e6-afd0-a4b4af6ff06f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="68cf2931-2a8b-43ef-9b1e-0da21800dbdc">
+                    <propertyInstance Id="3d13f4e6-0287-4215-a836-91c799d70530" name="Get" value="public">
+                      <elementDefinition Id="5a4edb7e-8aa2-46e7-b483-dc0701c68a77" />
+                    </propertyInstance>
+                    <elementDefinition Id="16f36ffe-9d03-41b7-adef-5968d9e17181" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="cf2b083b-b432-4613-8181-3e2b1c8c3f6f">
+                    <propertyInstance Id="933653b8-8df9-4cb1-8491-b1a3ba41c083" name="HasBody" value="false">
+                      <elementDefinition Id="3010936e-1643-426c-98f5-dadfb6759e26" />
+                    </propertyInstance>
+                    <elementDefinition Id="0c5fefe3-02bb-4b63-9b18-2305355dde37" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="0afac14d-860c-451c-86a7-5f39d7e78efb">
+                    <propertyInstance Id="786fa2fa-d1ac-4d25-aabf-589ba0dea629" name="IsUnsafe" value="false">
+                      <elementDefinition Id="fab6296a-bdb7-420e-a807-37a51ff8b295" />
+                    </propertyInstance>
+                    <elementDefinition Id="631e4896-1706-45db-b86f-f08af535e112" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="41865258-910e-4ea4-be91-78d4f2a82829">
+                    <propertyInstance Id="406dadaf-097d-4231-9bc3-237516814058" name="Inheritance" value="none">
+                      <elementDefinition Id="999c9381-f2c4-40d2-9aa8-b37c512629c7" />
+                    </propertyInstance>
+                    <elementDefinition Id="da7d4c24-79d2-47c0-b3fe-8d8b59f6e42c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="0a7925cb-e4c1-4050-a81a-a8e0dcc6b670">
+                    <propertyInstance Id="a5197fa5-822c-47a3-b5a5-a782c77ff79c" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="f532c514-4850-4b7e-bbc0-e0dbffbe5e7c" />
+                    </propertyInstance>
+                    <elementDefinition Id="8aa1a4ec-0812-4aaa-b5d4-fc477d57deb7" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="cf3a91fa-5e5c-423d-88f6-fc202bc6663c">
+                    <propertyInstance Id="7d9c0cec-ef9b-4dd8-a740-3be31a853f04" name="Set" value="public">
+                      <elementDefinition Id="b72c0145-0ab0-47e8-b669-865f16807214" />
+                    </propertyInstance>
+                    <elementDefinition Id="5ba2e58d-223c-42c3-b998-49be8ebbd2c5" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="1bec16c1-c7ae-4150-bb56-604041b798f9" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="80a7810e-cf0c-48fd-ad45-a567d43dc4ac" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="82212b27-537f-477c-b593-358d5ca523c8" name="ConnectionString" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="972bbb25-a238-48a8-a81d-dd7e5d04e20d" handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3DConnectionString" tag="ViewCode">
+                <elementDefinition Id="d45b3c47-cc95-4749-a6c2-f2ea04d42461" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="34aa56ff-aca3-4039-81b3-481ba80a8cab" name="property" profile="CSharpProfile">
+                <elementDefinition Id="f2e9d1f1-afc1-496a-bb2f-9ba19de7ea7c" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="67cce55d-7cd6-4e1e-8ffe-12665406a069">
+                    <propertyInstance Id="662b96b6-4896-4adb-b31b-af97b76dcee2" name="ClrAttributes">
+                      <elementDefinition Id="40ce510f-61fb-4b83-af1e-87de1ff67522" />
+                    </propertyInstance>
+                    <elementDefinition Id="f013aa8e-baad-4587-a4ba-88c5c0f92d8d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="959ac860-23c1-4cec-9bd2-e31139256982">
+                    <propertyInstance Id="707a7a56-2349-4ca7-bd5e-b207a8230646" name="Get" value="public">
+                      <elementDefinition Id="f9653680-f55e-4c06-a59a-ca461721f62d" />
+                    </propertyInstance>
+                    <elementDefinition Id="43dba155-e626-4fcb-b33c-93be0d968fd0" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="5a7f1a32-70c0-456d-b495-b34b7dd1cb19">
+                    <propertyInstance Id="3a60da49-f817-4d76-9572-d9f52a58f48b" name="HasBody" value="false">
+                      <elementDefinition Id="b9b77efc-81f9-458d-b881-99a3622292d5" />
+                    </propertyInstance>
+                    <elementDefinition Id="94df55dc-c312-4dff-bbb6-9128db9b0c47" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2c171177-091f-46a0-b6ab-34ac8a6b00e7">
+                    <propertyInstance Id="19f903dc-c285-4e22-8503-605cbec1c8a0" name="IsUnsafe" value="false">
+                      <elementDefinition Id="e5478078-d5b6-44ce-bcdd-7c7d969ea543" />
+                    </propertyInstance>
+                    <elementDefinition Id="826aa8f7-9f74-403b-905c-617c19ac5952" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c5c98cd1-cda3-4a7d-8830-e3347feadff1">
+                    <propertyInstance Id="f092b43a-9faa-4b0a-83b1-34542f3a8045" name="Inheritance" value="none">
+                      <elementDefinition Id="080be6c7-1b9a-4959-8f8e-ca479ca2ed9c" />
+                    </propertyInstance>
+                    <elementDefinition Id="bbb0d6d7-d768-42c7-975f-63133c1fadde" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="50c06fa4-91c1-4612-a1bb-50dda36353fc">
+                    <propertyInstance Id="b5508fb1-077f-4481-9353-86ea1dcaec24" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="1708a7aa-dbee-41cb-b4e1-861f0fbb4525" />
+                    </propertyInstance>
+                    <elementDefinition Id="756d51ed-fd9c-413b-bc63-de9d12f9e0f2" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="aac03da3-f5bd-4c7f-9adf-b53bfa2cc16d">
+                    <propertyInstance Id="46d012b0-7dab-46be-9e9f-7ae0727128f6" name="Set" value="public">
+                      <elementDefinition Id="21c1633b-dde9-435c-b024-e395ad9cddbf" />
+                    </propertyInstance>
+                    <elementDefinition Id="4017b1ad-7093-492b-9833-bab68fdca635" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="0389ac06-f129-487a-b71a-fc989c218c56" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="80a7810e-cf0c-48fd-ad45-a567d43dc4ac" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="bdc25edc-dc8f-4f1e-8b61-700a6ebc8ead" name="SetComputerName" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="3200f455-502c-4a11-bca3-a43b7cd63865" handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3DSetComputerName" tag="ViewCode">
+                <elementDefinition Id="c997e24b-ee0c-4259-b7dd-90fa5f938258" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="4443a7f9-119b-4f6a-b244-1b99f75a1ba7" name="property" profile="CSharpProfile">
+                <elementDefinition Id="df66fdc8-48b4-4caa-8d71-c7f9d206cd8a" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b926326c-43af-48ae-b563-837ecce2c70d">
+                    <propertyInstance Id="f5db07e7-b635-4ded-a6c3-1ee0c1ee0ff6" name="ClrAttributes">
+                      <elementDefinition Id="53c5e8af-69fb-4fe1-8762-fecedd2279da" />
+                    </propertyInstance>
+                    <elementDefinition Id="8a1ee1ec-e440-484b-b393-52a4c27a20ac" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c98f9939-c063-4c01-b083-d1e3c7113c05">
+                    <propertyInstance Id="54a53fca-23fa-453b-a3e1-858185641f5d" name="Get" value="public">
+                      <elementDefinition Id="516825b1-bebc-47b6-b68d-4d5bab04adc6" />
+                    </propertyInstance>
+                    <elementDefinition Id="1ceff891-be50-4a08-8dbd-3e0631f7d482" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="29d0e3f0-dc77-4273-9d57-8485fab78efa">
+                    <propertyInstance Id="a341c8e9-3c21-4b48-9fbd-d3e0aaf137f6" name="HasBody" value="false">
+                      <elementDefinition Id="758c77e0-5661-4327-91ce-011c58020cd0" />
+                    </propertyInstance>
+                    <elementDefinition Id="8d9a18c6-de93-4564-85d8-095e7eff3697" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="5d23317d-b786-4763-a9a0-8b2768dfdf50">
+                    <propertyInstance Id="24885ae8-ba53-4775-9dcf-45419d895f45" name="IsUnsafe" value="false">
+                      <elementDefinition Id="d73c6821-1c4a-4467-b4fc-de77fc360f9b" />
+                    </propertyInstance>
+                    <elementDefinition Id="7b9c8669-ac0b-4707-98c7-e525f063e706" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="fbc9dd80-fbc6-4a0c-b8db-ab894a555652">
+                    <propertyInstance Id="b87ffe1b-772d-41d2-ad1f-a01fa974bd00" name="Inheritance" value="none">
+                      <elementDefinition Id="b8f47ab9-f017-42a8-8898-d3affdc1ad44" />
+                    </propertyInstance>
+                    <elementDefinition Id="9c24d081-2503-4822-8712-95b7a6a4d1ef" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c62c7907-0e3c-4e01-8702-2251c390a74a">
+                    <propertyInstance Id="4110d1c3-0799-4b2f-b15d-23afba4dad5e" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="9e6e3933-bb09-4e58-b752-619345856bbf" />
+                    </propertyInstance>
+                    <elementDefinition Id="521edff4-fd89-4c14-bdf5-bb956c1f3dcc" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="95fdc254-1ae7-4689-a638-34ce3d847bbb">
+                    <propertyInstance Id="70d30de8-d9c9-4be1-8ec7-dad1b38751cf" name="Set" value="public">
+                      <elementDefinition Id="99d75cb3-8492-4e02-8a04-84d7b759c32b" />
+                    </propertyInstance>
+                    <elementDefinition Id="2c9e773e-d2ca-4753-8123-6ca5d5d3c921" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="64116a8d-83f6-4dc7-bcd4-3b62516edfed" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="80a7810e-cf0c-48fd-ad45-a567d43dc4ac" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="2c6dacfa-08de-456e-b3c4-5ecdaada0534" name="GetListeningMode" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="1d4072e2-e0d6-4b67-8d06-b67e515a8af1" handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3DGetListeningMode" tag="ViewCode">
+                <elementDefinition Id="df2ccd5e-fb72-49a1-a9aa-67065be5f2b7" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="e158cb70-d782-4a26-9e7f-03b2cacccc2f" name="property" profile="CSharpProfile">
+                <elementDefinition Id="c9b38905-2f2b-443f-b03d-f0727fc7f2ec" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="cea87365-c6a7-40dc-857a-08dedb9cc4cf">
+                    <propertyInstance Id="6ece7915-8887-421e-b7d4-fe8a6c69acb3" name="ClrAttributes">
+                      <elementDefinition Id="0bb98194-6d38-4f67-ad67-2ec5e377b54d" />
+                    </propertyInstance>
+                    <elementDefinition Id="3fe485d1-1875-4245-bbf0-a2dbdc1c05ed" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d3aa030b-92a4-4eaa-9d46-f5935f16ff53">
+                    <propertyInstance Id="d25bdb28-e8e4-4863-8a4c-4e4a6163f8ac" name="Get" value="public">
+                      <elementDefinition Id="b0a4efba-7def-4513-a760-3d133563f9bb" />
+                    </propertyInstance>
+                    <elementDefinition Id="fdb9248d-0fde-4b14-bc92-0f43c15679b5" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b7e86d3b-7211-4614-b516-519e89601045">
+                    <propertyInstance Id="9281a062-3d67-409d-813e-24ba93a23282" name="HasBody" value="false">
+                      <elementDefinition Id="d5eb1540-e0f4-4d9f-9c04-25b9be4bf1e7" />
+                    </propertyInstance>
+                    <elementDefinition Id="58d3d3ef-0aaa-49f4-9cea-7918f314322a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="dfcab839-e750-4411-90be-ae4f4edf363c">
+                    <propertyInstance Id="68680766-d797-4aa5-a04b-a558d7e777cb" name="IsUnsafe" value="false">
+                      <elementDefinition Id="c8d14431-8b19-4105-acc6-9951344f72b9" />
+                    </propertyInstance>
+                    <elementDefinition Id="8e3cb0db-cc12-4a75-8934-1312b4fc4b2b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6bcdd9bd-5b00-49cc-9af5-584b895994d4">
+                    <propertyInstance Id="a978b74e-c05d-4025-b720-cf6ed838514a" name="Inheritance" value="none">
+                      <elementDefinition Id="002e70d4-9b60-4f95-a3fa-17a2860aa6fe" />
+                    </propertyInstance>
+                    <elementDefinition Id="8e48ac75-650e-4bda-8974-4b59e28bd324" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="cd749ac3-5636-4c96-8b88-82bfccea430e">
+                    <propertyInstance Id="a7265cb2-eb94-4541-bdd9-f55c8054bf8d" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="6490268c-4219-48e1-abf5-707739b3f035" />
+                    </propertyInstance>
+                    <elementDefinition Id="66fc712d-ad79-4f22-8351-23dc5b56f86a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="0427059c-e503-4667-9589-0faf0030490b">
+                    <propertyInstance Id="4b33bddd-cb1f-4df6-86a9-114b6a2cdc38" name="Set" value="public">
+                      <elementDefinition Id="d3c70a66-0918-417f-bc64-5c2256236d89" />
+                    </propertyInstance>
+                    <elementDefinition Id="05b4426a-5a55-4e05-9952-3f356d5d5c16" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="1960a217-8af1-444c-892b-102e5f7e9b8e" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="12a432eb-8b4a-4699-ac3a-02ad4d7ce176" LastKnownName="ListeningMode" />
+            </type_NamedElement>
+          </property>
+          <property Id="d03a06fb-06b2-40ba-afad-10b6732f0faa" name="gesture" visibility="Private" isLeaf="false" isStatic="true" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="ea416da1-c260-4149-bd59-3bccb353b41c" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3Dgesture" tag="ViewCode">
+                <elementDefinition Id="cdbf2480-6978-431e-b4d0-439bf29ac9a5" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="6955b3b6-33b8-4add-953e-158ba00bdc87" name="field" profile="CSharpProfile">
+                <elementDefinition Id="42c3c535-d293-4959-9d5e-33f69c821e07" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="09d0fb32-ae1b-40b6-93dc-16ac757df5c7">
+                    <propertyInstance Id="e57dd19f-2f13-4dd8-9816-3870bbef88a8" name="ClrAttributes">
+                      <elementDefinition Id="ca9bb20b-b887-41db-a8a4-fcb8c343100c" />
+                    </propertyInstance>
+                    <elementDefinition Id="b85637d8-bc50-42f2-85bd-2400684fd625" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="01b8591a-617d-4409-86b7-428d8839ad58">
+                    <propertyInstance Id="d2c8c1df-33f2-4029-b577-5f13cb3ad1de" name="IsConst" value="false">
+                      <elementDefinition Id="6b2cfbff-dc08-4492-8906-998219071a01" />
+                    </propertyInstance>
+                    <elementDefinition Id="b0820d54-72e1-4ce5-a0e2-4300323529a4" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7c54f6da-9c76-4a83-bc8a-6af255e009b1">
+                    <propertyInstance Id="87267ebe-83c7-4930-99b0-3d6eaa2aa65e" name="IsNullable" value="false">
+                      <elementDefinition Id="e64f747b-7173-4c2e-a221-644a5c455c59" />
+                    </propertyInstance>
+                    <elementDefinition Id="4d5b7b3d-028b-415e-8f89-fe2c0d7dbaf0" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="277d770e-5c34-485c-abdc-ef4b0b48889a">
+                    <propertyInstance Id="6b78882d-f66a-4576-b747-11abdd7da6b6" name="IsVolatile" value="false">
+                      <elementDefinition Id="f532ec2c-9789-40b4-a550-1a0dca54bccf" />
+                    </propertyInstance>
+                    <elementDefinition Id="9a7c6516-360c-4d53-9ee7-97f9b1284e30" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="0f796a43-3bc5-4c45-82e1-e16d8c10f4a2">
+                    <propertyInstance Id="b76c763e-7f6e-4f91-9790-105ead0cd457" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="bbe639a1-717e-4f50-a91f-cc1368733d8a" />
+                    </propertyInstance>
+                    <elementDefinition Id="70faa3bf-29d4-42ac-83bf-4e41d6a1dd1a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="4380ce26-1db8-43de-b64f-5d80d9c94a78" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="7bf799e2-b42c-40eb-9939-c57ef3efbcb9" LastKnownName="CommonGestures" />
+            </type_NamedElement>
+          </property>
+          <property Id="04e0b586-b38d-4b05-80fe-9b968f6ade65" name="circle" visibility="Private" isLeaf="false" isStatic="true" isReadOnly="false" isOrdered="true" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="5c4408b2-b8dd-4f15-8823-cdf15246ec84" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3Dcircle" tag="ViewCode">
+                <elementDefinition Id="6f86eb08-f741-4cb8-a3b8-a2e3af4d6460" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="6d98792e-1c06-4f7a-97a2-bac7345a0b9f" name="field" profile="CSharpProfile">
+                <elementDefinition Id="29df0aa6-6e4f-48f1-87ad-b385aee328f6" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="8206c01d-c99e-43f1-aae2-6629927069b7">
+                    <propertyInstance Id="74d8d6d0-4779-4ce5-9806-6d732df63827" name="ClrAttributes">
+                      <elementDefinition Id="dfe77159-3376-45a4-a48a-ba601b0a2c74" />
+                    </propertyInstance>
+                    <elementDefinition Id="8af2a473-a72a-4e90-b9a2-788c0262e00f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2c5b3b7b-5dd7-404e-852e-38bf4e119149">
+                    <propertyInstance Id="31507b47-841e-4989-94cf-33e257ac8806" name="IsConst" value="false">
+                      <elementDefinition Id="7f94a5ff-569d-455a-910c-02b7797c432a" />
+                    </propertyInstance>
+                    <elementDefinition Id="7ac613c0-7020-4398-9c4e-9799c97655de" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="54dc12ff-983f-45b1-bc2b-5da519b25ad7">
+                    <propertyInstance Id="6f0ba686-f659-4ac9-9f97-81d88c2e66f8" name="IsNullable" value="false">
+                      <elementDefinition Id="db1a49e6-bfe2-48f7-bd46-21b8e2fa070c" />
+                    </propertyInstance>
+                    <elementDefinition Id="8e7147d4-b623-4414-ac3c-c3cfb787a7db" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="82497bb0-972a-43ec-a83e-169a96c2de70">
+                    <propertyInstance Id="554e6d2b-5df4-4094-b078-fcac63edf41c" name="IsVolatile" value="false">
+                      <elementDefinition Id="677170e4-632f-409d-9ff7-de991c501593" />
+                    </propertyInstance>
+                    <elementDefinition Id="d60e5f13-293f-43a7-a0b3-a44b62cbbfe5" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="02a4e8c2-2d78-46cc-a0ac-560115d08541">
+                    <propertyInstance Id="695791b5-9203-4790-9be8-8d633bb8b6e9" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="93c015c1-90bf-42c1-95f8-020e6656586c" />
+                    </propertyInstance>
+                    <elementDefinition Id="4c0c3d8c-555a-43ab-8665-1d5a1f2bf29b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <lowerValueInternal>
+              <literalString Id="2377fdd3-12b7-4fc6-8ee2-cc7df1fb87cc" name="Lower" value="*">
+                <elementDefinition Id="97f5180b-4f66-4395-a445-1413b3c29a54" />
+              </literalString>
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString Id="7150c719-aadf-4871-a90a-d6b5be74138f" name="Upper" value="*">
+                <elementDefinition Id="4b6572d3-8bc6-4847-b648-3bd0dd29ba2d" />
+              </literalString>
+            </upperValueInternal>
+            <elementDefinition Id="92b276a4-7c74-4ff8-99b2-b875e474ab85" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="2d3484af-10c9-408d-84d0-56084268278c" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="9d8829a6-6a51-405f-b73c-5d944d59baef" name="circlepointer" visibility="Private" isLeaf="false" isStatic="true" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="89b7ea48-d7d4-4ea6-878f-5771e492eb54" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3Dcirclepointer" tag="ViewCode">
+                <elementDefinition Id="6302c8ab-bdcd-48d8-9c80-bc3d52c63677" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="838497fc-0198-4b3a-ab20-ff526680d317" name="field" profile="CSharpProfile">
+                <elementDefinition Id="975b6245-64e6-44a2-8d63-179ff10691a9" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d14cfbba-ed88-45e8-b461-ebfb8e197064">
+                    <propertyInstance Id="61ac10de-4165-4f5e-9225-ea00b2e5ab3c" name="ClrAttributes">
+                      <elementDefinition Id="5aaad73c-3224-4022-9daf-926b1ef5274c" />
+                    </propertyInstance>
+                    <elementDefinition Id="da6dc3ed-2890-4272-9c97-ff09557148ed" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="19886601-a072-41c9-9f84-ad81028bfd86">
+                    <propertyInstance Id="e4fc5871-5902-46dd-aaa1-bf6c14ee91e0" name="IsConst" value="false">
+                      <elementDefinition Id="748e9cec-315e-4013-b7cf-4c7398c8fd5b" />
+                    </propertyInstance>
+                    <elementDefinition Id="6d63dbe3-dea9-4e38-b775-1ed8a936437c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a2c8c407-b608-424f-9196-69e17bb80767">
+                    <propertyInstance Id="1443d1df-51e9-4678-ad76-2ae44a662aef" name="IsNullable" value="false">
+                      <elementDefinition Id="1b2fef31-d48a-4a52-8457-6560e31a32d0" />
+                    </propertyInstance>
+                    <elementDefinition Id="54ee8452-49f7-441a-a478-b8e9811b8783" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="464d779c-0a73-4cb2-80a4-c6ce33d3c741">
+                    <propertyInstance Id="8b3c3d27-d863-4049-9a2b-1c0bf8fa8051" name="IsVolatile" value="false">
+                      <elementDefinition Id="6521e447-f51d-4fab-8cdf-4923a89b1a65" />
+                    </propertyInstance>
+                    <elementDefinition Id="eb5b1adf-8acf-4345-be11-637105bdcb64" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="554eb9ae-5609-48fc-93ef-95ffa2b1c4f6">
+                    <propertyInstance Id="3d5b4fee-f068-4a8d-90fe-48b7b74269d9" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="d13d50e8-2e32-4107-a945-03f7a8479b16" />
+                    </propertyInstance>
+                    <elementDefinition Id="b22df482-52dc-4ef4-a7ef-ed52a3179923" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="b1a0cb20-968a-4db9-8d67-16a9642d38fd" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="2d3484af-10c9-408d-84d0-56084268278c" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="7fbadad2-11a5-428d-8a9b-9364a3a86599" name="oldyaw" visibility="Private" isLeaf="false" isStatic="true" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="b8d0e355-dfcb-45cf-a219-8e4aa9500fc7" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3Doldyaw" tag="ViewCode">
+                <elementDefinition Id="a27a6174-58ec-495f-9558-3f90e7e1e5aa" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="128aafc9-8b08-4709-8cc4-30e412665ed8" name="field" profile="CSharpProfile">
+                <elementDefinition Id="a6b9e3be-70bb-4caa-9606-48b4ae333624" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d92935f8-4fb2-4087-877a-4bfd38551dd9">
+                    <propertyInstance Id="d826d4d1-33fa-4798-907c-166b24025051" name="ClrAttributes">
+                      <elementDefinition Id="480b23ac-0568-4cef-9162-fe684c12d807" />
+                    </propertyInstance>
+                    <elementDefinition Id="ad02c7c4-20d4-47a3-b842-26e8784af53c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="852d0871-fc6d-4c52-a60f-b2b98b6e6ea4">
+                    <propertyInstance Id="d131c307-f6f4-4b10-93f3-151c216da60c" name="IsConst" value="false">
+                      <elementDefinition Id="41467663-918b-4656-9007-d98da7ef65ca" />
+                    </propertyInstance>
+                    <elementDefinition Id="e010df4b-2c29-46ee-b52e-22b54644fb00" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="08a3c940-21aa-4a9a-a8ee-ff2996a912d6">
+                    <propertyInstance Id="b9b62a20-aad5-4441-b62f-844764f06cba" name="IsNullable" value="false">
+                      <elementDefinition Id="0219ee4f-a9af-482c-86b2-c8b1d786eebc" />
+                    </propertyInstance>
+                    <elementDefinition Id="ff25659d-951a-4ed4-9336-58934a8d55e7" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="57864006-b80e-470d-9372-e01d18d5b939">
+                    <propertyInstance Id="8a887e31-d6fb-4fdd-b86d-91e7c8d8cd1d" name="IsVolatile" value="false">
+                      <elementDefinition Id="1026a832-5d2f-4c72-b10a-28698eabf0c4" />
+                    </propertyInstance>
+                    <elementDefinition Id="10960028-0525-4fe2-89d8-bab01d050b7a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6b8d9442-c6fb-4a66-b98c-25379761312f">
+                    <propertyInstance Id="ed7a5a13-21b9-4b26-a7eb-0c707f5491ac" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="e0ec72fe-5c94-4945-8a64-98637ca0e03d" />
+                    </propertyInstance>
+                    <elementDefinition Id="bc902f63-f33b-4183-a148-df7087355dfb" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="15eb3a6b-a81a-48fe-80b3-abd2ff75842d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="2d3484af-10c9-408d-84d0-56084268278c" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="a0c0e1a6-5956-44ed-8d9e-e6d86b4d47b0" name="newroll" visibility="Private" isLeaf="false" isStatic="true" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="25be886f-062a-4c32-84ee-251bd96feb30" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3Dnewroll" tag="ViewCode">
+                <elementDefinition Id="8b69abe2-fd45-4085-a01f-5a9f7affb8e2" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="4a17e7ed-bf67-466b-a1dc-489bc2ec1d12" name="field" profile="CSharpProfile">
+                <elementDefinition Id="89bfb9b2-43e1-48e1-add0-dc34a6bb2958" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="0f95de51-f689-43f7-b897-d3754793ed67">
+                    <propertyInstance Id="d9704011-bd29-4d2d-935e-37324883dfe1" name="ClrAttributes">
+                      <elementDefinition Id="02175b13-f507-496a-944a-2301395e3551" />
+                    </propertyInstance>
+                    <elementDefinition Id="d52c366d-92ab-42f7-8bf9-696e5ab02372" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d89e9a45-edb7-4441-968d-84b02183f6f9">
+                    <propertyInstance Id="6633d2cc-7a3b-4823-893d-274281216d05" name="IsConst" value="false">
+                      <elementDefinition Id="5802bf34-89da-423e-9878-9487a5a58b01" />
+                    </propertyInstance>
+                    <elementDefinition Id="5f88425e-4810-4c0c-a5c8-994ef21ef84c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="5e73ca89-c2de-4c87-ab0c-f771ff261f27">
+                    <propertyInstance Id="dd76968c-5dae-4cbc-823b-e7847d1f35d2" name="IsNullable" value="false">
+                      <elementDefinition Id="f0cd8dfa-ea95-4dee-b446-2de425915961" />
+                    </propertyInstance>
+                    <elementDefinition Id="a9de8e6d-7d3f-4412-b2f2-e1c20fb55087" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="4c8bf3e9-e4d0-4406-a775-dcd01274af65">
+                    <propertyInstance Id="4e3c18c7-aa3e-4b98-be8e-cd746897330d" name="IsVolatile" value="false">
+                      <elementDefinition Id="fcf57599-38c0-4b83-b816-e5e0e22ae90f" />
+                    </propertyInstance>
+                    <elementDefinition Id="33613f14-6ed1-4454-b3cb-61654e69da96" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="24e1f301-0207-44fb-84cb-102d9132b7f9">
+                    <propertyInstance Id="0f02d46a-cc9e-4bf6-9a07-62cd22f4a80a" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="b3f7ecde-1cf7-4ab7-bd80-6c69b3552a0e" />
+                    </propertyInstance>
+                    <elementDefinition Id="0d33fc06-20bd-47b7-b60e-1039cde88569" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="c744a823-932d-405f-b99e-59077b80df7b" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="2d3484af-10c9-408d-84d0-56084268278c" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="dc9ddf9e-b022-461f-8333-07578fe87497" name="newpitch" visibility="Private" isLeaf="false" isStatic="true" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="d48bc1f8-058f-4aa2-acca-3674ff000916" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3Dnewpitch" tag="ViewCode">
+                <elementDefinition Id="b5f67847-cee4-4074-99a0-0599c8cafc5c" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="8b17c641-1bfe-48a4-ae51-026e3068e766" name="field" profile="CSharpProfile">
+                <elementDefinition Id="eb89e253-c214-4404-a638-f8f6bb163e4c" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="04f51aec-16fc-49c1-9084-8c83c59037aa">
+                    <propertyInstance Id="4b26f821-1d1b-4cbb-a638-717ac732c6d6" name="ClrAttributes">
+                      <elementDefinition Id="295dc203-ead3-4d7c-800f-cf00f37db8dc" />
+                    </propertyInstance>
+                    <elementDefinition Id="4534fcf7-8c1e-48dc-bd39-9e0d5f7bf026" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="05e78b53-b590-4620-9034-7a5ee1059e57">
+                    <propertyInstance Id="c6eca201-6ac5-4624-a85a-6bab949309f4" name="IsConst" value="false">
+                      <elementDefinition Id="355eae3e-bfbc-4a83-ba3a-13d80545ebc7" />
+                    </propertyInstance>
+                    <elementDefinition Id="ba8e662c-e7a2-4999-82ea-afc295cc0f5e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="8b964ea7-2832-4af5-9ff2-5eafc45cf0a5">
+                    <propertyInstance Id="28700af3-c578-4dd0-819c-a7dca816aae6" name="IsNullable" value="false">
+                      <elementDefinition Id="8e31694c-482a-481f-beec-28d7413081c4" />
+                    </propertyInstance>
+                    <elementDefinition Id="ba7b7482-127b-4a34-bee2-ab3f4880762c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="8dfde7c8-0961-4188-8fee-2f4b08bca526">
+                    <propertyInstance Id="69c61b91-7959-45f4-995b-a0c1a0d53cc4" name="IsVolatile" value="false">
+                      <elementDefinition Id="2ca1301d-070b-4655-b46d-efb90a2fd425" />
+                    </propertyInstance>
+                    <elementDefinition Id="7dfeb63c-1f19-40d8-8058-2e310ea0ac9e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="16068303-0d03-4107-b8f6-0015273808a7">
+                    <propertyInstance Id="2aafd87e-d8ba-47ac-ad01-3b85adde930c" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="80d2884d-88c0-4b68-b6cb-b34ec0bbd7a9" />
+                    </propertyInstance>
+                    <elementDefinition Id="7d4d7ef1-72c0-4a57-be11-f4c2e1722a84" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="fbdee891-4139-47d1-99e7-8a8a47456212" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="2d3484af-10c9-408d-84d0-56084268278c" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="a223f90c-3e27-414b-9082-1ea2c1fd3d4f" name="newyaw" visibility="Private" isLeaf="false" isStatic="true" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="d4b6183d-4312-4938-aeb3-56b0c361ab3f" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3Dnewyaw" tag="ViewCode">
+                <elementDefinition Id="8119b7e8-364d-492e-967c-ff82ef6466d7" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="fb45adaf-efc1-440a-b7b2-65c83fcc6ff0" name="field" profile="CSharpProfile">
+                <elementDefinition Id="91d2be7d-c7ab-46be-8529-901ad082dfab" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="0ba899f3-bde8-4af0-b4bb-d86374a2b344">
+                    <propertyInstance Id="23c36992-016f-450f-8790-3082bf913da5" name="ClrAttributes">
+                      <elementDefinition Id="7de4d909-70c3-4dc0-9c9e-10bb45ca1492" />
+                    </propertyInstance>
+                    <elementDefinition Id="56dc194c-eaf1-4c61-89a8-6864179132d6" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="1baec8ec-14f8-4083-99fd-86af0f86c089">
+                    <propertyInstance Id="86917961-9749-4382-97c8-573f78b86f43" name="IsConst" value="false">
+                      <elementDefinition Id="c794bef3-9f91-4a4b-8daa-0eec04ab982a" />
+                    </propertyInstance>
+                    <elementDefinition Id="7bfd22d9-e143-4148-8305-6ee6fe849a58" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="795bdf48-3976-402c-85ed-5872939a8d32">
+                    <propertyInstance Id="da076946-dbfe-4bc2-bd3a-146585f1ea84" name="IsNullable" value="false">
+                      <elementDefinition Id="5cfee1da-82c6-4904-8ad6-4fddee7b72cd" />
+                    </propertyInstance>
+                    <elementDefinition Id="659dad42-9b4c-453d-ac11-80b8275250b2" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="1ba5aa4f-da49-4549-84f3-2588bb0cc81d">
+                    <propertyInstance Id="d2f287e1-98e2-4368-aacf-b82b741a6669" name="IsVolatile" value="false">
+                      <elementDefinition Id="1b3902e9-3a93-491f-98eb-a6c890e5af09" />
+                    </propertyInstance>
+                    <elementDefinition Id="c47d91c0-53ba-4c31-a988-bdd63e20e62a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="0505dc0e-385c-4e74-bf53-0b6920f93582">
+                    <propertyInstance Id="132bdfe7-6a4b-48ae-a99d-e571b48f8618" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="d9cab559-d974-4b5a-9aa7-dac131a3646d" />
+                    </propertyInstance>
+                    <elementDefinition Id="6ec25e1e-6cf8-4d73-835f-02d163051a45" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="1aeec1a9-db8f-49e9-be00-99524df91d49" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="2d3484af-10c9-408d-84d0-56084268278c" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="5225f2c7-06e7-4338-b8bd-1c84b37a4da1" name="Initialise" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="8ccf5963-b2f9-423e-bd25-de10564a4022" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3DInitialise" tag="ViewCode">
+                <elementDefinition Id="7ce2ad8a-4724-477f-925f-a3a64331d408" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="1057a072-78bd-471c-b3ad-e5af058fe9b2" name="method" profile="CSharpProfile">
+                <elementDefinition Id="de9984e6-1363-4573-b4e9-9fa34daeb354" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="f1710a49-a7fe-4797-9266-9ca826e9f0bc">
+                    <propertyInstance Id="f1ded06b-628f-4005-9156-ebfc091030b5" name="ClrAttributes">
+                      <elementDefinition Id="7a6ac0b8-a768-424d-aa1f-9530189db0c2" />
+                    </propertyInstance>
+                    <elementDefinition Id="6aba9975-11c4-4e61-bafa-4d14f3746556" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e82dc238-02eb-45de-882d-8865f1abcb8a">
+                    <propertyInstance Id="e5b59031-7b08-4b00-a789-f93fd165f22a" name="IsPartial" value="false">
+                      <elementDefinition Id="488febc8-8d8e-4802-ba86-a7da810ad46a" />
+                    </propertyInstance>
+                    <elementDefinition Id="2c5cb613-8919-4ee1-a445-f500655a221a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="8e727e30-2cc4-44af-beeb-34ec23073078">
+                    <propertyInstance Id="9abd2310-c541-4f1b-8209-2d45cc80388b" name="IsUnsafe" value="false">
+                      <elementDefinition Id="7f14ab4f-ba78-4a32-82b9-5cc3f8c2538f" />
+                    </propertyInstance>
+                    <elementDefinition Id="35f2f8fd-0ec8-4277-8bd4-9f4af9651774" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="fb35195f-b22d-4298-a067-80580c6c9775">
+                    <propertyInstance Id="28504bc2-083c-45ad-a084-4dcd3adfa35b" name="Inheritance" value="none">
+                      <elementDefinition Id="16f5ebab-c906-4525-9904-3fdee7453ccc" />
+                    </propertyInstance>
+                    <elementDefinition Id="580cdb10-0258-41c0-b1c8-438dee8850eb" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2024bee3-f835-45e7-9b5b-28eff3d2f370">
+                    <propertyInstance Id="2e945886-eaa1-4078-8a6f-15cfb41469dd" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="3769fff6-ade0-4a99-ad9c-e2ddbf2146f8" />
+                    </propertyInstance>
+                    <elementDefinition Id="73cf6fa1-96f7-48da-be5b-865b66ceb4a5" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="669ab045-a254-45c3-951b-218eb4010ac7">
+                    <propertyInstance Id="86c1cd95-eb51-42de-88dd-8e402e1336de" name="params" value="false">
+                      <elementDefinition Id="e0a34b3d-6dca-451b-aafe-bc9c0571ffd1" />
+                    </propertyInstance>
+                    <elementDefinition Id="b52b4c11-b07d-4159-aa23-2f9faeb747e4" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="0395213c-08e8-493f-98b9-f676c68b3af4" />
+          </operation>
+          <operation Id="f1bc9059-084b-4bf9-8c6e-58930c5671ef" name="Shutdown" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="6d2f8cf1-14a3-417a-aa40-920379d80392" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3DShutdown" tag="ViewCode">
+                <elementDefinition Id="4484ccc1-56e7-40dd-82d2-d0b1befcef86" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="a7569069-4c58-42a4-ac6b-3266ea88fb6e" name="method" profile="CSharpProfile">
+                <elementDefinition Id="d98f425a-a5f5-4f13-a624-fc3a093566c2" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="8398ec2a-897c-471d-8e2f-6aa86728e4bd">
+                    <propertyInstance Id="95fec9bb-1705-4cba-a70d-7a944fbf56b7" name="ClrAttributes">
+                      <elementDefinition Id="647c670c-7e74-4bfd-bc98-fd4fc7fad695" />
+                    </propertyInstance>
+                    <elementDefinition Id="f4b72b7e-642c-47be-a090-ee8d80b29747" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="43b52067-6ca6-42bc-b014-d15661323a35">
+                    <propertyInstance Id="ffcdc29e-4517-4e80-af71-ceb3755561d7" name="IsPartial" value="false">
+                      <elementDefinition Id="3212b959-fca2-4aac-b02a-78240f01b7b0" />
+                    </propertyInstance>
+                    <elementDefinition Id="b2d3e557-0ef9-46aa-bf3c-2ad9af26dc9e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e77c6f02-5900-4172-bc30-c35d23781c5c">
+                    <propertyInstance Id="3d27785e-b726-4d97-a511-9799edaf208b" name="IsUnsafe" value="false">
+                      <elementDefinition Id="6c08502c-8185-4fb9-9834-c1aca9833e4c" />
+                    </propertyInstance>
+                    <elementDefinition Id="8dd349e7-3fe5-45da-aff2-6f09e7fb63ed" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ec8542ae-8ac9-40f4-852d-3db69188f81b">
+                    <propertyInstance Id="e6f2be18-543e-4d2d-a62d-e1cb7f410b88" name="Inheritance" value="none">
+                      <elementDefinition Id="927260f5-01d7-4e8c-a93e-103f80bc9443" />
+                    </propertyInstance>
+                    <elementDefinition Id="31a57b64-1964-484c-bebc-19e83d434e90" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="54808d9d-fabf-4f85-ae2a-cc373ee7d964">
+                    <propertyInstance Id="78a6eaa4-8769-49e6-af78-a27b2430edb9" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="09e4ca3a-80c9-4100-aa34-4d0a008e9f74" />
+                    </propertyInstance>
+                    <elementDefinition Id="6bfaf49a-1428-4935-9188-55de0b333cfc" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="dc7d62f8-277a-4450-ae64-67f19bbc2e4d">
+                    <propertyInstance Id="e8fc939b-7461-4fe4-a20f-b69993c64fd1" name="params" value="false">
+                      <elementDefinition Id="a29e5061-42fe-4645-815e-af9cac4e9f65" />
+                    </propertyInstance>
+                    <elementDefinition Id="cb0ce3eb-9a21-42be-9295-4b8f9680c89d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="f2313c3e-15cd-4f48-abaf-49fe774b7862" />
+          </operation>
+          <operation Id="ac888cac-e0be-432d-963e-5b46ec9111f8" name="SetParameters" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="29df2676-9bb6-498a-8a42-3e7331277378" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3D(Name%3DSetParameters OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FCommon%2Fbin%2FDebug%2FCommon.dll Namespace%3DHapCon.Common Type%3DListeningMode)])" tag="ViewCode">
+                <elementDefinition Id="1a7450d2-19d5-461d-94e5-00b0fe145b61" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="1a00b6df-2d6a-402b-a34c-841f51d2ce43" name="method" profile="CSharpProfile">
+                <elementDefinition Id="e5d028fa-682e-43a9-bc94-995f07d38004" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="41fedf6e-8e98-470b-94f0-fc39d716e6a4">
+                    <propertyInstance Id="14b9dd8a-c795-45f6-89cc-d77143b52829" name="ClrAttributes">
+                      <elementDefinition Id="7be335cb-3a38-45db-bf97-c8b066245bce" />
+                    </propertyInstance>
+                    <elementDefinition Id="c9671bfd-dc9d-4882-8d03-fa91017b6e3c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="1ac8f87d-cd92-4da1-aa77-a92b186db22e">
+                    <propertyInstance Id="16cc82e6-4bf2-400e-93ae-9c15ad26a30a" name="IsPartial" value="false">
+                      <elementDefinition Id="1178007b-85e8-49c7-adea-20f5b35bf850" />
+                    </propertyInstance>
+                    <elementDefinition Id="627496e0-2875-45eb-9785-9d3a4ab47303" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9c23b173-4119-455a-a95d-d5c6834b86b0">
+                    <propertyInstance Id="56edaef1-2613-4cd0-9bb7-292ca105dfc7" name="IsUnsafe" value="false">
+                      <elementDefinition Id="d2a4d056-2e81-4d61-8e90-836863342dff" />
+                    </propertyInstance>
+                    <elementDefinition Id="055eb3e3-764d-43c2-a9f6-d10856771736" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d0e40150-11c2-4409-9902-e478dd60b81e">
+                    <propertyInstance Id="a293a41b-f38c-4e09-9972-28bf3e3197ae" name="Inheritance" value="none">
+                      <elementDefinition Id="43e05289-db52-4232-a281-a63b5caab0ed" />
+                    </propertyInstance>
+                    <elementDefinition Id="209923c2-bf7d-4d4b-b03e-03a8cabbada1" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="bf769ae6-cc79-4ffb-8c13-6522736e2ef3">
+                    <propertyInstance Id="93d85397-13f7-4984-8bab-77afff7ec8a0" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="b8690e22-2d2a-4268-9c0f-fc4275adb1b4" />
+                    </propertyInstance>
+                    <elementDefinition Id="d86de5ef-029c-4519-8099-af75ac05dbaf" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="70f03a2f-1098-4641-b212-d15268d98e09">
+                    <propertyInstance Id="4d26d792-ee90-4737-86bb-4285bf352247" name="params" value="false">
+                      <elementDefinition Id="fb1bf81b-ee7f-4177-9dc9-43c630009d50" />
+                    </propertyInstance>
+                    <elementDefinition Id="e14eecfa-20bd-4606-a8e0-e477e3f9dce3" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="8ffa9d27-62a6-45e2-9ae7-b8cd8ce317d1" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="cbf94e01-4d53-45d9-be32-b087a1014bcc" name="name" direction="In">
+                  <referencesInternal>
+                    <reference Id="df576002-6b8c-4a50-9524-4ae858588a73" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3D(Name%3DSetParameters OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FCommon%2Fbin%2FDebug%2FCommon.dll Namespace%3DHapCon.Common Type%3DListeningMode)]) ParameterIdentifier%3Dname" tag="ViewCode">
+                      <elementDefinition Id="f10bd326-8cad-4177-92c5-36bd6ef01d11" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="2ca9c927-c0ae-4207-826f-402ee4a90d73" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="80a7810e-cf0c-48fd-ad45-a567d43dc4ac" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c65189fd-6ea3-4c43-8ea1-c1bb191dc556" name="computerName" direction="In">
+                  <referencesInternal>
+                    <reference Id="9ff70b3c-7075-482e-934f-49c3b436de5c" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3D(Name%3DSetParameters OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FCommon%2Fbin%2FDebug%2FCommon.dll Namespace%3DHapCon.Common Type%3DListeningMode)]) ParameterIdentifier%3DcomputerName" tag="ViewCode">
+                      <elementDefinition Id="fd107edf-a28b-402c-a515-c77d1d81d139" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="da6b1e91-c85b-4f70-8ad9-6d66af6f87c3" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="80a7810e-cf0c-48fd-ad45-a567d43dc4ac" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9eb64101-1202-40fb-8b02-dae2ea140523" name="listeningMode" direction="In">
+                  <referencesInternal>
+                    <reference Id="36b34067-8e6c-44f9-90ae-8e08574c2a11" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3D(Name%3DSetParameters OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FCommon%2Fbin%2FDebug%2FCommon.dll Namespace%3DHapCon.Common Type%3DListeningMode)]) ParameterIdentifier%3DlisteningMode" tag="ViewCode">
+                      <elementDefinition Id="1f49860d-7753-415f-b3a3-6e4ba2d29704" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="65640529-87a4-4845-8542-4345134f34c9" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="12a432eb-8b4a-4699-ac3a-02ad4d7ce176" LastKnownName="ListeningMode" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="1c1d7806-9c23-4d0d-9086-bbfdd8f8bd06" name="getGesture" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="70729e8b-1df1-40cc-988f-dcaa0884bcb2" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3DgetGesture" tag="ViewCode">
+                <elementDefinition Id="9571b448-e8df-4b3d-a397-86a73962cc35" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="84d33271-6c80-4fa4-afe4-fcab2a254c66" name="method" profile="CSharpProfile">
+                <elementDefinition Id="a9667f1e-fa1b-47b7-8679-9fa358383293" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="24e8ae87-523c-4f2c-ab5f-1a1a3d9aaaf9">
+                    <propertyInstance Id="c4907467-2d8c-4608-afaa-cac4dbb7f244" name="ClrAttributes">
+                      <elementDefinition Id="31cf9a9f-d810-4ed4-a7f9-c65c87be3edb" />
+                    </propertyInstance>
+                    <elementDefinition Id="2935fc44-d874-463a-9dda-dfc10b6502a4" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6338869d-0920-4a33-9287-6ec96b860422">
+                    <propertyInstance Id="6227e7ec-8a45-4e5b-8ce8-185d624f98e3" name="IsPartial" value="false">
+                      <elementDefinition Id="0abcff8a-341c-4bb7-bfef-1ad018de2f71" />
+                    </propertyInstance>
+                    <elementDefinition Id="a2b917ca-7c30-4df4-8049-b163cd432ddd" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7bc1463f-9a9a-43c4-a373-d7aeb880e00b">
+                    <propertyInstance Id="ba6f1edc-9f54-4a54-b521-0835a9c71740" name="IsUnsafe" value="false">
+                      <elementDefinition Id="6727461f-8e4b-457b-8c82-b272fe9b125d" />
+                    </propertyInstance>
+                    <elementDefinition Id="3ff18144-f1f9-4ab3-ba89-5af0c8ca322a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a83f0174-fd7d-4aa9-a00b-dc9ce80820e5">
+                    <propertyInstance Id="f73c7552-552c-45ed-9575-99592ef9f366" name="Inheritance" value="none">
+                      <elementDefinition Id="2f21895d-b6a1-44a1-b93c-3b991bb9268c" />
+                    </propertyInstance>
+                    <elementDefinition Id="1147421e-6d42-4828-abf1-cd13167489ef" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="85c2e5ed-3399-4f1c-a5f4-cca70c3037c1">
+                    <propertyInstance Id="6faedd00-f5c7-4ced-b35f-2ff95e4fe4b5" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="605bcf29-321a-4587-847c-216c16c6f06c" />
+                    </propertyInstance>
+                    <elementDefinition Id="e078ef6b-c086-4fab-8440-4f747b4e07a3" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e72039e6-3c64-49e7-9629-5cea8280de95">
+                    <propertyInstance Id="6ee32e04-bac2-43c7-af95-ff23ce7a2b6f" name="params" value="false">
+                      <elementDefinition Id="c5a1e17a-2a79-4b56-87a1-5bfe9ad581da" />
+                    </propertyInstance>
+                    <elementDefinition Id="d309f369-fc80-4a60-91e0-54b7e0035135" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="07d49df9-b4bb-422c-bc94-97ec8187c5c8" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="153fb945-e9d9-472a-80ec-0255775b0f57" direction="Return">
+                  <elementDefinition Id="7182ecb0-c60a-445d-9ca3-6083c39514d8" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="7bf799e2-b42c-40eb-9939-c57ef3efbcb9" LastKnownName="CommonGestures" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="55039d15-e6b4-43ee-8890-04d2c5f6fe1d" name="getCoordinate" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="14278254-0d5f-463a-9719-6b06f076beb0" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3DgetCoordinate" tag="ViewCode">
+                <elementDefinition Id="92b609c2-f369-480a-852d-a474215cc686" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="c5bb3ee3-d338-40a7-be25-9059fbb1a0f2" name="method" profile="CSharpProfile">
+                <elementDefinition Id="46a26015-f1ab-4415-8e62-44bede339f4a" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6b46dfae-886c-4063-8368-215660035bd4">
+                    <propertyInstance Id="257ea8f1-5265-4096-a4f7-6ce44f240224" name="ClrAttributes">
+                      <elementDefinition Id="7d6289f9-2600-4cb9-97e9-8035d2d7a1a9" />
+                    </propertyInstance>
+                    <elementDefinition Id="5a8d41a5-5d2a-40f6-89f2-6ef2028de484" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="064a06cd-2db8-42a3-ad8b-c7a66dfa25a4">
+                    <propertyInstance Id="084c8a5b-d421-4fd8-a779-302e4f3c430e" name="IsPartial" value="false">
+                      <elementDefinition Id="8b9352e4-06cd-44cb-b9fd-cfced54a876c" />
+                    </propertyInstance>
+                    <elementDefinition Id="5c11f4e2-24d9-4ae4-9041-d3fc9b2c49d1" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="3db6cf7b-c11d-4178-91b9-ea5c05eefb85">
+                    <propertyInstance Id="fe53c00b-0523-47c1-b337-4892d1f5a574" name="IsUnsafe" value="false">
+                      <elementDefinition Id="b7ca9eba-914e-408e-ba16-a5ac7888cf5b" />
+                    </propertyInstance>
+                    <elementDefinition Id="543083fc-3e5a-4cd8-ad60-3a56570277d1" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="f26451cd-9325-4ccd-b52a-77a152b39aac">
+                    <propertyInstance Id="e739efa9-0857-430b-8e76-19b5dd5d0a57" name="Inheritance" value="none">
+                      <elementDefinition Id="a81cb8a5-298a-410c-b9fd-d60fccaabef3" />
+                    </propertyInstance>
+                    <elementDefinition Id="0afa1e58-d857-42d0-b732-44051628ca54" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="72ca9e56-3c75-4972-953d-642119e76a52">
+                    <propertyInstance Id="74ad2d6f-eb39-4a41-b4a9-960619fc8628" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="6513b19a-1130-4e1d-a7e2-00a48005fad7" />
+                    </propertyInstance>
+                    <elementDefinition Id="fd98395d-f7d2-4c97-92e7-a61db8460a29" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="53504521-e4ba-4dc6-954f-444e2ab0fa42">
+                    <propertyInstance Id="89c0631b-09f7-4768-8142-f422ca7e64a7" name="params" value="false">
+                      <elementDefinition Id="19482a03-49ce-4fe6-adbd-9b3b13180dac" />
+                    </propertyInstance>
+                    <elementDefinition Id="e615ebbb-36e9-4838-aa98-e1637caf636f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="cc510b23-aea2-4967-833f-74f01b462b5f" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f2816b2f-b2c0-4f05-88cb-ac8f6ed11b21" direction="Return" isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString Id="a2807831-c82a-47dc-bf1a-8821dd3611bb" name="Lower" value="*">
+                      <elementDefinition Id="9462341f-3fb8-4bde-bd2d-824e7bca4e1a" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="ee5c8d90-a7e1-4bce-90e5-efb3e3adb30c" name="Upper" value="*">
+                      <elementDefinition Id="0ba606cc-1fca-49a0-8363-2b73548a8bc4" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="2d06d669-c6ee-449a-8b6c-35c62c5dc8a0" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d68e230d-38c5-44f4-91b8-31d3438b93cb" LastKnownName="Single" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="b6cdb6cc-8f66-447e-aaa6-9b221080eb88" name="Myo_OrientationDataAcquired" visibility="Private" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="f3c05f1a-35af-4811-9007-3ae67e832b94" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3D(Name%3DMyo_OrientationDataAcquired OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2FMyoSharp.dll Namespace%3DMyoSharp.Device Type%3DOrientationDataEventArgs)])" tag="ViewCode">
+                <elementDefinition Id="37e4658d-f381-457e-bb18-9db3734ea648" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="ee7c44a9-9a74-4cb9-aa4f-0a060bbf5fd6" name="method" profile="CSharpProfile">
+                <elementDefinition Id="4d697379-baa7-414a-a228-a8e605a056a5" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="76ab4d0a-41c3-4deb-92d8-a89da30d0f7d">
+                    <propertyInstance Id="b7b37e4d-fac5-4102-8eac-09bcc9aa845c" name="ClrAttributes">
+                      <elementDefinition Id="8565039a-2175-4172-a2ba-df67c7f75e32" />
+                    </propertyInstance>
+                    <elementDefinition Id="2ecfbd2e-27f3-43e0-85f9-2550277126b9" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="f2ef1453-e6ff-4498-9eb2-69ead98a1503">
+                    <propertyInstance Id="92a276b9-37e1-4d23-b612-6339b3ea5eb4" name="IsPartial" value="false">
+                      <elementDefinition Id="dbcfb13d-b3eb-407e-8363-3ecb9e236461" />
+                    </propertyInstance>
+                    <elementDefinition Id="ee3931fc-2466-4ac2-8581-99d7420e90be" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="3d5a65cd-7eb1-447d-80ca-849a6026e993">
+                    <propertyInstance Id="4b407b06-e36f-4672-9e3e-3031f00db57b" name="IsUnsafe" value="false">
+                      <elementDefinition Id="cd16ba6f-9a3d-4bff-9ab0-7beffedf1c20" />
+                    </propertyInstance>
+                    <elementDefinition Id="294e7c09-d7cc-4dc1-b84f-e16579733580" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="f5eb4f43-bab0-470c-9f1b-c7c0477c46ca">
+                    <propertyInstance Id="fda28db4-eca0-487c-a2ca-d9e425ce24b0" name="Inheritance" value="none">
+                      <elementDefinition Id="c764e69e-896d-4723-97ae-8b9b61e59488" />
+                    </propertyInstance>
+                    <elementDefinition Id="c110babd-c793-4416-a5f3-76226eed4421" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ab9d008c-0f54-47f2-9290-79867daeee31">
+                    <propertyInstance Id="81eb8b0b-f15c-4433-ab18-cea3d4f8467e" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="01a2dd4b-24b9-44ec-a972-75499f7b8959" />
+                    </propertyInstance>
+                    <elementDefinition Id="71c6749d-cd21-4e0d-82a7-ad75cf614047" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="13acab6d-9184-4bbc-846f-c8f25145ec28">
+                    <propertyInstance Id="c1137045-1ffb-49a3-a296-3d019b6580ef" name="params" value="false">
+                      <elementDefinition Id="94ea8aa4-f9bb-4c14-ba7e-325cfc5ceebe" />
+                    </propertyInstance>
+                    <elementDefinition Id="7ecbd356-d866-4987-be2a-44c73ea7b4c9" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="691fa7d2-c122-4fe4-ab19-1dc06c6984f1" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="2302394b-1d99-4dad-9cf7-fd3610bb8799" name="sender" direction="In">
+                  <referencesInternal>
+                    <reference Id="1ae4f633-bd38-4a3e-934f-75f27dd773a9" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3D(Name%3DMyo_OrientationDataAcquired OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2FMyoSharp.dll Namespace%3DMyoSharp.Device Type%3DOrientationDataEventArgs)]) ParameterIdentifier%3Dsender" tag="ViewCode">
+                      <elementDefinition Id="5f3dcf92-6928-4010-a82a-f2ccd294e997" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="46164cb2-6c0f-4104-9ff7-9edac9ce2ee7" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6a5efd13-9dee-4692-83f2-459bef88ee19" LastKnownName="Object" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="de571f14-edd0-4e34-bec7-ff071842b6d5" name="e" direction="In">
+                  <referencesInternal>
+                    <reference Id="035f636f-38f7-4b82-a487-65cd2699b1ab" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3D(Name%3DMyo_OrientationDataAcquired OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2FMyoSharp.dll Namespace%3DMyoSharp.Device Type%3DOrientationDataEventArgs)]) ParameterIdentifier%3De" tag="ViewCode">
+                      <elementDefinition Id="2c0fc8a4-14d1-4a17-98cf-cb502f9380c8" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="adbfcaf8-fa40-4ece-9776-b54dc37cc7ca" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="fe3a7cc5-9dae-4034-a9c2-3a8e91b761d4" LastKnownName="OrientationDataEventArgs" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="a1f8ead0-669a-4eec-82e5-820287fe0a5f" name="Myo_PoseChanged" visibility="Private" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="1257f933-5002-43ff-858b-014c6cab50f0" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3D(Name%3DMyo_PoseChanged OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2FMyoSharp.dll Namespace%3DMyoSharp.Device Type%3DPoseEventArgs)])" tag="ViewCode">
+                <elementDefinition Id="80fa3360-030d-4c8f-af56-88a7f89ea5ac" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="a2acc023-2717-47ce-b455-c87f0b363e77" name="method" profile="CSharpProfile">
+                <elementDefinition Id="1affdda0-178a-4441-8f42-89b8643e1a71" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d0ab16ab-779f-4fa7-bd87-cbc2c71602b3">
+                    <propertyInstance Id="bbdf7b24-ac15-48da-8707-85da6f8b1685" name="ClrAttributes">
+                      <elementDefinition Id="c682a1c5-f146-40b7-9496-08f7757f0ee1" />
+                    </propertyInstance>
+                    <elementDefinition Id="2ecb6f57-dc5c-4d9b-94c1-cff448e0107f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="944873d1-4969-480c-9ac3-c45429e2672e">
+                    <propertyInstance Id="7cb8cabd-23b3-4732-8f43-9735fbce7e35" name="IsPartial" value="false">
+                      <elementDefinition Id="561facbd-6853-41bd-bee7-e26543a17c68" />
+                    </propertyInstance>
+                    <elementDefinition Id="7a484190-4e34-465d-9825-aed3b41bcfcb" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="46a03626-f455-4e2e-a4fb-3d148c681f37">
+                    <propertyInstance Id="0fccb5b6-0931-4c91-b737-b7b25dad7f69" name="IsUnsafe" value="false">
+                      <elementDefinition Id="79cd3c88-0707-4fa5-b2a7-dd397bbd481d" />
+                    </propertyInstance>
+                    <elementDefinition Id="bf4bd74b-0e72-48e1-9bc4-6d2f1d2606f3" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="cffcbcdd-fc07-4702-9349-9c6c8a00d8b3">
+                    <propertyInstance Id="6734e245-cabd-4728-9a60-79e22d137ba0" name="Inheritance" value="none">
+                      <elementDefinition Id="56257c8d-6ef5-4b29-9637-f6a1de3f752b" />
+                    </propertyInstance>
+                    <elementDefinition Id="dcfcc124-4183-4630-a667-69ea4bfb6ff5" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="556b6f57-1fc3-47be-b22a-c404828fb9fb">
+                    <propertyInstance Id="35f59181-8e6d-4783-acd7-e88ace0cb611" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="fe4c3965-6b29-4903-a7ea-8bcb1c3b48e1" />
+                    </propertyInstance>
+                    <elementDefinition Id="b2fc7a4a-ca5d-4916-ac7f-0fe90d2f275c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="5c663030-4b9f-4e0b-8ab5-cffdb46b4226">
+                    <propertyInstance Id="a48a7e5e-d9f9-4cec-a90e-c9ba14fc953b" name="params" value="false">
+                      <elementDefinition Id="52b65314-1b9e-4741-b1d9-7ec9fc89c507" />
+                    </propertyInstance>
+                    <elementDefinition Id="2a8b1b97-2b88-44d5-a15c-efdae8f8839a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="1d8ef4aa-082f-41e9-b9b7-3fbc84d625f5" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ed7c69b4-2a8c-4625-ba2f-bce5c58eb3cb" name="sender" direction="In">
+                  <referencesInternal>
+                    <reference Id="e18ff29b-069c-4e54-a71d-26507ef75aad" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3D(Name%3DMyo_PoseChanged OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2FMyoSharp.dll Namespace%3DMyoSharp.Device Type%3DPoseEventArgs)]) ParameterIdentifier%3Dsender" tag="ViewCode">
+                      <elementDefinition Id="900a21ee-a3cb-4c52-8194-94f4d4e77b63" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="7bd6dae6-2760-4530-a8c7-7ac968bc90d6" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6a5efd13-9dee-4692-83f2-459bef88ee19" LastKnownName="Object" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6f62207c-c5dd-40a2-9aa5-32ca7007e4d2" name="e" direction="In">
+                  <referencesInternal>
+                    <reference Id="46308844-cbfe-4bdf-95c1-fdabd5e4fdb8" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3D(Name%3DMyo_PoseChanged OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2FMyoSharp.dll Namespace%3DMyoSharp.Device Type%3DPoseEventArgs)]) ParameterIdentifier%3De" tag="ViewCode">
+                      <elementDefinition Id="1c63f35e-f571-4b55-8a25-76d53f7f2ea8" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="9614b424-211a-41bd-9629-a51fc00a94ea" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="68bf965a-0afa-4b78-ae1f-466491cc1679" LastKnownName="PoseEventArgs" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="d117bf35-7c1e-4036-a607-b0ee232de682" name="CLKSequence_PoseSequenceCompleted" visibility="Private" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="69e842fe-4405-430e-ad4a-e1d2f64cd71b" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3D(Name%3DCLKSequence_PoseSequenceCompleted OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2FMyoSharp.dll Namespace%3DMyoSharp.Poses Type%3DPoseSequenceEventArgs)])" tag="ViewCode">
+                <elementDefinition Id="ee18d8f9-2435-454c-9fb0-01f55bbf87bb" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="6fd9a593-456c-47e4-bc4d-0dbea1801e24" name="method" profile="CSharpProfile">
+                <elementDefinition Id="03d5175a-9d27-4220-b990-97be453ee696" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d8607ea1-3393-4df3-a3a7-19f54c4d6ad7">
+                    <propertyInstance Id="cb706b78-cbbb-4ae0-ba5c-f3d6087d0274" name="ClrAttributes">
+                      <elementDefinition Id="a61214c6-afe9-4263-b968-571cffc396cb" />
+                    </propertyInstance>
+                    <elementDefinition Id="ed253428-b3ed-425e-8421-b752ada2954a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2b3dc4e5-92b5-4ac0-97a1-069bb102978c">
+                    <propertyInstance Id="caabd34e-39e5-434d-90e4-f0e3a3fcf1dc" name="IsPartial" value="false">
+                      <elementDefinition Id="a0f00622-6f40-4306-9102-3280474718a4" />
+                    </propertyInstance>
+                    <elementDefinition Id="0a41cb90-4a90-411d-bf4d-28002163ef8c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ae8a40a2-0eb6-4217-b1e1-2c97ac95645c">
+                    <propertyInstance Id="e5ecef0d-cde2-4dcd-80ae-3cf227efc08d" name="IsUnsafe" value="false">
+                      <elementDefinition Id="7f6aa922-ab7f-4944-8aed-9ab5e8d7e1db" />
+                    </propertyInstance>
+                    <elementDefinition Id="3a347831-0cb4-4934-934f-ca4b8ffa1b1e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="428cac03-278c-44a8-b2a7-2faa0ce7b75c">
+                    <propertyInstance Id="d28a7d16-8247-4c78-b287-3f3fa6240d8c" name="Inheritance" value="none">
+                      <elementDefinition Id="ab5abed8-d3bf-4392-9ac7-4f20a65e8bad" />
+                    </propertyInstance>
+                    <elementDefinition Id="9977de55-b754-4ba0-b1a2-6da54bfcbb55" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9854cdf2-ce71-41a4-97c6-4e1c86ec6a1f">
+                    <propertyInstance Id="35759774-c5bb-4257-9bb8-f753efb1d2c6" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="83da57a6-ecc6-4830-a569-29f0da401501" />
+                    </propertyInstance>
+                    <elementDefinition Id="36def409-f0f4-4a6c-9310-4484a1bb3d0d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9748123d-b9ba-421c-a212-ac2cbc0fb7a2">
+                    <propertyInstance Id="b04d9922-d121-4c6d-bf14-6323296d8df5" name="params" value="false">
+                      <elementDefinition Id="42e2f1e2-4fe5-4ef4-a783-2366edc00003" />
+                    </propertyInstance>
+                    <elementDefinition Id="c987bf46-0d88-4650-acb2-eb3e08a61e8b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="3044eae2-dac0-49c5-b1fb-dbc8c92be39c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="13b4217b-4e83-4509-b455-ccc0fbb22098" name="sender" direction="In">
+                  <referencesInternal>
+                    <reference Id="c5c8e48c-9e83-4174-817e-6e7b197b145f" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3D(Name%3DCLKSequence_PoseSequenceCompleted OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2FMyoSharp.dll Namespace%3DMyoSharp.Poses Type%3DPoseSequenceEventArgs)]) ParameterIdentifier%3Dsender" tag="ViewCode">
+                      <elementDefinition Id="ac42e626-9347-4475-9179-1df114666c72" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="4971d2f8-8e4a-4157-a165-0349f3481606" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6a5efd13-9dee-4692-83f2-459bef88ee19" LastKnownName="Object" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="8ac45a55-2411-4e7a-bf3c-9c954567ab33" name="e" direction="In">
+                  <referencesInternal>
+                    <reference Id="1a9d1fb7-3d37-41b2-bb81-d1b394153299" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3D(Name%3DCLKSequence_PoseSequenceCompleted OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2FMyoSharp.dll Namespace%3DMyoSharp.Poses Type%3DPoseSequenceEventArgs)]) ParameterIdentifier%3De" tag="ViewCode">
+                      <elementDefinition Id="c293fdc3-c3ff-4576-9530-2dd59c4ff89e" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="065fb702-ce04-43de-a54c-14c87d820312" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="251a1ab1-d944-4da0-8440-f03ddf8b3411" LastKnownName="PoseSequenceEventArgs" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="47452842-30b8-484f-83f6-701dab506651" name="ACLKSequence_PoseSequenceCompleted" visibility="Private" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="3c971837-c06f-4a48-94f4-f939ddb8c1f0" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3D(Name%3DACLKSequence_PoseSequenceCompleted OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2FMyoSharp.dll Namespace%3DMyoSharp.Poses Type%3DPoseSequenceEventArgs)])" tag="ViewCode">
+                <elementDefinition Id="e62ba5c7-0006-4109-97ee-5edb08bc8b87" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="66aee19b-3d5b-49cc-a7ba-40726c244388" name="method" profile="CSharpProfile">
+                <elementDefinition Id="1cb1bbf1-fd91-4be8-8ad3-060b00bef8d4" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2e4cf408-dbe4-44ac-8f2d-cc338d2251c2">
+                    <propertyInstance Id="2563f5ea-3362-4fd2-93b5-865857d53e4a" name="ClrAttributes">
+                      <elementDefinition Id="e171d20e-405f-4dea-b950-b0b6278426c5" />
+                    </propertyInstance>
+                    <elementDefinition Id="6911fd65-5a90-4c37-8648-c46442544f45" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ad085370-2d20-4d99-91aa-85a1a2ef9f5d">
+                    <propertyInstance Id="1b931989-c12a-469e-a846-0203f19a2ed0" name="IsPartial" value="false">
+                      <elementDefinition Id="b9c7c186-5dcc-43d4-8f2a-8e8036187e6d" />
+                    </propertyInstance>
+                    <elementDefinition Id="2fbf135d-f04e-42b9-8aff-7dcf7d7c572d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a8fdeafd-8341-42ae-a104-a5660bca38f4">
+                    <propertyInstance Id="643e65a8-519a-4e1b-8085-b01460c7ce38" name="IsUnsafe" value="false">
+                      <elementDefinition Id="94828915-e35c-4cca-b493-3d5e8f5dc0b8" />
+                    </propertyInstance>
+                    <elementDefinition Id="fc664189-685b-4d3b-98d8-d508e370d011" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="144a0df7-a285-415a-8f4d-aa39a0a1d911">
+                    <propertyInstance Id="9cd56967-927f-4bc0-8f38-f3d0aef8ed02" name="Inheritance" value="none">
+                      <elementDefinition Id="dc2d8ef9-ddd9-451e-ac75-a62ebeefe01b" />
+                    </propertyInstance>
+                    <elementDefinition Id="8abcd4d5-be49-4d27-bd7b-ac20d8fab951" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="722c05cc-5dd3-4e66-a525-dbe9f1c136bb">
+                    <propertyInstance Id="adb01114-5537-4048-94c7-cd741c7699b9" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="232a7675-b6ba-4588-977d-e76924b3a21e" />
+                    </propertyInstance>
+                    <elementDefinition Id="037c102c-d4d5-40c6-bb75-5df01a0e5ba0" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="75a52076-561e-4376-9f1e-379b8b22402a">
+                    <propertyInstance Id="34680c8f-2b9e-4f58-8a22-0010039b93ba" name="params" value="false">
+                      <elementDefinition Id="004d80d2-c033-4a48-aa89-549918e3e1f2" />
+                    </propertyInstance>
+                    <elementDefinition Id="825e6748-4e8f-4c86-97b2-65fcc8c8f480" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="63881152-6198-47af-94b9-99d96790733c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6fd4e1b3-28bd-45e7-b2b2-b695f6c14be1" name="sender" direction="In">
+                  <referencesInternal>
+                    <reference Id="9abfec80-3a50-4b2c-a93b-0432dcdb575d" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3D(Name%3DACLKSequence_PoseSequenceCompleted OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2FMyoSharp.dll Namespace%3DMyoSharp.Poses Type%3DPoseSequenceEventArgs)]) ParameterIdentifier%3Dsender" tag="ViewCode">
+                      <elementDefinition Id="80932bbc-4dfd-4ae7-95be-446b4b66966c" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="7435c77f-2752-4177-b5e7-4062b15a86b1" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6a5efd13-9dee-4692-83f2-459bef88ee19" LastKnownName="Object" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e44c666b-73a2-48e1-aca1-02f4b260227a" name="e" direction="In">
+                  <referencesInternal>
+                    <reference Id="4891f032-d032-4a1f-8fd8-02a88f029439" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3D(Name%3DACLKSequence_PoseSequenceCompleted OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2FMyoSharp.dll Namespace%3DMyoSharp.Poses Type%3DPoseSequenceEventArgs)]) ParameterIdentifier%3De" tag="ViewCode">
+                      <elementDefinition Id="93b8ecf5-73bc-476d-9fb5-2597e190205f" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="e02d307c-2411-45fb-a8df-816e4bfce2be" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="251a1ab1-d944-4da0-8440-f03ddf8b3411" LastKnownName="PoseSequenceEventArgs" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="5d003c46-3713-44b4-a53f-693bb551011a" name="ThalmicLabsMYO" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="0c12358e-472a-400e-94b1-b109048b27e4" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3D.ctor" tag="ViewCode">
+                <elementDefinition Id="d4684adb-d2c9-49e0-9e20-47069ca7e905" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="b2472d69-4d96-444d-9acf-353b9dba96f9" name="method" profile="CSharpProfile">
+                <elementDefinition Id="ca1fcba7-e167-4b66-ae17-310171a2ed60" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e5e91b60-d8eb-46b8-b827-cfafd3aee26b">
+                    <propertyInstance Id="9ba600cf-0649-4f1c-a06e-a920eef57ccb" name="ClrAttributes">
+                      <elementDefinition Id="2f38f349-f6c3-4cba-9e76-2acf229dc7cc" />
+                    </propertyInstance>
+                    <elementDefinition Id="ad6d179a-43fc-4b23-84ad-13e9133b2bc1" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="0aa7e9a2-9693-4ddd-b730-5eb109509a35">
+                    <propertyInstance Id="6405eed6-c2b2-483c-a770-9761d3cc0a68" name="IsPartial" value="false">
+                      <elementDefinition Id="5f5e532d-0b39-40f8-bc98-daae8665bd09" />
+                    </propertyInstance>
+                    <elementDefinition Id="326a9d83-04e6-4959-9c4d-103ee591c206" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b396eb8d-30e6-4bff-9876-6fdc4b096db2">
+                    <propertyInstance Id="12a0b6fc-862b-43c8-9e56-1556ab1d2be7" name="IsUnsafe" value="false">
+                      <elementDefinition Id="639e567d-5ddf-4924-8696-f4ca335851b7" />
+                    </propertyInstance>
+                    <elementDefinition Id="6d11e348-3de5-4446-8b31-f728108e4355" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="95dbe2b9-3a12-4335-9f16-ee556d9d2178">
+                    <propertyInstance Id="f0ad9535-6464-4bc5-85cb-98984f9aa4ed" name="Inheritance" value="none">
+                      <elementDefinition Id="e2cb1e3e-2a5c-4580-99d0-226ccab533f9" />
+                    </propertyInstance>
+                    <elementDefinition Id="3e1f1d9d-3f0c-4299-8f32-0218ef338697" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="42fef334-c554-47ea-b0bc-42340dc6b35c">
+                    <propertyInstance Id="da50f266-3d51-4984-a534-97a7003762af" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="75202968-a488-44fc-9226-bf75c0c7b37c" />
+                    </propertyInstance>
+                    <elementDefinition Id="0f5d8695-9a7c-4144-ad39-148a807b8755" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d7681c77-589a-4249-a7a7-dadc81a06b3c">
+                    <propertyInstance Id="085eff95-5461-4829-9c73-92d1947362fd" name="params" value="false">
+                      <elementDefinition Id="877a4ece-e93b-4e5a-ac80-bd5a24e0fe37" />
+                    </propertyInstance>
+                    <elementDefinition Id="7ca38cc5-599e-411a-9184-daa20a893843" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="50525c96-df03-48f9-8d37-62679b17aa13" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="12a432eb-8b4a-4699-ac3a-02ad4d7ce176" name="ListeningMode" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject_Common::HapCon::Common::ListeningMode">
+        <elementDefinition Id="47a45df8-84f2-48cf-aaab-122592ca19bb" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="7bf799e2-b42c-40eb-9939-c57ef3efbcb9" name="CommonGestures" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject_Common::HapCon::Common::CommonGestures">
+        <elementDefinition Id="b1876c72-4584-4d60-903c-7063d3ee2481" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="2d3484af-10c9-408d-84d0-56084268278c" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="d68e230d-38c5-44f4-91b8-31d3438b93cb" name="Single" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject_Common::System::Single">
+        <elementDefinition Id="438ac932-1e49-4c9c-80b7-46e5a706fd6b" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="6a5efd13-9dee-4692-83f2-459bef88ee19" name="Object" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject_Common::System::Object">
+        <elementDefinition Id="446cd21e-f935-446f-abed-0b7051671aec" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="fe3a7cc5-9dae-4034-a9c2-3a8e91b761d4" name="OrientationDataEventArgs" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject_Common::MyoSharp::Device::OrientationDataEventArgs">
+        <elementDefinition Id="bfd11f87-ff32-4cf5-908e-fa53603eb21f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="68bf965a-0afa-4b78-ae1f-466491cc1679" name="PoseEventArgs" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject_Common::MyoSharp::Device::PoseEventArgs">
+        <elementDefinition Id="1df91b07-88ab-4e8b-8647-85605228e5c8" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="251a1ab1-d944-4da0-8440-f03ddf8b3411" name="PoseSequenceEventArgs" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject_Common::MyoSharp::Poses::PoseSequenceEventArgs">
+        <elementDefinition Id="84b06d6b-2d93-4085-88a9-7275693237a0" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="e67c8730-357d-4a1b-9967-53e96720f17b" name="ModelingProject_Common">
+    <elementDefinition Id="07716275-ac28-412a-8fa1-60a2ec999500" />
+  </package>
+</logicalClassDesignerModel>

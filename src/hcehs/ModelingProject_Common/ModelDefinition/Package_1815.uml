@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="a8435ed8-9004-41a9-a447-2b50a2cbab58"
+  name="GesturePak"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="96aaed67-cdb2-4c94-b394-a7972693066f"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DGesturePak"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="eb4304c9-4a7c-4775-8735-77c017e8e6a5"
+        name="Gesture"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="c92d9b1e-cc8f-49fb-be8f-54caa6e018fe"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FFranklins.Net%2FGesturePak 1.0.4%2Fsamples%2Fc%2523%2FGesturePak Demo%2Fgesturepak%2FGesturePakObjects.dll&quot; Namespace%3DGesturePak Type%3DGesture"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="0605f159-4a40-4d83-b240-b00a187f227b"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6ad457d3-d669-41eb-8bd9-23183923b247">
+                <propertyInstance
+                  Id="94412e5a-01b2-4576-af74-8d92f0d3bbbb"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c2c33f78-6873-41af-b8c0-8575943cb874">
+                <propertyInstance
+                  Id="8993b174-bebb-44e7-9dbb-dc6803cb54f8"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="abada08a-6530-4be5-89ba-1d5a50aacc66">
+                <propertyInstance
+                  Id="03b10aa5-98aa-447e-842c-adbc91b571dd"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7e6764d7-407a-44d6-ab42-7c26f8331ef5">
+                <propertyInstance
+                  Id="22246b3f-f352-424b-82cd-a0d31dd1aee1"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="be863612-6dba-47f9-8495-8bfe06f74c59">
+                <propertyInstance
+                  Id="6cf69f42-dff1-4bf2-a4f9-38971b4b8e73"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="646ee82f-ba72-4772-b944-4b4ecb09c563"
+        name="MatchingPose"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="716531cf-1457-4236-b9a2-956ccbd9bde0"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FFranklins.Net%2FGesturePak 1.0.4%2Fsamples%2Fc%2523%2FGesturePak Demo%2Fgesturepak%2FGesturePakObjects.dll&quot; Namespace%3DGesturePak Type%3DMatchingPose"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="d2c2b91d-e4d2-4a9d-84a2-a09a665f1407"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a05361b6-b7bf-49dc-b924-abe463a27c73">
+                <propertyInstance
+                  Id="8a0b4299-12eb-487b-8f4f-46dae5c49519"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c4baffb8-7d7d-4795-bebb-f40cefbd0287">
+                <propertyInstance
+                  Id="8ab6b960-f08b-4942-a3c7-e6c957e85a8e"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4559797b-9c5c-4d76-a78e-f5514e71c7f4">
+                <propertyInstance
+                  Id="c4dd8246-92c4-41c5-b6ea-474d0eaabbff"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="da9c091c-d6c1-4ff8-8848-d8b48e334449">
+                <propertyInstance
+                  Id="99c4c853-1ff5-4f73-9af4-fa546483309d"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="459a2b17-855a-469e-9086-f734b271840a">
+                <propertyInstance
+                  Id="2bad924d-0a77-47b0-a523-b7774952d7bd"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5b9e66d8-0c3b-4981-be11-fd886252539a"
+        name="Pose"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="79296537-5d15-48b7-97b9-cac4cee7a9e6"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FFranklins.Net%2FGesturePak 1.0.4%2Fsamples%2Fc%2523%2FGesturePak Demo%2Fgesturepak%2FGesturePakObjects.dll&quot; Namespace%3DGesturePak Type%3DPose"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="52a23407-3c36-4e0e-bf1e-880bc8865001"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6d4b133b-dff5-43a5-9605-e93e304004f6">
+                <propertyInstance
+                  Id="3cd4979f-3e80-446e-a5c1-c975a1bf879e"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="467321b0-b509-4751-bf22-935b63569f87">
+                <propertyInstance
+                  Id="51ae58b3-2f11-4d70-872b-faf37bce0c3b"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="15634bad-3ac6-4645-b099-99eb4f0b1052">
+                <propertyInstance
+                  Id="4b60354d-3053-4f00-bd8b-765bd4139ff2"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="48e46f34-a845-40b1-9c1e-2c9a1206581a">
+                <propertyInstance
+                  Id="e5443b26-7a40-471c-b8b6-f908f9eae603"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fcd67ba1-3680-445e-9efb-9e42cbde26c0">
+                <propertyInstance
+                  Id="e91051d0-dd37-483f-8c74-c0b4ddbd9534"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="19867230-1cb0-4ae6-8230-7617094002e6"
+        name="GestureMatcher"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="923bac28-4542-4006-8648-a274b9c061c1"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FFranklins.Net%2FGesturePak 1.0.4%2Fsamples%2Fc%2523%2FGesturePak Demo%2Fgesturepak%2FGesturePakObjects.dll&quot; Namespace%3DGesturePak Type%3DGestureMatcher"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="760364e9-3469-43e7-85ea-a595d1f26ec3"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9500e1c7-12f6-45a5-be93-e969cdada5f9">
+                <propertyInstance
+                  Id="c61ebfcf-e97f-4bcb-b619-79a89e5a51f0"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="aeb8224f-8216-4c43-b101-86377307673f">
+                <propertyInstance
+                  Id="7c068240-648f-4644-b024-91d18f526538"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6367dd1a-ba7b-4f28-b5c1-d5d675d5c029">
+                <propertyInstance
+                  Id="e9588de7-68a7-4708-9bd0-47f3bd87a2c9"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="df37cc1f-8913-450d-a314-197d9676bacb">
+                <propertyInstance
+                  Id="61776fa7-39cd-457a-a575-0536b1e1bd92"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="efb48b4f-477b-484c-be94-74621d5af51a">
+                <propertyInstance
+                  Id="367c818c-ea8c-47ff-9f00-8b7799c717d8"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

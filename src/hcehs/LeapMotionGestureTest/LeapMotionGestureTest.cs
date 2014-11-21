@@ -42,9 +42,9 @@ namespace HapCon.LeapMotionGestureTest
                         case CommonGestures.Okay:
                             Console.WriteLine("Okay");
                             break;
-                        //case CommonGestures.Unknown:
-                        //    Console.WriteLine("Unknown");
-                        //    break;    
+                        case CommonGestures.Unknown:
+                            Console.WriteLine("Unknown");
+                            break;    
 
                     }
 

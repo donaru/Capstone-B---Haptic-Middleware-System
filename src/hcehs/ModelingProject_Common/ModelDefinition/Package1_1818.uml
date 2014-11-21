@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="052a98af-252f-4784-aa45-05d6aa6ead4e"
+  name="Device"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="7daac395-01c2-4096-bde7-643dd8a32704"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DMyoSharp.Device"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="bfd11f87-ff32-4cf5-908e-fa53603eb21f"
+        name="OrientationDataEventArgs"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="02ebe7b1-8bcc-4892-a330-d661dfc6d2ec"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2FMyoSharp.dll Namespace%3DMyoSharp.Device Type%3DOrientationDataEventArgs"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="2f788f8e-9fd9-4026-80e6-87d6f1dbc627"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1cd7bdc5-30ba-4e29-8742-8a9ef0230592">
+                <propertyInstance
+                  Id="f6bb7123-e999-4c93-95a3-a0cc3e9c05a5"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8e7dace5-886c-4e86-ae0a-1e2e9d56452d">
+                <propertyInstance
+                  Id="deae6a77-1c5e-4723-af81-c10216f5e387"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="76d30f79-1bfc-4c70-a053-86aadf2e747a">
+                <propertyInstance
+                  Id="22c0d9aa-b6c0-41f4-b9e6-5462e595b1a7"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a6bfb60d-9b7d-4583-837b-31eb6d6c4e94">
+                <propertyInstance
+                  Id="4be1da46-c194-4f9c-9c4f-04721d9e2a9d"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="77a24c1d-8200-4762-a6a2-69cf05ba3d84">
+                <propertyInstance
+                  Id="495df561-531d-4b7a-adf2-657a0555f329"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1df91b07-88ab-4e8b-8647-85605228e5c8"
+        name="PoseEventArgs"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="b5636c31-74bb-439f-9a78-f82042246d40"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2FMyoSharp.dll Namespace%3DMyoSharp.Device Type%3DPoseEventArgs"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="1f676150-7616-4afc-88dd-c4c2b3b5fdcc"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6a4ce979-3aa3-4e34-9dda-c900566640f7">
+                <propertyInstance
+                  Id="9a1b740f-9347-402a-abbb-34fae62fdc0b"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c3b61e6d-129f-47f9-8070-348789eaabcc">
+                <propertyInstance
+                  Id="b92a7d75-90c0-4e84-af3c-1d00fc551a8e"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7869ca60-505a-4885-8e4d-f64d4b4fdcf4">
+                <propertyInstance
+                  Id="019851bf-82be-4e5a-8a79-38f31fe0ce3b"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0f348278-4d12-41d3-98f5-c494f9381b71">
+                <propertyInstance
+                  Id="9f05c973-08e8-49d2-a692-c325d963512b"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="051fe854-6c27-4539-83af-da13378ce73a">
+                <propertyInstance
+                  Id="429eae2a-f346-498c-ac9f-44e8f71b382d"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

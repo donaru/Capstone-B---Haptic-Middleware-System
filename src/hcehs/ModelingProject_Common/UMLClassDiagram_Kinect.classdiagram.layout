@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLClassDiagram_Kinect">
+  <logicalClassDesignerModelMoniker Id="1e7f2cf9-9b3c-4189-a46f-50bdad6f30bb" />
+  <nestedChildShapes>
+    <interfaceShape Id="ac61746d-71b8-44c7-aea7-25821689010b" absoluteBounds="0.5, 1.5, 3, 1.2505034391085306" hideQualifiedName="false" increaseHeight="0.18800345897674564" customColor="207, 223, 191">
+      <interfaceMoniker Id="c6aed913-e431-4af1-8b64-bb32d0c5f9a5" LastKnownName="IMicrosoftKinect" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="becfc14f-4753-487f-a0d8-a902ab9622f2" absoluteBounds="0.515, 2.0780034589767458, 2.9699999999999998, 0.36132811258236563" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="ced5ddcc-831d-443d-babe-245d49fc7c85" absoluteBounds="0.515, 2.4493315715591111, 2.9699999999999998, 0.2011718675494194" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </interfaceShape>
+    <classShape Id="1f019554-bc67-4bc0-b360-0c1fc39eea98" absoluteBounds="4.375, 0.5, 4.875, 6.4729917055368418" hideQualifiedName="false" increaseHeight="0.18800345897674561" customColor="181, 193, 223">
+      <classMoniker Id="ce228a56-1299-4d3c-bc7c-a9f4350e6b7c" LastKnownName="MicrosoftKinect" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="1f2fde35-08e9-4d67-86b2-0af51ef98e94" absoluteBounds="4.39, 1.0153356393178306, 4.8450000000000006, 3.2441405231753984" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="0697dec9-f7b2-4c72-b15f-9bb038a94cff" absoluteBounds="4.39, 4.2694761624932287, 4.8450000000000006, 2.6035155430436134" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <realizationConnector edgePoints="[(4.375 : 2.12525171955427); (3.5 : 2.12525171955427)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" showAsLollipop="false">
+      <interfaceRealizationMoniker Id="611a6c95-7172-488d-a9f4-6f1bbcf0a284" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="1f019554-bc67-4bc0-b360-0c1fc39eea98" />
+        <interfaceShapeMoniker Id="ac61746d-71b8-44c7-aea7-25821689010b" />
+      </nodes>
+    </realizationConnector>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>

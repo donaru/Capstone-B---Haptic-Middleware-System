@@ -117,12 +117,12 @@ namespace HapCon.LeapMotion
 
                         //if (swipe.Direction.Equals())
                         
-                        Console.WriteLine("Swipe id: " + swipe.Id
+                      /* Console.WriteLine("Swipe id: " + swipe.Id
                                        + ", " + swipe.State
                                        + ", position: " + swipe.Position
                                        + ", direction: " + swipe.Direction
                                        + ", speed: " + swipe.Speed
-                                       + ", fingers: " + fingers.Count());
+                                       + ", fingers: " + fingers.Count());*/
                         
 
                         //Console.WriteLine(swipe.Direction.y);
@@ -183,6 +183,12 @@ namespace HapCon.LeapMotion
                 // Get the first hand
                 Hand hand = frame.Hands[0];
 
+                Vector handPosition = hand.PalmPosition;
+                coordinates[0] = handPosition.x;
+                coordinates[1] = handPosition.y;
+                coordinates[2] = handPosition.z;
+                return coordinates;
+                /* ---- Prototype used for mouse control purposes
                 // Check if the hand has any fingers
                 FingerList fingers = hand.Fingers;
                 if (!fingers.IsEmpty)
@@ -194,16 +200,17 @@ namespace HapCon.LeapMotion
                         avgPos += finger.TipPosition;
                     }
                     avgPos /= fingers.Count;
-
+                    
                     InteractionBox iBox = _controller.Frame().InteractionBox;
                     Vector normalizedPosition = iBox.NormalizePoint(avgPos);
 
                     coordinates[0] = normalizedPosition.x;
                     coordinates[1] = normalizedPosition.y;
                     coordinates[2] = normalizedPosition.z;
+                    
 
                     return coordinates;
-                }
+                }*/
                 
             }
             return null;

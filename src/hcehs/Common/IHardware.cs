@@ -10,7 +10,8 @@ namespace HapCon.Common
     {
         TcpConnection,
         HttpConnection,
-        UsbConnection
+        UsbConnection,
+        BluetoothConnection
     }
 
     
@@ -37,6 +38,10 @@ namespace HapCon.Common
         ListeningMode GetListeningMode { get; set; }
         CommonGestures getGesture();
         float[] getCoordinate();
+
+        // float get velocity
+
+
         
     }
 }

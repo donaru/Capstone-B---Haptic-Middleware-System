@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="d4eb8f83-233f-451d-a8ec-cb198708633f"
+  name="HapCon"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="d326a4a7-9f87-4ae1-b96f-4a8c956493ed"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DHapCon"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="a8a9a66c-017c-402a-9c69-02080ef01dc7"
+        LastKnownName="Common"
+        LastKnownLocation="Package1_1752.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="d1a1ab01-0981-48a9-943f-7a87be01a0d1"
+        LastKnownName="Haptics"
+        LastKnownLocation="Package1_1805.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="1c168d51-8411-4653-b600-a381d45ff49c"
+        LastKnownName="MicrosoftKinect"
+        LastKnownLocation="Package_1805.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="a587e23d-c191-4b4d-bd5b-55b4596b90dc"
+        LastKnownName="LeapMotion"
+        LastKnownLocation="Package2_1805.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="00362b53-e909-4e2e-8e22-e6699085733f"
+        LastKnownName="ThalmicLabsMYO"
+        LastKnownLocation="Package3_1805.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="a09ebd6d-1e5a-4387-968d-0a391b4cbc1e"
+        LastKnownName="HapticService"
+        LastKnownLocation="Package_1826.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

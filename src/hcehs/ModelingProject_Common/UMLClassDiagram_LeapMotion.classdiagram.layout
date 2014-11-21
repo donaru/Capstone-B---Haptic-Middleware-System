@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLClassDiagram_LeapMotion">
+  <logicalClassDesignerModelMoniker Id="a053ddb1-ac49-4ce6-af8a-19916db2b2d5" />
+  <nestedChildShapes>
+    <interfaceShape Id="5aa1507e-017e-48b8-9c11-e501569178fa" absoluteBounds="0.5, 0.625, 2.75, 1.2505034391085306" hideQualifiedName="false" increaseHeight="0.18800345897674564" customColor="207, 223, 191">
+      <interfaceMoniker Id="27e087c2-0ab6-4a42-87ea-2a6425c17cb1" LastKnownName="ILeapMotion" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="31347d78-d441-4324-8f70-044e69272375" absoluteBounds="0.515, 1.2030034589767458, 2.7199999999999998, 0.36132811258236563" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="f193a6bf-a61e-48bd-870a-646c98778383" absoluteBounds="0.515, 1.5743315715591113, 2.7199999999999998, 0.2011718675494194" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </interfaceShape>
+    <classShape Id="92aad31e-877e-4db5-b66b-c8a22374c784" absoluteBounds="4.25, 0.5, 2.75, 2.9495543148120245" hideQualifiedName="false" increaseHeight="0.18800345897674561" customColor="181, 193, 223">
+      <classMoniker Id="5edfb129-a26b-4b27-9ae0-1107866de4fb" LastKnownName="LeapMotion" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="9c61c8c6-88c4-4fd8-ae96-2c059c216d2d" absoluteBounds="4.265, 1.0153356393178306, 2.7199999999999998, 1.162109337747097" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="2213f26a-2068-4187-9929-a5fdac84859a" absoluteBounds="4.265, 2.1874449770649278, 2.7199999999999998, 1.1621093377470972" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <realizationConnector edgePoints="[(4.25 : 1.25909755139254); (3.25 : 1.25909755139254)]" fixedFrom="Algorithm" fixedTo="Caller" customColor="113, 111, 110" showAsLollipop="false">
+      <interfaceRealizationMoniker Id="2052bd3c-97ff-4271-9ef7-e4b95678f571" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="92aad31e-877e-4db5-b66b-c8a22374c784" />
+        <interfaceShapeMoniker Id="5aa1507e-017e-48b8-9c11-e501569178fa" />
+      </nodes>
+    </realizationConnector>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>

@@ -102,6 +102,10 @@
       <Project>{bcee44b8-7667-41ac-903b-26b27d3636ef}</Project>
       <Name>Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Haptics\Haptics.csproj">
+      <Project>{ba6c8a82-10a0-4dd5-90d9-7f55d30a98fb}</Project>
+      <Name>Haptics</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MicrosoftKinect\MicrosoftKinect.csproj">
       <Project>{18d71eb5-fe03-43ce-860d-fc0d0af178ce}</Project>
       <Name>MicrosoftKinect</Name>
@@ -111,7 +115,10 @@
     <Resource Include="kinect-pr-top-1.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="PVM.png" />
+    <Resource Include="anticlockwise.png" />
+    <Resource Include="clockwise.png" />
+    <Resource Include="left_hand.jpg" />
+    <Resource Include="right_hand.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

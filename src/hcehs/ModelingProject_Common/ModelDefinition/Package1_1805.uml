@@ -1,0 +1,1776 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="d1a1ab01-0981-48a9-943f-7a87be01a0d1"
+  name="Haptics"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="fceebe02-8a02-45c6-af05-08ade2590a5c"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DHapCon.Haptics"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <enumeration
+        Id="d194b09e-4c98-442b-8125-7e3511c559ab"
+        name="HapticDevices"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="a762fcb6-bde7-4c44-8796-4c7002b2820e"
+            handle="viewcode://./CodeSchema_Enum?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FHaptics%2Fbin%2FDebug%2FHaptics.dll Namespace%3DHapCon.Haptics Type%3D(Name%3DHapticDevices ParentType%3DHaptics)"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="371d5e22-8e1c-49b6-8eb6-d4e1e1cfed14"
+            name="enum"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e8e2c35f-841d-4481-9879-5ed97e7820ea">
+                <propertyInstance
+                  Id="18742431-8860-4c20-8bf4-ad7f5aac646c"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="db781796-7614-4e69-b2eb-d028240a7b0d">
+                <propertyInstance
+                  Id="d42e1516-716b-4b16-8a30-79847fc54c94"
+                  name="BaseType"
+                  value="int" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="98143010-93f4-4235-a7ee-61c0f9a152b4">
+                <propertyInstance
+                  Id="6f0b1e1a-3770-4d8e-b40f-6ce4897a6b62"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="0b419f02-aee7-4845-84fc-00174abce8c9"
+            name="Kinect">
+            <referencesInternal>
+              <reference
+                Id="b5e588e4-3f05-4950-8aab-541c6d695460"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FHaptics%2Fbin%2FDebug%2FHaptics.dll Namespace%3DHapCon.Haptics Type%3D(Name%3DHapticDevices ParentType%3DHaptics) Member%3DKinect"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="ac289953-3ce0-4223-b546-8183767ebc86"
+            name="LeapMotion">
+            <referencesInternal>
+              <reference
+                Id="cb33f40a-9a4a-45c5-8b09-1e013add19c8"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FHaptics%2Fbin%2FDebug%2FHaptics.dll Namespace%3DHapCon.Haptics Type%3D(Name%3DHapticDevices ParentType%3DHaptics) Member%3DLeapMotion"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="1fc4fd13-7aa3-431f-af63-f881a4ebfd54"
+            name="MYO">
+            <referencesInternal>
+              <reference
+                Id="144009d4-2bf5-459d-ac90-ad0e67550966"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FHaptics%2Fbin%2FDebug%2FHaptics.dll Namespace%3DHapCon.Haptics Type%3D(Name%3DHapticDevices ParentType%3DHaptics) Member%3DMYO"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="a0f9b37e-496a-45de-b5d9-534b25a56400"
+            name="Unknown">
+            <referencesInternal>
+              <reference
+                Id="ca47c138-1c0d-4c17-8f8a-a09e9eba76cc"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FHaptics%2Fbin%2FDebug%2FHaptics.dll Namespace%3DHapCon.Haptics Type%3D(Name%3DHapticDevices ParentType%3DHaptics) Member%3DUnknown"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6256043e-93e1-4066-82c2-3f0939c280dc"
+        name="Haptics"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="fddfb1a6-0d8f-4502-b969-98a2f1262fec"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FHaptics%2Fbin%2FDebug%2FHaptics.dll Namespace%3DHapCon.Haptics Type%3DHaptics"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="c3cada12-2b20-4489-88ec-3b372d9cd88f"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="622f169d-ea14-4576-9816-f1e127de6bc8">
+                <propertyInstance
+                  Id="7560e800-2458-4f47-9bad-4cac5b929772"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0d7209a3-6270-48f6-8899-c50936af274d">
+                <propertyInstance
+                  Id="c9ffa69c-d58a-40f0-ab7a-5fce4ea9f1e4"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="51a19cfe-a3b6-4657-a483-b4e19f5813b0">
+                <propertyInstance
+                  Id="5de4c6c9-eebe-4634-afa3-c35674a485f5"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e057027b-a4ea-44da-af6d-2fb4e68e7735">
+                <propertyInstance
+                  Id="590146b3-a9ff-4845-9f00-fe6e30e23263"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="06ffa1fe-d3c6-49ee-96b9-39a067f412c2">
+                <propertyInstance
+                  Id="8ccad4b2-125e-4561-94be-5e4c2dedd057"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="a7ed57bf-53d9-4f98-a0c9-c4719255e622">
+            <interfaceMoniker
+              Id="77b7c7ba-663d-4fc9-ba7e-3577e5b9eea3"
+              LastKnownName="IHaptics"
+              LastKnownLocation="Package1_1805.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="095bcbe7-ed19-42f4-9c82-67a1424af5f7"
+            isDerived="false"
+            sourceEndRoleName="Haptics"
+            targetEndRoleName="GetListeningMode"
+            isLeaf="false"
+            isAbstract="false">
+            <enumerationMoniker
+              Id="47a45df8-84f2-48cf-aaab-122592ca19bb"
+              LastKnownName="ListeningMode"
+              LastKnownLocation="Package1_1752.uml" />
+            <description>Property GetListeningMode references type ListeningMode.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0bb2bb2d-dd83-4939-a343-8ef898dd2753"
+                  name="Haptics"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="83cd36e8-9391-48d2-9708-239dc0abe2ea"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="3e0051cd-adeb-490e-a1af-5c6d53b417f2"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="05ac5890-5fb9-4337-be07-2a0fb5c2e9f6"
+                  name="GetListeningMode"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="eed3efc8-0ac7-446b-acb3-d08c548b9a44"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="89056ca0-0001-4d1f-8663-2ab58b14c0a5"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="d6c98859-77e2-4d6e-9504-9a98ab4910a1"
+            name="ConnectionString"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="b45179eb-b69b-495f-9698-8a11716beaf7"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FHaptics%2Fbin%2FDebug%2FHaptics.dll Namespace%3DHapCon.Haptics Type%3DHaptics Member%3DConnectionString"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7c1c6a44-7d3a-499c-8851-717ccbfea7bc"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="94fff505-7c25-4a2a-8046-a04a8d39756e">
+                    <propertyInstance
+                      Id="cc6bb1bc-637b-485b-a871-113907f9c296"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9b38d96d-f2c7-4878-8790-3a8de9b4954a">
+                    <propertyInstance
+                      Id="f5c000db-4bef-4a78-a24d-2deefe21ee6f"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2f0d2cb8-fd22-4a1a-9be8-09afc9eeb063">
+                    <propertyInstance
+                      Id="d87e6ff4-8378-48e0-b588-8dc8171eb370"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0aca2de1-2178-46da-bcc6-6f3db2253fd4">
+                    <propertyInstance
+                      Id="a9cf56b2-6f66-41b0-9ef8-5694f78246da"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="073c1546-449a-4a20-9614-2ed83d521a81">
+                    <propertyInstance
+                      Id="80560502-f79e-4a27-98ec-6ca59ef546c2"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="140acf96-ea2a-4137-895b-7ca25d7e4f79">
+                    <propertyInstance
+                      Id="329632cf-5a79-4f19-972b-a10662a45476"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5dfe1a77-c7d2-4fd2-ad56-d213bbd3604a">
+                    <propertyInstance
+                      Id="4bb81bc1-1f3c-4e4c-9976-9cb9c51c5c84"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject_Common.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="f2d1264d-8628-41f3-b0d1-7d4f3d051b03"
+            name="GetListeningMode"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="d732be96-24f5-441a-9788-80da4538b993"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FHaptics%2Fbin%2FDebug%2FHaptics.dll Namespace%3DHapCon.Haptics Type%3DHaptics Member%3DGetListeningMode"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4fdd0320-faa9-4b01-a332-efa9442ca276"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bc5005d8-88c1-4e88-a041-ae643a61f1ff">
+                    <propertyInstance
+                      Id="be718e5b-5d0d-4f8d-9b80-4be7385785e5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1c3b49a6-cf40-4ccd-bbe2-073abb9681a2">
+                    <propertyInstance
+                      Id="a5a34a3a-2dfe-48fa-aa98-a2eaa6b2e5a4"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="388750ea-e07a-4e07-83ef-1a2564beacfb">
+                    <propertyInstance
+                      Id="efd94bd7-3205-46a5-bbe9-861a875149f1"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0ff72299-b427-40f7-a7f9-114a0e9a2bc4">
+                    <propertyInstance
+                      Id="5843ea49-ee04-4ac8-a77d-2e5e253055e1"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="980dd78f-093f-4b72-a511-a136a506764e">
+                    <propertyInstance
+                      Id="1cbf891b-5d2d-44f0-a249-590d547d7932"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c842199c-bf02-46b9-b19d-0c19e02065d4">
+                    <propertyInstance
+                      Id="df7c9034-e71b-4a4c-8eef-1ff8deba0cfc"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0e94f528-9abc-4b37-aba7-b735d07edb71">
+                    <propertyInstance
+                      Id="56ba4da9-4d9d-4aed-bb16-e16419bef857"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <enumerationMoniker
+                Id="47a45df8-84f2-48cf-aaab-122592ca19bb"
+                LastKnownName="ListeningMode"
+                LastKnownLocation="Package1_1752.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="3cc313f6-1cc6-4da4-8a32-dca60e49d1aa"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="90f8e6dc-9a33-49e1-a4fb-a73613de61b1"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FHaptics%2Fbin%2FDebug%2FHaptics.dll Namespace%3DHapCon.Haptics Type%3DHaptics Member%3DName"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8b096e29-464d-47db-906f-e8adfde56af2"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4c0f0b68-45c4-4acb-b787-3c75d1a7a2de">
+                    <propertyInstance
+                      Id="45d82b56-f7f1-42c0-aafd-46b342fef9a3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="834c9a56-dcca-448f-8048-12e60fb273b9">
+                    <propertyInstance
+                      Id="a2960c3e-86d5-49b0-b3db-488dba61dfa1"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="77797b59-7d09-45dc-96ad-54146734ea89">
+                    <propertyInstance
+                      Id="7274c41b-2cf8-4d77-8477-67019493a2d8"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="79372e88-020a-4c90-ae45-45fce16a3f63">
+                    <propertyInstance
+                      Id="fd2a6e5b-de78-4c4e-af9f-a432c9ebd734"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4be5efbe-fdf5-4ca3-9585-c27e8380223b">
+                    <propertyInstance
+                      Id="a7f58599-ff13-4e9b-9f40-9bc8aebcb629"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ad32974b-d512-4449-b727-11207fdaed99">
+                    <propertyInstance
+                      Id="31c4ffa3-46eb-48e4-8940-ce86facdf36c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="13576ad4-196a-4ce3-947a-36e549669372">
+                    <propertyInstance
+                      Id="cc7df401-bf24-466c-93cb-bee3ddc89478"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject_Common.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="b64374ae-04ec-4a7a-adfa-84e8e8c77a26"
+            name="SetComputerName"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="7cf5370e-1804-4939-a434-6f90871caa3e"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FHaptics%2Fbin%2FDebug%2FHaptics.dll Namespace%3DHapCon.Haptics Type%3DHaptics Member%3DSetComputerName"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2e884e54-cc6c-4c5e-a6a0-3c7cd6d5eb60"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d5ce61f3-aca5-42bb-b0c9-9b0b626676b9">
+                    <propertyInstance
+                      Id="f5f5d0dc-11bd-41da-9636-6692e4b4bdc6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="55c89cc7-4af5-40e3-8f44-f31c095aed10">
+                    <propertyInstance
+                      Id="ca236ebd-b282-4b16-bd9e-30309c25f849"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cbe0ac9c-6950-4066-aa31-e1f46329aed9">
+                    <propertyInstance
+                      Id="b8eb55ff-9c27-4674-91ad-42ae60ddaf2a"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5fb2ea9e-04c7-43da-8ca7-ff41ef21ef69">
+                    <propertyInstance
+                      Id="d175ed6e-e043-4aeb-8510-7df795a94e5b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8c28bd65-062c-4f03-a30a-a02dcdbc025c">
+                    <propertyInstance
+                      Id="2f05b8b3-253f-4fde-a9b1-83762336571c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d4efd8be-d907-439e-a2ae-8eb7dd1acabb">
+                    <propertyInstance
+                      Id="c2b01b5a-3c74-46fe-8fa4-40e810f9066e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7bec77cb-ac83-4dca-9238-73af11df6e80">
+                    <propertyInstance
+                      Id="1a18a409-16a8-4eb7-afe9-646c9849da1c"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject_Common.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="3e8735ef-e32e-44a8-a321-8e8c5b0e727f"
+            name="currentDevice"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="c76385dc-3d2c-44f2-99f4-75e69e693e6f"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FHaptics%2Fbin%2FDebug%2FHaptics.dll Namespace%3DHapCon.Haptics Type%3DHaptics Member%3DcurrentDevice"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8e8d1252-dd9e-4d0f-b171-e55f8de60a97"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bf07f981-be9a-4b14-9306-9d1017061732">
+                    <propertyInstance
+                      Id="40b7d813-ec29-4a18-a202-39802dd0cd82"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aaf26431-472c-4597-ab82-ce439bdc5644">
+                    <propertyInstance
+                      Id="e213553d-4038-43f3-b0dc-00dc8ccc6c3c"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0a84c240-d64f-4a79-97cb-ced2a272d1e9">
+                    <propertyInstance
+                      Id="216ec2b7-670d-4678-b323-dd3ee6b11cf1"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ffd77b71-f9db-4ae5-8e5c-93335da6c816">
+                    <propertyInstance
+                      Id="947651a7-1b4d-4194-9f9a-b152f34dedfe"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e2ded56e-b8ce-4c6c-aa3c-32d6482d52cc">
+                    <propertyInstance
+                      Id="2b37218c-3cee-4bbf-958b-e6e57da4fbe2"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <enumerationMoniker
+                Id="d194b09e-4c98-442b-8125-7e3511c559ab"
+                LastKnownName="HapticDevices"
+                LastKnownLocation="Package1_1805.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="73e9c0a1-aca9-454d-8660-ed13da82a788"
+            name="kinect"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="94c52ea0-d4a2-407b-b509-655aa9af9ecf"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FHaptics%2Fbin%2FDebug%2FHaptics.dll Namespace%3DHapCon.Haptics Type%3DHaptics Member%3Dkinect"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="87671a8a-f514-416f-afd3-829bcc9cf194"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="255afd3e-5b57-4b72-bc99-6ff502919a1b">
+                    <propertyInstance
+                      Id="ec165bf4-4525-4bfc-9cd4-ae0dd3ed1d13"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2ce60ff0-6f51-4c49-be13-22f221c8439f">
+                    <propertyInstance
+                      Id="46467712-8c8a-4f80-b43f-cb029ffb6ced"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="66f392dd-c713-4a0a-9867-166407d1d4b7">
+                    <propertyInstance
+                      Id="72107343-c8e3-4a70-8bfe-a4376e47dcf1"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ed1724ca-59ee-4c87-8a8c-efcebb9397de">
+                    <propertyInstance
+                      Id="edbf08d6-ad75-4f25-a5f4-ac4dd4c28adf"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0cd3929a-4e6c-4ffd-82a5-c27f29536046">
+                    <propertyInstance
+                      Id="24d92140-1cc0-468f-b471-cc530a689c78"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="9b217c42-a63a-42f5-89b7-452975c711fa"
+                LastKnownName="MicrosoftKinect"
+                LastKnownLocation="Package_1805.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="4ab151dd-cedf-49f7-ab0d-b0afcd887591"
+            name="leapmotion"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="83de3472-2a0c-4100-a6d9-466180b2da29"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FHaptics%2Fbin%2FDebug%2FHaptics.dll Namespace%3DHapCon.Haptics Type%3DHaptics Member%3Dleapmotion"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="fb138425-5685-4a72-abbb-1f592fb5670c"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c66d5252-14fc-4639-b376-ca1e09c67b72">
+                    <propertyInstance
+                      Id="cc2c2319-a076-4a80-a722-922aa1156584"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8beb7f12-f9ac-4f4c-a6ff-5cb1c270e6d4">
+                    <propertyInstance
+                      Id="27e09f37-60e6-42e8-9bc4-a72106e2ac19"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8beac45f-92df-4ec7-a193-edfcca4906fa">
+                    <propertyInstance
+                      Id="2d830479-660d-4386-b157-5be4e7d01143"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7ff6f24f-8213-482c-943e-292bdfa4e9aa">
+                    <propertyInstance
+                      Id="3516d283-f0e4-41a0-886d-5a9b40480f7b"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="58b041e1-d89d-4a7e-8900-a800a782ba52">
+                    <propertyInstance
+                      Id="d49a47f5-0b59-4f86-ab7c-07abc2b38881"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="64e685c2-5865-4c43-bd13-3744a65affa6"
+                LastKnownName="LeapMotion"
+                LastKnownLocation="Package2_1805.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="89fd3079-139f-4d1c-aaea-6d104d2d672d"
+            name="myo"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="672b3d3e-c4d7-41a4-9859-403bb6c28681"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FHaptics%2Fbin%2FDebug%2FHaptics.dll Namespace%3DHapCon.Haptics Type%3DHaptics Member%3Dmyo"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c746035f-b567-401e-a306-a86adac0766c"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="67406b31-9429-411e-8b29-594906390cc0">
+                    <propertyInstance
+                      Id="fbdf25c1-b4b1-4b9d-8d3c-cb1682cc14fb"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="269d4914-53f3-46b5-a123-f853b6530547">
+                    <propertyInstance
+                      Id="32aba33e-7e56-4a6e-b0c1-aec106695240"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3d0cfd9c-9330-413f-a6c9-37ae955b72eb">
+                    <propertyInstance
+                      Id="482ad4c2-31e2-4eca-912b-f206379d291b"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="00ce6a11-0587-48e1-bc37-d604f1bb5a96">
+                    <propertyInstance
+                      Id="27c81d0a-7aea-4ae6-b650-7a21f589159b"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="54abb971-0e81-41ba-9da2-55f00c61424c">
+                    <propertyInstance
+                      Id="314bcaa0-194f-41e9-9651-a32f877700e7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="530b9db4-3e51-445f-ae43-a2dc9dc39f67"
+                LastKnownName="ThalmicLabsMYO"
+                LastKnownLocation="Package3_1805.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="7a11bee9-0136-4efe-ba76-3ccf235b3dfa"
+            name="oldkinect_distance"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="84fdbaf5-9898-417c-8c9b-0832d591ec56"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FHaptics%2Fbin%2FDebug%2FHaptics.dll Namespace%3DHapCon.Haptics Type%3DHaptics Member%3Doldkinect_distance"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="830ff952-fd04-4c95-8fa4-0c89eecc793c"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="83d2855a-dfd9-4b90-b279-90cbe0551758">
+                    <propertyInstance
+                      Id="1e9e9cfe-7bce-4aeb-b335-90fceb7669ae"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6c42ff9f-12b5-4ee0-bd30-0e3c53a0ffb6">
+                    <propertyInstance
+                      Id="ddbcd109-6a8f-4a88-a490-b880eec15089"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="89571e3f-df79-4d01-8de4-cf8a889a61d5">
+                    <propertyInstance
+                      Id="7a49afbf-40d2-438f-b03c-ca1f2e1027ea"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a1dc383a-66a8-4b2b-a265-e8095c4c1a4e">
+                    <propertyInstance
+                      Id="9c7e9aaf-ba56-47a4-90a4-9ead7a0b08e3"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b9703a07-d2f4-4114-adf0-e9d580b39274">
+                    <propertyInstance
+                      Id="cdc084ab-6485-4314-a475-289ca844489f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="438ac932-1e49-4c9c-80b7-46e5a706fd6b"
+                LastKnownName="Single"
+                LastKnownLocation="Package2_1752.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="057e4433-5e9a-42d4-99d7-ba97e5b4cbe8"
+            name="SetParameters"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="62873486-3568-4a93-af9b-ffb691aacb35"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FHaptics%2Fbin%2FDebug%2FHaptics.dll Namespace%3DHapCon.Haptics Type%3DHaptics Member%3D(Name%3DSetParameters OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FCommon%2Fbin%2FDebug%2FCommon.dll Namespace%3DHapCon.Common Type%3DListeningMode)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f6131468-eb60-44e4-b53a-ad5789e5716d"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2feb8362-1e44-4eb7-abc0-c5d8700377c5">
+                    <propertyInstance
+                      Id="99a4284c-d094-42af-af9b-518ed2d31273"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d5ebfcfb-30e9-42be-bb3b-7bb8126b4efc">
+                    <propertyInstance
+                      Id="91a90eaf-748e-42aa-88e6-9d9339da0136"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="84f06476-699e-4e8f-baa1-d2525cca6b3e">
+                    <propertyInstance
+                      Id="dd6484aa-7fcc-49b5-a017-7ecf77616490"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="32bc31b8-c416-425b-9d43-18c7f085f07f">
+                    <propertyInstance
+                      Id="196eeb3b-776c-46a7-8f25-1b7d41de267f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9362542c-2cf2-447f-979f-6dae4c31e599">
+                    <propertyInstance
+                      Id="cd78486a-70f9-4163-a7ba-6f2da8b22020"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9e94f99e-5547-4197-94bf-0b6a2974f92e">
+                    <propertyInstance
+                      Id="253f5521-8232-40a2-ac96-0176d160c895"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="21d0d808-0ead-463d-93ef-a738588bfad3"
+                  name="name"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="166c7126-768e-46d6-baa6-2a073b2f0a76"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FHaptics%2Fbin%2FDebug%2FHaptics.dll Namespace%3DHapCon.Haptics Type%3DHaptics Member%3D(Name%3DSetParameters OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FCommon%2Fbin%2FDebug%2FCommon.dll Namespace%3DHapCon.Common Type%3DListeningMode)]) ParameterIdentifier%3Dname"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject_Common.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d3436981-3322-4e6c-b9ab-130b452c5d1f"
+                  name="computerName"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="60d9e2ea-f77f-4743-a945-c7b2a5d03e23"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FHaptics%2Fbin%2FDebug%2FHaptics.dll Namespace%3DHapCon.Haptics Type%3DHaptics Member%3D(Name%3DSetParameters OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FCommon%2Fbin%2FDebug%2FCommon.dll Namespace%3DHapCon.Common Type%3DListeningMode)]) ParameterIdentifier%3DcomputerName"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject_Common.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="62abcb7c-faa1-44cd-8e0e-b8c26d116c5e"
+                  name="listeningMode"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="923da3fe-fbb1-4ccf-a9d9-cdcd0250977a"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FHaptics%2Fbin%2FDebug%2FHaptics.dll Namespace%3DHapCon.Haptics Type%3DHaptics Member%3D(Name%3DSetParameters OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FCommon%2Fbin%2FDebug%2FCommon.dll Namespace%3DHapCon.Common Type%3DListeningMode)]) ParameterIdentifier%3DlisteningMode"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="47a45df8-84f2-48cf-aaab-122592ca19bb"
+                      LastKnownName="ListeningMode"
+                      LastKnownLocation="Package1_1752.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="444761e3-3990-4a76-ad76-c986d602285c"
+            name="Haptics"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="b5f8deff-a31c-4c67-b712-6329b4d2f84b"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FHaptics%2Fbin%2FDebug%2FHaptics.dll Namespace%3DHapCon.Haptics Type%3DHaptics Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="95a4b8ff-539e-47c6-89b7-7a7aa301e089"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="54302aa7-23f8-48a0-8e64-a5fcd771d0f3">
+                    <propertyInstance
+                      Id="09309124-b053-4752-9c58-d0f533187d6e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="967c21d1-fa44-4748-a452-8c11570f241b">
+                    <propertyInstance
+                      Id="18528794-3ed7-47a8-9e14-e9382611eb9e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ff359ebb-8e3d-465c-b8c1-f6fa78738888">
+                    <propertyInstance
+                      Id="e7226a14-0b61-431d-8995-d99daf3744ea"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5430f5f9-9fe7-4818-8692-71708bb86d6b">
+                    <propertyInstance
+                      Id="512fe558-b40d-4792-acac-af3066d2b06b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eed2afdb-8439-46c6-b183-e84cd68c80f6">
+                    <propertyInstance
+                      Id="c7d0e1bb-b24c-4036-8ae6-0a8ee662b09f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e34337b4-0146-4566-82b9-8e819a7e5833">
+                    <propertyInstance
+                      Id="6f64a5a5-1e22-4183-9752-9d9521c441d3"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="f715fbe9-822c-4a02-9ff0-5b1539187088"
+            name="Initialise"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="92b70c32-6ceb-42a0-929a-83dbeda42919"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FHaptics%2Fbin%2FDebug%2FHaptics.dll Namespace%3DHapCon.Haptics Type%3DHaptics Member%3DInitialise"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="fb01f031-7c3d-4d45-9d9a-c1effc15112b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fa63d2aa-266d-4512-9699-04f4ed8f0f8b">
+                    <propertyInstance
+                      Id="4ad30da0-9727-4995-a8c8-edd6fa3a15d5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c747e3bf-6992-4fce-ad7b-a1f46f2f2f83">
+                    <propertyInstance
+                      Id="3dceddb9-2c2b-4f64-a1d8-62bbcb3b2e75"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="85e1154c-3616-4b5f-8a85-a517df2ed9ee">
+                    <propertyInstance
+                      Id="7b24a2a0-bc93-4da9-92c4-d3c806cdaa7b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="522d79e6-ae7f-426b-899e-bf89c196d76a">
+                    <propertyInstance
+                      Id="63b018f0-7f4f-45eb-a40b-705ca0c4bb59"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8a19619f-8591-4f54-afc6-8f504cf7e577">
+                    <propertyInstance
+                      Id="0e1e0214-4988-4db8-9b99-46bc3c9d9035"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a7ff9784-e93a-4bf5-98af-89ea2236fbd2">
+                    <propertyInstance
+                      Id="ce9c7d62-53ce-4a68-b985-7abda21c1464"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="a0cdcbaf-aa53-4270-8945-a2396cdc3f5f"
+            name="Shutdown"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1b1d6fb0-792c-4042-9125-3479fb0e8e9c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FHaptics%2Fbin%2FDebug%2FHaptics.dll Namespace%3DHapCon.Haptics Type%3DHaptics Member%3DShutdown"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="bbd571f0-9f88-41b8-b562-803968008186"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a06ad524-944b-4587-a2c2-50c369fd0f69">
+                    <propertyInstance
+                      Id="44c5c0bd-fad2-45cd-acf7-a9d188434134"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="955bf090-208b-43a5-a8de-836807fce95a">
+                    <propertyInstance
+                      Id="f41ecf43-407a-4ed0-8bc6-0126f7572cca"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f3d18547-806d-4740-8d22-75ae6e4b409b">
+                    <propertyInstance
+                      Id="f3ec5875-e679-4f86-90a7-adef443ef230"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9c997377-a881-4fda-b0b2-1995b5059286">
+                    <propertyInstance
+                      Id="8c0b01c2-d853-43f5-b456-9179dd883534"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="79324932-7b23-4385-a7ca-606c04843a4b">
+                    <propertyInstance
+                      Id="aa2a96d2-7ec6-44d7-baca-25bc82d1db38"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4f267f93-c405-458c-899a-d3f68cb5e488">
+                    <propertyInstance
+                      Id="1bc9fe2c-5fd3-4a1c-9746-a5eb3e0b4b98"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="aa33b6b4-31dc-45ad-afa6-8956ab3e9189"
+            name="deviceSelected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="5feabc21-1df6-4804-9b40-183205c01888"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FHaptics%2Fbin%2FDebug%2FHaptics.dll Namespace%3DHapCon.Haptics Type%3DHaptics Member%3DdeviceSelected"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="df4e9008-2f20-4e2a-8444-3c7cad96656a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="24d4fd20-5a47-4403-a73c-fe1898e8dcc9">
+                    <propertyInstance
+                      Id="2ae05866-eb80-4bf9-b8a5-97be8b35cbb2"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3dfd7618-0e66-424f-a58d-3cd815197f5e">
+                    <propertyInstance
+                      Id="897c87e7-fd93-4a5b-b571-b6f259f7d63d"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bdf3103a-85f4-4f47-96ca-544dd95a5a1e">
+                    <propertyInstance
+                      Id="cfa46802-5982-487c-91e4-15f2752fd507"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9eab22ea-4677-4800-a8ba-d6040fee7cd2">
+                    <propertyInstance
+                      Id="5fe501d6-2454-4161-87fe-15c8043f948c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="964ef400-d5f5-4ed2-aa59-aa8d7d480fcd">
+                    <propertyInstance
+                      Id="15fbb546-b80d-494c-98be-e7f804132a8e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6c9bac69-75f9-4bf4-987a-e2a05e074336">
+                    <propertyInstance
+                      Id="c7c2f67e-7c3a-492d-a9af-c245ff3dbe42"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="055e7fa4-b842-4ab5-a811-12897103c280"
+                  direction="Return">
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="d194b09e-4c98-442b-8125-7e3511c559ab"
+                      LastKnownName="HapticDevices"
+                      LastKnownLocation="Package1_1805.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="46d3dfda-edcf-4bbc-a742-5c4c768e69fd"
+            name="eulerAngle"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="2e6a8f35-19b1-4657-a4b4-60b80b8dc922"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FHaptics%2Fbin%2FDebug%2FHaptics.dll Namespace%3DHapCon.Haptics Type%3DHaptics Member%3DeulerAngle"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d772775a-c108-4844-8195-ea40634f608c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="62187e0d-6191-40a3-8d23-8e8fcb3de0f5">
+                    <propertyInstance
+                      Id="7175f25a-49d1-4bd6-9b3f-4b9acf888138"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f38b0e9f-c634-4101-b68e-f682f2fb74d3">
+                    <propertyInstance
+                      Id="426500b6-f5d5-4281-8006-4190036c8f21"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="21b8a88c-d8a9-4772-9476-81ee537e3383">
+                    <propertyInstance
+                      Id="e7ce0042-6503-40fb-b9f4-a99ed5e54801"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="01f33262-9ae0-4b0c-8f3d-ae97c3359f77">
+                    <propertyInstance
+                      Id="6581f2a6-0ae7-4df2-9ae2-12411b5c7421"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b0968fbd-dd2e-46f2-a73f-d52b00574d49">
+                    <propertyInstance
+                      Id="a914c8fe-8b50-49c9-b736-c679cbb13954"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eee0513e-4e88-4b0a-bc36-1feaaac9abbf">
+                    <propertyInstance
+                      Id="1290afc5-5a82-40d8-93b5-3229c8e8f2f2"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="dd94df3f-55e0-496d-9a93-56e7cfe4ee4d"
+                  direction="Return"
+                  isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="c099d4d1-e176-4749-ac48-4a0472e8e2d6"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="f5e479d5-f899-4a54-a21a-f6e4b3ae8bf7"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="438ac932-1e49-4c9c-80b7-46e5a706fd6b"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package2_1752.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="fc7cb160-f553-4151-85e5-5744b655eb57"
+            name="getCoordinate"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a205ff18-e422-4a0f-9292-e5e34cc8c8b8"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FHaptics%2Fbin%2FDebug%2FHaptics.dll Namespace%3DHapCon.Haptics Type%3DHaptics Member%3DgetCoordinate"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="db35340b-349a-4561-a203-4baa938cb30e"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2ed9d36f-39ed-4e7f-b9d5-97c7a058690b">
+                    <propertyInstance
+                      Id="14001f37-2ac0-4474-adeb-08b4a8681c52"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7b8c8495-98bc-4d73-94be-86e82e71fe9d">
+                    <propertyInstance
+                      Id="27641be4-1fb6-4403-bcb4-4ee1542894ea"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2c947504-db66-4cdc-b577-6557205c311c">
+                    <propertyInstance
+                      Id="f38e2978-899b-4485-9eff-d72d69528882"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aaeb52ae-5929-4e83-b91d-c929a5c540c2">
+                    <propertyInstance
+                      Id="6e881662-619b-4dc8-b7fb-58817a210c1f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="86d600a7-3149-49fe-a760-aa62769a4474">
+                    <propertyInstance
+                      Id="137db194-afdd-4596-918b-cc1a6c5a4f4a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c564a306-d966-4136-9c49-987fab8b7ccf">
+                    <propertyInstance
+                      Id="e819c4f5-3135-4cdb-a1ea-31404b0a35a5"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3a9c284b-f075-4832-8f3d-fa8cb8bfc39f"
+                  direction="Return"
+                  isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="fe69540b-cbaa-4715-b966-bde406dfc88a"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="af9d67e0-20c9-4d27-9827-c4467aa2c660"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="438ac932-1e49-4c9c-80b7-46e5a706fd6b"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package2_1752.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="bda0b284-39e2-412c-9306-8a2f677e6300"
+            name="getDistance"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="57b3b465-6634-431c-bb97-4e45f9aa6a46"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FHaptics%2Fbin%2FDebug%2FHaptics.dll Namespace%3DHapCon.Haptics Type%3DHaptics Member%3DgetDistance"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="eda34844-c8a9-4f88-86e3-3e53e5176571"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="57b9d8ad-44b6-4790-9ea5-99a883a6ef7d">
+                    <propertyInstance
+                      Id="6f732dbe-2627-402f-b170-a270979037cd"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5361d8d5-c36f-4137-a01c-12cbd13f562b">
+                    <propertyInstance
+                      Id="c12814b4-a9f7-457c-b330-a230bd1008e2"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="06e7ea72-0e65-4a54-8d63-8ad72b744380">
+                    <propertyInstance
+                      Id="4277f8d9-670d-40af-b7b2-08ab3738874f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="af9297d0-ddc3-40aa-8e82-a23179d6dcfd">
+                    <propertyInstance
+                      Id="79370521-bb5f-4ec5-9816-a149b4f68cfe"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7dd95a9b-0668-4acf-b08a-39b80094a9d4">
+                    <propertyInstance
+                      Id="27a31b53-8ca7-4b43-a07b-8bb1d037886c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a5ddd058-7d09-4bde-b14a-f521cc9559f4">
+                    <propertyInstance
+                      Id="f40c7684-f258-407f-92f3-4f50df158612"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f1b54bf8-8dd2-4733-bb8c-3a0e16f51411"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="438ac932-1e49-4c9c-80b7-46e5a706fd6b"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package2_1752.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="e271c3cc-d19f-4e5b-9da0-28830c4eaf45"
+            name="getGesture"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="783ce3df-cdba-45c0-bfe3-11083e867b5c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FHaptics%2Fbin%2FDebug%2FHaptics.dll Namespace%3DHapCon.Haptics Type%3DHaptics Member%3DgetGesture"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d475c0c8-ca6b-4552-8085-88d900bad2da"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d861db26-188a-4f35-81e2-4b42f23ca7d4">
+                    <propertyInstance
+                      Id="c8872ca9-93ca-4831-a45f-53eb6f23154f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cd5d6967-21fb-459a-8c4e-2bfa0b589770">
+                    <propertyInstance
+                      Id="d559e5d9-6f55-41f1-895c-50dff59cf11e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3405bfbe-a8e5-447e-9ccb-49cf798fb62a">
+                    <propertyInstance
+                      Id="032efbd5-394a-46f8-938c-1b7bdd8c9101"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="943eedf4-e1f4-4100-977a-cb0439a95e72">
+                    <propertyInstance
+                      Id="20d80c96-3693-4a04-9c52-41cece630f76"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1ac4ef6e-930c-4063-829d-78af60e22ec9">
+                    <propertyInstance
+                      Id="2a5c9030-b8bc-4471-8997-8dccea7c1db4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6f101c95-3cbe-4baa-9ab4-f2f5113b1d11">
+                    <propertyInstance
+                      Id="85c0b70c-31e2-4d67-adfb-febb37406424"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a057fa15-3beb-485f-91c0-cd4a4a478cf1"
+                  direction="Return">
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="b1876c72-4584-4d60-903c-7063d3ee2481"
+                      LastKnownName="CommonGestures"
+                      LastKnownLocation="Package1_1752.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="77b7c7ba-663d-4fc9-ba7e-3577e5b9eea3"
+        name="IHaptics"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="77ea7e62-6035-49f5-8ad5-d1fb94afe807"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FHaptics%2Fbin%2FDebug%2FHaptics.dll Namespace%3DHapCon.Haptics Type%3DIHaptics"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="b18630ab-e130-4eb3-b878-d185bbd8fc33"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="05a78d7e-6d79-4aec-803a-3ce4098ba198">
+                <propertyInstance
+                  Id="f4b0423c-d79b-4bf9-8534-3ef7aa8d1404"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="17b603af-ef12-4487-b7e9-11c20fdebf87">
+                <propertyInstance
+                  Id="5e06ab08-394e-4526-90d2-27b55ec83277"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="31d4350c-f554-4180-9025-b2e88ec3c59a">
+                <propertyInstance
+                  Id="a14408e1-7e68-4758-8606-c54809e3eb16"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1ced8837-6507-483d-93c3-abd158404963">
+                <propertyInstance
+                  Id="760ee241-aeef-4632-a995-5f093626b043"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="b2a8ba0c-1d88-485e-bbc1-3ab39661b24a"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="c3df1ff5-2d7e-40a7-ac21-d5cbd80f5801"
+              LastKnownName="IHardware"
+              LastKnownLocation="Package1_1752.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributes>
+          <property
+            Id="54896afb-ffbd-4763-b338-ae7bfc5d2ffd"
+            name="ConnectionString"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="a7fa5560-3494-4569-b91c-a5b684fcb56c"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FHaptics%2Fbin%2FDebug%2FHaptics.dll Namespace%3DHapCon.Haptics Type%3DIHaptics Member%3DConnectionString"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3cc65062-e4b7-4d10-b946-25b09a42fec2"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9991cfcf-186b-426c-846a-30afbbdc8a0f">
+                    <propertyInstance
+                      Id="f97eb7fe-5561-4aae-b8d4-5c9805134dbd"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="851c82ac-22bb-4fde-aacc-84adc61b7439">
+                    <propertyInstance
+                      Id="e60acc6f-953e-4719-ac1c-b5c59dc2e3b7"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="41a8bade-7348-4d04-936a-0db41493eb9e">
+                    <propertyInstance
+                      Id="33b5debd-e265-4a44-a27f-b712f17f66f2"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2074e2fc-d45b-4072-8462-2a546566820c">
+                    <propertyInstance
+                      Id="04c1b5ee-1d6e-4597-8d62-caedf4531813"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="495518bd-6e5b-4394-8168-c01e0c61840c">
+                    <propertyInstance
+                      Id="d6c8b49e-e826-4c50-9275-0e83e8d3435b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="57948180-0ab0-4168-ad62-a85e26f9a3b3">
+                    <propertyInstance
+                      Id="301ee0b7-4101-47aa-8f74-0a58b7638a41"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c241750b-c5aa-4fc7-b264-5aa60e71ae08">
+                    <propertyInstance
+                      Id="4e6b56a3-cf48-401f-9a08-556deb3f034c"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject_Common.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributes>
+      </Interface>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

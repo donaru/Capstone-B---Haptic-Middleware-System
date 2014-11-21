@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLClassDiagram_Haptics">
+  <logicalClassDesignerModelMoniker Id="985bf26b-1d64-466c-a19b-bff3662c14e3" />
+  <nestedChildShapes>
+    <enumerationShape Id="35773049-833e-416f-9a7a-41e0701ed86f" absoluteBounds="0.5, 0.75, 2.625, 1.5198003066579502" hideQualifiedName="false" increaseHeight="0.18800345897674564" customColor="161, 150, 103">
+      <enumerationMoniker Id="7bee9412-fa41-4e7e-ada2-13237fccb54c" LastKnownName="HapticDevices" />
+      <nestedChildShapes>
+        <LiteralElementListCompartment Id="252b1f4c-2570-4146-8b5c-1c7034eb6435" absoluteBounds="0.515, 1.3280034589767458, 2.5949999999999998, 0.84179684768120444" name="LiteralsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </enumerationShape>
+    <classShape Id="28cdeae2-bd76-415d-8c0b-4171b2362aab" absoluteBounds="4, 0.75, 2.125, 3.9104917850097021" hideQualifiedName="false" increaseHeight="0.18800345897674561" customColor="181, 193, 223">
+      <classMoniker Id="756e1249-68d0-4f6c-889c-3a6487e1bf13" LastKnownName="Haptics" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="e8a9b371-501a-418a-a287-a4bbb91de602" absoluteBounds="4.0150000000000006, 1.2653356393178306, 2.0949999999999998, 1.6425780728459358" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="9d92e511-346d-43cc-b8be-b9b93aa0b254" absoluteBounds="4.0150000000000006, 2.9179137121637662, 2.0949999999999998, 1.6425780728459358" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <interfaceShape Id="3cf2a514-835e-4c06-9ff7-4cbfd05c0ce9" absoluteBounds="0.5, 3, 2.25, 1.2705034391085306" hideQualifiedName="false" increaseHeight="0.18800345897674564" customColor="207, 223, 191">
+      <interfaceMoniker Id="609029d9-d5c2-471f-aed2-00e99f2d4c62" LastKnownName="IHaptics" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="05b168e3-7bdd-408f-b605-c1cdecae8719" absoluteBounds="0.515, 3.5780034589767458, 2.2199999999999998, 0.36132811258236563" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="b08b1e13-c8fd-411f-a0f9-33612feaf9dc" absoluteBounds="0.515, 3.9493315715591111, 2.2199999999999998, 0.22117186754941942" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </interfaceShape>
+    <realizationConnector edgePoints="[(4 : 3.63525171955427); (2.75 : 3.63525171955427)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" showAsLollipop="false">
+      <interfaceRealizationMoniker Id="3cd4eab7-523d-4f2c-a7eb-adacf221dde1" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="28cdeae2-bd76-415d-8c0b-4171b2362aab" />
+        <interfaceShapeMoniker Id="3cf2a514-835e-4c06-9ff7-4cbfd05c0ce9" />
+      </nodes>
+    </realizationConnector>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>

@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="26ca66d8-4990-4e43-b495-6722b89431d8"
+  name="Leap"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="2bb594f1-b0b9-4ebf-a453-ff7ecf33c525"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DLeap"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="56cbb6da-e730-4a27-8b8a-5ae8a8ce64c9"
+        name="Controller"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="7b4bcb50-4e55-4b0c-aa07-9ab16c6c02f7"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FLeapMotion%2FLeapCSharp.NET4.0.dll Namespace%3DLeap Type%3DController"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="c2fee51b-deaf-4b19-80ed-2eeacd7a7174"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ddc28506-4413-4ab2-87bf-aeb75ed5930b">
+                <propertyInstance
+                  Id="aaf031d6-5943-441f-abc1-66a69fe5697c"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="72449d29-953a-4c3e-b2f2-1a651289ca02">
+                <propertyInstance
+                  Id="3c684104-9099-4837-af4f-d1be948649dd"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a08121f9-b183-4f2a-bebf-1de769e829d5">
+                <propertyInstance
+                  Id="2210f739-5b78-413c-9800-e6db68f52dcb"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9eeb0093-dc4a-451f-aff6-b9a1dfc54b55">
+                <propertyInstance
+                  Id="b6f4cf07-5318-41b7-b54b-1e33d0030cd5"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ada638f6-b416-44f6-aee9-80458cedd040">
+                <propertyInstance
+                  Id="50164d6c-0ef7-4d85-a61c-ab4eb850b915"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c3d006e4-c71c-4119-b08b-e17d445ffe32"
+        name="Listener"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="d92e5f5f-7f2c-4926-9628-0a8976cf6b26"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FLeapMotion%2FLeapCSharp.NET4.0.dll Namespace%3DLeap Type%3DListener"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="eafb6503-bde5-410b-9854-8f4cd594e501"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8b25e032-ae35-448d-8f09-2b735ab79808">
+                <propertyInstance
+                  Id="3f9c80e2-bd4b-448c-9496-ffb286bbd8c6"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="66eb2ed4-20ed-41ba-a19f-c14e13a1c4a2">
+                <propertyInstance
+                  Id="3bb11aa6-9965-4b8e-950c-9188e83a0b94"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8dc25661-282c-4d0c-a450-6aeb8f6fd458">
+                <propertyInstance
+                  Id="f3a38308-2753-48a7-bddd-5c6de15d0db7"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ecd9ca44-9bdd-4f49-94ad-3db10190e055">
+                <propertyInstance
+                  Id="d4b783ce-10e1-4bf5-9241-9ba5992c8f7d"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="91422da7-3de0-4e54-8e82-36e91457b7b4">
+                <propertyInstance
+                  Id="61ed826e-2d7c-4e60-b961-5e26919453f5"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

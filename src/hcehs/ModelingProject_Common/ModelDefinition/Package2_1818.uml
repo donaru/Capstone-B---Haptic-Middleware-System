@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="7f70da61-50df-4173-ba39-39a7d4ad66c5"
+  name="Poses"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="dbf6bdd8-68e7-4134-81d0-a6a27b1c49cd"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DMyoSharp.Poses"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="84b06d6b-2d93-4085-88a9-7275693237a0"
+        name="PoseSequenceEventArgs"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="2e75d32c-fbe4-4b3f-b4f8-c59d99b8f7fb"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2FMyoSharp.dll Namespace%3DMyoSharp.Poses Type%3DPoseSequenceEventArgs"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="9e78f89c-19d5-42bd-8d21-c2c75fd22e7d"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="704146bb-69a8-4b23-8501-f50b47805e71">
+                <propertyInstance
+                  Id="0080e54d-9a72-419a-8065-39a8ec2c9a32"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e98ec91a-16e6-4b75-8053-8b1480827afa">
+                <propertyInstance
+                  Id="041f5fcc-2789-4bd2-a385-780da9f54e5b"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4ed1ee62-837d-4d18-8132-ff4796e0263c">
+                <propertyInstance
+                  Id="63cf0de7-23aa-4b80-ac7d-fc27e5e19e08"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c0275698-35cb-4254-a6e0-ab23ced48b55">
+                <propertyInstance
+                  Id="fd2c6747-e90c-4d80-ad9a-f2af1ea254c2"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5568d2f6-e8e5-4e88-b569-fd93bc36057b">
+                <propertyInstance
+                  Id="cb27111a-3767-4d25-a98f-3747be0c2d62"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="fb7d4fdb-6fe6-4423-ad78-7c65180380b8"
+            isSubstitutable="false">
+            <classMoniker
+              Id="1df91b07-88ab-4e8b-8647-85605228e5c8"
+              LastKnownName="PoseEventArgs"
+              LastKnownLocation="Package1_1818.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

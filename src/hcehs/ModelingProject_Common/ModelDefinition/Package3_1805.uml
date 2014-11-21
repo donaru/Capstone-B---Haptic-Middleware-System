@@ -1,0 +1,2012 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="00362b53-e909-4e2e-8e22-e6699085733f"
+  name="ThalmicLabsMYO"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="9c7e7825-90eb-4ffc-a1b0-310ca8c82274"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DHapCon.ThalmicLabsMYO"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="530b9db4-3e51-445f-ae43-a2dc9dc39f67"
+        name="ThalmicLabsMYO"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="3d37244e-4af3-4f14-8864-d2b58c485881"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="3348f0f3-ffd5-4900-9a9f-85e47932c9a1"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f27f21ee-54a9-4495-b7b8-9c5ce6f61e03">
+                <propertyInstance
+                  Id="2249f8d0-c3b9-4e33-a1ea-9991913ce5b7"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ded6bd5d-b5b7-4451-9c35-94717d01144e">
+                <propertyInstance
+                  Id="9c1a9911-acb2-4dba-8a35-babbe069680d"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6822e910-6f41-4794-8c9b-c59b36d30a4e">
+                <propertyInstance
+                  Id="b751f787-0aa5-43e4-8ace-e40ed810cb1b"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cf37b976-6244-471a-b39e-ab8a0d08e5d5">
+                <propertyInstance
+                  Id="d501d92c-7838-499b-aee4-3125a854e66b"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0e6e148e-06a1-4325-9039-b1e35b7d81cb">
+                <propertyInstance
+                  Id="fceb1988-6063-4178-a6c8-d17b4bef74de"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="c690cd19-49dd-4417-a413-4f7b48c067bb">
+            <interfaceMoniker
+              Id="24a7eeab-5839-40ec-9934-d2a1ea6483f1"
+              LastKnownName="IThalmicLabsMYO"
+              LastKnownLocation="Package3_1805.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="98a9911f-2120-4d22-8469-96f381fb9313"
+            isDerived="false"
+            sourceEndRoleName="ThalmicLabsMYO"
+            targetEndRoleName="GetListeningMode"
+            isLeaf="false"
+            isAbstract="false">
+            <enumerationMoniker
+              Id="47a45df8-84f2-48cf-aaab-122592ca19bb"
+              LastKnownName="ListeningMode"
+              LastKnownLocation="Package1_1752.uml" />
+            <description>Property GetListeningMode references type ListeningMode.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="929c9724-08f7-4140-972a-f3b07cc876ef"
+                  name="ThalmicLabsMYO"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="b3df8e42-7d94-4dc9-97cb-1521cc060bc6"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="654db2ec-1a08-465f-ade3-21eda8e98496"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c1006734-89d0-4181-b1a7-f139c25b7a15"
+                  name="GetListeningMode"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="6cca354b-828d-4efb-b968-5b005840a2be"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="a08e977b-0307-408d-bd71-4b4f786ab7e4"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="1bec16c1-c7ae-4150-bb56-604041b798f9"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="92390e8c-52ff-4f0b-8ea0-f0acb8a16f35"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3DName"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e454f078-011a-4c12-8512-553a48c803c5"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6f9e39dd-7c4f-42e6-afd0-a4b4af6ff06f">
+                    <propertyInstance
+                      Id="089402f0-856e-485a-943f-794ce31c3b99"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="16f36ffe-9d03-41b7-adef-5968d9e17181">
+                    <propertyInstance
+                      Id="5a4edb7e-8aa2-46e7-b483-dc0701c68a77"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0c5fefe3-02bb-4b63-9b18-2305355dde37">
+                    <propertyInstance
+                      Id="3010936e-1643-426c-98f5-dadfb6759e26"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="631e4896-1706-45db-b86f-f08af535e112">
+                    <propertyInstance
+                      Id="fab6296a-bdb7-420e-a807-37a51ff8b295"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="da7d4c24-79d2-47c0-b3fe-8d8b59f6e42c">
+                    <propertyInstance
+                      Id="999c9381-f2c4-40d2-9aa8-b37c512629c7"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8aa1a4ec-0812-4aaa-b5d4-fc477d57deb7">
+                    <propertyInstance
+                      Id="f532c514-4850-4b7e-bbc0-e0dbffbe5e7c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5ba2e58d-223c-42c3-b998-49be8ebbd2c5">
+                    <propertyInstance
+                      Id="b72c0145-0ab0-47e8-b669-865f16807214"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject_Common.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="0389ac06-f129-487a-b71a-fc989c218c56"
+            name="ConnectionString"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="d45b3c47-cc95-4749-a6c2-f2ea04d42461"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3DConnectionString"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f2e9d1f1-afc1-496a-bb2f-9ba19de7ea7c"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f013aa8e-baad-4587-a4ba-88c5c0f92d8d">
+                    <propertyInstance
+                      Id="40ce510f-61fb-4b83-af1e-87de1ff67522"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="43dba155-e626-4fcb-b33c-93be0d968fd0">
+                    <propertyInstance
+                      Id="f9653680-f55e-4c06-a59a-ca461721f62d"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="94df55dc-c312-4dff-bbb6-9128db9b0c47">
+                    <propertyInstance
+                      Id="b9b77efc-81f9-458d-b881-99a3622292d5"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="826aa8f7-9f74-403b-905c-617c19ac5952">
+                    <propertyInstance
+                      Id="e5478078-d5b6-44ce-bcdd-7c7d969ea543"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bbb0d6d7-d768-42c7-975f-63133c1fadde">
+                    <propertyInstance
+                      Id="080be6c7-1b9a-4959-8f8e-ca479ca2ed9c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="756d51ed-fd9c-413b-bc63-de9d12f9e0f2">
+                    <propertyInstance
+                      Id="1708a7aa-dbee-41cb-b4e1-861f0fbb4525"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4017b1ad-7093-492b-9833-bab68fdca635">
+                    <propertyInstance
+                      Id="21c1633b-dde9-435c-b024-e395ad9cddbf"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject_Common.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="64116a8d-83f6-4dc7-bcd4-3b62516edfed"
+            name="SetComputerName"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="c997e24b-ee0c-4259-b7dd-90fa5f938258"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3DSetComputerName"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="df66fdc8-48b4-4caa-8d71-c7f9d206cd8a"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8a1ee1ec-e440-484b-b393-52a4c27a20ac">
+                    <propertyInstance
+                      Id="53c5e8af-69fb-4fe1-8762-fecedd2279da"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1ceff891-be50-4a08-8dbd-3e0631f7d482">
+                    <propertyInstance
+                      Id="516825b1-bebc-47b6-b68d-4d5bab04adc6"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8d9a18c6-de93-4564-85d8-095e7eff3697">
+                    <propertyInstance
+                      Id="758c77e0-5661-4327-91ce-011c58020cd0"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7b9c8669-ac0b-4707-98c7-e525f063e706">
+                    <propertyInstance
+                      Id="d73c6821-1c4a-4467-b4fc-de77fc360f9b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9c24d081-2503-4822-8712-95b7a6a4d1ef">
+                    <propertyInstance
+                      Id="b8f47ab9-f017-42a8-8898-d3affdc1ad44"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="521edff4-fd89-4c14-bdf5-bb956c1f3dcc">
+                    <propertyInstance
+                      Id="9e6e3933-bb09-4e58-b752-619345856bbf"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2c9e773e-d2ca-4753-8123-6ca5d5d3c921">
+                    <propertyInstance
+                      Id="99d75cb3-8492-4e02-8a04-84d7b759c32b"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject_Common.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="1960a217-8af1-444c-892b-102e5f7e9b8e"
+            name="GetListeningMode"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="df2ccd5e-fb72-49a1-a9aa-67065be5f2b7"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3DGetListeningMode"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c9b38905-2f2b-443f-b03d-f0727fc7f2ec"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3fe485d1-1875-4245-bbf0-a2dbdc1c05ed">
+                    <propertyInstance
+                      Id="0bb98194-6d38-4f67-ad67-2ec5e377b54d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fdb9248d-0fde-4b14-bc92-0f43c15679b5">
+                    <propertyInstance
+                      Id="b0a4efba-7def-4513-a760-3d133563f9bb"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="58d3d3ef-0aaa-49f4-9cea-7918f314322a">
+                    <propertyInstance
+                      Id="d5eb1540-e0f4-4d9f-9c04-25b9be4bf1e7"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8e3cb0db-cc12-4a75-8934-1312b4fc4b2b">
+                    <propertyInstance
+                      Id="c8d14431-8b19-4105-acc6-9951344f72b9"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8e48ac75-650e-4bda-8974-4b59e28bd324">
+                    <propertyInstance
+                      Id="002e70d4-9b60-4f95-a3fa-17a2860aa6fe"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="66fc712d-ad79-4f22-8351-23dc5b56f86a">
+                    <propertyInstance
+                      Id="6490268c-4219-48e1-abf5-707739b3f035"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="05b4426a-5a55-4e05-9952-3f356d5d5c16">
+                    <propertyInstance
+                      Id="d3c70a66-0918-417f-bc64-5c2256236d89"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <enumerationMoniker
+                Id="47a45df8-84f2-48cf-aaab-122592ca19bb"
+                LastKnownName="ListeningMode"
+                LastKnownLocation="Package1_1752.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="4380ce26-1db8-43de-b64f-5d80d9c94a78"
+            name="gesture"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="cdbf2480-6978-431e-b4d0-439bf29ac9a5"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3Dgesture"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="42c3c535-d293-4959-9d5e-33f69c821e07"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b85637d8-bc50-42f2-85bd-2400684fd625">
+                    <propertyInstance
+                      Id="ca9bb20b-b887-41db-a8a4-fcb8c343100c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b0820d54-72e1-4ce5-a0e2-4300323529a4">
+                    <propertyInstance
+                      Id="6b2cfbff-dc08-4492-8906-998219071a01"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4d5b7b3d-028b-415e-8f89-fe2c0d7dbaf0">
+                    <propertyInstance
+                      Id="e64f747b-7173-4c2e-a221-644a5c455c59"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9a7c6516-360c-4d53-9ee7-97f9b1284e30">
+                    <propertyInstance
+                      Id="f532ec2c-9789-40b4-a550-1a0dca54bccf"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="70faa3bf-29d4-42ac-83bf-4e41d6a1dd1a">
+                    <propertyInstance
+                      Id="bbe639a1-717e-4f50-a91f-cc1368733d8a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <enumerationMoniker
+                Id="b1876c72-4584-4d60-903c-7063d3ee2481"
+                LastKnownName="CommonGestures"
+                LastKnownLocation="Package1_1752.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="92b276a4-7c74-4ff8-99b2-b875e474ab85"
+            name="circle"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isOrdered="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="6f86eb08-f741-4cb8-a3b8-a2e3af4d6460"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3Dcircle"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="29df0aa6-6e4f-48f1-87ad-b385aee328f6"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8af2a473-a72a-4e90-b9a2-788c0262e00f">
+                    <propertyInstance
+                      Id="dfe77159-3376-45a4-a48a-ba601b0a2c74"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7ac613c0-7020-4398-9c4e-9799c97655de">
+                    <propertyInstance
+                      Id="7f94a5ff-569d-455a-910c-02b7797c432a"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8e7147d4-b623-4414-ac3c-c3cfb787a7db">
+                    <propertyInstance
+                      Id="db1a49e6-bfe2-48f7-bd46-21b8e2fa070c"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d60e5f13-293f-43a7-a0b3-a44b62cbbfe5">
+                    <propertyInstance
+                      Id="677170e4-632f-409d-9ff7-de991c501593"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4c0c3d8c-555a-43ab-8665-1d5a1f2bf29b">
+                    <propertyInstance
+                      Id="93c015c1-90bf-42c1-95f8-020e6656586c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <lowerValueInternal>
+              <literalString
+                Id="97f5180b-4f66-4395-a445-1413b3c29a54"
+                name="Lower"
+                value="*" />
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString
+                Id="4b6572d3-8bc6-4847-b648-3bd0dd29ba2d"
+                name="Upper"
+                value="*" />
+            </upperValueInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProject_Common.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="b1a0cb20-968a-4db9-8d67-16a9642d38fd"
+            name="circlepointer"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="6302c8ab-bdcd-48d8-9c80-bc3d52c63677"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3Dcirclepointer"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="975b6245-64e6-44a2-8d63-179ff10691a9"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="da6dc3ed-2890-4272-9c97-ff09557148ed">
+                    <propertyInstance
+                      Id="5aaad73c-3224-4022-9daf-926b1ef5274c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6d63dbe3-dea9-4e38-b775-1ed8a936437c">
+                    <propertyInstance
+                      Id="748e9cec-315e-4013-b7cf-4c7398c8fd5b"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="54ee8452-49f7-441a-a478-b8e9811b8783">
+                    <propertyInstance
+                      Id="1b2fef31-d48a-4a52-8457-6560e31a32d0"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eb5b1adf-8acf-4345-be11-637105bdcb64">
+                    <propertyInstance
+                      Id="6521e447-f51d-4fab-8cdf-4923a89b1a65"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b22df482-52dc-4ef4-a7ef-ed52a3179923">
+                    <propertyInstance
+                      Id="d13d50e8-2e32-4107-a945-03f7a8479b16"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProject_Common.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="15eb3a6b-a81a-48fe-80b3-abd2ff75842d"
+            name="oldyaw"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="a27a6174-58ec-495f-9558-3f90e7e1e5aa"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3Doldyaw"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a6b9e3be-70bb-4caa-9606-48b4ae333624"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ad02c7c4-20d4-47a3-b842-26e8784af53c">
+                    <propertyInstance
+                      Id="480b23ac-0568-4cef-9162-fe684c12d807"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e010df4b-2c29-46ee-b52e-22b54644fb00">
+                    <propertyInstance
+                      Id="41467663-918b-4656-9007-d98da7ef65ca"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ff25659d-951a-4ed4-9336-58934a8d55e7">
+                    <propertyInstance
+                      Id="0219ee4f-a9af-482c-86b2-c8b1d786eebc"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="10960028-0525-4fe2-89d8-bab01d050b7a">
+                    <propertyInstance
+                      Id="1026a832-5d2f-4c72-b10a-28698eabf0c4"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bc902f63-f33b-4183-a148-df7087355dfb">
+                    <propertyInstance
+                      Id="e0ec72fe-5c94-4945-8a64-98637ca0e03d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProject_Common.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="c744a823-932d-405f-b99e-59077b80df7b"
+            name="newroll"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="8b69abe2-fd45-4085-a01f-5a9f7affb8e2"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3Dnewroll"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="89bfb9b2-43e1-48e1-add0-dc34a6bb2958"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d52c366d-92ab-42f7-8bf9-696e5ab02372">
+                    <propertyInstance
+                      Id="02175b13-f507-496a-944a-2301395e3551"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5f88425e-4810-4c0c-a5c8-994ef21ef84c">
+                    <propertyInstance
+                      Id="5802bf34-89da-423e-9878-9487a5a58b01"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a9de8e6d-7d3f-4412-b2f2-e1c20fb55087">
+                    <propertyInstance
+                      Id="f0cd8dfa-ea95-4dee-b446-2de425915961"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="33613f14-6ed1-4454-b3cb-61654e69da96">
+                    <propertyInstance
+                      Id="fcf57599-38c0-4b83-b816-e5e0e22ae90f"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0d33fc06-20bd-47b7-b60e-1039cde88569">
+                    <propertyInstance
+                      Id="b3f7ecde-1cf7-4ab7-bd80-6c69b3552a0e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProject_Common.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="fbdee891-4139-47d1-99e7-8a8a47456212"
+            name="newpitch"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="b5f67847-cee4-4074-99a0-0599c8cafc5c"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3Dnewpitch"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="eb89e253-c214-4404-a638-f8f6bb163e4c"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4534fcf7-8c1e-48dc-bd39-9e0d5f7bf026">
+                    <propertyInstance
+                      Id="295dc203-ead3-4d7c-800f-cf00f37db8dc"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ba8e662c-e7a2-4999-82ea-afc295cc0f5e">
+                    <propertyInstance
+                      Id="355eae3e-bfbc-4a83-ba3a-13d80545ebc7"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ba7b7482-127b-4a34-bee2-ab3f4880762c">
+                    <propertyInstance
+                      Id="8e31694c-482a-481f-beec-28d7413081c4"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7dfeb63c-1f19-40d8-8058-2e310ea0ac9e">
+                    <propertyInstance
+                      Id="2ca1301d-070b-4655-b46d-efb90a2fd425"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7d4d7ef1-72c0-4a57-be11-f4c2e1722a84">
+                    <propertyInstance
+                      Id="80d2884d-88c0-4b68-b6cb-b34ec0bbd7a9"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProject_Common.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="1aeec1a9-db8f-49e9-be00-99524df91d49"
+            name="newyaw"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="8119b7e8-364d-492e-967c-ff82ef6466d7"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3Dnewyaw"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="91d2be7d-c7ab-46be-8529-901ad082dfab"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="56dc194c-eaf1-4c61-89a8-6864179132d6">
+                    <propertyInstance
+                      Id="7de4d909-70c3-4dc0-9c9e-10bb45ca1492"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7bfd22d9-e143-4148-8305-6ee6fe849a58">
+                    <propertyInstance
+                      Id="c794bef3-9f91-4a4b-8daa-0eec04ab982a"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="659dad42-9b4c-453d-ac11-80b8275250b2">
+                    <propertyInstance
+                      Id="5cfee1da-82c6-4904-8ad6-4fddee7b72cd"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c47d91c0-53ba-4c31-a988-bdd63e20e62a">
+                    <propertyInstance
+                      Id="1b3902e9-3a93-491f-98eb-a6c890e5af09"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6ec25e1e-6cf8-4d73-835f-02d163051a45">
+                    <propertyInstance
+                      Id="d9cab559-d974-4b5a-9aa7-dac131a3646d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProject_Common.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="0395213c-08e8-493f-98b9-f676c68b3af4"
+            name="Initialise"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="7ce2ad8a-4724-477f-925f-a3a64331d408"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3DInitialise"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="de9984e6-1363-4573-b4e9-9fa34daeb354"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6aba9975-11c4-4e61-bafa-4d14f3746556">
+                    <propertyInstance
+                      Id="7a6ac0b8-a768-424d-aa1f-9530189db0c2"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2c5cb613-8919-4ee1-a445-f500655a221a">
+                    <propertyInstance
+                      Id="488febc8-8d8e-4802-ba86-a7da810ad46a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="35f2f8fd-0ec8-4277-8bd4-9f4af9651774">
+                    <propertyInstance
+                      Id="7f14ab4f-ba78-4a32-82b9-5cc3f8c2538f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="580cdb10-0258-41c0-b1c8-438dee8850eb">
+                    <propertyInstance
+                      Id="16f5ebab-c906-4525-9904-3fdee7453ccc"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="73cf6fa1-96f7-48da-be5b-865b66ceb4a5">
+                    <propertyInstance
+                      Id="3769fff6-ade0-4a99-ad9c-e2ddbf2146f8"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b52b4c11-b07d-4159-aa23-2f9faeb747e4">
+                    <propertyInstance
+                      Id="e0a34b3d-6dca-451b-aafe-bc9c0571ffd1"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="f2313c3e-15cd-4f48-abaf-49fe774b7862"
+            name="Shutdown"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="4484ccc1-56e7-40dd-82d2-d0b1befcef86"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3DShutdown"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d98f425a-a5f5-4f13-a624-fc3a093566c2"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f4b72b7e-642c-47be-a090-ee8d80b29747">
+                    <propertyInstance
+                      Id="647c670c-7e74-4bfd-bc98-fd4fc7fad695"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b2d3e557-0ef9-46aa-bf3c-2ad9af26dc9e">
+                    <propertyInstance
+                      Id="3212b959-fca2-4aac-b02a-78240f01b7b0"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8dd349e7-3fe5-45da-aff2-6f09e7fb63ed">
+                    <propertyInstance
+                      Id="6c08502c-8185-4fb9-9834-c1aca9833e4c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="31a57b64-1964-484c-bebc-19e83d434e90">
+                    <propertyInstance
+                      Id="927260f5-01d7-4e8c-a93e-103f80bc9443"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6bfaf49a-1428-4935-9188-55de0b333cfc">
+                    <propertyInstance
+                      Id="09e4ca3a-80c9-4100-aa34-4d0a008e9f74"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cb0ce3eb-9a21-42be-9295-4b8f9680c89d">
+                    <propertyInstance
+                      Id="a29e5061-42fe-4645-815e-af9cac4e9f65"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="8ffa9d27-62a6-45e2-9ae7-b8cd8ce317d1"
+            name="SetParameters"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1a7450d2-19d5-461d-94e5-00b0fe145b61"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3D(Name%3DSetParameters OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FCommon%2Fbin%2FDebug%2FCommon.dll Namespace%3DHapCon.Common Type%3DListeningMode)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e5d028fa-682e-43a9-bc94-995f07d38004"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c9671bfd-dc9d-4882-8d03-fa91017b6e3c">
+                    <propertyInstance
+                      Id="7be335cb-3a38-45db-bf97-c8b066245bce"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="627496e0-2875-45eb-9785-9d3a4ab47303">
+                    <propertyInstance
+                      Id="1178007b-85e8-49c7-adea-20f5b35bf850"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="055eb3e3-764d-43c2-a9f6-d10856771736">
+                    <propertyInstance
+                      Id="d2a4d056-2e81-4d61-8e90-836863342dff"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="209923c2-bf7d-4d4b-b03e-03a8cabbada1">
+                    <propertyInstance
+                      Id="43e05289-db52-4232-a281-a63b5caab0ed"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d86de5ef-029c-4519-8099-af75ac05dbaf">
+                    <propertyInstance
+                      Id="b8690e22-2d2a-4268-9c0f-fc4275adb1b4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e14eecfa-20bd-4606-a8e0-e477e3f9dce3">
+                    <propertyInstance
+                      Id="fb1bf81b-ee7f-4177-9dc9-43c630009d50"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2ca9c927-c0ae-4207-826f-402ee4a90d73"
+                  name="name"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="f10bd326-8cad-4177-92c5-36bd6ef01d11"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3D(Name%3DSetParameters OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FCommon%2Fbin%2FDebug%2FCommon.dll Namespace%3DHapCon.Common Type%3DListeningMode)]) ParameterIdentifier%3Dname"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject_Common.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="da6b1e91-c85b-4f70-8ad9-6d66af6f87c3"
+                  name="computerName"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="fd107edf-a28b-402c-a515-c77d1d81d139"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3D(Name%3DSetParameters OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FCommon%2Fbin%2FDebug%2FCommon.dll Namespace%3DHapCon.Common Type%3DListeningMode)]) ParameterIdentifier%3DcomputerName"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject_Common.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="65640529-87a4-4845-8542-4345134f34c9"
+                  name="listeningMode"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="1f49860d-7753-415f-b3a3-6e4ba2d29704"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3D(Name%3DSetParameters OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FCommon%2Fbin%2FDebug%2FCommon.dll Namespace%3DHapCon.Common Type%3DListeningMode)]) ParameterIdentifier%3DlisteningMode"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="47a45df8-84f2-48cf-aaab-122592ca19bb"
+                      LastKnownName="ListeningMode"
+                      LastKnownLocation="Package1_1752.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="07d49df9-b4bb-422c-bc94-97ec8187c5c8"
+            name="getGesture"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="9571b448-e8df-4b3d-a397-86a73962cc35"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3DgetGesture"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a9667f1e-fa1b-47b7-8679-9fa358383293"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2935fc44-d874-463a-9dda-dfc10b6502a4">
+                    <propertyInstance
+                      Id="31cf9a9f-d810-4ed4-a7f9-c65c87be3edb"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a2b917ca-7c30-4df4-8049-b163cd432ddd">
+                    <propertyInstance
+                      Id="0abcff8a-341c-4bb7-bfef-1ad018de2f71"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3ff18144-f1f9-4ab3-ba89-5af0c8ca322a">
+                    <propertyInstance
+                      Id="6727461f-8e4b-457b-8c82-b272fe9b125d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1147421e-6d42-4828-abf1-cd13167489ef">
+                    <propertyInstance
+                      Id="2f21895d-b6a1-44a1-b93c-3b991bb9268c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e078ef6b-c086-4fab-8440-4f747b4e07a3">
+                    <propertyInstance
+                      Id="605bcf29-321a-4587-847c-216c16c6f06c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d309f369-fc80-4a60-91e0-54b7e0035135">
+                    <propertyInstance
+                      Id="c5a1e17a-2a79-4b56-87a1-5bfe9ad581da"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7182ecb0-c60a-445d-9ca3-6083c39514d8"
+                  direction="Return">
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="b1876c72-4584-4d60-903c-7063d3ee2481"
+                      LastKnownName="CommonGestures"
+                      LastKnownLocation="Package1_1752.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="cc510b23-aea2-4967-833f-74f01b462b5f"
+            name="getCoordinate"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="92b609c2-f369-480a-852d-a474215cc686"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3DgetCoordinate"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="46a26015-f1ab-4415-8e62-44bede339f4a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5a8d41a5-5d2a-40f6-89f2-6ef2028de484">
+                    <propertyInstance
+                      Id="7d6289f9-2600-4cb9-97e9-8035d2d7a1a9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5c11f4e2-24d9-4ae4-9041-d3fc9b2c49d1">
+                    <propertyInstance
+                      Id="8b9352e4-06cd-44cb-b9fd-cfced54a876c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="543083fc-3e5a-4cd8-ad60-3a56570277d1">
+                    <propertyInstance
+                      Id="b7ca9eba-914e-408e-ba16-a5ac7888cf5b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0afa1e58-d857-42d0-b732-44051628ca54">
+                    <propertyInstance
+                      Id="a81cb8a5-298a-410c-b9fd-d60fccaabef3"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fd98395d-f7d2-4c97-92e7-a61db8460a29">
+                    <propertyInstance
+                      Id="6513b19a-1130-4e1d-a7e2-00a48005fad7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e615ebbb-36e9-4838-aa98-e1637caf636f">
+                    <propertyInstance
+                      Id="19482a03-49ce-4fe6-adbd-9b3b13180dac"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2d06d669-c6ee-449a-8b6c-35c62c5dc8a0"
+                  direction="Return"
+                  isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="9462341f-3fb8-4bde-bd2d-824e7bca4e1a"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="0ba606cc-1fca-49a0-8363-2b73548a8bc4"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="438ac932-1e49-4c9c-80b7-46e5a706fd6b"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package2_1752.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="691fa7d2-c122-4fe4-ab19-1dc06c6984f1"
+            name="Myo_OrientationDataAcquired"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="37e4658d-f381-457e-bb18-9db3734ea648"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3D(Name%3DMyo_OrientationDataAcquired OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2FMyoSharp.dll Namespace%3DMyoSharp.Device Type%3DOrientationDataEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4d697379-baa7-414a-a228-a8e605a056a5"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2ecfbd2e-27f3-43e0-85f9-2550277126b9">
+                    <propertyInstance
+                      Id="8565039a-2175-4172-a2ba-df67c7f75e32"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ee3931fc-2466-4ac2-8581-99d7420e90be">
+                    <propertyInstance
+                      Id="dbcfb13d-b3eb-407e-8363-3ecb9e236461"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="294e7c09-d7cc-4dc1-b84f-e16579733580">
+                    <propertyInstance
+                      Id="cd16ba6f-9a3d-4bff-9ab0-7beffedf1c20"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c110babd-c793-4416-a5f3-76226eed4421">
+                    <propertyInstance
+                      Id="c764e69e-896d-4723-97ae-8b9b61e59488"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="71c6749d-cd21-4e0d-82a7-ad75cf614047">
+                    <propertyInstance
+                      Id="01a2dd4b-24b9-44ec-a972-75499f7b8959"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7ecbd356-d866-4987-be2a-44c73ea7b4c9">
+                    <propertyInstance
+                      Id="94ea8aa4-f9bb-4c14-ba7e-325cfc5ceebe"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="46164cb2-6c0f-4104-9ff7-9edac9ce2ee7"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="5f3dcf92-6928-4010-a82a-f2ccd294e997"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3D(Name%3DMyo_OrientationDataAcquired OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2FMyoSharp.dll Namespace%3DMyoSharp.Device Type%3DOrientationDataEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="446cd21e-f935-446f-abed-0b7051671aec"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package2_1752.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="adbfcaf8-fa40-4ece-9776-b54dc37cc7ca"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="2c0fc8a4-14d1-4a17-98cf-cb502f9380c8"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3D(Name%3DMyo_OrientationDataAcquired OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2FMyoSharp.dll Namespace%3DMyoSharp.Device Type%3DOrientationDataEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="bfd11f87-ff32-4cf5-908e-fa53603eb21f"
+                      LastKnownName="OrientationDataEventArgs"
+                      LastKnownLocation="Package1_1818.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="1d8ef4aa-082f-41e9-b9b7-3fbc84d625f5"
+            name="Myo_PoseChanged"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="80fa3360-030d-4c8f-af56-88a7f89ea5ac"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3D(Name%3DMyo_PoseChanged OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2FMyoSharp.dll Namespace%3DMyoSharp.Device Type%3DPoseEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1affdda0-178a-4441-8f42-89b8643e1a71"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2ecb6f57-dc5c-4d9b-94c1-cff448e0107f">
+                    <propertyInstance
+                      Id="c682a1c5-f146-40b7-9496-08f7757f0ee1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7a484190-4e34-465d-9825-aed3b41bcfcb">
+                    <propertyInstance
+                      Id="561facbd-6853-41bd-bee7-e26543a17c68"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bf4bd74b-0e72-48e1-9bc4-6d2f1d2606f3">
+                    <propertyInstance
+                      Id="79cd3c88-0707-4fa5-b2a7-dd397bbd481d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dcfcc124-4183-4630-a667-69ea4bfb6ff5">
+                    <propertyInstance
+                      Id="56257c8d-6ef5-4b29-9637-f6a1de3f752b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b2fc7a4a-ca5d-4916-ac7f-0fe90d2f275c">
+                    <propertyInstance
+                      Id="fe4c3965-6b29-4903-a7ea-8bcb1c3b48e1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2a8b1b97-2b88-44d5-a15c-efdae8f8839a">
+                    <propertyInstance
+                      Id="52b65314-1b9e-4741-b1d9-7ec9fc89c507"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7bd6dae6-2760-4530-a8c7-7ac968bc90d6"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="900a21ee-a3cb-4c52-8194-94f4d4e77b63"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3D(Name%3DMyo_PoseChanged OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2FMyoSharp.dll Namespace%3DMyoSharp.Device Type%3DPoseEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="446cd21e-f935-446f-abed-0b7051671aec"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package2_1752.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9614b424-211a-41bd-9629-a51fc00a94ea"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="1c63f35e-f571-4b55-8a25-76d53f7f2ea8"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3D(Name%3DMyo_PoseChanged OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2FMyoSharp.dll Namespace%3DMyoSharp.Device Type%3DPoseEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="1df91b07-88ab-4e8b-8647-85605228e5c8"
+                      LastKnownName="PoseEventArgs"
+                      LastKnownLocation="Package1_1818.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="3044eae2-dac0-49c5-b1fb-dbc8c92be39c"
+            name="CLKSequence_PoseSequenceCompleted"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="ee18d8f9-2435-454c-9fb0-01f55bbf87bb"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3D(Name%3DCLKSequence_PoseSequenceCompleted OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2FMyoSharp.dll Namespace%3DMyoSharp.Poses Type%3DPoseSequenceEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="03d5175a-9d27-4220-b990-97be453ee696"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ed253428-b3ed-425e-8421-b752ada2954a">
+                    <propertyInstance
+                      Id="a61214c6-afe9-4263-b968-571cffc396cb"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0a41cb90-4a90-411d-bf4d-28002163ef8c">
+                    <propertyInstance
+                      Id="a0f00622-6f40-4306-9102-3280474718a4"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3a347831-0cb4-4934-934f-ca4b8ffa1b1e">
+                    <propertyInstance
+                      Id="7f6aa922-ab7f-4944-8aed-9ab5e8d7e1db"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9977de55-b754-4ba0-b1a2-6da54bfcbb55">
+                    <propertyInstance
+                      Id="ab5abed8-d3bf-4392-9ac7-4f20a65e8bad"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="36def409-f0f4-4a6c-9310-4484a1bb3d0d">
+                    <propertyInstance
+                      Id="83da57a6-ecc6-4830-a569-29f0da401501"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c987bf46-0d88-4650-acb2-eb3e08a61e8b">
+                    <propertyInstance
+                      Id="42e2f1e2-4fe5-4ef4-a783-2366edc00003"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4971d2f8-8e4a-4157-a165-0349f3481606"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="ac42e626-9347-4475-9179-1df114666c72"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3D(Name%3DCLKSequence_PoseSequenceCompleted OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2FMyoSharp.dll Namespace%3DMyoSharp.Poses Type%3DPoseSequenceEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="446cd21e-f935-446f-abed-0b7051671aec"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package2_1752.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="065fb702-ce04-43de-a54c-14c87d820312"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="c293fdc3-c3ff-4576-9530-2dd59c4ff89e"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3D(Name%3DCLKSequence_PoseSequenceCompleted OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2FMyoSharp.dll Namespace%3DMyoSharp.Poses Type%3DPoseSequenceEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="84b06d6b-2d93-4085-88a9-7275693237a0"
+                      LastKnownName="PoseSequenceEventArgs"
+                      LastKnownLocation="Package2_1818.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="63881152-6198-47af-94b9-99d96790733c"
+            name="ACLKSequence_PoseSequenceCompleted"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e62ba5c7-0006-4109-97ee-5edb08bc8b87"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3D(Name%3DACLKSequence_PoseSequenceCompleted OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2FMyoSharp.dll Namespace%3DMyoSharp.Poses Type%3DPoseSequenceEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1cb1bbf1-fd91-4be8-8ad3-060b00bef8d4"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6911fd65-5a90-4c37-8648-c46442544f45">
+                    <propertyInstance
+                      Id="e171d20e-405f-4dea-b950-b0b6278426c5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2fbf135d-f04e-42b9-8aff-7dcf7d7c572d">
+                    <propertyInstance
+                      Id="b9c7c186-5dcc-43d4-8f2a-8e8036187e6d"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fc664189-685b-4d3b-98d8-d508e370d011">
+                    <propertyInstance
+                      Id="94828915-e35c-4cca-b493-3d5e8f5dc0b8"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8abcd4d5-be49-4d27-bd7b-ac20d8fab951">
+                    <propertyInstance
+                      Id="dc2d8ef9-ddd9-451e-ac75-a62ebeefe01b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="037c102c-d4d5-40c6-bb75-5df01a0e5ba0">
+                    <propertyInstance
+                      Id="232a7675-b6ba-4588-977d-e76924b3a21e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="825e6748-4e8f-4c86-97b2-65fcc8c8f480">
+                    <propertyInstance
+                      Id="004d80d2-c033-4a48-aa89-549918e3e1f2"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7435c77f-2752-4177-b5e7-4062b15a86b1"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="80932bbc-4dfd-4ae7-95be-446b4b66966c"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3D(Name%3DACLKSequence_PoseSequenceCompleted OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2FMyoSharp.dll Namespace%3DMyoSharp.Poses Type%3DPoseSequenceEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="446cd21e-f935-446f-abed-0b7051671aec"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package2_1752.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e02d307c-2411-45fb-a8df-816e4bfce2be"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="93b8ecf5-73bc-476d-9fb5-2597e190205f"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3D(Name%3DACLKSequence_PoseSequenceCompleted OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2FMyoSharp.dll Namespace%3DMyoSharp.Poses Type%3DPoseSequenceEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="84b06d6b-2d93-4085-88a9-7275693237a0"
+                      LastKnownName="PoseSequenceEventArgs"
+                      LastKnownLocation="Package2_1818.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="50525c96-df03-48f9-8d37-62679b17aa13"
+            name="ThalmicLabsMYO"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d4684adb-d2c9-49e0-9e20-47069ca7e905"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DThalmicLabsMYO Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ca1fcba7-e167-4b66-ae17-310171a2ed60"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ad6d179a-43fc-4b23-84ad-13e9133b2bc1">
+                    <propertyInstance
+                      Id="2f38f349-f6c3-4cba-9e76-2acf229dc7cc"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="326a9d83-04e6-4959-9c4d-103ee591c206">
+                    <propertyInstance
+                      Id="5f5e532d-0b39-40f8-bc98-daae8665bd09"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6d11e348-3de5-4446-8b31-f728108e4355">
+                    <propertyInstance
+                      Id="639e567d-5ddf-4924-8696-f4ca335851b7"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3e1f1d9d-3f0c-4299-8f32-0218ef338697">
+                    <propertyInstance
+                      Id="e2cb1e3e-2a5c-4580-99d0-226ccab533f9"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0f5d8695-9a7c-4144-ad39-148a807b8755">
+                    <propertyInstance
+                      Id="75202968-a488-44fc-9226-bf75c0c7b37c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7ca38cc5-599e-411a-9184-daa20a893843">
+                    <propertyInstance
+                      Id="877a4ece-e93b-4e5a-ac80-bd5a24e0fe37"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="24a7eeab-5839-40ec-9934-d2a1ea6483f1"
+        name="IThalmicLabsMYO"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="ef90a0b7-9111-4686-8b67-e89dbf800f24"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DIThalmicLabsMYO"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="4f587fa8-1c38-46e1-a649-b94a0ab34903"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fb4ea68d-5a26-4724-ab56-7205c389c51f">
+                <propertyInstance
+                  Id="8beaae9c-d9ba-41b5-a3e9-da03f3195292"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c374e210-51d3-4d43-839c-f3214b9204a6">
+                <propertyInstance
+                  Id="6c63877c-08ca-42f5-8ae0-83ce9de5964b"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ba6e196e-95c2-46ed-a225-ed470feb951e">
+                <propertyInstance
+                  Id="93743324-5f14-4164-a756-7e7970c19ccb"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b194d585-8f87-447a-942c-d0201ea785d0">
+                <propertyInstance
+                  Id="97dd53a7-0397-481a-8b60-7208dd1525ea"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="8f9d17ce-9623-4c51-be60-4692862e30c0"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="c3df1ff5-2d7e-40a7-ac21-d5cbd80f5801"
+              LastKnownName="IHardware"
+              LastKnownLocation="Package1_1752.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributes>
+          <property
+            Id="d1618cd1-8e05-45ba-a92e-f41825bd7194"
+            name="ConnectionString"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="4d70f16e-bf13-4d83-8142-8ad36acae259"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMYO%2FThalmicLabsMYO%2Fbin%2FDebug%2FThalmicLabsMYO.dll Namespace%3DHapCon.ThalmicLabsMYO Type%3DIThalmicLabsMYO Member%3DConnectionString"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a67eaf0a-e6f5-4a05-8299-36628f0c57c5"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8d68f29d-7fcc-4f18-b864-6e998a2c4374">
+                    <propertyInstance
+                      Id="b244c610-a77e-421a-bf66-2472effd2d00"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fa723917-96a9-4fc9-8242-863145d2d1b6">
+                    <propertyInstance
+                      Id="1bd959f5-d2e8-44be-89e1-b6b96611f7a3"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4ceb8dfb-1ff6-4057-84d0-7795bb96dbaa">
+                    <propertyInstance
+                      Id="5406bec5-e5ca-4f63-801c-bc3dd83ccf8a"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f7b4df98-2fee-43ea-a484-7594b674e3cf">
+                    <propertyInstance
+                      Id="95e97946-ead1-41aa-af8e-f107eda66c8a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="650450c3-f341-42dd-b28c-22f442a963a8">
+                    <propertyInstance
+                      Id="899f85a3-0413-4a91-9106-01e39f40f6e2"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="524110c0-e4ea-4a69-93e6-c89a0a2ee0ab">
+                    <propertyInstance
+                      Id="40d0b257-cc92-441b-b1ec-db64e8e2101a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b3395219-04cd-4bb5-a89c-e6f17c7c17a4">
+                    <propertyInstance
+                      Id="67a93f2f-6bde-432b-adf1-a07a5a9e3eb5"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject_Common.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributes>
+      </Interface>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

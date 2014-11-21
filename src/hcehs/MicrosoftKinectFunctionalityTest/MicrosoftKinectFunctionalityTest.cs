@@ -26,14 +26,14 @@ namespace HapCon.MicrosoftKinectFunctionalityTest
 
             while(true)
             {
-               /* 
+               
                 newDistance = kinect.getDistance();
                 if (newDistance != 0 || newDistance != previousDistance)
                 {
                     Console.WriteLine(newDistance);
                     previousDistance = newDistance;
                 }
-                */
+                
                 //System.Threading.Thread.Sleep(1000);
 
 

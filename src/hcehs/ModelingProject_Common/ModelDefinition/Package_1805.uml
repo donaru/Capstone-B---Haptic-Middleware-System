@@ -1,0 +1,2869 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="1c168d51-8411-4653-b600-a381d45ff49c"
+  name="MicrosoftKinect"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="9624a315-ca96-4716-94ab-60c0ee5f2966"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DHapCon.MicrosoftKinect"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="9b217c42-a63a-42f5-89b7-452975c711fa"
+        name="MicrosoftKinect"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="e7dfec25-31b7-4579-87bf-5d9df80e8760"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMicrosoftKinect%2Fbin%2FDebug%2FMicrosoftKinect.dll Namespace%3DHapCon.MicrosoftKinect Type%3DMicrosoftKinect"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="b36f443d-a0d3-4341-841f-f8f5cfdfcf95"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9e2bff65-2813-4d7f-9f6a-02cd02b9bf38">
+                <propertyInstance
+                  Id="f2519586-2777-48a6-8875-d1cdce7022ce"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e8ac75b3-a3ac-4d8a-b21d-09fe92b90c20">
+                <propertyInstance
+                  Id="16fdebab-032c-432d-a316-6561848fcd8b"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2d4f32b6-8522-4057-9091-cb09ea930396">
+                <propertyInstance
+                  Id="137cda46-fa27-4d47-a0f4-94700ea859ec"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ec5c79fb-75ac-46a9-8b41-037c6c0c77f6">
+                <propertyInstance
+                  Id="f84b273f-f8e1-48ca-9946-72b7fe3101f0"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c17469b0-310f-489b-9c59-985f8620d7c4">
+                <propertyInstance
+                  Id="d73d7785-bc0f-410b-be8d-5dbb372b5623"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="7290c2c9-ae1b-446d-a612-3d202d01a1fc">
+            <interfaceMoniker
+              Id="8c152495-b47b-40ed-b246-68cb3a19a377"
+              LastKnownName="IMicrosoftKinect"
+              LastKnownLocation="Package_1805.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="381e905e-3d57-4b14-9419-eec846ab9955"
+            isDerived="false"
+            sourceEndRoleName="MicrosoftKinect"
+            targetEndRoleName="GetListeningMode"
+            isLeaf="false"
+            isAbstract="false">
+            <enumerationMoniker
+              Id="47a45df8-84f2-48cf-aaab-122592ca19bb"
+              LastKnownName="ListeningMode"
+              LastKnownLocation="Package1_1752.uml" />
+            <description>Property GetListeningMode references type ListeningMode.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e84dfd7a-88f3-40a4-9497-2d179de6a323"
+                  name="MicrosoftKinect"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="4455cf87-a1b0-4c30-b135-4b3bfc966f3e"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="1dee7ffb-7d2e-4cc9-b2ed-2fe219aed181"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="33e55067-3492-442e-8b36-d53432ae7147"
+                  name="GetListeningMode"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="5c560e96-b28e-4099-b33c-0f42b1691436"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="87886cc8-deb4-44f3-a970-c71d601d86bc"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="64c71329-69fd-4a56-ba09-fa601e05f159"
+            name="ConnectionString"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="36461d88-1ad5-4f4a-adac-9f32e7cb53e1"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMicrosoftKinect%2Fbin%2FDebug%2FMicrosoftKinect.dll Namespace%3DHapCon.MicrosoftKinect Type%3DMicrosoftKinect Member%3DConnectionString"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3e66b1d7-7c9a-403a-b982-7b0f973a6239"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eccdba5e-d938-48e2-a4e3-68fdff9baeaf">
+                    <propertyInstance
+                      Id="e966c7e7-0016-4de1-bb45-fa9866bc6937"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="51ac8c8b-2dca-4325-be49-d434b769ca79">
+                    <propertyInstance
+                      Id="b612da67-d914-4296-9a65-129421675bac"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="614ab19f-6a26-49c7-bf35-f199c407a941">
+                    <propertyInstance
+                      Id="d4137d15-dea2-448d-ad5e-00170b0934ca"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1368ec7a-1ea3-412f-8088-ceaac77bf6c1">
+                    <propertyInstance
+                      Id="8b708158-01cb-4afa-9aca-4875575654f0"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="821579e6-0cca-48eb-a63e-d2a7da0941c0">
+                    <propertyInstance
+                      Id="3b60ad9d-08a1-4a19-afeb-113c25a6f23d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="440c2d4e-cd8c-43dc-aac8-e37e06f184bc">
+                    <propertyInstance
+                      Id="89daf3a5-ee71-40dd-9ed9-5db6ffbc3b34"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="75ac49f2-bd7f-44b4-98a7-44414daf3039">
+                    <propertyInstance
+                      Id="aceba2de-cfbb-41d1-9527-a6e1f79e5a57"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject_Common.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="715e044b-2d69-471c-b6c8-4102f3378fa0"
+            name="GetListeningMode"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="0e907331-9f75-4c3c-907e-c784312eabc5"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMicrosoftKinect%2Fbin%2FDebug%2FMicrosoftKinect.dll Namespace%3DHapCon.MicrosoftKinect Type%3DMicrosoftKinect Member%3DGetListeningMode"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="58e846dd-3eed-4015-970f-6641403a2035"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="86182c25-dfbc-4bf2-bc2a-754224b739ec">
+                    <propertyInstance
+                      Id="c7acf76f-a06b-4c42-a751-54f17de65c9b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d42ae787-0276-45c2-b8cf-3c8934ff2384">
+                    <propertyInstance
+                      Id="f3e8d395-5365-46e6-ba1b-a9d06d0cce2f"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a193cd4f-27b5-4ed1-8115-31191cca9e8e">
+                    <propertyInstance
+                      Id="c0027f91-66ed-479c-9c56-d82efac50d6e"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2ada9ef3-3526-4c55-98dd-2e0ce3351df7">
+                    <propertyInstance
+                      Id="7241b41d-67a2-498b-8ad2-16d787fbda80"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="af7bd71d-065d-49f2-927b-a1343135e4af">
+                    <propertyInstance
+                      Id="d81bd928-4dc6-44d4-95a6-fede2affa664"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e5ed4ee3-bb1c-4bb1-853c-c5941ee86ed7">
+                    <propertyInstance
+                      Id="0fc9f4b6-ed36-4139-b404-dd082c7956b8"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="968920a2-22bb-4ff2-bf19-e9e169a4d600">
+                    <propertyInstance
+                      Id="b489ea3b-8b6f-4bf5-91b2-d427bf17f83d"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <enumerationMoniker
+                Id="47a45df8-84f2-48cf-aaab-122592ca19bb"
+                LastKnownName="ListeningMode"
+                LastKnownLocation="Package1_1752.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="fab69c09-e246-4f8d-9a3b-5cf904abddea"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="c4f03df6-3b67-402d-9ae2-95945bb4fa31"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMicrosoftKinect%2Fbin%2FDebug%2FMicrosoftKinect.dll Namespace%3DHapCon.MicrosoftKinect Type%3DMicrosoftKinect Member%3DName"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="55b7c1ac-2d22-4cad-8c7f-02fa12f14530"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e3a12530-9536-48e4-b204-9847392f1b56">
+                    <propertyInstance
+                      Id="8d3f85b4-f18c-40c2-a729-171ab1397e26"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0f669c4f-17ca-4f2d-8096-76f55a6759ae">
+                    <propertyInstance
+                      Id="0e61dbbb-fe1a-44f9-9947-3627d87a2dae"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7b1eb69e-5527-4bb2-9fcd-2b5485123708">
+                    <propertyInstance
+                      Id="32c91684-29ca-4cfc-8b3b-206580c4f06e"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a6723801-8657-4c1c-b0af-3a28d4601c2f">
+                    <propertyInstance
+                      Id="6fe8edc8-bbd2-4f49-9e1c-4caf91141471"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="692cad29-46f8-454c-91fe-cdbf9478916d">
+                    <propertyInstance
+                      Id="3c12532e-9756-4671-afeb-f8337b83579f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="316fd725-2358-4ab2-9b06-28dd96d0d18d">
+                    <propertyInstance
+                      Id="5c50267e-344e-40bc-9631-8be3757e149d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2e90ca3c-7a2c-424e-b03b-7e6116b6553b">
+                    <propertyInstance
+                      Id="e82585d9-f9f5-4c19-8702-a304de9554c5"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject_Common.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="2081b7d6-a0d0-4b4a-a33b-aaf0e55d1697"
+            name="SetComputerName"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="8849cc44-fc87-4e14-bef2-0eb8120d971b"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMicrosoftKinect%2Fbin%2FDebug%2FMicrosoftKinect.dll Namespace%3DHapCon.MicrosoftKinect Type%3DMicrosoftKinect Member%3DSetComputerName"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7edc7679-3fbd-4aeb-9d29-7a6b28797128"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e9397b4d-a96a-461d-acaa-b2faf8b7c66a">
+                    <propertyInstance
+                      Id="f84d943a-9eed-426d-b9f2-56eba89d4e27"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cacfa095-0558-482c-b9bb-dedae7fcc953">
+                    <propertyInstance
+                      Id="1f527a0f-964d-4ea3-b363-f0e572667d3b"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="83bbdc75-459b-4ec3-8268-c83b70ced763">
+                    <propertyInstance
+                      Id="0b37ba9d-7ae3-4a5c-b8cc-e9769078b8f9"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0175323d-0305-4e33-9953-58d80cad4d12">
+                    <propertyInstance
+                      Id="054ec918-87dd-4766-abe2-423f05d887ca"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="11628138-b19c-491e-80e0-3e4604f47005">
+                    <propertyInstance
+                      Id="e19f545e-3928-4bf1-8620-b9cc52ae83f1"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="032726b4-39b1-41aa-9b68-ca3d65009c16">
+                    <propertyInstance
+                      Id="806de118-d118-429d-826e-9a0eea8dcd0a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ed47c4a2-a648-48dc-99fd-b1a2be002581">
+                    <propertyInstance
+                      Id="9985fd13-4ac2-4656-830b-dcbcab4a5f4f"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject_Common.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="09e10e60-c0c0-411c-b363-3c30aadd7c0e"
+            name="distance"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="38519de2-eee8-4043-9307-fb4474f451bb"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMicrosoftKinect%2Fbin%2FDebug%2FMicrosoftKinect.dll Namespace%3DHapCon.MicrosoftKinect Type%3DMicrosoftKinect Member%3Ddistance"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f5fc450a-9617-4820-84a2-ed2a5e934968"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f5f543c3-e7a7-4111-a40a-dccd4ba60ae1">
+                    <propertyInstance
+                      Id="5bcd5cfa-59e3-4cca-85e9-12f9c4773c54"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="56e17907-810c-4d67-9425-eac3612bb54d">
+                    <propertyInstance
+                      Id="931f974b-04a6-4a71-9b44-ba813fc7fc90"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="44091c74-5e52-4ebb-86d4-b1663b1a97bb">
+                    <propertyInstance
+                      Id="6a83a7e0-a777-473b-bb03-f7610b6840db"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2526ede7-1632-454c-a75c-a16b8d52ff86">
+                    <propertyInstance
+                      Id="7a532d93-3838-4cc5-9087-6ca754456c01"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bf786e22-693f-4b51-977d-d3c14fdab358">
+                    <propertyInstance
+                      Id="07519870-6df1-4cbf-ba4f-c97dcd709cd5"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="438ac932-1e49-4c9c-80b7-46e5a706fd6b"
+                LastKnownName="Single"
+                LastKnownLocation="Package2_1752.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="4aea50bc-74b2-436f-9d1a-5b243f634568"
+            name="gestureFound"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="0b2098af-830b-445d-8ee7-a588ef4d0cbe"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMicrosoftKinect%2Fbin%2FDebug%2FMicrosoftKinect.dll Namespace%3DHapCon.MicrosoftKinect Type%3DMicrosoftKinect Member%3DgestureFound"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="03c9156e-e4dc-4878-a75f-e71d89bd8b15"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="14eef293-0864-4436-8473-d0703b5fdd0e">
+                    <propertyInstance
+                      Id="d4c00872-438b-4439-a156-c18361941bd3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="39357df5-9da2-4ce3-b3de-2d20d92de84e">
+                    <propertyInstance
+                      Id="f062666c-2d2d-4168-b9fb-da42d065504d"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9cd28dc1-e31f-4103-bd17-df35442e8c8a">
+                    <propertyInstance
+                      Id="6196a5a9-552f-4c27-931f-1f8b092855ac"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="36c0b2c3-1473-4f3f-a1dc-b3382138d7f8">
+                    <propertyInstance
+                      Id="a45e8c4a-ddcf-4462-85e2-38aa43b69f06"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fe4e0a05-4911-4127-9bdc-58e5f1b272be">
+                    <propertyInstance
+                      Id="dc73a8f2-d21e-4196-9dcf-e8b8baa9811e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="ModelingProject_Common.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ab987b1f-1f9f-4805-b3ad-62adde1405a6"
+            name="gestureName"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="a94c8486-435a-479d-a648-a80169152dfa"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMicrosoftKinect%2Fbin%2FDebug%2FMicrosoftKinect.dll Namespace%3DHapCon.MicrosoftKinect Type%3DMicrosoftKinect Member%3DgestureName"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a61518da-b335-4e44-ac84-bddd0fc4b2a1"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9911c0a3-b6cc-4d74-92e6-f562b91df3cd">
+                    <propertyInstance
+                      Id="06881b4e-7ebb-4910-989b-ff2acfe29dc6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2e9d2679-cf98-446c-9ebb-544f5d04017a">
+                    <propertyInstance
+                      Id="03e3dbe7-e29b-4e9a-8e09-03d380888e3e"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="479f1af5-ccf9-4644-bcc7-08e3e66980cc">
+                    <propertyInstance
+                      Id="946e80ce-27ad-4b84-9bfa-337880d29505"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a481046b-95a8-46b4-a8b6-7d969eacf48a">
+                    <propertyInstance
+                      Id="4e8e20ef-9692-40e9-86ff-7ebdf8fc366c"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aaf915b2-1f50-41c2-8a89-65f20a030eab">
+                    <propertyInstance
+                      Id="5ad5c694-d5fd-4684-9120-3ca3938e216f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject_Common.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="cf940e56-b02a-4dda-a772-dfb3d1094ca1"
+            name="gesturefile"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="983de95b-3ab6-4fae-9907-12b97cca44fe"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMicrosoftKinect%2Fbin%2FDebug%2FMicrosoftKinect.dll Namespace%3DHapCon.MicrosoftKinect Type%3DMicrosoftKinect Member%3Dgesturefile"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0410d993-4b02-423c-98c2-197ebc6df7a9"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="63f53be8-0a89-40ee-8e1b-fba04c4c1e17">
+                    <propertyInstance
+                      Id="5e8c3085-e796-472a-b208-d45133b16f65"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6f842837-9182-480c-b24d-23e346c8e387">
+                    <propertyInstance
+                      Id="bb8ce907-645f-4377-8455-153a73b34931"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4b646e21-5194-4f07-a985-ac88c8de475d">
+                    <propertyInstance
+                      Id="108364c5-88c9-427f-9650-3b23c0e34de3"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="86da09b3-c61e-4d79-b913-4480868029f4">
+                    <propertyInstance
+                      Id="1a459e05-44e2-4a68-9a23-50399d63e9a8"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4c282115-4355-4e34-8d37-fb6674ab2a3d">
+                    <propertyInstance
+                      Id="edc6445a-7a6d-4ef5-ae2a-3f5ce241cef8"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject_Common.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ce1ceb5c-5115-4b20-8eef-292aa914f6dc"
+            name="gesturefile1"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="0f78b103-d571-4cfa-afb0-33359de0e491"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMicrosoftKinect%2Fbin%2FDebug%2FMicrosoftKinect.dll Namespace%3DHapCon.MicrosoftKinect Type%3DMicrosoftKinect Member%3Dgesturefile1"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="729397b1-a41b-4ed2-bd26-d8d55f8596fd"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b8d8f3f4-50d4-4286-8aaf-010137ca3b90">
+                    <propertyInstance
+                      Id="4d5820ca-d938-4fba-bf3c-bc96fe7f1359"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="62626a00-b8c0-4946-8310-3b554a4078c6">
+                    <propertyInstance
+                      Id="889276e7-352b-4b06-b053-0ce2153ed57d"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="570e7359-fb43-43e6-b5a0-646fce1b5f99">
+                    <propertyInstance
+                      Id="0913b0ab-59de-4812-b894-3b2a185bc9a2"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="153e061b-c9df-4c04-8c14-4262ee4df9d8">
+                    <propertyInstance
+                      Id="42389767-791c-487d-9094-60a1f3e28429"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b2853c31-c3e2-4784-a8d7-40ba62a60070">
+                    <propertyInstance
+                      Id="80c102e4-efcf-4b97-91ea-d138c2d1cc60"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject_Common.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="8f8e6e40-6191-4662-b00e-356078fabaa3"
+            name="gesturefile2"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="baa4a9f6-a7dd-4afa-bde4-1e75cd094f73"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMicrosoftKinect%2Fbin%2FDebug%2FMicrosoftKinect.dll Namespace%3DHapCon.MicrosoftKinect Type%3DMicrosoftKinect Member%3Dgesturefile2"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3879caaa-f5ad-45ca-972c-a1315c894f80"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e36381e3-f113-4fcc-817c-63d03ced5885">
+                    <propertyInstance
+                      Id="19c58bd5-9043-4ebd-bbd2-f45ff4a2e95b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ac60ce60-1ba1-4719-b184-1ec894b624c8">
+                    <propertyInstance
+                      Id="5d82ef82-a0af-4b5c-919e-6bd41ceb7999"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d79b1f39-2a4b-4075-8eb2-87462dd56f75">
+                    <propertyInstance
+                      Id="e8280c5c-db14-41d5-98dc-62d68569ecb0"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a188872b-2f77-44cd-9c0f-c910b7c38fc7">
+                    <propertyInstance
+                      Id="c2ccab7b-3cfc-4a22-ba87-65383c2e1656"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="09f85e84-cead-4bd4-9efa-464f728f0501">
+                    <propertyInstance
+                      Id="9304f024-b929-4ad0-8d57-c3b65e684ed7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject_Common.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="0a8df7c9-b6b9-485c-bea5-dcb404c6661d"
+            name="gesturefile3"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="fcea2ec5-ed14-4207-9191-a654012cb912"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMicrosoftKinect%2Fbin%2FDebug%2FMicrosoftKinect.dll Namespace%3DHapCon.MicrosoftKinect Type%3DMicrosoftKinect Member%3Dgesturefile3"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d82b2cf1-82e6-4d18-a9fa-a092ca85765d"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c79fe115-c7af-42c7-8ad0-94a3eadc16db">
+                    <propertyInstance
+                      Id="5069fccd-6bff-4b2b-9c3a-cbca440c8d08"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d3ca174b-f278-4e9a-94f8-a3648004d898">
+                    <propertyInstance
+                      Id="2ceeff13-8c76-430b-93e0-7314aec5bfd4"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="99798d21-db3d-4a40-8206-67589ff976ea">
+                    <propertyInstance
+                      Id="fc41c609-6c97-4a34-bea1-ca1ee9d7bd5e"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bf298d00-2a2f-48bd-8abd-c78eb87b153b">
+                    <propertyInstance
+                      Id="e494a855-9317-483e-9047-5aa530e6cb5c"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0ddcb1ac-65bb-40f1-9e0b-fa1246daf020">
+                    <propertyInstance
+                      Id="bf246deb-64a8-487a-af22-7fa3833b38d6"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject_Common.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="e15a9fda-cc75-4c76-bd43-9c6e46d88000"
+            name="gesturefile4"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="fb9e94db-0e7a-43ef-990b-6ac353f2309b"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMicrosoftKinect%2Fbin%2FDebug%2FMicrosoftKinect.dll Namespace%3DHapCon.MicrosoftKinect Type%3DMicrosoftKinect Member%3Dgesturefile4"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3ebe4929-3eb2-43f2-8e50-a99e2da82475"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="722ac9c6-c36d-411a-bdd3-b4c5be5b7734">
+                    <propertyInstance
+                      Id="68aad3b7-0503-4ad2-858b-4bbfba8cfd4c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2886acd7-ad1b-41ef-938d-1fa1d9365351">
+                    <propertyInstance
+                      Id="d39d29e6-1221-454f-ac73-45db0bd29a73"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4c603cb8-70df-4920-9803-d13b4d8cf8a7">
+                    <propertyInstance
+                      Id="3e4802dc-066b-4de6-830f-a1b8575b6178"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b666c35b-3d90-475e-bf7f-dfede9ec2955">
+                    <propertyInstance
+                      Id="bd56fdb1-5f98-41fd-ba36-583002aa2fcb"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0010b370-4fce-4d35-9293-7062ab6e2236">
+                    <propertyInstance
+                      Id="ea6c7b00-6241-4649-b8fe-9c356d567b89"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject_Common.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="e2463a0c-1f46-4350-9927-2219d99dbe0b"
+            name="inRange"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="557bb117-6c96-4329-8be2-9fd27bcd9152"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMicrosoftKinect%2Fbin%2FDebug%2FMicrosoftKinect.dll Namespace%3DHapCon.MicrosoftKinect Type%3DMicrosoftKinect Member%3DinRange"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e0ecbc53-dec2-4fc6-9038-2f0025fa4e03"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d4d80b21-d054-48f0-8f4d-86ef4aad3aef">
+                    <propertyInstance
+                      Id="fc5704c3-114f-4fca-a79c-fa0a11d3eb7d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="31046ba8-ecef-4ac0-8969-81467e23636a">
+                    <propertyInstance
+                      Id="2186f5bc-6a83-4481-9d18-0c191231d238"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dcc9dfc0-7393-4064-9d21-da62781529c8">
+                    <propertyInstance
+                      Id="b88f2c11-48bb-4f74-9ea1-1c3e8f440f86"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7727ccb5-45bb-46ec-8e46-370d19ed3b46">
+                    <propertyInstance
+                      Id="bd871ab7-7956-4e5b-8e41-5e0563e3de35"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5aa7debe-fef0-457e-bedb-f79d4bd6f85a">
+                    <propertyInstance
+                      Id="826b1289-506b-4f9e-b206-e71ebc26ce46"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="ModelingProject_Common.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="89743a18-96bd-4eca-ad97-250f3762b683"
+            name="matcher"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="95a1c249-19b8-4b34-bd02-e9ba8e4dfe55"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMicrosoftKinect%2Fbin%2FDebug%2FMicrosoftKinect.dll Namespace%3DHapCon.MicrosoftKinect Type%3DMicrosoftKinect Member%3Dmatcher"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1ab26c37-a44a-462c-b07a-709b7194b979"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dc715051-3cac-49a4-a064-a7614615515a">
+                    <propertyInstance
+                      Id="73de7cb1-0595-47d7-89f8-ab14deeda5f1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b33c6951-9781-423c-acca-6196b98fa79c">
+                    <propertyInstance
+                      Id="3bce8b8e-2a57-4f72-b599-4e9ca13bc540"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f6789b36-c1bb-48e4-8e08-2d6b24b0f649">
+                    <propertyInstance
+                      Id="70747cef-0b62-4f24-bd18-574e35079c71"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b914355b-6537-4a3a-a5d6-d3e1e036e87a">
+                    <propertyInstance
+                      Id="df2042d5-63c8-4be4-9943-a7e9407aedc0"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6a602783-dc9c-4bfc-8d01-7635df1d7983">
+                    <propertyInstance
+                      Id="dddc1391-1eb3-4d65-82c4-e752385fe35f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="19867230-1cb0-4ae6-8230-7617094002e6"
+                LastKnownName="GestureMatcher"
+                LastKnownLocation="Package_1815.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="6cee1910-2a17-487b-8547-a3acf44c8481"
+            name="regGesture"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="bfe1b450-6e18-454d-91c2-c5e783d300c2"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMicrosoftKinect%2Fbin%2FDebug%2FMicrosoftKinect.dll Namespace%3DHapCon.MicrosoftKinect Type%3DMicrosoftKinect Member%3DregGesture"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8e55d1ac-8b0f-4f24-8307-41d16e088ecd"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b79fdd8b-4dc4-46d2-9d6b-fc6b7a869f4b">
+                    <propertyInstance
+                      Id="3d1ad30a-de97-455e-ab21-c399bc859cb8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1042e2fb-a5b6-4b3f-b037-0ff00ac8cdba">
+                    <propertyInstance
+                      Id="c15538e3-1a9f-4e94-aac6-87560ccce7c7"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="28a79196-a496-4e39-92a7-94938c7ae464">
+                    <propertyInstance
+                      Id="43dc31f2-c9a1-47d6-9483-1941c5aebccb"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9325588a-01ea-4d22-99fe-f49d9a093a2e">
+                    <propertyInstance
+                      Id="a0809c1d-4c63-4765-acb6-0ac7f1d41a44"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="003788d4-0ceb-4091-98c9-cc910a630725">
+                    <propertyInstance
+                      Id="c1e970c5-bfad-4415-96b4-cd15fc2a54c2"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="ModelingProject_Common.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="04672033-f562-478e-8171-43c4aab97286"
+            name="sensor"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="e759febb-42cf-4b22-bb9f-3b4582b17e3c"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMicrosoftKinect%2Fbin%2FDebug%2FMicrosoftKinect.dll Namespace%3DHapCon.MicrosoftKinect Type%3DMicrosoftKinect Member%3Dsensor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="45825896-d540-49a5-8c2d-06be405fce23"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6eae5e8b-e103-481c-af2b-2e5251ecc6fc">
+                    <propertyInstance
+                      Id="4d4b9a5f-de6f-471a-8024-3637e910811e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="54fc0a45-f5ef-4d2a-a832-36f46569fcb8">
+                    <propertyInstance
+                      Id="177be486-4084-40ad-a75f-9a2ba514a777"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b0c6aed3-f06f-448d-816c-92dbf33354f7">
+                    <propertyInstance
+                      Id="bc914a00-0fa9-4fb4-a918-c81af1cc17d5"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="09e44931-4d40-446e-bf7c-610914ac1292">
+                    <propertyInstance
+                      Id="4f7a0f5d-e856-4692-9ada-e654f3aa9def"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c1b3b9b7-08b3-47c6-87c9-13da642cb521">
+                    <propertyInstance
+                      Id="5ad5130a-0d25-49fd-8123-57656c8d4a4f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="30ff5401-a29e-4300-83ae-27a21a204ced"
+                LastKnownName="KinectSensor"
+                LastKnownLocation="Package2_1815.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="a81407e6-e61e-4d28-a20e-0f5d978279f7"
+            name="totalSkeleton"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isOrdered="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="f756c313-4869-400b-940e-30b9f0435ddd"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMicrosoftKinect%2Fbin%2FDebug%2FMicrosoftKinect.dll Namespace%3DHapCon.MicrosoftKinect Type%3DMicrosoftKinect Member%3DtotalSkeleton"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d52b3407-5f5d-48e0-b440-8dcdb1ecdf51"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="68202288-d787-496c-a751-d39810b59ec6">
+                    <propertyInstance
+                      Id="5f747fae-3cd8-4c79-97cf-c00230fb1a5d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="16421b69-9b82-42c5-b026-ae6e188a130d">
+                    <propertyInstance
+                      Id="9ef4fb32-27dc-4463-bf20-81e16fdeaf63"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3df76019-f453-4468-b80b-f8624e89d319">
+                    <propertyInstance
+                      Id="5fba673e-445e-4d48-8e00-c17a294f0f82"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7760663e-1b81-421f-9f55-430d1ffcf898">
+                    <propertyInstance
+                      Id="351bcbcd-7257-4274-a6dd-c8b7dc569772"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f2066815-7ab7-4921-86cf-4343e35f9938">
+                    <propertyInstance
+                      Id="bc4158ad-d9a7-461e-a961-c07404b8ac93"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <lowerValueInternal>
+              <literalString
+                Id="c736094d-c766-4d89-b191-4338422ac270"
+                name="Lower"
+                value="*" />
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString
+                Id="c5f9c832-805c-40c8-aa8e-90cf319ac414"
+                name="Upper"
+                value="*" />
+            </upperValueInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="8fb44132-ed4b-4ec0-99ab-4703fd814c15"
+                LastKnownName="Skeleton"
+                LastKnownLocation="Package2_1815.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="9f4db70b-2719-49f6-b635-e1cc0a755e81"
+            name="xCoordinate"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="2628f86b-925a-427b-a916-492fb3a95cc2"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMicrosoftKinect%2Fbin%2FDebug%2FMicrosoftKinect.dll Namespace%3DHapCon.MicrosoftKinect Type%3DMicrosoftKinect Member%3DxCoordinate"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6c005cf6-deed-4663-b1af-bd6b96f59266"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5e6a7b9a-7911-40a2-a188-be5acfe14963">
+                    <propertyInstance
+                      Id="f6338277-d3d4-4744-bd54-cadcbcb9abb0"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f070c266-0d56-48e6-84ed-ff15a976d917">
+                    <propertyInstance
+                      Id="6c5ca9ed-1c1f-44be-8b2c-b3707802c0e6"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="97d0fdc5-f99d-44ac-9adb-07872f86ae5f">
+                    <propertyInstance
+                      Id="916719ec-c4e4-48bf-87dc-46a61aa62b9f"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1c61ec67-01b3-4a98-b4bf-8fe30b942971">
+                    <propertyInstance
+                      Id="9d029f3a-8db5-4cb8-9b60-c3f82c21cf86"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cf64789a-e58a-4f6a-9b67-dbe58727b503">
+                    <propertyInstance
+                      Id="ca2c4f5d-82b2-4dbe-825a-e47c1f17f68a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="438ac932-1e49-4c9c-80b7-46e5a706fd6b"
+                LastKnownName="Single"
+                LastKnownLocation="Package2_1752.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="777f7f40-9eae-48a4-92be-bcfa686150ab"
+            name="yCoordinate"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="abdd0e2a-1b7b-458c-8183-074850c64283"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMicrosoftKinect%2Fbin%2FDebug%2FMicrosoftKinect.dll Namespace%3DHapCon.MicrosoftKinect Type%3DMicrosoftKinect Member%3DyCoordinate"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b18a95fb-7b25-4f07-94b5-7db51877eda2"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c88b6218-2408-4114-a2a1-ec71b3bf59e7">
+                    <propertyInstance
+                      Id="33edcadb-bafe-4a05-9394-ecefc72d0e29"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2d9a8b4f-6c8a-4bb3-922b-cad18c24efd3">
+                    <propertyInstance
+                      Id="a36245c9-f817-4ec3-8934-95848f5250cc"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c497a1b4-d690-41e8-b64a-cd541fcbfbbf">
+                    <propertyInstance
+                      Id="0e6a7339-2ec8-4345-950b-ec975f33aada"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b047c6df-7ab1-4830-90a6-5213b72ec38e">
+                    <propertyInstance
+                      Id="440cf8dc-7cdb-44c7-8f59-3c70e11f2176"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f4f82bba-5225-4769-8a90-bcce965840c0">
+                    <propertyInstance
+                      Id="ea238d05-5973-43ce-ba33-7eee664b2ea5"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="438ac932-1e49-4c9c-80b7-46e5a706fd6b"
+                LastKnownName="Single"
+                LastKnownLocation="Package2_1752.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="1bb40316-d3b1-4fd8-a0b7-736153a17cac"
+            name="SetParameters"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="9a80d0d8-4b1f-4254-b4b0-1faaa9b8889d"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMicrosoftKinect%2Fbin%2FDebug%2FMicrosoftKinect.dll Namespace%3DHapCon.MicrosoftKinect Type%3DMicrosoftKinect Member%3D(Name%3DSetParameters OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FCommon%2Fbin%2FDebug%2FCommon.dll Namespace%3DHapCon.Common Type%3DListeningMode)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="633e7691-0980-4a46-a6e4-560bbd7311bb"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="82a07ab2-4c42-4d00-bda7-c12dd76d00d6">
+                    <propertyInstance
+                      Id="72a1a522-0c5b-40c1-94cc-ad2256f4dcd4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d6f0f8c4-d9b6-4238-840e-f9c7d769c73d">
+                    <propertyInstance
+                      Id="f43bdde1-4c88-4c87-becc-8056cf91e137"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b5559f04-f913-444b-a383-7d9bd0b73b16">
+                    <propertyInstance
+                      Id="4b716687-a4f3-4a72-8759-93d2a4476824"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="db45a87e-adc5-4b41-af3b-896e8f7b2428">
+                    <propertyInstance
+                      Id="d94f67f9-74d1-468b-b772-143441b3b9c9"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="735cb6ef-cdf5-4491-851e-f045aa13f5a8">
+                    <propertyInstance
+                      Id="48ca822e-f484-462f-8c9f-919218e9dea1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a4c7cab7-77bf-4a34-8986-3305abd05187">
+                    <propertyInstance
+                      Id="17a72cfa-302a-4ab6-8f70-f9042e341f3d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3e5f61fd-f84e-4026-9149-2ef031ce2aa0"
+                  name="name"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="6fb4b84f-2e85-475b-9fee-253f297c0c4c"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMicrosoftKinect%2Fbin%2FDebug%2FMicrosoftKinect.dll Namespace%3DHapCon.MicrosoftKinect Type%3DMicrosoftKinect Member%3D(Name%3DSetParameters OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FCommon%2Fbin%2FDebug%2FCommon.dll Namespace%3DHapCon.Common Type%3DListeningMode)]) ParameterIdentifier%3Dname"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject_Common.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="73260919-bcea-4fd9-89a8-2ab565cdfa4b"
+                  name="computerName"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="8f5d0e3d-d98f-4acc-9921-6b0c7b433c85"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMicrosoftKinect%2Fbin%2FDebug%2FMicrosoftKinect.dll Namespace%3DHapCon.MicrosoftKinect Type%3DMicrosoftKinect Member%3D(Name%3DSetParameters OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FCommon%2Fbin%2FDebug%2FCommon.dll Namespace%3DHapCon.Common Type%3DListeningMode)]) ParameterIdentifier%3DcomputerName"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject_Common.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9bccd844-dc33-44aa-b429-14ff2914b34f"
+                  name="listeningMode"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="70f00272-c464-457c-b673-2cd337bc69af"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMicrosoftKinect%2Fbin%2FDebug%2FMicrosoftKinect.dll Namespace%3DHapCon.MicrosoftKinect Type%3DMicrosoftKinect Member%3D(Name%3DSetParameters OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FCommon%2Fbin%2FDebug%2FCommon.dll Namespace%3DHapCon.Common Type%3DListeningMode)]) ParameterIdentifier%3DlisteningMode"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="47a45df8-84f2-48cf-aaab-122592ca19bb"
+                      LastKnownName="ListeningMode"
+                      LastKnownLocation="Package1_1752.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="46f5f7df-b290-4b04-91ad-608ebc346242"
+            name="matcher_GestureMatch"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1f439a28-1bd2-4625-8acc-f9bec13d475f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMicrosoftKinect%2Fbin%2FDebug%2FMicrosoftKinect.dll Namespace%3DHapCon.MicrosoftKinect Type%3DMicrosoftKinect Member%3D(Name%3Dmatcher_GestureMatch OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FFranklins.Net%2FGesturePak 1.0.4%2Fsamples%2Fc%2523%2FGesturePak Demo%2Fgesturepak%2FGesturePakObjects.dll&quot; Namespace%3DGesturePak Type%3DGesture)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b334537b-7fa6-4e83-b377-b0a54df686ac"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="072c6f98-c17e-4790-9bb2-654dd92abec1">
+                    <propertyInstance
+                      Id="424fbeac-ec40-4e7f-b767-f8ed2f98a0be"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5980f9b5-1bf6-4ebb-8c63-445d7ab4b0a3">
+                    <propertyInstance
+                      Id="e70f9487-bc88-41b7-8c27-005eccc15ba8"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a12afc1f-e841-4318-9d69-c892014c002f">
+                    <propertyInstance
+                      Id="25ffc4ba-04e0-4700-8ebf-974f8d892bf0"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="af889c0a-d8f8-4a6d-84fc-2c5f73bd9b77">
+                    <propertyInstance
+                      Id="7bb57d68-0b72-433d-bd6c-5bac45fefe2f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1b431721-ace4-4d73-a090-164d3fedbbd0">
+                    <propertyInstance
+                      Id="c2131e89-83ce-49c7-9e5b-24a12d5bf85f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6a458340-8082-497a-bf1c-7e7bf7dc48ff">
+                    <propertyInstance
+                      Id="3d7320f0-60e7-45f7-aa37-9ac06e1aacd2"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f7a27bfa-0f28-45ed-be7d-4c457e50bf67"
+                  name="gesture"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="c993ed25-1378-4c22-a7d6-e4ba3095c229"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMicrosoftKinect%2Fbin%2FDebug%2FMicrosoftKinect.dll Namespace%3DHapCon.MicrosoftKinect Type%3DMicrosoftKinect Member%3D(Name%3Dmatcher_GestureMatch OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FFranklins.Net%2FGesturePak 1.0.4%2Fsamples%2Fc%2523%2FGesturePak Demo%2Fgesturepak%2FGesturePakObjects.dll&quot; Namespace%3DGesturePak Type%3DGesture)]) ParameterIdentifier%3Dgesture"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="eb4304c9-4a7c-4775-8735-77c017e8e6a5"
+                      LastKnownName="Gesture"
+                      LastKnownLocation="Package_1815.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="f420bf72-96f3-40fb-895e-1691718db5a0"
+            name="matcher_PoseMatch"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="25f08661-5b2b-4f61-a667-eb16845c1455"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMicrosoftKinect%2Fbin%2FDebug%2FMicrosoftKinect.dll Namespace%3DHapCon.MicrosoftKinect Type%3DMicrosoftKinect Member%3D(Name%3Dmatcher_PoseMatch OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FFranklins.Net%2FGesturePak 1.0.4%2Fsamples%2Fc%2523%2FGesturePak Demo%2Fgesturepak%2FGesturePakObjects.dll&quot; Namespace%3DGesturePak Type%3DMatchingPose)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FFranklins.Net%2FGesturePak 1.0.4%2Fsamples%2Fc%2523%2FGesturePak Demo%2Fgesturepak%2FGesturePakObjects.dll&quot; Namespace%3DGesturePak Type%3DPose)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="994b9510-e35a-4548-a743-2e294fcb9f39"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f1b21233-4876-4ab7-923b-38a900c3b183">
+                    <propertyInstance
+                      Id="60bbb06a-93f6-410f-b279-b226a83ef99e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="28c4a1ea-8b44-4f56-93fd-38ed5106de9e">
+                    <propertyInstance
+                      Id="abc1640b-d34f-4760-93c6-11c4db9befb2"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f154cb75-3996-418d-8be0-b459ebecd67f">
+                    <propertyInstance
+                      Id="0f210d9a-7939-462b-bda6-06254dc90128"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="019dd8f6-5bb4-4aab-b916-a2c98bdb9349">
+                    <propertyInstance
+                      Id="cc3db67a-9d36-4041-9bf7-136b779ce4c7"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="24916840-72b9-4142-b6ff-3fc7b499d763">
+                    <propertyInstance
+                      Id="ce359e4c-8e52-43c6-ad22-e5c9d7f71e64"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="80d1501a-217a-4f2b-aa79-21a2dc9c8fe7">
+                    <propertyInstance
+                      Id="04d9f99a-e59b-470b-bc4f-f73aabee8afb"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5a7a1b96-d9b9-44cd-baee-ee58505cfbba"
+                  name="match"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="a96556c6-b92e-47b7-92fe-69f788be0d54"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMicrosoftKinect%2Fbin%2FDebug%2FMicrosoftKinect.dll Namespace%3DHapCon.MicrosoftKinect Type%3DMicrosoftKinect Member%3D(Name%3Dmatcher_PoseMatch OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FFranklins.Net%2FGesturePak 1.0.4%2Fsamples%2Fc%2523%2FGesturePak Demo%2Fgesturepak%2FGesturePakObjects.dll&quot; Namespace%3DGesturePak Type%3DMatchingPose)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FFranklins.Net%2FGesturePak 1.0.4%2Fsamples%2Fc%2523%2FGesturePak Demo%2Fgesturepak%2FGesturePakObjects.dll&quot; Namespace%3DGesturePak Type%3DPose)]) ParameterIdentifier%3Dmatch"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="646ee82f-ba72-4772-b944-4b4ecb09c563"
+                      LastKnownName="MatchingPose"
+                      LastKnownLocation="Package_1815.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e59f57ae-89ed-4db4-b256-be79e05564c5"
+                  name="pose"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="cc3f2d20-3de8-4e7d-8385-dd1f49b771aa"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMicrosoftKinect%2Fbin%2FDebug%2FMicrosoftKinect.dll Namespace%3DHapCon.MicrosoftKinect Type%3DMicrosoftKinect Member%3D(Name%3Dmatcher_PoseMatch OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FFranklins.Net%2FGesturePak 1.0.4%2Fsamples%2Fc%2523%2FGesturePak Demo%2Fgesturepak%2FGesturePakObjects.dll&quot; Namespace%3DGesturePak Type%3DMatchingPose)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FFranklins.Net%2FGesturePak 1.0.4%2Fsamples%2Fc%2523%2FGesturePak Demo%2Fgesturepak%2FGesturePakObjects.dll&quot; Namespace%3DGesturePak Type%3DPose)]) ParameterIdentifier%3Dpose"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5b9e66d8-0c3b-4981-be11-fd886252539a"
+                      LastKnownName="Pose"
+                      LastKnownLocation="Package_1815.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="d4b15635-e50b-42cd-9da2-bc2df562038b"
+            name="matcher_Tracking"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="66567e26-a356-4604-b085-9c5f9557669c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMicrosoftKinect%2Fbin%2FDebug%2FMicrosoftKinect.dll Namespace%3DHapCon.MicrosoftKinect Type%3DMicrosoftKinect Member%3D(Name%3Dmatcher_Tracking OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FFranklins.Net%2FGesturePak 1.0.4%2Fsamples%2Fc%2523%2FGesturePak Demo%2Fgesturepak%2FGesturePakObjects.dll&quot; Namespace%3DGesturePak Type%3DPose)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f8d82ac6-aa3e-48da-8bb6-a64bf02405cd"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0cc4d3bf-327d-4dd6-8f6b-f8bb00ae2883">
+                    <propertyInstance
+                      Id="69188a24-f3cb-4a30-9e10-0f2e2831a71a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a3c94d91-6cc0-423f-af5c-08746ded3387">
+                    <propertyInstance
+                      Id="4deb3c5d-a43a-422a-ba86-e6d96abc40c7"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f3b79aa3-e388-4f9e-bf8e-b058ed2b69d4">
+                    <propertyInstance
+                      Id="74d7c28b-1b6a-4bf6-a404-b3f045aad89a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="777c0979-3b19-4d8f-a4be-ab703c71f45f">
+                    <propertyInstance
+                      Id="f67dea7b-b921-4467-a35e-287eb20be807"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9e03bdfd-3847-4c7b-9942-2843f6fe1934">
+                    <propertyInstance
+                      Id="080b5eb4-d2d8-44b7-859c-1615ad1e31d4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6bd7611e-50f0-4ab8-a674-660fa2a699ba">
+                    <propertyInstance
+                      Id="980b5d55-8191-4f91-949c-68dc75a67b58"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="59f75df6-dba8-435d-9d94-294b7c6da91b"
+                  name="pose"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="c9642757-4b54-499c-83ab-5e7d3d27e65d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMicrosoftKinect%2Fbin%2FDebug%2FMicrosoftKinect.dll Namespace%3DHapCon.MicrosoftKinect Type%3DMicrosoftKinect Member%3D(Name%3Dmatcher_Tracking OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FFranklins.Net%2FGesturePak 1.0.4%2Fsamples%2Fc%2523%2FGesturePak Demo%2Fgesturepak%2FGesturePakObjects.dll&quot; Namespace%3DGesturePak Type%3DPose)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)]) ParameterIdentifier%3Dpose"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5b9e66d8-0c3b-4981-be11-fd886252539a"
+                      LastKnownName="Pose"
+                      LastKnownLocation="Package_1815.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e8267363-52ee-449f-9da1-247a25c07e1a"
+                  name="delta"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="176283c4-e17c-4bf7-ac61-2b4aef0058cc"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMicrosoftKinect%2Fbin%2FDebug%2FMicrosoftKinect.dll Namespace%3DHapCon.MicrosoftKinect Type%3DMicrosoftKinect Member%3D(Name%3Dmatcher_Tracking OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FFranklins.Net%2FGesturePak 1.0.4%2Fsamples%2Fc%2523%2FGesturePak Demo%2Fgesturepak%2FGesturePakObjects.dll&quot; Namespace%3DGesturePak Type%3DPose)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)]) ParameterIdentifier%3Ddelta"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="438ac932-1e49-4c9c-80b7-46e5a706fd6b"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package2_1752.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="d884b6b0-f90d-44f0-bcff-72c2e7f95a06"
+            name="sensor_SkeletonFrameReady"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="0f4cc6c5-8392-4a32-8f07-f0e7db4cf51b"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMicrosoftKinect%2Fbin%2FDebug%2FMicrosoftKinect.dll Namespace%3DHapCon.MicrosoftKinect Type%3DMicrosoftKinect Member%3D(Name%3Dsensor_SkeletonFrameReady OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FMicrosoft SDKs%2FKinect%2Fv1.7%2FAssemblies%2FMicrosoft.Kinect.dll&quot; Namespace%3DMicrosoft.Kinect Type%3DSkeletonFrameReadyEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="db139010-5aa0-40fb-83f7-ce77a1c74942"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8d470159-61a0-459c-8911-94193d47cb02">
+                    <propertyInstance
+                      Id="087da2ec-01ca-42d6-bfaf-530ce8b05cb9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c3dc233e-c864-4bcc-bbe3-6385c00821bd">
+                    <propertyInstance
+                      Id="2abae285-3f10-4281-bfba-3e389bcd50e6"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4605418c-c352-435f-9632-09f4437a4e34">
+                    <propertyInstance
+                      Id="2347f74b-ccdb-48aa-8c41-710649143e1d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="adc2be6e-37e4-4269-bb5a-9131c1f74731">
+                    <propertyInstance
+                      Id="e0fe27ac-0f22-4302-b5d6-19ce0c6d142a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="35df5393-eaa7-4cb8-a2de-e6652f1f88b0">
+                    <propertyInstance
+                      Id="a8300887-8aea-4566-a21a-ec0cfeeafa8e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aad5d9f4-1f3f-4f30-b6aa-bd02622bc22b">
+                    <propertyInstance
+                      Id="c588ada8-311f-4c60-ac05-268381a0c2b0"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="114bbcd4-b2b2-48d8-a8e0-3d5992e8c3f6"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="c17f5a5b-c0a7-4a34-ac13-7c9f6bd68362"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMicrosoftKinect%2Fbin%2FDebug%2FMicrosoftKinect.dll Namespace%3DHapCon.MicrosoftKinect Type%3DMicrosoftKinect Member%3D(Name%3Dsensor_SkeletonFrameReady OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FMicrosoft SDKs%2FKinect%2Fv1.7%2FAssemblies%2FMicrosoft.Kinect.dll&quot; Namespace%3DMicrosoft.Kinect Type%3DSkeletonFrameReadyEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="446cd21e-f935-446f-abed-0b7051671aec"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package2_1752.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a3da56ef-216b-4dac-ac31-173c77769ed3"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="00b7e309-5e09-4ea0-98d3-fa9a456d54e8"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMicrosoftKinect%2Fbin%2FDebug%2FMicrosoftKinect.dll Namespace%3DHapCon.MicrosoftKinect Type%3DMicrosoftKinect Member%3D(Name%3Dsensor_SkeletonFrameReady OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FMicrosoft SDKs%2FKinect%2Fv1.7%2FAssemblies%2FMicrosoft.Kinect.dll&quot; Namespace%3DMicrosoft.Kinect Type%3DSkeletonFrameReadyEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="ea8309e3-7517-487c-91a9-d95de9ef3e2b"
+                      LastKnownName="SkeletonFrameReadyEventArgs"
+                      LastKnownLocation="Package2_1815.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="7e4de3a2-c816-4145-9a6a-c84c5f0913d7"
+            name="MicrosoftKinect"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="44dce4ff-cdc2-438e-bf79-19b837b29f4e"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMicrosoftKinect%2Fbin%2FDebug%2FMicrosoftKinect.dll Namespace%3DHapCon.MicrosoftKinect Type%3DMicrosoftKinect Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a30efc90-1ad9-47cb-b7a4-0c19aeb3bc66"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6c6a8288-fb96-4456-9c11-6b9f7048b82b">
+                    <propertyInstance
+                      Id="ca29cccb-1095-4646-b578-6ab766412e9e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="26087736-3fbb-43bf-8f23-7f9a0ca882c1">
+                    <propertyInstance
+                      Id="f3ccef06-2794-4f10-b05b-5451daa0eeb0"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c655e40b-6851-4c37-83c7-94103713650a">
+                    <propertyInstance
+                      Id="cdf89d32-4fa3-4f85-872e-0c2ad3f39c41"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="89a2ff02-cabb-4c12-9b91-a75530c5a87b">
+                    <propertyInstance
+                      Id="62fbc414-45e9-4bdb-af59-411d4163cfc6"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="750a6ae9-b15f-40fa-a22b-3547af722776">
+                    <propertyInstance
+                      Id="341f3dea-509b-4b57-a4cb-88796cea0a34"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1737936b-e5d0-49e6-8831-8a7e3eb22eeb">
+                    <propertyInstance
+                      Id="978d9a3b-51f2-471d-9e94-79ac63a738a2"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="a16513cd-30d5-40a0-8238-68d60677af8d"
+            name="Initialise"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e3f20416-2b34-4bab-bdf4-d3e27a8e9f5b"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMicrosoftKinect%2Fbin%2FDebug%2FMicrosoftKinect.dll Namespace%3DHapCon.MicrosoftKinect Type%3DMicrosoftKinect Member%3DInitialise"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5376d921-8800-4046-8147-5779b8925b93"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2599b133-d108-4794-9d37-b283da5f27ed">
+                    <propertyInstance
+                      Id="29abea81-dce9-4ae0-848f-75481a193fd9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b56fa473-f2f2-457a-aa0b-a72a4477f1f4">
+                    <propertyInstance
+                      Id="8741fa9d-6421-481c-bdfb-0390c0710bc7"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4ee123cd-1cfa-4926-b928-e869b4357aff">
+                    <propertyInstance
+                      Id="9e9c0c45-b940-4ae0-a9a1-de583e153971"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d453ebdb-1185-469a-93f1-b970dd321b61">
+                    <propertyInstance
+                      Id="bd581713-1587-4827-bea7-e53a29bbd0ad"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3c2b4656-e493-46e3-8119-638b6f9a23b2">
+                    <propertyInstance
+                      Id="d810d176-c1f4-40e6-85a3-82b628f771c9"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="28fff629-2920-4c09-a6f9-8cb1ce9d830a">
+                    <propertyInstance
+                      Id="aa7ce1a0-cb04-4ee0-85f0-da32dc55f9b1"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="f4a0a7e1-684d-4905-ae4d-49dd77b94d34"
+            name="Shutdown"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="bc2c374b-0310-4896-bffe-6004d635432b"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMicrosoftKinect%2Fbin%2FDebug%2FMicrosoftKinect.dll Namespace%3DHapCon.MicrosoftKinect Type%3DMicrosoftKinect Member%3DShutdown"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="428be79c-6135-4b77-b469-2bb29f433a02"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9293a1d9-5f8a-4496-960a-705ab1d3ce59">
+                    <propertyInstance
+                      Id="dccb11fd-c2b2-49bb-bd28-c9065426d15d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b8985799-703e-48a7-a4c5-9b4c3d8535cb">
+                    <propertyInstance
+                      Id="b1908b25-1765-4b42-970c-030ced73f0a3"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2c79450e-cc94-4d75-8c01-7892b66a2ec3">
+                    <propertyInstance
+                      Id="bf9a885f-0d32-4ce6-bba1-ffcc7915a0e9"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9401e7cc-2679-4a92-8c5f-3a246e99c36d">
+                    <propertyInstance
+                      Id="dc501058-29e3-4d3e-9f1e-f532e24daa26"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3959f573-89be-4e7f-9c37-49d0d73ecc34">
+                    <propertyInstance
+                      Id="6231466c-fd97-40d7-ac34-84c491e3e756"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1ce6d310-325a-4edd-a81e-0c9f3b127441">
+                    <propertyInstance
+                      Id="ad916b1b-1f59-4d29-9b85-4486ff7c1f67"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="cb5b1d57-fdcf-45ce-8d59-7ad03520195c"
+            name="getCoordinate"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="33e22aa4-b932-4aa6-b094-6f9e71f18eaa"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMicrosoftKinect%2Fbin%2FDebug%2FMicrosoftKinect.dll Namespace%3DHapCon.MicrosoftKinect Type%3DMicrosoftKinect Member%3DgetCoordinate"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="958e5576-3ca1-4255-b0ce-6702d4a05983"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fc6af31e-c5c7-41c4-849e-7ffdf6f67069">
+                    <propertyInstance
+                      Id="394965e5-c2c2-4458-9e9c-29ef6d66bb1b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d328a880-aa87-4c2b-895d-6c7255b4838c">
+                    <propertyInstance
+                      Id="1c702334-a88f-4475-800a-aff4a91f4f58"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bde14959-82b7-41b6-a603-f08141cdc721">
+                    <propertyInstance
+                      Id="79cdd488-5eb5-4a3b-9923-90757800e237"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="25119ad1-0416-49b7-a866-29366c30d023">
+                    <propertyInstance
+                      Id="d43a8fea-b1ad-43c8-9cdf-1f80d3974d97"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3515bf36-48d7-44a4-b04e-b59d38fad7c6">
+                    <propertyInstance
+                      Id="24fdcc89-b7d8-4dd6-852e-5b31278ff29d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="05f72951-ac28-40fb-b1f6-104bf01a4d87">
+                    <propertyInstance
+                      Id="a5dbc348-4252-4be8-a663-683ecff14d97"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1d2fef91-7faf-4d6b-a995-15513ac48bc4"
+                  direction="Return"
+                  isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="f780dfef-db43-472c-ad2c-5b19a496a175"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="b36a71ea-9da6-4101-b410-3546954eef45"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="438ac932-1e49-4c9c-80b7-46e5a706fd6b"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package2_1752.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="cd26d785-fbce-44bb-9f55-10d14f686029"
+            name="getDistance"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="6cd9b5f5-f58d-4453-8cd0-ae33aea4bfc5"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMicrosoftKinect%2Fbin%2FDebug%2FMicrosoftKinect.dll Namespace%3DHapCon.MicrosoftKinect Type%3DMicrosoftKinect Member%3DgetDistance"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4d385ab5-bce8-48d4-a289-c1863af00f97"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="82f1a972-dd5e-4e04-97ff-4d9c3123ed9c">
+                    <propertyInstance
+                      Id="e4137869-5f73-42a6-a008-f4bd645e3b75"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c118a29f-1867-4d3a-94c7-c01c1c064cbb">
+                    <propertyInstance
+                      Id="4b03463b-5b9c-4294-9500-60bdae5fbe7d"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="53a74f58-5e28-4e69-a67e-c60cf6fa0770">
+                    <propertyInstance
+                      Id="02b30513-1138-446a-bf81-423e798a969f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3c669b42-b524-4e4a-9b8b-da0c05aff602">
+                    <propertyInstance
+                      Id="2d8188b3-52f9-4872-bad1-cf847cde3367"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e0cc40c6-7ebf-4853-9ce7-3337ef7776bb">
+                    <propertyInstance
+                      Id="8fade813-2098-4660-a7e3-18c16f33ceec"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2113eb26-baa8-4ae5-9e25-f820210786f5">
+                    <propertyInstance
+                      Id="56cbb522-b8e3-4510-ba36-0463e402684f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="526fe53f-eab5-4bcf-80d3-85e23398bec1"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="438ac932-1e49-4c9c-80b7-46e5a706fd6b"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package2_1752.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="ab96f77e-f467-49f9-b3a3-1933372d5cea"
+            name="getGesture"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="f436329d-d77d-4f37-a9a9-ff0c1299d252"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMicrosoftKinect%2Fbin%2FDebug%2FMicrosoftKinect.dll Namespace%3DHapCon.MicrosoftKinect Type%3DMicrosoftKinect Member%3DgetGesture"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0282280a-9258-4180-98f3-dee430df0d09"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="10b47a47-8f96-4c8d-b41e-3666f8f60e6a">
+                    <propertyInstance
+                      Id="ed2ddc8e-f6e8-4886-b762-ffa106d79c9f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d6f7723a-fecf-4748-a84f-28114ab8536e">
+                    <propertyInstance
+                      Id="9301c573-a1e3-4974-a780-3be919d9b4f7"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c50df370-9f71-4934-bad8-ed12549d970b">
+                    <propertyInstance
+                      Id="2766e006-1f39-451f-92f7-722c9cf48f86"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="031c4a65-1685-43fb-9b41-b45262c5f055">
+                    <propertyInstance
+                      Id="6abcf6f5-c4fb-4999-8923-6b39aa63a1bf"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4c04e2a7-13b5-45c8-805b-7e7805bec800">
+                    <propertyInstance
+                      Id="dab435d2-ad2a-45f7-9dc7-2689b9cf20fc"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="33099a18-edcd-4e59-81a4-857b85f9a436">
+                    <propertyInstance
+                      Id="2c88720b-f90d-4f3c-83f5-35f326228b32"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="165118b4-73f9-4c63-85bb-11f647b6a806"
+                  direction="Return">
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="b1876c72-4584-4d60-903c-7063d3ee2481"
+                      LastKnownName="CommonGestures"
+                      LastKnownLocation="Package1_1752.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="c7881c3b-7ce0-4431-bc32-7eb992e84272"
+            name="matcher_DoneRecognizing"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="bce6b60c-0575-4ad8-9cdd-16b8bca98f2c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMicrosoftKinect%2Fbin%2FDebug%2FMicrosoftKinect.dll Namespace%3DHapCon.MicrosoftKinect Type%3DMicrosoftKinect Member%3Dmatcher_DoneRecognizing"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a8a97d25-3ac5-4b59-ac04-42bd8b41d7da"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c8967dc7-495f-4c89-aef3-7ab75b63ce7a">
+                    <propertyInstance
+                      Id="4f25d71c-1f40-4ea5-aba9-82f1ba7d778b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2bc16fe6-7aa9-46f8-ae25-90a6b9893342">
+                    <propertyInstance
+                      Id="5da5e75a-a3bd-4bf8-a555-69785d6f3ad4"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8f2f3285-1e46-4e66-9750-a72a189cb6c6">
+                    <propertyInstance
+                      Id="f742a903-0d1f-446e-b175-0d039ee464d1"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c5882991-84cf-4e51-879b-df372dd33339">
+                    <propertyInstance
+                      Id="03595982-c002-4b49-91aa-37522ec584da"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="50d3d11d-5054-454c-9ab5-50a639612a38">
+                    <propertyInstance
+                      Id="b116d167-41c0-414e-9afe-9a85ddc45f1e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="726dbd87-6f00-4c9b-968f-f3a9c847c571">
+                    <propertyInstance
+                      Id="581a8b07-50d5-433a-88a6-a2387fbe32e5"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="b47c645f-7885-4d74-aba7-c1b1d9bbd4f1"
+            name="matcher_NotTracking"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="64ba7b54-856b-4372-b224-910af5cad4c6"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMicrosoftKinect%2Fbin%2FDebug%2FMicrosoftKinect.dll Namespace%3DHapCon.MicrosoftKinect Type%3DMicrosoftKinect Member%3Dmatcher_NotTracking"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a206d24a-cdda-43c0-9725-17d1c5ec2dbe"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="66af2706-1943-4a86-955b-4144154b57b4">
+                    <propertyInstance
+                      Id="e17c311a-6888-46e5-9df5-864abf625e03"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="103e228b-5349-42cf-a9de-e592cdb460ff">
+                    <propertyInstance
+                      Id="1922f217-e3fd-4d6e-90b5-f5f32d132f82"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="45c55ceb-d60d-4283-ba13-cfa7d16cbfb0">
+                    <propertyInstance
+                      Id="cb2765f6-3c37-4e28-91fc-2e09fae977c8"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="40afb963-f49d-42e3-8b46-f108c85d9f82">
+                    <propertyInstance
+                      Id="0d387c68-7f5e-42d1-9373-2dd6fb0c1167"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fe36b5a4-5f58-445c-8c32-a8db7812a3f0">
+                    <propertyInstance
+                      Id="7241104d-c0a5-4d30-a4a2-e38242cf367b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4187be7f-e6fd-4ead-889d-e9148f8c160f">
+                    <propertyInstance
+                      Id="d60a4fba-ffa2-4f29-84dc-a08248518af9"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="e8c9bf6f-22f1-44d3-8621-1e6db19d3a26"
+            name="matcher_StartedRecognizing"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="b323d11f-a862-4367-add0-790c85a89607"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMicrosoftKinect%2Fbin%2FDebug%2FMicrosoftKinect.dll Namespace%3DHapCon.MicrosoftKinect Type%3DMicrosoftKinect Member%3Dmatcher_StartedRecognizing"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f60dfe42-eee5-4b45-b00d-233588455444"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b4a966a1-5095-4b84-a274-5036648eea5a">
+                    <propertyInstance
+                      Id="e7cb0286-fdd7-43f3-9308-f718cb42f8b1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a7736649-3681-4359-87fa-ff0919395a43">
+                    <propertyInstance
+                      Id="acfd9c12-a2ed-4e46-9ba2-b4cba1adde8b"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="48234553-b087-4a1e-a271-bb03db93974b">
+                    <propertyInstance
+                      Id="8a91f939-d4d0-411e-b6f5-26e8d6a94aa4"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="43a944ba-24ab-4b79-910c-4451d104eb9b">
+                    <propertyInstance
+                      Id="1e1ef4e9-63cd-4159-a833-f5406fc72998"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4abebd74-ee4e-47d6-9df5-25a7e44459b0">
+                    <propertyInstance
+                      Id="2e8166cf-0dc6-4cc0-a9a0-6b2a6c28bbc0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5da3fbb6-ef24-4334-9863-1e40e68fff9e">
+                    <propertyInstance
+                      Id="2cf1fa1e-abc3-4d98-a90b-162430a1e556"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="2d2ed9bf-f57e-4da7-8df6-da385b2f757c"
+            name="sensor_SkeletonStream"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="2fb4963a-8a05-45e3-b90a-34100070fc0f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMicrosoftKinect%2Fbin%2FDebug%2FMicrosoftKinect.dll Namespace%3DHapCon.MicrosoftKinect Type%3DMicrosoftKinect Member%3Dsensor_SkeletonStream"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="82170e40-6365-42e0-9294-19a67c799077"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4010536f-305e-4a60-b0d4-f56e4a1da55b">
+                    <propertyInstance
+                      Id="121d66b0-1dea-4ac2-813e-7fba64bda993"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="27e53241-6a4f-48f5-8b76-924c52bac5e7">
+                    <propertyInstance
+                      Id="fd103b88-9104-4cf4-b09d-e1196093ceb9"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="92ea3f2d-2893-43d6-9bd4-79b28d28cd5f">
+                    <propertyInstance
+                      Id="5837208e-22fe-4869-9460-25bb8534c1b2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="11580f52-52ad-4038-9daf-461f647f8cb6">
+                    <propertyInstance
+                      Id="6098f576-d77f-4114-b07e-2d44079e0a2a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7ec75835-a068-419f-b06d-e85466e99be0">
+                    <propertyInstance
+                      Id="3509a7b3-bbb6-4e9a-8f51-07fa7867b823"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fa90f96f-ce5f-48f9-bd73-9e2396b28b0a">
+                    <propertyInstance
+                      Id="86937b84-6545-43d9-928e-8830fa3d4133"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="8c152495-b47b-40ed-b246-68cb3a19a377"
+        name="IMicrosoftKinect"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="f7134f5b-58a9-47b9-b53c-137337bb229c"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMicrosoftKinect%2Fbin%2FDebug%2FMicrosoftKinect.dll Namespace%3DHapCon.MicrosoftKinect Type%3DIMicrosoftKinect"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="eb82f9dc-482a-41ad-847f-1d8b3b2e03cd"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="65e22a31-4068-4b8b-9366-02bff1efa363">
+                <propertyInstance
+                  Id="d3f498e0-1ad6-4272-8a9e-4a19b98b4718"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="41b91ff6-70e2-46cf-8dc6-91faadd8f918">
+                <propertyInstance
+                  Id="b0101d63-51ac-47ce-9573-5f17d29acd40"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d74a7a94-9725-4583-9da1-82bf14e009ab">
+                <propertyInstance
+                  Id="6a5a0bc6-56af-4c03-84f6-a286190630ad"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="09fc0e0b-255f-4245-8a10-833a74969bdb">
+                <propertyInstance
+                  Id="73e54392-dca0-4990-9d24-db61422f0a06"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="afb0dac7-dc88-4776-bb07-9aec3049c290"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="c3df1ff5-2d7e-40a7-ac21-d5cbd80f5801"
+              LastKnownName="IHardware"
+              LastKnownLocation="Package1_1752.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributes>
+          <property
+            Id="787f0a53-91c1-42c7-8fbe-80cfd43054de"
+            name="ConnectionString"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="34ddc0c7-7df9-4f23-97e8-20d47fc786bc"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FDell%2FDocuments%2Fhaptic-control%2Fsrc%2Fhcehs%2FMicrosoftKinect%2Fbin%2FDebug%2FMicrosoftKinect.dll Namespace%3DHapCon.MicrosoftKinect Type%3DIMicrosoftKinect Member%3DConnectionString"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f767e1c3-61e7-4584-a52d-c5bba6b898cb"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="10fd7494-9aba-45cf-af65-4003cdd6ebc5">
+                    <propertyInstance
+                      Id="626b035c-6a71-4f46-888e-e18763623ecd"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c3df84fa-d112-49a8-b187-2965254bc178">
+                    <propertyInstance
+                      Id="42b5e507-dc40-4591-9f8a-ff1a4aa34b44"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e6a5cfd8-e5f7-42e2-b59e-97f704163334">
+                    <propertyInstance
+                      Id="95430f10-36f1-4d96-8438-7d790d683c27"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="12c1c101-f9d3-4101-b1fd-5054ecd433f5">
+                    <propertyInstance
+                      Id="c4200aff-3e22-4992-a337-4bd963940123"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bf50f6fa-d62d-469a-a7b8-180d6cb321b2">
+                    <propertyInstance
+                      Id="b1654b83-723a-48ad-b739-09632cb23b3d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9c0b9fe6-aa7f-4b1b-a6dd-4987db8f834d">
+                    <propertyInstance
+                      Id="c2d301ab-26df-4b8b-9d94-950a41c23812"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="876e5ba9-369f-49be-bb4d-08ac004ca1a2">
+                    <propertyInstance
+                      Id="bcf379df-9633-4043-b532-89685ea246a6"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject_Common.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributes>
+      </Interface>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

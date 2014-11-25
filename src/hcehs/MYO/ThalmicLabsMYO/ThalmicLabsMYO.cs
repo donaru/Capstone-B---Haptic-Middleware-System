@@ -20,7 +20,8 @@ namespace HapCon.ThalmicLabsMYO
         static int newroll;
         static int newpitch;
         static int newyaw;
-
+        static bool circlelisten = false;
+        static bool active = false;
 
         public string Name { get; set; }
         public string ConnectionString { get; set; }
@@ -48,6 +49,7 @@ namespace HapCon.ThalmicLabsMYO
                     e.Myo.OrientationDataAcquired += Myo_OrientationDataAcquired;
                     e.Myo.PoseChanged += Myo_PoseChanged;
                     // for every Myo that connects, listen for special sequences
+                    /*
                     var clockwise_sequence = PoseSequence.Create(
                         e.Myo,
                         Pose.Fist,
@@ -58,7 +60,7 @@ namespace HapCon.ThalmicLabsMYO
                         Pose.Fist,
                         Pose.WaveIn);
                     anticlockwise_sequence.PoseSequenceCompleted += ACLKSequence_PoseSequenceCompleted;
-
+                    */
 
 
                 };
@@ -133,66 +135,65 @@ namespace HapCon.ThalmicLabsMYO
             var pitch = (int)((e.Pitch + pi) / (pi * 2.0f) * 10);
             var yaw = (int)((e.Yaw + pi) / (pi * 2.0f) * 10);
 
-            /* ---- PROTOTYPE CONSOLE OUTPUT
-            Console.Clear();
-            Console.WriteLine(@"Roll: {0}", roll);
-            Console.WriteLine(@"Pitch: {0}", pitch);
-            Console.WriteLine(@"Yaw: {0}", yaw);
-            */
+            newroll = (int)(e.Roll * 10f);
+            newpitch = (int)(e.Pitch * 10f);
+            newyaw = (int)(e.Yaw * 10f);
 
-            // Update coordinate values for output
-            newroll = roll;
-            newpitch = pitch;
-            newyaw = yaw;
-
-            // *** Better logic will need to be implemented for circle gesture detection
-            
-            if (oldyaw != yaw)
+            if (circlelisten) // Check if MYO can detect a circle
             {
-                if (circlepointer == 3)
-                {   // 6 5 7 8
-                    //Console.WriteLine(circle[0] + " " + circle[1] + " " + circle[2] + " " + circle[3]);
-                    if ((circle[0] > circle[1]) && (circle[1] < circle[2]) && (circle[2] > circle[3]))
-                    {
-                       // Console.WriteLine("Clock-wise detected");
-                       // gesture = CommonGestures.CircleClockwise;
-                        circlepointer = 0;
-                    }
-                  
-                    if ((circle[0] > circle[1]) && (circle[1] < circle[2]) && (circle[2] > circle[3]))
-                    {
-                       // Console.WriteLine("Anti Clock-wise detected");
-                       // gesture = CommonGestures.CircleAntiClockwise;
-                        circlepointer = 0;
-                    }
-                    else
-                    {
-                        
-                        circle[0] = circle[1];
-                        circle[1] = circle[2];
-                        circle[2] = circle[3];
-                        
-                    }
-
-                    //circle = null;
-                    //circlepointer = 0;
-                }
-                try
+                if (active)
                 {
-                    circle[circlepointer] = yaw;
-                    if (circlepointer < 3) 
-                        circlepointer++;
-       
-                    oldyaw = yaw;
+                    // Notifies the user that he's in circle listening mode
+                    e.Myo.Vibrate(VibrationType.Short);
+                    e.Myo.Vibrate(VibrationType.Short);
+                    active = false;
                 }
-                catch (Exception j)
+
+
+
+                /* ---- PROTOTYPE CONSOLE OUTPUT
+                
+                Console.Clear();
+                Console.WriteLine(@"Roll: {0}", roll);
+                Console.WriteLine(@"eRoll: {0}",e.Roll*10);
+                Console.WriteLine(@"Pitch: {0}", newpitch);
+                Console.WriteLine(@"ePitch: {0}",e.Pitch*10);
+                Console.WriteLine(@"Yaw: {0}", newyaw);
+                Console.WriteLine(@"eYaw: {0}", e.Yaw * 10);
+                */
+
+                // Logic: identifying via top circular motion
+                // Anti-clockwise = if pitch>0 and Yaw is increasing
+                // Clockwise = if pitch <0 and Yaw is decreasing = clockwise
+                
+
+
+                if (newpitch > 0 && newpitch > 0)
                 {
+                    
+                    if (newyaw != oldyaw)
+                    {
+
+                        switch(circlepointer)
+                        {
+                            case 4: // When it reach to the end of the circle array
+                                if ((circle[0] > circle[1]) && (circle[1] > circle[2]) && (circle[2] > circle[3]))
+                                    gesture = CommonGestures.CircleClockwise;
+                                if ((circle[0] < circle[1]) && (circle[1] < circle[2]) && (circle[2] < circle[3]))
+                                    gesture = CommonGestures.CircleAntiClockwise;
+                                circlepointer = 0;
+                                break;
+                            default:
+                                circle[circlepointer] = newyaw;
+                                circlepointer++;
+                                break;
+                        }
+                    }
+                    oldyaw = newyaw;
 
                 }
-             
 
             }
-            
 
         }
 
@@ -220,6 +221,14 @@ namespace HapCon.ThalmicLabsMYO
 
             if (e.Myo.Pose == Pose.FingersSpread)
                 gesture = CommonGestures.Okay;
+
+            if (e.Myo.Pose == Pose.Fist)
+            {
+                circlelisten = true;
+                active = true;
+            }
+            else
+                circlelisten = false;
 
             if (e.Myo.Pose == Pose.Rest)
                 gesture = CommonGestures.Unknown;

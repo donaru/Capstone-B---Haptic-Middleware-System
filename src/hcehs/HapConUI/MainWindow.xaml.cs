@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Microsoft.Kinect;
 using System.IO;
+using System.Timers;
 using HapCon.Haptics;
 using System.ComponentModel;
 using System.Threading;
@@ -104,8 +105,13 @@ namespace HapConUI
         private DrawingImage imageSource;
 
         Haptics controller = new Haptics();
+
         static float[] previouscoordinates = new float[3];
+        static float[] coordinate = new float[3];
+        static double velocity = 0;
         static CommonGestures oldgesture = CommonGestures.Unknown;
+
+        static System.Timers.Timer _timer; // From System.Timers
 
         //private readonly BackgroundWorker update = new BackgroundWorker();
         /// <summary>
@@ -181,7 +187,12 @@ namespace HapConUI
         /// <param name="e">event arguments</param>
         private void WindowLoaded(object sender, RoutedEventArgs e)
         {
-            
+            // Setting up timer for velocity calculations
+            _timer = new System.Timers.Timer(200); // Set up the timer for 200 milliseconds for velocity calculations
+            _timer.Elapsed += new ElapsedEventHandler(_timer_Elapsed);
+            _timer.Enabled = true; // Enable it
+
+            // Initialise Haptic UI middleware
             controller.Initialise();
             
             // Create the drawing group we'll use for drawing
@@ -298,21 +309,71 @@ namespace HapConUI
             // Euler's Angles
             TextAngle.Text = "Roll: " + angle[0] + " Pitch: " + angle[1] + " Yaw:" + angle[2];
             // Coordinates
+            BitmapImage image;
+            BitmapImage image_device;
             
-
-            float[] coordinate = new float[3];
             coordinate = controller.getCoordinate();
             TextCoodinatesX.Text = "X:" + coordinate[0];
             TextCoodinatesY.Text = "Y:" + coordinate[1];
             TextCoodinatesZ.Text = "Z:" + coordinate[2];
 
             TextCurrentDevice.Text = controller.deviceSelected().ToString();
+            if (controller.deviceSelected() == Haptics.HapticDevices.Kinect)
+            {
+                image_device = new BitmapImage(new Uri("device_kinect.jpg", UriKind.Relative));
+                ImageDevice.Source = image_device;
+            }
+            if (controller.deviceSelected() == Haptics.HapticDevices.LeapMotion)
+            {
+                image_device = new BitmapImage(new Uri("device_leapmotion.png", UriKind.Relative));
+                ImageDevice.Source = image_device;
+            }
+            if (controller.deviceSelected() == Haptics.HapticDevices.MYO)
+            {
+                image_device = new BitmapImage(new Uri("device_myo.png", UriKind.Relative));
+                ImageDevice.Source = image_device;
+            }
+            if (controller.deviceSelected() == Haptics.HapticDevices.Unknown)
+            {
+                image_device = new BitmapImage(new Uri("gesture_unknown.png", UriKind.Relative));
+                ImageDevice.Source = image_device;
+            }
 
             CommonGestures gesture = controller.getGesture();
             if (gesture != oldgesture && (gesture != CommonGestures.Unknown))
             {
                 TextGesture.Text = gesture.ToString();
-
+                 
+                if (gesture == CommonGestures.SwipeLeft)
+                {
+                    image = new BitmapImage(new Uri("gesture_swipeleft.jpg", UriKind.Relative));
+                    ImageGesture.Source = image;
+                }
+                if (gesture == CommonGestures.SwipeRight)
+                {
+                    image = new BitmapImage(new Uri("gesture_swiperight.jpg", UriKind.Relative));
+                    ImageGesture.Source = image;
+                }
+                if (gesture == CommonGestures.CircleAntiClockwise)
+                {
+                    image = new BitmapImage(new Uri("gesture_anticlockwise.png", UriKind.Relative));
+                    ImageGesture.Source = image;
+                }
+                if (gesture == CommonGestures.CircleClockwise)
+                {
+                    image = new BitmapImage(new Uri("gesture_clockwise.png", UriKind.Relative));
+                    ImageGesture.Source = image;
+                }
+                if (gesture == CommonGestures.Okay)
+                {
+                    image = new BitmapImage(new Uri("gesture_okay.png", UriKind.Relative));
+                    ImageGesture.Source = image;
+                }
+                if (gesture == CommonGestures.Unknown)
+                {
+                    image = new BitmapImage(new Uri("gesture_unknown.png", UriKind.Relative));
+                    ImageGesture.Source = image;
+                }
                 oldgesture = gesture;
             }
 
@@ -330,6 +391,7 @@ namespace HapConUI
             */
             
             //-----------
+            TextVelocity.Text = velocity.ToString();
 
             using (SkeletonFrame skeletonFrame = e.OpenSkeletonFrame())
             {
@@ -546,6 +608,25 @@ namespace HapConUI
                 }
             }
         }
+        static void _timer_Elapsed(object sender, ElapsedEventArgs e)
+        {
+            if (previouscoordinates == null)
+                previouscoordinates = coordinate;
+            else
+            {
+                float deltax = (coordinate[0] - previouscoordinates[0])/100;
+                float deltay = (coordinate[1] - previouscoordinates[1])/100;
+                float deltaz = (coordinate[2] - previouscoordinates[2])/100;
+
+                velocity = (Math.Sqrt(Math.Pow(deltax, 2) + Math.Pow(deltay, 2) + Math.Pow(deltaz, 2)) / 0.2);
+                previouscoordinates = coordinate;
+            }
+
+            //System.Threading.Thread.Sleep(200);
+            //coordinate = controller.getCoordinate();
+
+        }
+
 
 
     }

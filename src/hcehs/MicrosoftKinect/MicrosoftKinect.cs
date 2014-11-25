@@ -18,8 +18,8 @@ namespace HapCon.MicrosoftKinect
         public string ConnectionString { get; set; }
         public string SetComputerName { get; set; }
         public ListeningMode GetListeningMode { get; set; }
-
-        KinectSensor sensor;
+        // KinectSensor sensor; 
+        private KinectSensor sensor = KinectSensor.KinectSensors[0]; // Added KinectSensor.KinectSensors[0]
         Skeleton[] totalSkeleton;
         static float xCoordinate;
         static float yCoordinate;
@@ -35,12 +35,13 @@ namespace HapCon.MicrosoftKinect
         private string gesturefile2 = "SwipeRight.xml";
         private string gesturefile3 = "CircleClockwise.xml";
         private string gesturefile4 = "CircleAntiClockwise.xml";
-
+        private string gesturefile5 = "Okay.xml";
 
         public bool gestureFound = false;
         public string gestureName;
         public bool regGesture;
-        bool inRange = false;
+        public bool inRange = false;
+        private CommonGestures cgesture = CommonGestures.Unknown;
 
         public MicrosoftKinect()
         {
@@ -81,18 +82,20 @@ namespace HapCon.MicrosoftKinect
             Console.WriteLine("Initialized Kinect");
             try
             {
+                /* -- testing polling
                 sensor_SkeletonStream();
                
                 this.sensor.Start();
                 this.sensor.SkeletonStream.TrackingMode = SkeletonTrackingMode.Seated;
                 Console.WriteLine("Connected Kinect");
-
+                */
                 // Create your gesture objects (however many you want to test)
                 Gesture g1 = new Gesture(gesturefile);
                 Gesture g2 = new Gesture(gesturefile1);
                 Gesture g3 = new Gesture(gesturefile2);
                 Gesture g4 = new Gesture(gesturefile3);
                 Gesture g5 = new Gesture(gesturefile4);
+                Gesture g6 = new Gesture(gesturefile5);
 
                 // Add it to a gestures collection
                 List<Gesture> gestures = new List<Gesture>();
@@ -101,11 +104,26 @@ namespace HapCon.MicrosoftKinect
                 gestures.Add(g3);
                 gestures.Add(g4);
                 gestures.Add(g5);
+                gestures.Add(g6);
 
+                // ----- TEST CODE
+                matcher = new GestureMatcher(gestures);
+                // hook up events
+                this.sensor.SkeletonFrameReady += sensor_SkeletonFrameReady;
+                // Start the Kinect
+                this.sensor.SkeletonStream.Enable(new Microsoft.Kinect.TransformSmoothParameters());
+                //sensor_SkeletonStream();
+                
+                this.sensor.Start();
+                this.sensor.SkeletonStream.TrackingMode = SkeletonTrackingMode.Seated;
 
+                /* --- Testing real time polling for gestures
+                 * 
                 // Create a new matcher from the Kinect sensor and the gestures
                 matcher = new GestureMatcher(KinectSensor.KinectSensors[0], gestures);
-
+                TimeSpan interval = TimeSpan.FromSeconds(1);
+             //   matcher.AutoTrackingRecoveryInterval = interval;
+                
                 // hook up events
                 matcher.StartedRecognizing += matcher_StartedRecognizing;
                 matcher.DoneRecognizing += matcher_DoneRecognizing;
@@ -113,9 +131,11 @@ namespace HapCon.MicrosoftKinect
                 matcher.NotTracking += matcher_NotTracking;
                 matcher.PoseMatch += matcher_PoseMatch;
                 matcher.GestureMatch += matcher_GestureMatch;
+              
 
                 // Start recognizing your gestures!
                 matcher.StartRecognizing();
+                */
                 regGesture = true;
 
             } catch (Exception e)
@@ -141,13 +161,7 @@ namespace HapCon.MicrosoftKinect
        
         public CommonGestures getGesture()
         {
-            if (gestureFound)
-            {
-                gestureFound = false;
-                if(gestureName == "Flap")
-                    return CommonGestures.Okay;
-            }
-            return CommonGestures.Unknown;
+            return cgesture;
         }
 
          
@@ -164,10 +178,9 @@ namespace HapCon.MicrosoftKinect
         {
             try
             {
-                if (inRange)
-                    return distance;
-                else
-                    return 0;
+
+                return distance;
+
             }
             catch (Exception e)
             {
@@ -200,7 +213,7 @@ namespace HapCon.MicrosoftKinect
                 if (firstSkeleton == null)
                 {
                     //matcher.DoneRecognizing(); 
-                    regGesture = false;
+                    //regGesture = false;
                     return;
                 }
                 if (firstSkeleton.Joints[JointType.HandRight].TrackingState == JointTrackingState.Tracked)
@@ -208,24 +221,46 @@ namespace HapCon.MicrosoftKinect
                     //this.MapJointsWithUIElement(fir)
                     distance = firstSkeleton.Joints[JointType.HandRight].Position.Z;
                     xCoordinate = firstSkeleton.Joints[JointType.HandRight].Position.X;
-                    yCoordinate = firstSkeleton.Joints[JointType.HandRight].Position.Y;
                     
+
+                    yCoordinate = firstSkeleton.Joints[JointType.HandRight].Position.Y;
+                   // Console.WriteLine("x:" + xCoordinate + " y:" + yCoordinate + " z:" + distance);
+                    /*
                     if(!regGesture)
                     {
                         matcher.StartRecognizing();
                         regGesture = true;
                         
-                    }
+                    }*/
                         
                 }
                 /*
                 if (firstSkeleton.Joints[JointType.HandLeft].TrackingState == JointTrackingState.Tracked)
                 {
                     //this.MapJointsWithUIElement(fir)
-                   textBox2.Text = (firstSkeleton.Joints[JointType.HandLeft].Position.Z).ToString();
+                  // textBox2.Text = (firstSkeleton.Joints[JointType.HandLeft].Position.Z).ToString();
 
 
                 }*/
+                matcher.ProcessRealTimeSkeletonData(firstSkeleton);
+                foreach (Gesture gesture in matcher.Gestures)
+                {
+                    if (gesture.Matched)
+                    {
+                        //Console.WriteLine(gesture.Name);
+                        if (gesture.Name == "SwipeLeft")
+                            cgesture = CommonGestures.SwipeLeft;
+                        if (gesture.Name == "SwipeRight")
+                            cgesture = CommonGestures.SwipeRight;
+                        if (gesture.Name == "AntiClockwise")
+                            cgesture = CommonGestures.CircleAntiClockwise;
+                        if (gesture.Name == "Clockwise")
+                            cgesture = CommonGestures.CircleClockwise;
+                        if (gesture.Name == "Okay")
+                            cgesture = CommonGestures.Okay;
+                        //return;
+                    }
+                }
 
             }
         }
@@ -234,21 +269,22 @@ namespace HapCon.MicrosoftKinect
         {
 
             // This tells us the matcher is recognizing
-            //Console.WriteLine("Watching...");
+           // Console.WriteLine("Watching...");
             inRange = true;
         }
 
         private void matcher_DoneRecognizing()
         {
             // This tells us the matcher is NOT recognizing
-            //Console.WriteLine("Not Watching");
+           // Console.WriteLine("Not Watching");
             inRange = false;
         }
 
         private void matcher_Tracking(Pose pose, float delta)
         {
             // The window goes red when tracking
-            //Console.WriteLine("Tracking ...");
+            Console.WriteLine("Tracking ...");
+            inRange = true;
         }
 
         private void matcher_NotTracking()
@@ -256,7 +292,10 @@ namespace HapCon.MicrosoftKinect
             // The window goes white when not tracking
             Console.WriteLine("Not Tracking");
             inRange = false;
+            
 
+           
+          
         }
 
         private void matcher_PoseMatch(MatchingPose match, Pose pose)
@@ -270,7 +309,17 @@ namespace HapCon.MicrosoftKinect
         {
             // We got a match!
             Console.WriteLine("Found: " + gesture.Name);
-            gestureName = gesture.Name;
+            //gestureName = gesture.Name;
+            if (gesture.Name == "SwipeLeft")
+                cgesture = CommonGestures.SwipeLeft;
+            if (gesture.Name == "SwipeRight")
+                cgesture = CommonGestures.SwipeRight;
+            if (gesture.Name == "AntiClockwise")
+                cgesture = CommonGestures.CircleAntiClockwise;
+            if (gesture.Name == "Clockwise")
+                cgesture = CommonGestures.CircleClockwise;
+            if (gesture.Name == "Okay")
+                cgesture = CommonGestures.Okay;
             gestureFound = true;
         }
  

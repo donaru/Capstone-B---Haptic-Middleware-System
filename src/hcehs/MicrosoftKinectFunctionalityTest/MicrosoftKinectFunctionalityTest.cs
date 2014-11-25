@@ -24,41 +24,69 @@ namespace HapCon.MicrosoftKinectFunctionalityTest
             double deltax, deltay, deltaz;
             double velocity;
 
+            CommonGestures newgesture = CommonGestures.Unknown;
+            CommonGestures previousgesture = CommonGestures.SwipeRight;
             while(true)
             {
-               
+                //Console.Clear();
+                  /*  
+                if (kinect.getDistance() == 0)
+                {
+                    
+                    kinect.Shutdown();
+                    System.Threading.Thread.Sleep(1000);
+                    kinect.Initialise();
+                }*/
+                 
                 newDistance = kinect.getDistance();
+                //* -- Distance test
                 if (newDistance != 0 || newDistance != previousDistance)
                 {
                     Console.WriteLine(newDistance);
                     previousDistance = newDistance;
                 }
-                
+                //Console.WriteLine(newDistance);
+               // */
                 //System.Threading.Thread.Sleep(1000);
 
-
+                /*
+                    switch (kinect.getGesture())
+                    {
+                        case CommonGestures.SwipeLeft:
+                            Console.WriteLine("Swipe Left");
+                            break;
+                        case CommonGestures.SwipeRight:
+                            Console.WriteLine("Swipe Right");
+                            break;
+                        case CommonGestures.Okay:
+                            Console.WriteLine("Okay");
+                            break;
+                        case CommonGestures.CircleClockwise:
+                            Console.WriteLine("CircleClockwise");
+                            break;
+                        case CommonGestures.CircleAntiClockwise:
+                            Console.WriteLine("Circle Anti-Clockwise");
+                            break;
+                        case CommonGestures.Unknown:
+                            Console.WriteLine("Unknown");
+                            break;
+                    }
+            */
                 
-
-
-                if (kinect.getGesture() == CommonGestures.SwipeLeft)
-                {
-                    Console.WriteLine("Swipe Left detected");
-                    System.Threading.Thread.Sleep(10000); ;
-                }
-
                 // Calculating velocity
                 oldcoordinates = coordinates;
                 coordinates = kinect.getCoordinate();
                 deltax = oldcoordinates[0] - coordinates[0];
+                
                 deltay = oldcoordinates[1] - coordinates[1];
                 deltaz = oldcoordinates[2] - coordinates[2];
 
                 velocity = (Math.Sqrt(Math.Pow(deltax, 2) + Math.Pow(deltay, 2) + Math.Pow(deltaz, 2)) / 0.2);
-                //Console.WriteLine("x: " + coordinates[0] + " y:" + coordinates[1] + " z:" + coordinates[2]);
-                Console.WriteLine("velocity:" + velocity + "m/second");
+                
+               // Console.WriteLine("velocity:" + velocity + "m/second");
 
 
-                System.Threading.Thread.Sleep(200);
+               // System.Threading.Thread.Sleep(200);
             }
             
 

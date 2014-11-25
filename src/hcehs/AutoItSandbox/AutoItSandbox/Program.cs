@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AutoItX3Lib;
+using HapCon.Haptics;
+using HapCon.Common;
+using System.Threading;
 
 namespace AutoItSandbox
 {
@@ -12,6 +15,7 @@ namespace AutoItSandbox
         
         static void Main(string[] args)
         {
+            Haptics controller = new Haptics();
             bool capture = false;
             bool procedurenote = false;
 
@@ -21,15 +25,121 @@ namespace AutoItSandbox
            // _autoit.WinWaitActive("ProVation MD");
            /*
             * Prototype to log into ProVation using AutoIt
-            
+            */
+            //initialise framework
+            controller.Initialise();
+            CommonGestures x = CommonGestures.Unknown;
+            while(true)
+            {
+                x = controller.getGesture();
+                if (x != CommonGestures.Unknown)
+                    Console.WriteLine(x);
+                Console.WriteLine(controller.getDistance());
+                if (x == CommonGestures.SwipeRight)
+                    break;
+            }
+            // PROVATION LOGIN
             _autoit.WinActivate("ProVation MD");
-            _autoit.MouseClick("left",490,23);
+            //_autoit.MouseClick("left",490,23);
+            _autoit.MouseClick("left", 1394, 641);
             _autoit.Send("backdoor");
             _autoit.Send("{TAB}");
             _autoit.Send("hoyLake");
             _autoit.Send("{ENTER}");
+            while (true)
+            {
+                x = controller.getGesture();
+                if (x != CommonGestures.Unknown)
+                    Console.WriteLine(x);
+                Console.WriteLine(controller.getDistance());
+                if (x == CommonGestures.SwipeRight)
+                    break;
+            }
+            // GI Outlook Bar
+            _autoit.MouseClick("left", 1449, 347);
+            // Procedure documentation
+            _autoit.MouseClick("left", 1449, -146);
 
-            */
+            // Click into procedure documentation
+            _autoit.MouseClick("left", 1388, -61);
+            CommonGestures old = x;
+           
+            while (true)
+            {
+                x = controller.getGesture();
+                if (x != old)
+                {
+                    if (x != CommonGestures.Unknown)
+                        Console.WriteLine(x);
+                    Console.WriteLine(controller.getDistance());
+                    if (x == CommonGestures.SwipeRight)
+                        _autoit.Send("{UP}");
+                    if (x == CommonGestures.SwipeLeft)
+                        _autoit.Send("{DOWN}");
+                    if (x == CommonGestures.Okay)
+                        _autoit.Send("{ENTER}");
+                    if (x == CommonGestures.CircleClockwise)
+                    {
+                        // Click on Image Capture
+                        _autoit.MouseClick("left", 1840, -253);
+                        break;
+                    }
+
+                       
+                }
+                
+                old = x;
+            }
+
+
+
+            // Removing the error
+            _autoit.Send("{ENTER}");
+
+            old = x;
+            while (true)
+            {
+                x = controller.getGesture();
+                if (x != old)
+                {
+                    if (x != CommonGestures.Unknown)
+                        Console.WriteLine(x);
+                    Console.WriteLine(controller.getDistance());
+                    if (x == CommonGestures.SwipeRight)
+                    {
+                        _autoit.MouseClick("left", 1499, -251);
+                        break;
+                    }
+                        
+                    if (x == CommonGestures.Okay)
+                        _autoit.Send("P");
+
+                }
+                old = x;
+            }
+
+            while (true)
+            {
+                x = controller.getGesture();
+                if (x != old)
+                {
+                    if (x != CommonGestures.Unknown)
+                        Console.WriteLine(x);
+                    Console.WriteLine(controller.getDistance());
+                    if (x == CommonGestures.SwipeRight)
+                        _autoit.Send("{UP}");
+                    if (x == CommonGestures.SwipeLeft)
+                        _autoit.Send("{DOWN}");
+                    if (x == CommonGestures.Okay)
+                        _autoit.Send("{ENTER}");
+                    if (x == CommonGestures.CircleClockwise)
+                        _autoit.Send("{LEFT}");
+
+
+                }
+
+                old = x;
+            }
 
             /* 
              * Below Prototype is to capture within the Image Capture Screen then log back into the procedure note
@@ -46,6 +156,8 @@ namespace AutoItSandbox
 
             //Console.WriteLine("recieving input");
             //_autoit.
+
+            /*
             _autoit.WinActivate("Image Capture:");
             while(true)
             {
@@ -64,6 +176,8 @@ namespace AutoItSandbox
                     //capture = true;
                     
                 }
+             * 
+             * */
                 /*
                 if ((_autoit.WinActive("ProVation MD") == 1) && !procedurenote)
                 {
@@ -91,7 +205,7 @@ namespace AutoItSandbox
                     procedurenote = true;
                 }*/
 
-            }
+          //  }
 
             
                     

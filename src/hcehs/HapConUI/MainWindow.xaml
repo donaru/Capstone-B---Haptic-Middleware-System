@@ -2,7 +2,7 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="604.478" Width="863.717" Loaded="WindowLoaded" Closing="Window_Closing" AllowsTransparency="True" WindowStyle="None">
-    <Grid Loaded="Grid_Loaded" Background="#FFB6D648" Margin="0,0,0,10">
+    <Grid Loaded="Grid_Loaded" Background="#FF006699" Margin="0,0,0,10">
         <TabControl HorizontalAlignment="Left" Height="527" Margin="10,57,0,0" VerticalAlignment="Top" Width="844">
             <TabItem Header="Haptic Controller">
                 <Grid Margin="0,-3,-3,-1" Background="White">
@@ -13,25 +13,28 @@
                         <StatusBarItem Padding="0 0 0 10"/>
                         <TextBlock x:Name="statusBarText" Width="276"><Run Text="Click 'Seated' to change skeletal pipeline type!"/></TextBlock>
                     </StatusBar>
-                    <TextBox x:Name="TextDistance" HorizontalAlignment="Left" Height="23" Margin="119,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" Background="White"/>
-                    <Label Content="Distance (cm)" HorizontalAlignment="Left" Margin="0,149,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+                    <TextBox x:Name="TextDistance" HorizontalAlignment="Left" Height="22" Margin="119,316,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" Background="White"/>
+                    <Label Content="Distance (cm)" HorizontalAlignment="Left" Margin="0,310,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
                     <Button x:Name="resetKinectButton" Content="Reset" HorizontalAlignment="Left" Margin="261,445,0,0" VerticalAlignment="Top" Width="75" MouseLeftButtonDown="ResetKinect_Pressed"/>
-                    <Label Content="Velocity(cm/s)" HorizontalAlignment="Left" Margin="0,115,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
-                    <Label Content="Coordinates" HorizontalAlignment="Left" Margin="0,183,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
-                    <Label Content="Eulers Angle" HorizontalAlignment="Left" Margin="0,217,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
-                    <TextBox x:Name="TextAngle" HorizontalAlignment="Left" Height="23" Margin="119,223,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152"/>
-                    <TextBox x:Name="TextCoodinatesX" HorizontalAlignment="Left" Height="23" Margin="94,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="61"/>
-                    <TextBox x:Name="TextVelocity" HorizontalAlignment="Left" Height="23" Margin="119,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152"/>
-                    <TextBox x:Name="TextCoodinatesY" HorizontalAlignment="Left" Height="23" Margin="160,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="61"/>
-                    <TextBox x:Name="TextCoodinatesZ" HorizontalAlignment="Left" Height="23" Margin="226,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="61"/>
-                    <Label Content="Current Device" HorizontalAlignment="Left" Margin="0,81,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
-                    <TextBox x:Name="TextCurrentDevice" HorizontalAlignment="Left" Height="23" Margin="119,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152"/>
-                    <TextBox x:Name="TextGesture" HorizontalAlignment="Left" Height="23" Margin="119,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152"/>
+                    <Label Content="Velocity(m/s)" HorizontalAlignment="Left" Margin="0,276,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+                    <Label Content="Coordinates" HorizontalAlignment="Left" Margin="0,344,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+                    <Label Content="Eulers Angle" HorizontalAlignment="Left" Margin="0,378,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+                    <TextBox x:Name="TextAngle" HorizontalAlignment="Left" Height="22" Margin="119,384,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152"/>
+                    <TextBox x:Name="TextCoodinatesX" HorizontalAlignment="Left" Height="22" Margin="94,350,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="61"/>
+                    <TextBox x:Name="TextVelocity" HorizontalAlignment="Left" Height="22" Margin="119,282,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152"/>
+                    <TextBox x:Name="TextCoodinatesY" HorizontalAlignment="Left" Height="22" Margin="160,350,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="61"/>
+                    <TextBox x:Name="TextCoodinatesZ" HorizontalAlignment="Left" Height="22" Margin="226,350,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="61"/>
+                    <Label Content="Current Device" Margin="0,242,730,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+                    <TextBox x:Name="TextCurrentDevice" HorizontalAlignment="Left" Height="22" Margin="119,248,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152"/>
+                    <TextBox x:Name="TextGesture" HorizontalAlignment="Left" Height="23" Margin="119,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152"/>
+                    <Image x:Name="ImageGesture" HorizontalAlignment="Left" Height="131" Margin="10,39,0,0" VerticalAlignment="Top" Width="131"/>
+                    <Image x:Name="ImageDevice" HorizontalAlignment="Left" Height="131" Margin="160,39,0,0" VerticalAlignment="Top" Width="131"/>
 
                 </Grid>
             </TabItem>
         </TabControl>
-        <Label Content="Haptic Library Demonstration" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" FontSize="36" Background="{x:Null}"/>
-        <Label Content="Gesture Detected" HorizontalAlignment="Left" Margin="10,115,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <Label Content="Haptic UI Demonstration" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" FontSize="36" Background="{x:Null}" Foreground="White"/>
+        <Label Content=" Gesture" Margin="0,298,721,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" HorizontalAlignment="Right" Width="133"/>
+        <Image HorizontalAlignment="Left" Height="82" Margin="518,8,0,0" VerticalAlignment="Top" Width="336" Source="UTS_logo.jpg"/>
     </Grid>
 </Window>
